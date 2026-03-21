@@ -60,8 +60,9 @@
     <div class="hero-badge reveal">v1.0.17 &middot; PE/VC 投资管理平台</div>
     <h1 class="hero-title reveal">本地化 AI 投资管理平台</h1>
     <p class="hero-subtitle reveal">
-      面向一级市场投资机构的轻量级、本地化投资管理工具。<br>
-      无需部署服务器，安装即用，数据留在本地，安全可控。
+      面向一级市场投资机构的本地化智能管理平台。<br>
+      从项目发现到投后管理，AI 驱动全流程决策。<br>
+      无需部署服务器，安装即用，数据留在本地。
     </p>
     <div class="hero-ctas reveal">
       <a href="#download" class="btn btn-primary">下载 ProspectClaw</a>
@@ -94,6 +95,50 @@
       <div class="stat-card reveal stagger-4">
         <div class="stat-value">AI</div>
         <div class="stat-label">驱动引擎</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ 3.5 为什么选择 ═══════ -->
+<section class="section" style="background: var(--p-bg-alt);">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Why ProspectClaw</div>
+      <h2 class="section-title">为什么选择 ProspectClaw？</h2>
+      <p class="section-subtitle">专为一级市场投资团队打造，兼顾安全、效率与智能。</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card reveal stagger-1">
+        <div class="why-card-icon">&#128274;</div>
+        <h3 class="why-card-title">本地优先，数据主权</h3>
+        <p class="why-card-desc">所有数据存储在本地 SQLite，不经过任何云端，满足金融机构数据合规要求。</p>
+      </div>
+      <div class="why-card reveal stagger-2">
+        <div class="why-card-icon">&#9889;</div>
+        <h3 class="why-card-title">10MB 极致轻量</h3>
+        <p class="why-card-desc">基于 Tauri v2 + Rust，告别 Electron 臃肿运行时，冷启动不到 2 秒。</p>
+      </div>
+      <div class="why-card reveal stagger-3">
+        <div class="why-card-icon">&#129302;</div>
+        <h3 class="why-card-title">AI 原生集成</h3>
+        <p class="why-card-desc">内置 OpenClaw Agent 引擎，投资分析 + 智能体运维双模式，开箱即用。</p>
+      </div>
+      <div class="why-card reveal stagger-4">
+        <div class="why-card-icon">&#128200;</div>
+        <h3 class="why-card-title">全流程覆盖</h3>
+        <p class="why-card-desc">项目发现 → 尽调 → IC 审议 → 投后，11 个模块一站式管理完整投资链路。</p>
+      </div>
+      <div class="why-card reveal stagger-5">
+        <div class="why-card-icon">&#128640;</div>
+        <h3 class="why-card-title">零部署成本</h3>
+        <p class="why-card-desc">无需服务器、无需运维团队，下载安装即可使用，5 分钟完成上手。</p>
+      </div>
+      <div class="why-card reveal stagger-1">
+        <div class="why-card-icon">&#128295;</div>
+        <h3 class="why-card-title">开放生态</h3>
+        <p class="why-card-desc">支持 MCP 工具链扩展，对接 OpenAI / Anthropic / Deepseek 等主流 AI 模型。</p>
       </div>
     </div>
   </div>
@@ -175,23 +220,24 @@
   <div class="container">
     <div class="section-header reveal">
       <div class="section-tag">AI Capabilities</div>
-      <h2 class="section-title">AI 助手，投资 + 运维双技能</h2>
-      <p class="section-subtitle">内置钳子助手支持投资顾问和 IT 运维双模式，Agent 舰队多实例并行。</p>
+      <h2 class="section-title">智能体运维，AI 驱动投资决策</h2>
+      <p class="section-subtitle">内置 OpenClaw Agent 引擎，一站式管理 AI 智能体全生命周期，投资分析与系统运维双轨并行。</p>
     </div>
 
     <!-- AI 助手 -->
     <div class="showcase-row reveal">
       <div class="showcase-text">
-        <div class="showcase-label">Claw Assistant</div>
-        <h3 class="showcase-title">钳子助手 — 你的 AI 投资伙伴</h3>
+        <div class="showcase-label">Intelligent Agent Ops</div>
+        <h3 class="showcase-title">钳子助手 — 智能体运维中心</h3>
         <p class="showcase-desc">
-          流式响应、Markdown 渲染、多会话管理。结合投资知识库（PE/VC KB），提供行业分析、项目初评、一键诊断系统问题并生成报告。
+          一站式管理 AI Agent 全生命周期：环境体检、模型配置、技能挂载、心跳监控、异常自愈。支持流式对话诊断系统问题，结合投资知识库提供智能分析与项目初评。
         </p>
         <div class="showcase-chips">
-          <span class="chip">钳子助手</span>
-          <span class="chip">AI 诊断</span>
-          <span class="chip">智能分析</span>
-          <span class="chip">多会话</span>
+          <span class="chip">智能体运维</span>
+          <span class="chip">环境诊断</span>
+          <span class="chip">心跳监控</span>
+          <span class="chip">异常自愈</span>
+          <span class="chip">AI 分析</span>
         </div>
       </div>
       <div class="showcase-image" data-lightbox>
@@ -203,15 +249,16 @@
     <div class="showcase-row reverse reveal">
       <div class="showcase-text">
         <div class="showcase-label">Agent Fleet</div>
-        <h3 class="showcase-title">Agent 舰队与模型池</h3>
+        <h3 class="showcase-title">Agent 舰队 — 多实例编排</h3>
         <p class="showcase-desc">
-          AI Agent 多实例管理，支持 AI 新建和 AI 配置。多模型池支持 OpenAI、Anthropic、Deepseek 等主流 API，实时聊天验证 Agent 状态。
+          多 Agent 实例并行管理，支持 AI 自动创建和智能配置。模型池聚合 OpenAI / Anthropic / Deepseek 等主流 API，MCP 工具链扩展无限可能。实时聊天验证 Agent 状态，频道化管理对话上下文。
         </p>
         <div class="showcase-chips">
           <span class="chip">Agent 舰队</span>
           <span class="chip">模型池</span>
+          <span class="chip">MCP 工具链</span>
           <span class="chip">会话频道</span>
-          <span class="chip">MCP 工具</span>
+          <span class="chip">AI 编排</span>
         </div>
       </div>
       <div class="showcase-image" data-lightbox>
@@ -381,44 +428,49 @@
         <div class="download-card-icon">&#128187;</div>
         <h3 class="download-card-title">Windows</h3>
         <p class="download-card-detail">x64 &middot; Windows 10+</p>
-        <a href="#" class="btn btn-primary">下载 .exe</a>
+        <a href="mailto:contact@prospectbridge.com.cn?subject=Waitlist-Windows-ProspectClaw" class="btn btn-waitlist">加入等候名单</a>
+        <p class="download-card-soon">即将推出，敬请期待</p>
       </div>
       <div class="download-card reveal stagger-3">
         <div class="download-card-icon">&#128039;</div>
         <h3 class="download-card-title">Linux</h3>
         <p class="download-card-detail">Ubuntu 20.04+ / Fedora 36+</p>
-        <a href="#" class="btn btn-primary">下载 .AppImage</a>
+        <a href="mailto:contact@prospectbridge.com.cn?subject=Waitlist-Linux-ProspectClaw" class="btn btn-waitlist">加入等候名单</a>
+        <p class="download-card-soon">即将推出，敬请期待</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════ 9. 社区 ═══════ -->
-<section class="section" id="community" style="background: var(--p-bg-alt);">
+<!-- ═══════ 9. 联系我们 ═══════ -->
+<section class="section" id="contact" style="background: var(--p-bg-alt);">
   <div class="container">
     <div class="section-header reveal">
-      <div class="section-tag">Community</div>
-      <h2 class="section-title">加入社区</h2>
-      <p class="section-subtitle">扫码加入微信、QQ 或关注抖音，获取最新动态和技术支持。</p>
+      <div class="section-tag">Contact Us</div>
+      <h2 class="section-title">联系我们</h2>
+      <p class="section-subtitle">期待与您交流，获取产品试用或技术支持。</p>
     </div>
 
-    <div class="community-grid">
-      <div class="community-card reveal stagger-1">
-        <img src="/images/OpenClawWx.png" alt="微信群">
-        <div class="community-card-label">微信社区</div>
+    <div class="contact-grid">
+      <div class="contact-card reveal stagger-1">
+        <div class="contact-card-icon">&#9993;</div>
+        <h3 class="contact-card-title">邮箱</h3>
+        <p class="contact-card-desc"><a href="mailto:contact@prospectbridge.com.cn">contact@prospectbridge.com.cn</a></p>
       </div>
-      <div class="community-card reveal stagger-2">
-        <img src="/images/OpenClaw-QQ.png" alt="QQ 群">
-        <div class="community-card-label">QQ 群</div>
+      <div class="contact-card reveal stagger-2">
+        <div class="contact-card-icon">&#128172;</div>
+        <h3 class="contact-card-title">微信</h3>
+        <p class="contact-card-desc">添加微信 <strong>ProspectBridge</strong><br>获取产品试用与技术支持</p>
       </div>
-      <div class="community-card reveal stagger-3">
-        <img src="/images/OpenClaw-DY.png" alt="抖音">
-        <div class="community-card-label">抖音</div>
+      <div class="contact-card reveal stagger-3">
+        <div class="contact-card-icon">&#127970;</div>
+        <h3 class="contact-card-title">地址</h3>
+        <p class="contact-card-desc">杭州市滨江区<br>华业发展中心 38 楼</p>
       </div>
     </div>
 
-    <p class="community-info reveal">
-      远桥资产 &middot; Prospect Bridge &middot; 杭州市滨江区华业发展中心38楼
+    <p class="contact-info reveal">
+      远桥资产 &middot; Prospect Bridge
     </p>
   </div>
 </section>
