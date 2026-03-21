@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProspectClaw — 本地化 AI 投资管理平台</title>
+  <meta name="description" content="ProspectClaw 是远桥资产自主研发的 PE/VC 投资管理桌面平台，基于 Tauri v2 构建，集成 AI 助手，覆盖从项目发现到投后管理的全流程。">
+  <meta property="og:title" content="ProspectClaw — 本地化 AI 投资管理平台">
+  <meta property="og:description" content="面向一级市场投资机构的轻量级、本地化投资管理工具。无需部署服务器，安装即用，数据留在本地，安全可控。">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="/images/prospectclaw-tab-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/portal.css">
+</head>
+<body>
+
+<!-- 滚动进度条 -->
+<div id="scroll-progress"></div>
+
+<!-- ═══════ 1. 导航栏 ═══════ -->
+<nav class="portal-nav">
+  <div class="portal-nav-inner">
+    <a href="#" class="portal-nav-brand">
+      <img src="/images/logo-prospectbridge.png" alt="远桥资产">
+      ProspectClaw
+    </a>
+    <ul class="portal-nav-links">
+      <li><a href="#features">功能亮点</a></li>
+      <li><a href="#tutorials">教程引导</a></li>
+      <li><a href="#tech">技术架构</a></li>
+      <li><a href="#download">立即下载</a></li>
+    </ul>
+    <div class="portal-nav-actions">
+      <button class="theme-toggle" id="theme-toggle" title="切换主题">
+        <span class="theme-icon">&#9790;</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#features">功能亮点</a>
+    <a href="#tutorials">教程引导</a>
+    <a href="#tech">技术架构</a>
+    <a href="#download">立即下载</a>
+  </div>
+</nav>
+
+<!-- ═══════ 2. Hero ═══════ -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-grid"></div>
+  </div>
+  <div class="container hero-content">
+    <div class="hero-badge reveal">v1.0.17 &middot; PE/VC 投资管理平台</div>
+    <h1 class="hero-title reveal">本地化 AI 投资管理平台</h1>
+    <p class="hero-subtitle reveal">
+      面向一级市场投资机构的轻量级、本地化投资管理工具。<br>
+      无需部署服务器，安装即用，数据留在本地，安全可控。
+    </p>
+    <div class="hero-ctas reveal">
+      <a href="#download" class="btn btn-primary">下载 ProspectClaw</a>
+      <a href="#features" class="btn btn-outline">了解更多</a>
+    </div>
+    <div class="hero-image reveal">
+      <div class="hero-image-frame">
+        <img src="/screenshots/desktop-dashboard.png" alt="ProspectClaw 仪表盘">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ 3. 统计栏 ═══════ -->
+<section class="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card reveal stagger-1">
+        <div class="stat-value" data-count="11">0</div>
+        <div class="stat-label">功能模块</div>
+      </div>
+      <div class="stat-card reveal stagger-2">
+        <div class="stat-value">~10MB</div>
+        <div class="stat-label">安装包体积</div>
+      </div>
+      <div class="stat-card reveal stagger-3">
+        <div class="stat-value" data-count="3">0</div>
+        <div class="stat-label">平台支持</div>
+      </div>
+      <div class="stat-card reveal stagger-4">
+        <div class="stat-value">AI</div>
+        <div class="stat-label">驱动引擎</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ 4. 功能亮点 — 投资管理 ═══════ -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Investment Management</div>
+      <h2 class="section-title">从线索到关闭，全流程覆盖</h2>
+      <p class="section-subtitle">项目池、Deal 管道、企业库、审批流、自动化——每个环节都有专属模块支撑。</p>
+    </div>
+
+    <!-- 行 1 -->
+    <div class="showcase-row reveal">
+      <div class="showcase-text">
+        <div class="showcase-label">Overview & Pipeline</div>
+        <h3 class="showcase-title">投资概览与项目管道</h3>
+        <p class="showcase-desc">
+          实时仪表盘展示项目池漏斗、管道分布和近期动态。Deal Pipeline 看板按寻源→初筛→尽调→IC审议→条款谈判→已关闭六阶段管理，支持拖拽换阶段。
+        </p>
+        <div class="showcase-chips">
+          <span class="chip">投资概览</span>
+          <span class="chip">项目池</span>
+          <span class="chip">项目管道</span>
+          <span class="chip">三种视图</span>
+        </div>
+      </div>
+      <div class="showcase-image" data-lightbox>
+        <img src="/screenshots/desktop-investment-dashboard.png" alt="投资概览仪表盘">
+      </div>
+    </div>
+
+    <!-- 行 2 -->
+    <div class="showcase-row reverse reveal">
+      <div class="showcase-text">
+        <div class="showcase-label">Enterprise & Contacts</div>
+        <h3 class="showcase-title">企业库与联系人管理</h3>
+        <p class="showcase-desc">
+          被投及关注企业档案管理，支持行业分类、搜索筛选。投资相关联系人关联企业与角色标签，项目文档统一归档检索。
+        </p>
+        <div class="showcase-chips">
+          <span class="chip">企业库</span>
+          <span class="chip">联系人</span>
+          <span class="chip">投资文档</span>
+        </div>
+      </div>
+      <div class="showcase-image" data-lightbox>
+        <img src="/screenshots/desktop-company-database.png" alt="企业库">
+      </div>
+    </div>
+
+    <!-- 行 3 -->
+    <div class="showcase-row reveal">
+      <div class="showcase-text">
+        <div class="showcase-label">Workflow & Automation</div>
+        <h3 class="showcase-title">审批流与自动化</h3>
+        <p class="showcase-desc">
+          多维度交易评分量化投资决策，标准化 SOP 流程模板支持自定义与执行追踪。操作审计合规记录，定时任务与心跳规则自动化投后监控。
+        </p>
+        <div class="showcase-chips">
+          <span class="chip">战略评分</span>
+          <span class="chip">SOP 流程</span>
+          <span class="chip">审批流程</span>
+          <span class="chip">自动化</span>
+          <span class="chip">审计日志</span>
+        </div>
+      </div>
+      <div class="showcase-image" data-lightbox>
+        <img src="/screenshots/desktop-automation-center.png" alt="自动化中心">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ 5. 功能亮点 — AI 能力 ═══════ -->
+<section class="section" id="ai-features" style="background: var(--p-bg-alt);">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">AI Capabilities</div>
+      <h2 class="section-title">AI 助手，投资 + 运维双技能</h2>
+      <p class="section-subtitle">内置钳子助手支持投资顾问和 IT 运维双模式，Agent 舰队多实例并行。</p>
+    </div>
+
+    <!-- AI 助手 -->
+    <div class="showcase-row reveal">
+      <div class="showcase-text">
+        <div class="showcase-label">Claw Assistant</div>
+        <h3 class="showcase-title">钳子助手 — 你的 AI 投资伙伴</h3>
+        <p class="showcase-desc">
+          流式响应、Markdown 渲染、多会话管理。结合投资知识库（PE/VC KB），提供行业分析、项目初评、一键诊断系统问题并生成报告。
+        </p>
+        <div class="showcase-chips">
+          <span class="chip">钳子助手</span>
+          <span class="chip">AI 诊断</span>
+          <span class="chip">智能分析</span>
+          <span class="chip">多会话</span>
+        </div>
+      </div>
+      <div class="showcase-image" data-lightbox>
+        <img src="/screenshots/desktop-claw-assistant.png" alt="钳子助手">
+      </div>
+    </div>
+
+    <!-- Agent 舰队 -->
+    <div class="showcase-row reverse reveal">
+      <div class="showcase-text">
+        <div class="showcase-label">Agent Fleet</div>
+        <h3 class="showcase-title">Agent 舰队与模型池</h3>
+        <p class="showcase-desc">
+          AI Agent 多实例管理，支持 AI 新建和 AI 配置。多模型池支持 OpenAI、Anthropic、Deepseek 等主流 API，实时聊天验证 Agent 状态。
+        </p>
+        <div class="showcase-chips">
+          <span class="chip">Agent 舰队</span>
+          <span class="chip">模型池</span>
+          <span class="chip">会话频道</span>
+          <span class="chip">MCP 工具</span>
+        </div>
+      </div>
+      <div class="showcase-image" data-lightbox>
+        <img src="/screenshots/desktop-agent-management.png" alt="Agent 管理">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ 6. 教程引导 ═══════ -->
+<section class="section" id="tutorials">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Getting Started</div>
+      <h2 class="section-title">两条路径，快速上手</h2>
+      <p class="section-subtitle">每一步都告诉你做什么、在哪做、做完算什么。下载即可开始。</p>
+    </div>
+
+    <div class="tutorials-grid">
+      <!-- 投资工作台教程 -->
+      <div class="tutorial-card reveal stagger-1">
+        <div class="tutorial-card-icon">&#128200;</div>
+        <h3 class="tutorial-card-title">10 分钟跑通投资工作台</h3>
+        <p class="tutorial-card-desc">顺着这条链走，最快能把线索到审批的流程跑通。</p>
+        <ol class="tutorial-steps">
+          <li class="tutorial-step">
+            <div class="tutorial-step-num">1</div>
+            <div class="tutorial-step-body">
+              <div class="tutorial-step-title">导入演示数据</div>
+              <div class="tutorial-step-desc">先让首页出现一组可浏览的任务和样例，后面的项目池、Deal 才有完整链路可看。</div>
+            </div>
+          </li>
+          <li class="tutorial-step">
+            <div class="tutorial-step-num">2</div>
+            <div class="tutorial-step-body">
+              <div class="tutorial-step-title">在项目池录入第一条线索</div>
+              <div class="tutorial-step-desc">把项目名称、行业、负责人先放进项目池，先把线索进入系统。</div>
+            </div>
+          </li>
+          <li class="tutorial-step">
+            <div class="tutorial-step-num">3</div>
+            <div class="tutorial-step-body">
+              <div class="tutorial-step-title">转成 Deal 并推进阶段</div>
+              <div class="tutorial-step-desc">把值得跟进的项目转成 Deal，体验阶段推进和待办记录。</div>
+            </div>
+          </li>
+          <li class="tutorial-step">
+            <div class="tutorial-step-num">4</div>
+            <div class="tutorial-step-body">
+              <div class="tutorial-step-title">补齐 BP、初评或尽调材料</div>
+              <div class="tutorial-step-desc">把审批会用到的材料挂到文档库，让 Deal 和 SOP 围绕同一份资料工作。</div>
+            </div>
+          </li>
+          <li class="tutorial-step">
+            <div class="tutorial-step-num">5</div>
+            <div class="tutorial-step-body">
+              <div class="tutorial-step-title">发起审批或执行 SOP</div>
+              <div class="tutorial-step-desc">材料齐套后推进到审批，让系统承担流程提醒和决策沉淀。</div>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <!-- OpenClaw Agent 养成教程 -->
+      <div class="tutorial-card reveal stagger-2">
+        <div class="tutorial-card-icon">&#129424;</div>
+        <h3 class="tutorial-card-title">OpenClaw Agent 养成教程</h3>
+        <p class="tutorial-card-desc">按这 5 步把 OpenClaw 从"装好了"养到"第一只 Agent 真能用"。</p>
+        <ol class="tutorial-steps">
+          <li class="tutorial-step">
+            <div class="tutorial-step-num">1</div>
+            <div class="tutorial-step-body">
+              <div class="tutorial-step-title">环境体检</div>
+              <div class="tutorial-step-desc">确认 Node.js、OpenClaw CLI 和配置文件是否齐全，先把底座检查清楚。</div>
+            </div>
+          </li>
+          <li class="tutorial-step">
+            <div class="tutorial-step-num">2</div>
+            <div class="tutorial-step-body">
+              <div class="tutorial-step-title">给虾配脑子</div>
+              <div class="tutorial-step-desc">添加至少一个主模型，确保后面创建 Agent 时有可用的推理能力。</div>
+            </div>
+          </li>
+          <li class="tutorial-step">
+            <div class="tutorial-step-num">3</div>
+            <div class="tutorial-step-body">
+              <div class="tutorial-step-title">开虾缸</div>
+              <div class="tutorial-step-desc">创建第一只 Agent，给它独立身份、模型和工作区。</div>
+            </div>
+          </li>
+          <li class="tutorial-step">
+            <div class="tutorial-step-num">4</div>
+            <div class="tutorial-step-body">
+              <div class="tutorial-step-title">喂技能或装灵魂</div>
+              <div class="tutorial-step-desc">确认可用 Skill，或去 AI 助手页导入灵魂配置让 Agent 更像你的团队。</div>
+            </div>
+          </li>
+          <li class="tutorial-step">
+            <div class="tutorial-step-num">5</div>
+            <div class="tutorial-step-body">
+              <div class="tutorial-step-title">让虾开口</div>
+              <div class="tutorial-step-desc">去实时聊天发第一条消息，确认 Agent 真正能对话。</div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ 7. 技术架构 ═══════ -->
+<section class="section" id="tech" style="background: var(--p-bg-alt);">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Architecture</div>
+      <h2 class="section-title">专业级技术底座</h2>
+      <p class="section-subtitle">Rust 后端保安全、Vanilla JS 保轻量、SQLite 保隐私、OpenClaw 保智能。</p>
+    </div>
+
+    <div class="tech-grid">
+      <div class="tech-card reveal stagger-1">
+        <div class="tech-card-spotlight"></div>
+        <div class="tech-card-icon">&#9881;</div>
+        <h3 class="tech-card-title">Tauri v2</h3>
+        <p class="tech-card-desc">Rust 后端 + 系统 WebView，安装包约 10MB，无需 Electron 臃肿运行时。跨平台支持 macOS、Windows、Linux。</p>
+      </div>
+      <div class="tech-card reveal stagger-2">
+        <div class="tech-card-spotlight"></div>
+        <div class="tech-card-icon">&#9889;</div>
+        <h3 class="tech-card-title">Vanilla JS + Vite</h3>
+        <p class="tech-card-desc">零框架依赖，极致轻量。Vite 构建毫秒级热更新，原生 CSS 变量驱动主题系统。</p>
+      </div>
+      <div class="tech-card reveal stagger-3">
+        <div class="tech-card-spotlight"></div>
+        <div class="tech-card-icon">&#128274;</div>
+        <h3 class="tech-card-title">SQLite 本地存储</h3>
+        <p class="tech-card-desc">数据留在本地，安全可控。无需部署服务器，安装即用，满足金融机构数据合规要求。</p>
+      </div>
+      <div class="tech-card reveal stagger-4">
+        <div class="tech-card-spotlight"></div>
+        <div class="tech-card-icon">&#129302;</div>
+        <h3 class="tech-card-title">OpenClaw AI 引擎</h3>
+        <p class="tech-card-desc">自研 Agent 框架，支持 OpenAI、Anthropic、Deepseek 等多模型。4 种操作模式，8 种内置工具。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ 8. 下载区 ═══════ -->
+<section class="section" id="download">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Download</div>
+      <h2 class="section-title">立即下载 ProspectClaw</h2>
+      <div class="download-badge">v1.0.17</div>
+      <p class="section-subtitle">约 10MB 安装包，安装即用，无需额外运行时环境。</p>
+    </div>
+
+    <div class="download-grid">
+      <div class="download-card reveal stagger-1">
+        <div class="download-card-icon">&#63743;</div>
+        <h3 class="download-card-title">macOS</h3>
+        <p class="download-card-detail">Apple Silicon / Intel &middot; macOS 12.0+</p>
+        <a href="#" class="btn btn-primary">下载 .dmg</a>
+      </div>
+      <div class="download-card reveal stagger-2">
+        <div class="download-card-icon">&#128187;</div>
+        <h3 class="download-card-title">Windows</h3>
+        <p class="download-card-detail">x64 &middot; Windows 10+</p>
+        <a href="#" class="btn btn-primary">下载 .exe</a>
+      </div>
+      <div class="download-card reveal stagger-3">
+        <div class="download-card-icon">&#128039;</div>
+        <h3 class="download-card-title">Linux</h3>
+        <p class="download-card-detail">Ubuntu 20.04+ / Fedora 36+</p>
+        <a href="#" class="btn btn-primary">下载 .AppImage</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ 9. 社区 ═══════ -->
+<section class="section" id="community" style="background: var(--p-bg-alt);">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Community</div>
+      <h2 class="section-title">加入社区</h2>
+      <p class="section-subtitle">扫码加入微信、QQ 或关注抖音，获取最新动态和技术支持。</p>
+    </div>
+
+    <div class="community-grid">
+      <div class="community-card reveal stagger-1">
+        <img src="/images/OpenClawWx.png" alt="微信群">
+        <div class="community-card-label">微信社区</div>
+      </div>
+      <div class="community-card reveal stagger-2">
+        <img src="/images/OpenClaw-QQ.png" alt="QQ 群">
+        <div class="community-card-label">QQ 群</div>
+      </div>
+      <div class="community-card reveal stagger-3">
+        <img src="/images/OpenClaw-DY.png" alt="抖音">
+        <div class="community-card-label">抖音</div>
+      </div>
+    </div>
+
+    <p class="community-info reveal">
+      远桥资产 &middot; Prospect Bridge &middot; 杭州市滨江区华业发展中心38楼
+    </p>
+  </div>
+</section>
+
+<!-- ═══════ 10. 页脚 ═══════ -->
+<footer class="portal-footer">
+  <div class="container">
+    <div class="portal-footer-brand">
+      <img src="/images/logo-prospectbridge.png" alt="远桥资产">
+      ProspectClaw by 远桥资产 &middot; Prospect Bridge
+    </div>
+    <div class="portal-footer-links">
+      <a href="https://prospectbridge.com.cn" target="_blank" rel="noopener">官网</a>
+      <a href="#features">功能</a>
+      <a href="#tutorials">教程</a>
+      <a href="#download">下载</a>
+    </div>
+    <p class="portal-footer-copy">Copyright &copy; 2026 远桥资产。ProspectClaw 为商业闭源软件。</p>
+  </div>
+</footer>
+
+<!-- 灯箱 -->
+<div class="lightbox" id="lightbox">
+  <img src="" alt="预览">
+</div>
+
+<script defer src="/portal.js"></script>
+</body>
+</html>
