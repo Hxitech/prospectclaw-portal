@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProspectClaw Agent 知识库 — 给 AI 看的结构化参考</title>
+  <meta name="description" content="ProspectClaw 结构化知识库，专为 AI Agent 设计。包含产品架构、安装流程、配置参考、排障决策树和完整 FAQ。">
+  <meta property="og:title" content="ProspectClaw Agent 知识库 — 给 AI 看的结构化参考">
+  <meta property="og:description" content="专为 AI Agent 设计的结构化参考文档，便于检索、推理和回答用户关于 ProspectClaw 安装、配置与使用的问题。">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="/images/prospectclaw-tab-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/portal.css">
+</head>
+<body>
+
+<div id="scroll-progress"></div>
+
+<nav class="portal-nav">
+  <div class="portal-nav-inner">
+    <a href="/index.html" class="portal-nav-brand">
+      <img src="/images/logo-prospectbridge.png" alt="远桥资产">
+      ProspectClaw
+    </a>
+    <ul class="portal-nav-links">
+      <li><a href="/beginner-guide.html">新手指南</a></li>
+      <li><a href="/agent-guide.html">Agent 知识库</a></li>
+      <li><a href="/usage-guide.html">使用指南</a></li>
+      <li><a href="/openclaw-guide.html">OpenClaw 指南</a></li>
+      <li><a href="/index.html#download">立即下载</a></li>
+    </ul>
+    <div class="portal-nav-actions">
+      <button class="theme-toggle" id="theme-toggle" title="切换主题">
+        <span class="theme-icon">&#9790;</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/beginner-guide.html">新手指南</a>
+    <a href="/agent-guide.html">Agent 知识库</a>
+    <a href="/usage-guide.html">使用指南</a>
+    <a href="/openclaw-guide.html">OpenClaw 指南</a>
+    <a href="/index.html#download">立即下载</a>
+  </div>
+</nav>
+
+<section class="hero hero-guide usage-hero">
+  <div class="hero-bg">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-grid"></div>
+  </div>
+  <div class="container hero-content">
+    <div class="hero-badge reveal">AI Agent Reference · v1.0</div>
+    <h1 class="hero-title reveal">ProspectClaw Agent 知识库</h1>
+    <p class="hero-subtitle reveal">
+      这是一份专为 AI Agent 设计的结构化参考文档。内容经过优化，便于检索、推理和回答用户关于 ProspectClaw 安装、配置与使用的问题。
+    </p>
+    <div class="hero-ctas reveal">
+      <button class="btn btn-primary" data-copy-target="agent-kb-full">复制全文给 AI</button>
+      <a href="/beginner-guide.html" class="btn btn-outline">查看新手指南</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="ai-guide">
+  <div class="container">
+
+    <div class="ai-kb-toolbar reveal">
+      <div class="guide-intro-badge">Agent 知识块 v1.0</div>
+      <button class="btn btn-primary" data-copy-target="agent-kb-full">复制整段给 AI</button>
+    </div>
+
+    <pre class="ai-kb-block reveal" id="agent-kb-full"># ProspectClaw / OpenClaw 安装与使用知识库（Agent 版）
+
+## 元信息
+- 文档版本: 2026-03-22
+- 适用产品: ProspectClaw v1.0.17+
+- 目标读者: AI Agent（钳子助手、ChatGPT、Claude 等）
+- 用途: 回答用户关于安装、配置、使用、排障的问题
+
+---
+
+## 1. 产品定义
+
+### ProspectClaw
+- 定义: 基于 Tauri v2 的本地化 AI 投资管理面板
+- 底层引擎: OpenClaw（开源个人 AI 助手平台）
+- 平台: macOS（已发布）、Windows（等待中）、Linux（等待中）
+- 安装包大小: ~10MB
+- 默认端口: 面板 :1420, Gateway :18789
+
+### OpenClaw
+- 定义: 开源个人 AI 助手平台，提供 Gateway、Agent、Channel 等核心能力
+- 关系: ProspectClaw 是 OpenClaw 的管理面板 + 投资工作台
+- CLI: 命令行工具，用于安装/配置/管理 OpenClaw
+- Gateway: 核心后端服务，处理消息路由、Agent 执行、渠道连接
+
+### 钳子助手
+- 定义: ProspectClaw 内置的独立 AI 助手（不是 OpenClaw Agent）
+- 用途: 排障、问答、日志分析、环境检查
+- 独立性: 有自己的模型配置，不依赖 OpenClaw Gateway
+- 优先级: 建议用户最先配置，作为后续排障的"第二双眼睛"
+
+---
+
+## 2. 安装流程
+
+### macOS 安装
+1. 从官网下载 .dmg 文件
+2. 双击 .dmg，将应用图标拖入"应用程序"文件夹
+3. 首次打开可能被 Gatekeeper 拦截
+   - 错误信息: "无法打开...因为无法验证开发者" 或 "已损坏"
+   - 解决: 系统设置 → 隐私与安全性 → 找到 ProspectClaw → 仍要打开
+4. 首次启动自动进入"初始设置"
+
+### Windows 安装
+1. 下载 .exe 安装包
+2. 双击运行，按提示完成安装
+3. 常见问题: 管理员权限、npm 缓存、Git HTTPS 配置
+4. Node.js PATH 问题: 重启应用刷新环境变量
+
+### Linux 安装
+- 无桌面环境建议走 Web 版部署
+- 面板通过 :1420 访问
+- Gateway 通过 :18789 管理
+
+### 初始设置检查项
+| 检查项 | 说明 | 失败处理 |
+|--------|------|----------|
+| Node.js | 运行环境 | 从 nodejs.org 下载安装 |
+| Git | 版本控制 | 从 git-scm.com 下载安装 |
+| OpenClaw CLI | 命令行工具 | 点击页面"安装"按钮 |
+| 配置文件 | ~/.openclaw/openclaw.json | 点击"初始化"按钮 |
+
+---
+
+## 3. 推荐配置顺序
+
+1. 安装 ProspectClaw → 完成初始设置
+2. 配置钳子助手（优先！给它一个可用模型）
+3. 配置模型（至少 1 个主模型，建议 1-2 个备选）
+4. 启动 Gateway（服务管理/仪表盘页面）
+5. 创建 Agent（Agent 管理页面）
+6. 实时聊天验证（发第一条消息确认链路）
+7. 接消息渠道（飞书/Telegram，可选）
+
+---
+
+## 4. 核心页面职责
+
+| 页面 | 路由 | 职责 |
+|------|------|------|
+| 初始设置 | /setup | 环境检查、OpenClaw 初始化 |
+| 投资概览 | /invest-dashboard | 投资工作台（PE/VC 用户） |
+| 仪表盘 | /dashboard | Gateway 状态、系统概览 |
+| 钳子助手 | /assistant | 内置 AI 问答、排障卡片 |
+| 模型配置 | /models | 服务商/模型管理、主备选设置 |
+| Agent 管理 | /agents | 创建/编辑/备份 Agent |
+| 实时聊天 | /chat | 验证 Agent 回复、模型切换 |
+| 服务管理 | /services | Gateway 启停、版本、备份 |
+| 消息渠道 | /channels | 飞书/Telegram/Discord 等接入 |
+| 日志查看 | /logs | Gateway/错误/守护/审计日志 |
+| 记忆文件 | /memory | Agent 工作记忆、归档 |
+| 系统诊断 | /chat-debug | 环境体检、WebSocket 测试 |
+| 自动化 | /automation | 定时任务、模板卡片 |
+| 企业库 | /companies | 投资标的企业管理 |
+
+---
+
+## 5. 目录结构
+
+```
+~/.openclaw/
+├── openclaw.json          # 主配置（JSON5，支持注释）
+├── .env                   # 全局环境变量
+├── workspace/             # main Agent 工作区
+│   ├── IDENTITY.md        # Agent 身份
+│   ├── SOUL.md            # Agent 人格
+│   └── ...
+├── agents/
+│   ├── main/agent/        # main Agent 配置
+│   │   ├── models.json    # 模型配置
+│   │   └── auth-profiles.json
+│   └── &lt;agentId&gt;/
+│       ├── agent/
+│       └── workspace/
+└── logs/                  # 日志文件
+```
+
+---
+
+## 6. 排障决策树
+
+### 用户说"装不上"
+1. 什么操作系统？
+2. macOS → Gatekeeper 拦截？→ 系统设置放行
+3. Windows → 管理员权限？npm/Git 问题？
+4. 初始设置页面哪项红色？→ 按对应方案处理
+
+### 用户说"聊天没回复"
+1. Gateway 是否运行？→ 仪表盘/服务管理检查
+2. 模型是否配置且测试通过？→ 模型配置检查
+3. Agent 是否创建且绑定模型？→ Agent 管理检查
+4. Gateway 认证是否拦截？→ 安全设置检查
+5. 以上都正常 → 查看日志，找具体错误
+
+### 用户说"飞书/Telegram 不回复"
+1. Gateway 是否运行？
+2. 渠道配置是否保存？
+3. 平台侧应用是否发布？
+4. 机器人是否加入群/工作台？
+5. 配对审批是否完成？
+
+### 用户说"突然不工作了"
+1. 最近是否切换了 OpenClaw 版本？
+2. 最近是否改过模型配置/API Key？
+3. 最近是否改过 Gateway 安全设置？
+4. 用日志分析缩小范围，不要直接重装
+
+---
+
+## 7. 常见错误及解决
+
+### ERR: macOS "已损坏"或"无法验证开发者"
+- 原因: Gatekeeper 未签名应用拦截
+- 解决: 系统设置 → 隐私与安全性 → 仍要打开
+
+### ERR: Node.js 检测不到
+- macOS: 从终端启动应用（PATH 问题）
+- Windows: 重启应用（PATH 环境变量刷新）
+- 彻底解决: 安装 Node.js LTS 版本
+
+### ERR: Gateway 启动失败
+- 检查端口 18789 是否被占用
+- 检查 openclaw.json 格式是否正确
+- 检查模型配置是否有效
+- 检查 gateway.auth 认证模式
+
+### ERR: 模型连接超时
+- 检查 API Key 是否正确
+- 检查 Base URL 是否可达
+- 检查网络代理设置
+- 检查服务商侧服务状态
+
+### ERR: Agent 不回复
+- 确认 Gateway 运行中
+- 确认 Agent 绑定了可用模型
+- 确认实时聊天选择了正确的 Agent
+- 查看日志中的具体错误信息
+
+### ERR: 渠道保存后不生效
+- 确认 Gateway 运行中
+- 确认平台侧应用已发布
+- 确认机器人已添加到目标群
+- 确认配对审批已完成
+
+---
+
+## 8. 飞书接入要点
+- 在飞书开放平台创建企业自建应用
+- 开启机器人能力
+- 获取 App ID 和 App Secret
+- 事件订阅: 建议使用长连接（WebSocket）
+- 配置字段: appId, appSecret, domain(feishu/lark), pluginVersion(builtin/official)
+- 保存后完成配对审批
+- 发布应用版本后机器人才对他人可见
+
+## 9. Telegram 接入要点
+- 通过 @BotFather 创建 Bot
+- 获取 Bot Token
+- 通过 @userinfobot 获取用户 ID
+- 配置字段: botToken, allowedUsers
+- 最轻量的外部渠道选择
+
+---
+
+## 10. 回答原则
+
+### 当用户问"怎么安装"
+- 先确认操作系统
+- 给出对应平台的安装步骤
+- 提醒 macOS Gatekeeper 问题
+- 引导完成初始设置
+
+### 当用户问"怎么用"
+- 推荐配置顺序（见第 3 节）
+- 强调先配钳子助手
+- 不要先讲概念，先讲操作路径
+
+### 当用户问"为什么不工作"
+- 使用排障决策树（见第 6 节）
+- 先缩小层级: 环境 → 模型 → Gateway → Agent → 渠道
+- 不要建议重装，先定位具体问题
+
+### 当用户是非技术用户
+- 避免术语或立即解释
+- 给出具体的点击路径而非命令行
+- 提醒可以截图或描述错误信息
+- 引导到钳子助手获取进一步帮助
+
+### 当用户是技术用户
+- 可以给出 CLI 命令和配置文件路径
+- 可以引用目录结构（第 5 节）
+- 可以建议查看日志具体排查</pre>
+
+    <div class="guide-callout reveal">
+      <div class="guide-callout-title">如何使用这个知识库</div>
+      <p>你可以将上方的全部内容复制后提供给任何 AI Agent。它可以用作钳子助手的内置知识、ChatGPT 的自定义指令、Claude 的项目知识，或任何支持知识库的 AI 平台。建议定期更新以保持与产品版本同步。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section guide-final">
+  <div class="container">
+    <div class="guide-final-panel reveal">
+      <div class="guide-final-copy">
+        <div class="section-tag">Next Step</div>
+        <h2>知识库已就绪，下一步把它喂给你的 AI。</h2>
+        <p>复制上方全文，粘贴到钳子助手、ChatGPT 自定义指令、Claude 项目知识，或任何支持知识库的 AI 平台。你也可以查看新手指南了解完整的上手流程。</p>
+      </div>
+      <div class="guide-final-actions">
+        <a href="/beginner-guide.html" class="btn btn-primary">查看新手指南</a>
+        <a href="/index.html" class="btn btn-outline">回到主站</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="portal-footer">
+  <div class="container">
+    <div class="portal-footer-brand">
+      <img src="/images/logo-prospectbridge.png" alt="远桥资产">
+      ProspectClaw by 远桥资产 · Prospect Bridge
+    </div>
+    <div class="portal-footer-links">
+      <a href="/index.html">主站首页</a>
+      <a href="/beginner-guide.html">新手指南</a>
+      <a href="/usage-guide.html">使用指南</a>
+      <a href="/openclaw-guide.html">OpenClaw 指南</a>
+    </div>
+    <p class="portal-footer-copy">Copyright &copy; 2026 远桥资产。ProspectClaw 为商业闭源软件。</p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <img src="" alt="预览">
+</div>
+
+<script defer src="/portal.js"></script>
+</body>
+</html>
