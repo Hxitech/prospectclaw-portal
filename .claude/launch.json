@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "clawpanel",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "cd /Users/sang/Documents/ClawPanelInvest && npm run dev"],
+      "port": 1420
+    },
+    {
+      "name": "portal",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "-l", "3456"],
+      "port": 3456
+    }
+  ]
+}
