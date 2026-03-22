@@ -140,4 +140,49 @@
       target.scrollIntoView({ behavior: 'smooth', block: 'start' })
     })
   })
+
+  /* ── 使用指南：人类 / AI 面板切换 ── */
+  const guideTabGroups = document.querySelectorAll('[data-guide-tabs]')
+  guideTabGroups.forEach(function (group) {
+    group.querySelectorAll('[data-guide-tab]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const targetId = btn.getAttribute('data-guide-tab')
+        if (!targetId) return
+
+        group.querySelectorAll('[data-guide-tab]').forEach(function (item) {
+          item.classList.toggle('active', item === btn)
+        })
+
+        document.querySelectorAll('[data-guide-panel]').forEach(function (panel) {
+          panel.classList.toggle('active', panel.getAttribute('data-guide-panel') === targetId)
+        })
+      })
+    })
+  })
+
+  /* ── AI 知识区复制 ── */
+  document.querySelectorAll('[data-copy-target]').forEach(function (btn) {
+    btn.addEventListener('click', async function () {
+      const targetId = btn.getAttribute('data-copy-target')
+      const target = targetId ? document.getElementById(targetId) : null
+      if (!target) return
+
+      const text = 'value' in target ? target.value : target.textContent
+      if (!text) return
+
+      const original = btn.textContent
+      try {
+        await navigator.clipboard.writeText(text)
+        btn.textContent = '已复制'
+        setTimeout(function () {
+          btn.textContent = original
+        }, 1600)
+      } catch (err) {
+        btn.textContent = '复制失败'
+        setTimeout(function () {
+          btn.textContent = original
+        }, 1600)
+      }
+    })
+  })
 })()
