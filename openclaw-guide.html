@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenClaw 管理指南 — ProspectClaw</title>
+  <meta name="description" content="给非投资用户的 OpenClaw 管理指南：从环境体检、模型配置到创建 Agent、挂 Skills、实时聊天验证，一路把 OpenClaw 从装好了带到真能用。">
+  <meta property="og:title" content="OpenClaw 管理指南 — ProspectClaw">
+  <meta property="og:description" content="适合已经安装 ProspectClaw、但主要想管理 OpenClaw 的用户。参考 ClawPanel 教程引导节奏重写，重点讲怎么把第一只 Agent 养到能上班。">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="/images/prospectclaw-tab-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/portal.css">
+</head>
+<body>
+
+<div id="scroll-progress"></div>
+
+<nav class="portal-nav">
+  <div class="portal-nav-inner">
+    <a href="/index.html" class="portal-nav-brand">
+      <img src="/images/logo-prospectbridge.png" alt="远桥资产">
+      ProspectClaw
+    </a>
+    <ul class="portal-nav-links">
+      <li><a href="#guide-start">快速上手</a></li>
+      <li><a href="#guide-daily">日常管理</a></li>
+      <li><a href="#guide-fix">排障清单</a></li>
+      <li><a href="#guide-glossary">基本概念</a></li>
+      <li><a href="/index.html#download">立即下载</a></li>
+    </ul>
+    <div class="portal-nav-actions">
+      <button class="theme-toggle" id="theme-toggle" title="切换主题">
+        <span class="theme-icon">&#9790;</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#guide-start">快速上手</a>
+    <a href="#guide-daily">日常管理</a>
+    <a href="#guide-fix">排障清单</a>
+    <a href="#guide-glossary">基本概念</a>
+    <a href="/index.html#download">立即下载</a>
+  </div>
+</nav>
+
+<section class="hero hero-guide">
+  <div class="hero-bg">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-grid"></div>
+  </div>
+  <div class="container hero-content">
+    <div class="hero-badge reveal">OpenClaw Guide · 非投资用户版</div>
+    <h1 class="hero-title reveal">把 OpenClaw 从“装好了”<br>带到“真能上班”</h1>
+    <p class="hero-subtitle reveal">
+      如果你装 ProspectClaw 主要是为了管理 OpenClaw，<br>
+      这页就是给你的快捷通道。少一点投资术语，多一点真能落地的步骤。<br>
+      节奏参考 ClawPanel 教程引导，重点是让第一只 Agent 真的开口、干活、稳定。
+    </p>
+    <div class="hero-ctas reveal">
+      <a href="#guide-start" class="btn btn-primary">从第 1 步开始</a>
+      <a href="/index.html#tutorials" class="btn btn-outline">返回主站教程</a>
+    </div>
+    <div class="guide-quickbar reveal">
+      <div class="guide-quickbar-card">
+        <div class="guide-quickbar-title">适合谁</div>
+        <div class="guide-quickbar-text">想管理 OpenClaw，不想先走投资流程的用户</div>
+      </div>
+      <div class="guide-quickbar-card">
+        <div class="guide-quickbar-title">你会完成什么</div>
+        <div class="guide-quickbar-text">配好模型，创建 Agent，挂上 Skills，发出第一条可用回复</div>
+      </div>
+      <div class="guide-quickbar-card">
+        <div class="guide-quickbar-title">先盯住这 6 页</div>
+        <div class="guide-quickbar-text">初始设置、模型配置、Agent 管理、Gateway、Skills、实时聊天</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="guide-start">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Quick Start</div>
+      <h2 class="section-title">5 步把第一只 Agent 养出来</h2>
+      <p class="section-subtitle">不是功能总览，而是一条能真的跑通的路线。每一步都尽量回答三件事：先做什么、为什么、做到什么算过关。</p>
+    </div>
+
+    <div class="guide-intro-panel reveal">
+      <div class="guide-intro-copy">
+        <div class="guide-intro-badge">一句话版本</div>
+        <h3>先把底座搭稳，再给 Agent 配脑子、配身份、配技能，最后让它在实时聊天里开口。</h3>
+        <p>如果你只记住一个顺序，请记这个：环境 → 模型 → Agent → Skills → 聊天验证。先别急着追求“全能”，先做出一只靠谱的。</p>
+      </div>
+      <div class="guide-intro-image showcase-image" data-lightbox>
+        <img src="/screenshots/desktop-claw-assistant.png" alt="ProspectClaw 钳子助手">
+      </div>
+    </div>
+
+    <div class="guide-steps">
+      <article class="guide-step-card reveal stagger-1">
+        <div class="guide-step-topline">
+          <div class="guide-step-index">01</div>
+          <div class="guide-step-meta">先把地基夯实</div>
+        </div>
+        <div class="guide-step-content">
+          <div class="guide-step-copy">
+            <h3>环境体检</h3>
+            <p>打开 `初始设置`，先看 Node.js、OpenClaw CLI、配置文件是不是都已经就绪。这里没亮绿灯，后面很容易进入“哪儿都能点，哪儿都不太对”的状态。</p>
+            <ul class="guide-bullet-list">
+              <li>看到 Node.js 已安装，说明底层运行环境在。</li>
+              <li>看到 OpenClaw CLI 可用，说明面板能真正管到 OpenClaw。</li>
+              <li>看到配置文件已初始化，说明后面的模型和 Agent 有地方落脚。</li>
+            </ul>
+            <div class="guide-checkpoint">
+              <strong>过关标准：</strong> 你知道当前卡在哪一项，或者三项都已经可用。
+            </div>
+          </div>
+          <div class="guide-step-visual showcase-image" data-lightbox>
+            <img src="/screenshots/desktop-system-diagnosis.png" alt="OpenClaw 环境体检">
+          </div>
+        </div>
+      </article>
+
+      <article class="guide-step-card reveal stagger-2">
+        <div class="guide-step-topline">
+          <div class="guide-step-index">02</div>
+          <div class="guide-step-meta">给它一颗能工作的脑子</div>
+        </div>
+        <div class="guide-step-content reverse">
+          <div class="guide-step-copy">
+            <h3>模型配置</h3>
+            <p>打开 `模型配置`，至少添加 1 个可用主模型。这里最容易让人误会的是：页面看起来很顺手，但如果模型没配好，后面创建 Agent 也只是“有个壳”，还不算能工作。</p>
+            <ul class="guide-bullet-list">
+              <li>服务商是模型来源，比如 OpenAI、Anthropic 或代理服务。</li>
+              <li>主模型是默认出场选手，备选模型是它请假时的替补。</li>
+              <li>如果你爱折腾，顺手再配 1 到 2 个备选模型会更稳。</li>
+            </ul>
+            <div class="guide-checkpoint">
+              <strong>过关标准：</strong> 至少有一个模型测试通过，而且你知道默认主模型是谁。
+            </div>
+          </div>
+          <div class="guide-step-visual showcase-image" data-lightbox>
+            <img src="/screenshots/desktop-model-configuration.png" alt="OpenClaw 模型配置">
+          </div>
+        </div>
+      </article>
+
+      <article class="guide-step-card reveal stagger-3">
+        <div class="guide-step-topline">
+          <div class="guide-step-index">03</div>
+          <div class="guide-step-meta">先有角色，再谈性格</div>
+        </div>
+        <div class="guide-step-content">
+          <div class="guide-step-copy">
+            <h3>创建第一只 Agent</h3>
+            <p>打开 `Agent 管理`。第一次上手不用追求花活，先做出一只职责单一、名字清楚、模型明确的 Agent。先养活，再养胖，这条经验比一开始堆十种设定更值钱。</p>
+            <ul class="guide-bullet-list">
+              <li>`Agent ID` 建议全小写、简单好记。</li>
+              <li>`名称` 给人看，可以自然一点。</li>
+              <li>`模型` 决定它主要靠谁思考。</li>
+              <li>`工作区` 是它自己的地盘，规则、记忆和资料都会围着它转。</li>
+            </ul>
+            <div class="guide-checkpoint">
+              <strong>过关标准：</strong> 列表里已经有一只你叫得出名字、说得清职责的 Agent。
+            </div>
+          </div>
+          <div class="guide-step-visual showcase-image" data-lightbox>
+            <img src="/screenshots/desktop-agent-management.png" alt="OpenClaw Agent 管理">
+          </div>
+        </div>
+      </article>
+
+      <article class="guide-step-card reveal stagger-4">
+        <div class="guide-step-topline">
+          <div class="guide-step-index">04</div>
+          <div class="guide-step-meta">让它不只会说话</div>
+        </div>
+        <div class="guide-step-content reverse">
+          <div class="guide-step-copy">
+            <h3>挂上 Skills，必要时再装“灵魂”</h3>
+            <p>打开 `Skills` 页面，看哪些技能已经可用，哪些还差依赖。你这一步不是要把所有 Skill 都点亮，而是先确认当前最需要的那几个能力能不能真的调用。</p>
+            <ul class="guide-bullet-list">
+              <li>Skill 不只是开关，很多还依赖命令行工具、环境变量或额外配置。</li>
+              <li>如果你想让 Agent 更像一个“有工作习惯的人”，再去钳子助手里补规则、身份和风格。</li>
+              <li>模型决定它聪不聪明，Skills 决定它会不会干活，身份文件决定它像不像你要的那个角色。</li>
+            </ul>
+            <div class="guide-checkpoint">
+              <strong>过关标准：</strong> 你已经确认至少一个关键 Skill 可用，或者明确知道还缺什么。
+            </div>
+          </div>
+          <div class="guide-step-visual guide-skill-note">
+            <div class="guide-mini-card">
+              <h4>这一步最常见的误区</h4>
+              <p>“页面里能看到 Skill，所以应该已经能用。”</p>
+            </div>
+            <div class="guide-mini-card">
+              <h4>更靠谱的判断方式</h4>
+              <p>看它是不是可用状态，而不是只看它有没有出现在列表里。</p>
+            </div>
+            <div class="guide-mini-card">
+              <h4>建议</h4>
+              <p>先保证 1 到 2 个关键能力真的能跑，再扩张技能树。</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="guide-step-card reveal stagger-5">
+        <div class="guide-step-topline">
+          <div class="guide-step-index">05</div>
+          <div class="guide-step-meta">最终验收</div>
+        </div>
+        <div class="guide-step-content">
+          <div class="guide-step-copy">
+            <h3>去实时聊天，让它开口</h3>
+            <p>最后打开 `实时聊天`，发第一条消息。这一步最重要，因为很多配置在页面上都“像是好了”，但只有这里回得出来，才说明整条链路真的通了。</p>
+            <ul class="guide-bullet-list">
+              <li>Gateway 在工作。</li>
+              <li>模型能正常调用。</li>
+              <li>Agent 已经被正确加载。</li>
+              <li>权限没有把它卡住。</li>
+            </ul>
+            <div class="guide-test-box">
+              <div class="guide-test-title">第一次测试可以这样问</div>
+              <div class="guide-test-message">你好，请用三句话介绍你是谁、你能做什么、你现在用的是哪个模型。</div>
+            </div>
+            <div class="guide-checkpoint">
+              <strong>过关标准：</strong> 你已经收到第一条稳定回复。到这里，才算从“安装成功”升级到“可以开工”。
+            </div>
+          </div>
+          <div class="guide-step-visual showcase-image" data-lightbox>
+            <img src="/screenshots/desktop-thread-model-switch.png" alt="OpenClaw 实时聊天">
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="guide-daily" style="background: var(--p-bg-alt);">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Daily Ops</div>
+      <h2 class="section-title">日常管理，先记住这 4 件事</h2>
+      <p class="section-subtitle">OpenClaw 用顺以后，真正省时间的不是“会配”，而是“知道平时该盯哪里”。</p>
+    </div>
+
+    <div class="guide-four-grid">
+      <article class="guide-focus-card reveal stagger-1">
+        <div class="guide-focus-index">01</div>
+        <h3>模型要稳</h3>
+        <p>Agent 突然变木，大多数时候不是角色坏了，是模型掉线了。先看 API Key、Base URL、主模型连通性，再看备选模型能不能顶上。</p>
+      </article>
+      <article class="guide-focus-card reveal stagger-2">
+        <div class="guide-focus-index">02</div>
+        <h3>Gateway 要关好门</h3>
+        <p>只自己用时选“仅本机使用”最省心。要共享就配好 Token 或密码。把门打开很容易，把门关好更重要。</p>
+      </article>
+      <article class="guide-focus-card reveal stagger-3">
+        <div class="guide-focus-index">03</div>
+        <h3>Agent 要定期整理</h3>
+        <p>名字和职责写清楚，大改前先备份，一个 Agent 尽量只承担一类核心任务。这样出问题时，你知道该修谁。</p>
+      </article>
+      <article class="guide-focus-card reveal stagger-4">
+        <div class="guide-focus-index">04</div>
+        <h3>先看日志，再找助手</h3>
+        <p>排障顺序建议固定成：实时聊天表现 → 日志查看 → 系统诊断 → 钳子助手。别一出错就先重装，很多时候只是某个环节没接上。</p>
+      </article>
+    </div>
+
+    <div class="guide-callout reveal">
+      <div class="guide-callout-title">给非投资用户的一句安慰</div>
+      <p>主站和产品文案会优先讲投资工作流，但这不代表你必须先学投资模块才能用 OpenClaw。你完全可以把投资部分先当成另一个工作区，先把 OpenClaw 这条线跑顺。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="guide-fix">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Troubleshooting</div>
+      <h2 class="section-title">一份够用的排障清单</h2>
+      <p class="section-subtitle">不求覆盖所有奇怪情况，先把最常见的坑变成固定检查动作。</p>
+    </div>
+
+    <div class="guide-fix-grid">
+      <article class="guide-fix-card reveal stagger-1">
+        <h3>Agent 不回话</h3>
+        <ul class="guide-bullet-list">
+          <li>先看 `实时聊天` 是否连上 Gateway。</li>
+          <li>确认 `模型配置` 里的主模型测试通过。</li>
+          <li>确认目标 Agent 真的绑定了模型。</li>
+          <li>确认 Gateway 认证没有把请求拦住。</li>
+        </ul>
+      </article>
+      <article class="guide-fix-card reveal stagger-2">
+        <h3>能聊天，但不会用技能</h3>
+        <ul class="guide-bullet-list">
+          <li>看 `Skills` 页面里对应 Skill 是否真的是可用状态。</li>
+          <li>检查是否缺命令行依赖、环境变量或配置。</li>
+          <li>检查 Gateway 工具权限是不是设得太严。</li>
+          <li>检查 Agent 规则里有没有把能力边界卡死。</li>
+        </ul>
+      </article>
+      <article class="guide-fix-card reveal stagger-3">
+        <h3>突然一堆报错</h3>
+        <ul class="guide-bullet-list">
+          <li>回想最近有没有切 OpenClaw 版本。</li>
+          <li>看看 `关于` 页当前版本是不是高于推荐稳定版。</li>
+          <li>检查最近有没有改服务商、Token 或 Gateway 安全设置。</li>
+          <li>别急着全推倒，先确认是哪个环节先变了。</li>
+        </ul>
+      </article>
+      <article class="guide-fix-card reveal stagger-4">
+        <h3>完全不知道问题在哪</h3>
+        <ul class="guide-bullet-list">
+          <li>先看环境。</li>
+          <li>再看模型。</li>
+          <li>再看 Gateway。</li>
+          <li>最后看 Agent 本身。</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="guide-glossary" style="background: var(--p-bg-alt);">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Glossary</div>
+      <h2 class="section-title">装好以后，最好知道的 9 个基本概念</h2>
+      <p class="section-subtitle">尽量说人话，不把你丢进术语海里游泳。</p>
+    </div>
+
+    <div class="guide-glossary-grid">
+      <article class="guide-glossary-card reveal stagger-1">
+        <h3>ProspectClaw ≠ OpenClaw</h3>
+        <p>ProspectClaw 是管理面板，OpenClaw 是真正跑 Agent 的底层引擎。一个像驾驶舱，一个像发动机。</p>
+      </article>
+      <article class="guide-glossary-card reveal stagger-2">
+        <h3>CLI 不是另一个产品</h3>
+        <p>它是 OpenClaw 的命令行入口。你不一定天天手敲，但它能用，说明面板真的能接上底层。</p>
+      </article>
+      <article class="guide-glossary-card reveal stagger-3">
+        <h3>Gateway 是总入口</h3>
+        <p>聊天、模型调用、很多 Agent 行为都要经过它。很多“AI 不聪明”的问题，最后发现是入口没通。</p>
+      </article>
+      <article class="guide-glossary-card reveal stagger-4">
+        <h3>Agent 是角色，不是聊天窗口</h3>
+        <p>它有自己的名字、模型、工作区、规则、记忆和技能边界。新建 Agent，本质上是在造一个新角色。</p>
+      </article>
+      <article class="guide-glossary-card reveal stagger-1">
+        <h3>工作区就是它的生活区</h3>
+        <p>身份定义、行为规则、记忆文件、任务资料通常都在这附近。把 Agent 比成员工，工作区就是它的工位和文件夹。</p>
+      </article>
+      <article class="guide-glossary-card reveal stagger-2">
+        <h3>Skill 是能力插件</h3>
+        <p>它决定 Agent 除了聊天，还能不能调工具、连外部服务、做特定任务。有些 Skill 不是点亮就完事，还要依赖环境。</p>
+      </article>
+      <article class="guide-glossary-card reveal stagger-3">
+        <h3>主模型和备选模型都重要</h3>
+        <p>主模型是默认主力，备选模型是替补。只配一个模型当然也能跑，但一抽风就会带着 Agent 一起抽风。</p>
+      </article>
+      <article class="guide-glossary-card reveal stagger-4">
+        <h3>钳子助手不等于你的 Agent</h3>
+        <p>钳子助手更偏配置说明、排障和规则起草；实时聊天里的 Agent，才是在验证你自己养出来的那只是不是能独立工作。</p>
+      </article>
+      <article class="guide-glossary-card reveal stagger-1">
+        <h3>版本不是越新越香</h3>
+        <p>推荐稳定版通常更适合长期使用。升得太快，可能先收获新特性，也可能先收获兼容性惊喜。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section guide-final">
+  <div class="container">
+    <div class="guide-final-panel reveal">
+      <div class="guide-final-copy">
+        <div class="section-tag">One Last Thing</div>
+        <h2>先把“环境、模型、Agent、Skills、聊天验证”这条线跑通，再谈高级玩法。</h2>
+        <p>OpenClaw 的乐趣不在一开始就堆满功能，而在于你真的养出一只会干活、听得懂、还能稳定上班的 Agent。一旦这件事成了，后面很多高级玩法都会顺得多。</p>
+      </div>
+      <div class="guide-final-actions">
+        <a href="/index.html#download" class="btn btn-primary">下载 ProspectClaw</a>
+        <a href="/index.html" class="btn btn-outline">回到主站</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="portal-footer">
+  <div class="container">
+    <div class="portal-footer-brand">
+      <img src="/images/logo-prospectbridge.png" alt="远桥资产">
+      ProspectClaw by 远桥资产 · Prospect Bridge
+    </div>
+    <div class="portal-footer-links">
+      <a href="/index.html">主站首页</a>
+      <a href="#guide-start">快速上手</a>
+      <a href="#guide-fix">排障</a>
+      <a href="#guide-glossary">概念</a>
+    </div>
+    <p class="portal-footer-copy">Copyright &copy; 2026 远桥资产。ProspectClaw 为商业闭源软件。</p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <img src="" alt="预览">
+</div>
+
+<script defer src="/portal.js"></script>
+</body>
+</html>
