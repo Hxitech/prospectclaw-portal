@@ -28,10 +28,7 @@
     </a>
     <ul class="portal-nav-links">
       <li><a href="#features">功能亮点</a></li>
-      <li><a href="#tutorials">教程引导</a></li>
-      <li><a href="/beginner-guide.html">新手指南</a></li>
-      <li><a href="/usage-guide.html">使用指南</a></li>
-      <li><a href="/openclaw-guide.html">OpenClaw 指南</a></li>
+      <li><a href="#guides">使用指南</a></li>
       <li><a href="#tech">技术架构</a></li>
       <li><a href="#download">立即下载</a></li>
     </ul>
@@ -46,10 +43,7 @@
   </div>
   <div class="mobile-menu" id="mobile-menu">
     <a href="#features">功能亮点</a>
-    <a href="#tutorials">教程引导</a>
-    <a href="/beginner-guide.html">新手指南</a>
-    <a href="/usage-guide.html">使用指南</a>
-    <a href="/openclaw-guide.html">OpenClaw 指南</a>
+    <a href="#guides">使用指南</a>
     <a href="#tech">技术架构</a>
     <a href="#download">立即下载</a>
   </div>
@@ -274,108 +268,120 @@
   </div>
 </section>
 
-<!-- ═══════ 6. 教程引导 ═══════ -->
-<section class="section" id="tutorials">
+<!-- ═══════ 6. 使用指南入口 ═══════ -->
+<section class="section" id="guides">
   <div class="container">
     <div class="section-header reveal">
       <div class="section-tag">Getting Started</div>
-      <h2 class="section-title">两条路径，快速上手</h2>
-      <p class="section-subtitle">每一步都告诉你做什么、在哪做、做完算什么。下载即可开始。</p>
+      <h2 class="section-title">三种入口，按你的基础选</h2>
+      <p class="section-subtitle">无论你是第一次碰电脑软件，还是想直接上手配置，或者需要喂给 AI，这里都有对应的路径。</p>
     </div>
 
-    <div class="tutorials-grid">
-      <!-- 投资工作台教程 -->
-      <div class="tutorial-card reveal stagger-1">
-        <div class="tutorial-card-icon">&#128200;</div>
-        <h3 class="tutorial-card-title">10 分钟跑通投资工作台</h3>
-        <p class="tutorial-card-desc">顺着这条链走，最快能把线索到审批的流程跑通。</p>
-        <ol class="tutorial-steps">
-          <li class="tutorial-step">
-            <div class="tutorial-step-num">1</div>
-            <div class="tutorial-step-body">
-              <div class="tutorial-step-title">导入演示数据</div>
-              <div class="tutorial-step-desc">先让首页出现一组可浏览的任务和样例，后面的项目池、Deal 才有完整链路可看。</div>
-            </div>
-          </li>
-          <li class="tutorial-step">
-            <div class="tutorial-step-num">2</div>
-            <div class="tutorial-step-body">
-              <div class="tutorial-step-title">在项目池录入第一条线索</div>
-              <div class="tutorial-step-desc">把项目名称、行业、负责人先放进项目池，先把线索进入系统。</div>
-            </div>
-          </li>
-          <li class="tutorial-step">
-            <div class="tutorial-step-num">3</div>
-            <div class="tutorial-step-body">
-              <div class="tutorial-step-title">转成 Deal 并推进阶段</div>
-              <div class="tutorial-step-desc">把值得跟进的项目转成 Deal，体验阶段推进和待办记录。</div>
-            </div>
-          </li>
-          <li class="tutorial-step">
-            <div class="tutorial-step-num">4</div>
-            <div class="tutorial-step-body">
-              <div class="tutorial-step-title">补齐 BP、初评或尽调材料</div>
-              <div class="tutorial-step-desc">把审批会用到的材料挂到文档库，让 Deal 和 SOP 围绕同一份资料工作。</div>
-            </div>
-          </li>
-          <li class="tutorial-step">
-            <div class="tutorial-step-num">5</div>
-            <div class="tutorial-step-body">
-              <div class="tutorial-step-title">发起审批或执行 SOP</div>
-              <div class="tutorial-step-desc">材料齐套后推进到审批，让系统承担流程提醒和决策沉淀。</div>
-            </div>
-          </li>
-        </ol>
-      </div>
+    <div class="tutorials-grid" style="grid-template-columns: repeat(3, 1fr);">
 
-      <!-- OpenClaw Agent 养成教程 -->
-      <div class="tutorial-card reveal stagger-2">
-        <div class="tutorial-card-kicker">非投资用户推荐</div>
-        <div class="tutorial-card-icon">&#129424;</div>
-        <h3 class="tutorial-card-title">OpenClaw Agent 养成教程</h3>
-        <p class="tutorial-card-desc">参考 ClawPanel 的教程引导节奏重写，适合只想把 OpenClaw 管顺、用顺、不想先学投资流程的用户。第一件事不是闷头养虾，而是先把钳子助手配好。</p>
+      <!-- 零基础指南 -->
+      <div class="tutorial-card reveal stagger-1">
+        <div class="tutorial-card-icon">&#128118;</div>
+        <h3 class="tutorial-card-title">零基础指南</h3>
+        <p class="tutorial-card-desc">完全没有技术背景？不知道什么是"命令行"？没关系，这份指南专门为你准备。每一步都讲得非常详细，照着做就能把 ProspectClaw 用起来。</p>
         <ol class="tutorial-steps">
           <li class="tutorial-step">
             <div class="tutorial-step-num">1</div>
             <div class="tutorial-step-body">
-              <div class="tutorial-step-title">环境体检</div>
-              <div class="tutorial-step-desc">确认 Node.js、OpenClaw CLI 和配置文件是否齐全，先把底座检查清楚。</div>
+              <div class="tutorial-step-title">下载安装</div>
+              <div class="tutorial-step-desc">像装普通软件一样，把 ProspectClaw 装到电脑上。</div>
             </div>
           </li>
           <li class="tutorial-step">
             <div class="tutorial-step-num">2</div>
             <div class="tutorial-step-body">
-              <div class="tutorial-step-title">给虾配脑子</div>
-              <div class="tutorial-step-desc">添加至少一个主模型，确保后面创建 Agent 时有可用的推理能力。</div>
+              <div class="tutorial-step-title">配置 AI 助手</div>
+              <div class="tutorial-step-desc">给内置助手配个"大脑"，让它能帮你答疑解惑。</div>
             </div>
           </li>
           <li class="tutorial-step">
             <div class="tutorial-step-num">3</div>
             <div class="tutorial-step-body">
-              <div class="tutorial-step-title">开虾缸</div>
-              <div class="tutorial-step-desc">创建第一只 Agent，给它独立身份、模型和工作区。</div>
-            </div>
-          </li>
-          <li class="tutorial-step">
-            <div class="tutorial-step-num">4</div>
-            <div class="tutorial-step-body">
-              <div class="tutorial-step-title">喂技能或装灵魂</div>
-              <div class="tutorial-step-desc">确认可用 Skill，或去 AI 助手页导入灵魂配置让 Agent 更像你的团队。</div>
-            </div>
-          </li>
-          <li class="tutorial-step">
-            <div class="tutorial-step-num">5</div>
-            <div class="tutorial-step-body">
-              <div class="tutorial-step-title">让虾开口</div>
-              <div class="tutorial-step-desc">去实时聊天发第一条消息，确认 Agent 真正能对话。</div>
+              <div class="tutorial-step-title">发第一条消息</div>
+              <div class="tutorial-step-desc">验证系统跑通，遇到问题随时问 AI。</div>
             </div>
           </li>
         </ol>
         <div class="tutorial-card-actions">
-          <a href="/openclaw-guide.html" class="btn btn-primary">打开完整指南</a>
-          <span class="tutorial-card-note">先配钳子助手，再把虾养到真能开口干活</span>
+          <a href="/beginner-guide.html" class="btn btn-primary">打开零基础指南</a>
+          <span class="tutorial-card-note">约 30 分钟，不需要任何技术基础</span>
         </div>
       </div>
+
+      <!-- 进阶指南 -->
+      <div class="tutorial-card reveal stagger-2">
+        <div class="tutorial-card-kicker">推荐</div>
+        <div class="tutorial-card-icon">&#128736;</div>
+        <h3 class="tutorial-card-title">进阶指南</h3>
+        <p class="tutorial-card-desc">有一定技术基础，知道命令行和 API Key 是什么？这份指南带你走完从安装到 Agent 上线的完整流程，包括 Skills 管理、日常运维和排障清单。</p>
+        <ol class="tutorial-steps">
+          <li class="tutorial-step">
+            <div class="tutorial-step-num">1</div>
+            <div class="tutorial-step-body">
+              <div class="tutorial-step-title">安装 + 钳子助手</div>
+              <div class="tutorial-step-desc">跑完初始设置，先把内置助手配好作为排障后盾。</div>
+            </div>
+          </li>
+          <li class="tutorial-step">
+            <div class="tutorial-step-num">2</div>
+            <div class="tutorial-step-body">
+              <div class="tutorial-step-title">模型 + Gateway + Agent</div>
+              <div class="tutorial-step-desc">配主模型、启动 Gateway、创建 Agent 并挂 Skills。</div>
+            </div>
+          </li>
+          <li class="tutorial-step">
+            <div class="tutorial-step-num">3</div>
+            <div class="tutorial-step-body">
+              <div class="tutorial-step-title">验证 + 渠道接入</div>
+              <div class="tutorial-step-desc">实时聊天验收，选配飞书 / Telegram 外部渠道。</div>
+            </div>
+          </li>
+        </ol>
+        <div class="tutorial-card-actions">
+          <a href="/usage-guide.html" class="btn btn-primary">打开进阶指南</a>
+          <span class="tutorial-card-note">约 15-30 分钟，涵盖完整操作手册与排障</span>
+        </div>
+      </div>
+
+      <!-- AI 知识库 -->
+      <div class="tutorial-card reveal stagger-3">
+        <div class="tutorial-card-icon">&#129302;</div>
+        <h3 class="tutorial-card-title">AI 知识库</h3>
+        <p class="tutorial-card-desc">给 AI Agent 看的结构化参考文档。一键复制后喂给钳子助手、ChatGPT、Claude 或任何支持知识库的 AI 平台，让它们能精准回答 ProspectClaw 相关问题。</p>
+        <ol class="tutorial-steps">
+          <li class="tutorial-step">
+            <div class="tutorial-step-num">1</div>
+            <div class="tutorial-step-body">
+              <div class="tutorial-step-title">结构化知识</div>
+              <div class="tutorial-step-desc">产品定义、安装流程、配置参考、页面职责一应俱全。</div>
+            </div>
+          </li>
+          <li class="tutorial-step">
+            <div class="tutorial-step-num">2</div>
+            <div class="tutorial-step-body">
+              <div class="tutorial-step-title">排障决策树</div>
+              <div class="tutorial-step-desc">AI 可按决策树定位问题，不用猜测。</div>
+            </div>
+          </li>
+          <li class="tutorial-step">
+            <div class="tutorial-step-num">3</div>
+            <div class="tutorial-step-body">
+              <div class="tutorial-step-title">一键复制</div>
+              <div class="tutorial-step-desc">整段复制给任何 AI，即刻获得专业回答能力。</div>
+            </div>
+          </li>
+        </ol>
+        <div class="tutorial-card-actions">
+          <a href="/agent-guide.html" class="btn btn-primary">打开 AI 知识库</a>
+          <span class="tutorial-card-note">专为 AI Agent 设计，人类也能看</span>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -496,9 +502,9 @@
     <div class="portal-footer-links">
       <a href="https://prospectbridge.com.cn" target="_blank" rel="noopener">官网</a>
       <a href="#features">功能</a>
-      <a href="#tutorials">教程</a>
-      <a href="/usage-guide.html">使用指南</a>
-      <a href="/openclaw-guide.html">OpenClaw 指南</a>
+      <a href="/beginner-guide.html">零基础指南</a>
+      <a href="/usage-guide.html">进阶指南</a>
+      <a href="/agent-guide.html">AI 知识库</a>
       <a href="#download">下载</a>
     </div>
     <p class="portal-footer-copy">Copyright &copy; 2026 远桥资产。ProspectClaw 为商业闭源软件。</p>
