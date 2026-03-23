@@ -298,6 +298,292 @@ a:hover { text-decoration: underline; }
   border-radius: 12px; width: 100%; display: block;
 }
 
+/* ── 像素风 Hero ── */
+.hero-pixelscape {
+  position: relative; width: 100%; max-width: 880px; margin: 0 auto;
+  height: 380px; overflow: hidden;
+  border-radius: 12px;
+}
+
+/* 背景网格 */
+.pixel-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(99,102,241,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(99,102,241,0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* 桌面窗口 */
+.pixel-window {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 580px; background: var(--p-bg-secondary, #1a1b2e);
+  border: 2px solid var(--p-accent, #6366f1);
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(99,102,241,0.3), 0 0 40px rgba(99,102,241,0.2);
+  animation: windowFloat 6s ease-in-out infinite;
+}
+@keyframes windowFloat {
+  0%, 100% { transform: translate(-50%, -50%) translateY(0); }
+  50% { transform: translate(-50%, -50%) translateY(-12px); }
+}
+
+.pixel-window-bar {
+  display: flex; align-items: center; gap: 6px;
+  padding: 8px 12px; background: rgba(99,102,241,0.15);
+  border-bottom: 1px solid rgba(99,102,241,0.3);
+}
+.pixel-dot { width: 10px; height: 10px; border-radius: 50%; }
+.pixel-dot.red { background: #ef4444; animation: blink 2s infinite; }
+.pixel-dot.yellow { background: #f59e0b; }
+.pixel-dot.green { background: #22c55e; }
+.pixel-title { font-size: 11px; color: var(--p-text-tertiary, #888); margin-left: 8px; font-family: monospace; }
+
+.pixel-window-body { display: flex; align-items: center; justify-content: space-between; padding: 16px 12px; gap: 8px; min-height: 220px; }
+
+.pixel-sidebar {
+  width: 48px; border-right: 1px solid rgba(99,102,241,0.2);
+  padding: 12px 8px; display: flex; flex-direction: column; gap: 8px;
+}
+.pixel-nav-item {
+  height: 28px; border-radius: 4px; background: rgba(99,102,241,0.1);
+  border: 1px solid rgba(99,102,241,0.2);
+  animation: pixelPulse 3s ease-in-out infinite;
+}
+.pixel-nav-item:nth-child(1) { animation-delay: 0s; }
+.pixel-nav-item:nth-child(2) { animation-delay: 0.5s; }
+.pixel-nav-item:nth-child(3) { animation-delay: 1s; }
+.pixel-nav-item:nth-child(4) { animation-delay: 1.5s; }
+.pixel-nav-item:nth-child(5) { animation-delay: 2s; }
+.pixel-nav-item.active { background: rgba(99,102,241,0.4); border-color: var(--p-accent, #6366f1); }
+
+.pixel-content { flex: 1; padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+.pixel-line { height: 8px; border-radius: 4px; background: rgba(99,102,241,0.15); }
+.pixel-line.long { width: 75%; animation: lineGrow 3s ease-in-out infinite; }
+.pixel-line.medium { width: 55%; animation: lineGrow 3s ease-in-out infinite 0.5s; }
+.pixel-line.short { width: 35%; animation: lineGrow 3s ease-in-out infinite 1s; }
+@keyframes lineGrow {
+  0%, 100% { opacity: 0.4; } 50% { opacity: 1; }
+}
+
+.pixel-chart {
+  display: flex; align-items: flex-end; gap: 8px; height: 80px; margin-top: 8px;
+}
+.pixel-bar {
+  flex: 1; background: var(--p-accent, #6366f1);
+  border-radius: 3px 3px 0 0;
+  animation: barGrow 2s ease-in-out infinite;
+  box-shadow: 0 0 8px rgba(99,102,241,0.5);
+}
+.pixel-bar:nth-child(1) { animation-delay: 0s; }
+.pixel-bar:nth-child(2) { animation-delay: 0.2s; }
+.pixel-bar:nth-child(3) { animation-delay: 0.4s; }
+.pixel-bar:nth-child(4) { animation-delay: 0.6s; }
+.pixel-bar:nth-child(5) { animation-delay: 0.8s; }
+@keyframes barGrow {
+  0%, 100% { transform: scaleY(0.7); opacity: 0.6; }
+  50% { transform: scaleY(1); opacity: 1; }
+}
+
+/* 版本悬浮卡片 */
+.pixel-badge {
+  position: absolute;
+  display: flex; align-items: center; gap: 8px;
+  background: var(--p-bg-secondary, #1a1b2e);
+  border: 1.5px solid rgba(99,102,241,0.4);
+  border-radius: 8px; padding: 8px 14px;
+  box-shadow: 0 0 16px rgba(99,102,241,0.15);
+  animation: badgeFloat 5s ease-in-out infinite;
+}
+.pixel-badge-invest { top: 20px; left: 20px; animation-delay: 0s; border-color: rgba(34,197,94,0.4); }
+.pixel-badge-knowledge { top: 20px; right: 20px; animation-delay: 0.5s; border-color: rgba(59,130,246,0.4); }
+.pixel-badge-sop { bottom: 20px; right: 80px; animation-delay: 1s; border-color: rgba(168,85,247,0.4); }
+@keyframes badgeFloat {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-6px) rotate(0deg); }
+}
+.pixel-badge-icon { font-size: 20px; }
+.pixel-badge-name { font-size: 12px; font-weight: 700; color: var(--p-text-primary, #fff); }
+.pixel-badge-sub { font-size: 10px; color: var(--p-text-tertiary, #888); }
+
+/* 粒子 */
+.pixel-particle {
+  position: absolute; width: 4px; height: 4px;
+  background: var(--p-accent, #6366f1);
+  border-radius: 50%; opacity: 0;
+  animation: particleFloat 6s linear infinite;
+}
+.p1 { left: 10%; top: 80%; animation-delay: 0s; }
+.p2 { left: 25%; top: 90%; animation-delay: 1s; }
+.p3 { left: 45%; top: 85%; animation-delay: 2s; }
+.p4 { left: 65%; top: 95%; animation-delay: 0.5s; }
+.p5 { left: 80%; top: 88%; animation-delay: 1.5s; }
+.p6 { left: 92%; top: 78%; animation-delay: 2.5s; }
+@keyframes particleFloat {
+  0% { opacity: 0; transform: translateY(0) scale(1); }
+  20% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-300px) scale(0.5); }
+}
+
+/* 扫描线 */
+.pixel-scanline {
+  position: absolute; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(99,102,241,0.3), transparent);
+  animation: scanMove 4s linear infinite;
+}
+@keyframes scanMove {
+  0% { top: -2px; } 100% { top: 100%; }
+}
+
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+@keyframes pixelPulse {
+  0%, 100% { opacity: 0.5; } 50% { opacity: 1; }
+}
+
+/* ── 窗口内功能图标 ── */
+.pixel-features { display: flex; flex-direction: column; gap: 10px; min-width: 56px; }
+.pixel-feat { display: flex; align-items: center; gap: 6px; opacity: 0.5; transition: opacity 0.3s; }
+.pixel-feat.active { opacity: 1; }
+.pixel-feat-icon { width: 28px; height: 28px; flex-shrink: 0; }
+.pixel-feat-label { font-size: 9px; color: var(--p-text-tertiary, #888); font-family: monospace; white-space: nowrap; }
+
+/* 功能图标像素块 */
+.feat-robot {
+  width: 20px; height: 16px; background: #6366f1; border-radius: 3px;
+  position: relative; margin: 6px 4px;
+  box-shadow: inset 0 -4px 0 rgba(0,0,0,0.2);
+}
+.feat-robot::before { content:''; position: absolute; top:-6px; left: 4px; width: 12px; height: 6px; background: #6366f1; border-radius: 3px 3px 0 0; }
+.feat-robot::after { content:''; position: absolute; top: 2px; left: 3px; width: 4px; height: 4px; background: #fff; border-radius: 50%; box-shadow: 8px 0 0 #fff; }
+
+.feat-cube {
+  width: 18px; height: 18px; margin: 5px;
+  background: linear-gradient(135deg, #6366f1 50%, #4f46e5 50%);
+  border: 2px solid #818cf8;
+}
+.feat-cube::after { content:''; position: absolute; width: 8px; height: 8px; background: #a5b4fc; margin: 3px; }
+
+.feat-plug {
+  width: 14px; height: 16px; background: #22c55e; border-radius: 2px; margin: 6px 7px;
+  position: relative;
+}
+.feat-plug::before { content:''; position: absolute; top: -5px; left: 3px; width: 8px; height: 5px; background: #16a34a; border-radius: 2px 2px 0 0; }
+
+.feat-arrows {
+  width: 20px; height: 14px; margin: 7px 4px;
+  background: linear-gradient(90deg, #6366f1 33%, #fff 33%, #fff 66%, #6366f1 66%);
+  background-size: 6px 100%;
+  animation: arrowShift 2s steps(1) infinite;
+}
+@keyframes arrowShift { 0% { background-position: 0 0; } 100% { background-position: 6px 0; } }
+
+.feat-bubble {
+  width: 18px; height: 14px; background: #3b82f6; border-radius: 0 10px 10px 10px; margin: 7px 5px;
+  position: relative;
+}
+.feat-bubble::before { content:''; position: absolute; top: -4px; left: 0; border: 3px solid transparent; border-bottom-color: #3b82f6; }
+
+.feat-brain {
+  width: 18px; height: 16px; background: #ec4899; border-radius: 4px; margin: 6px 5px;
+  position: relative; overflow: hidden;
+}
+.feat-brain::before { content:''; position: absolute; inset: 3px; background: rgba(255,255,255,0.3); border-radius: 2px; }
+
+.feat-tool {
+  width: 8px; height: 18px; background: #f59e0b; margin: 5px 10px;
+  position: relative;
+}
+.feat-tool::before { content:''; position: absolute; top: -4px; left: -3px; width: 14px; height: 6px; background: #d97706; border-radius: 2px; }
+
+.feat-clock {
+  width: 16px; height: 16px; border: 3px solid #06b6d4; border-radius: 50%; margin: 6px;
+  position: relative;
+}
+.feat-clock::before { content:''; position: absolute; top: 2px; left: 50%; width: 3px; height: 5px; background: #06b6d4; transform: translateX(-50%); }
+.feat-clock::after { content:''; position: absolute; top: 50%; left: 50%; width: 5px; height: 2px; background: #06b6d4; transform: translateY(-50%); }
+
+/* ── 像素龙虾中心 ── */
+.pixel-center {
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  flex: 1;
+}
+
+.pixel-lobster-art {
+  position: relative; width: 80px; height: 80px;
+  animation: lobsterWiggle 3s ease-in-out infinite;
+}
+@keyframes lobsterWiggle {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  25% { transform: translateY(-4px) rotate(0deg); }
+  75% { transform: translateY(-4px) rotate(2deg); }
+}
+
+/* 身体 */
+.lobster-body {
+  position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);
+  width: 28px; height: 22px; background: #ef4444; border-radius: 8px 8px 4px 4px;
+  box-shadow: inset 0 -6px 0 rgba(0,0,0,0.2);
+}
+/* 身体纹路 */
+.lobster-body::before {
+  content:''; position: absolute; top: 4px; left: 4px; right: 4px;
+  border-bottom: 2px dashed rgba(255,255,255,0.3);
+}
+/* 尾巴 */
+.lobster-tail {
+  position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%);
+  width: 20px; height: 14px;
+  background: linear-gradient(to bottom, #ef4444 20%, #dc2626 20%, #dc2626 40%, #ef4444 40%, #ef4444 60%, #dc2626 60%, #dc2626 80%, #ef4444 80%);
+}
+/* 左钳 */
+.lobster-claw-left {
+  position: absolute; bottom: 28px; left: 4px;
+  width: 18px; height: 12px; background: #f87171; border-radius: 4px;
+  transform: rotate(-20deg);
+  box-shadow: inset 0 -3px 0 rgba(0,0,0,0.15);
+}
+.lobster-claw-left::before { content:''; position: absolute; top: -6px; left: 0; width: 10px; height: 8px; background: #fca5a5; border-radius: 6px 6px 2px 2px; transform: rotate(-10deg); }
+/* 右钳 */
+.lobster-claw-right {
+  position: absolute; bottom: 28px; right: 4px;
+  width: 18px; height: 12px; background: #f87171; border-radius: 4px;
+  transform: rotate(20deg);
+  box-shadow: inset 0 -3px 0 rgba(0,0,0,0.15);
+}
+.lobster-claw-right::before { content:''; position: absolute; top: -6px; right: 0; width: 10px; height: 8px; background: #fca5a5; border-radius: 6px 6px 2px 2px; transform: rotate(10deg); }
+/* 左眼 */
+.lobster-eye-left {
+  position: absolute; top: 16px; left: 26px;
+  width: 8px; height: 8px; background: #1a1a2e; border-radius: 50%;
+  box-shadow: 14px 0 0 #1a1a2e;
+}
+/* 眼珠 */
+.lobster-eye-left::before { content:''; position: absolute; top: 1px; left: 1px; width: 3px; height: 3px; background: #fff; border-radius: 50%; box-shadow: 14px 0 0 #fff; }
+/* 触角 */
+.lobster-antenna-left, .lobster-antenna-right {
+  position: absolute; top: 8px; width: 2px; height: 10px; background: #fca5a5; border-radius: 2px;
+  animation: antennaWiggle 2s ease-in-out infinite;
+}
+.lobster-antenna-left { left: 26px; transform: rotate(-30deg); animation-delay: 0s; }
+.lobster-antenna-right { right: 26px; transform: rotate(30deg); animation-delay: 0.5s; }
+@keyframes antennaWiggle {
+  0%, 100% { transform: rotate(-30deg); }
+  50% { transform: rotate(-20deg); }
+}
+.lobster-antenna-right { animation-name: antennaWiggleR; }
+@keyframes antennaWiggleR {
+  0%, 100% { transform: rotate(30deg); }
+  50% { transform: rotate(20deg); }
+}
+
+.pixel-lobster-label {
+  font-size: 10px; font-weight: 700; color: rgba(255,120,80,0.9);
+  font-family: monospace; letter-spacing: 2px; text-shadow: 0 0 10px rgba(255,100,50,0.7);
+}
+
+/* 龙虾吉祥物（已移除，改用像素龙虾） */
+
 /* ── 统计栏 ── */
 .stats {
   padding: 60px 0;
