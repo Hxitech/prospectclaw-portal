@@ -54,7 +54,7 @@
     <div class="hero-grid"></div>
   </div>
   <div class="container hero-content">
-    <div class="hero-badge reveal">AI Agent Reference · v1.0</div>
+    <div class="hero-badge reveal">AI Agent Reference · v1.0.21</div>
     <h1 class="hero-title reveal">ProspectClaw Agent 知识库</h1>
     <p class="hero-subtitle reveal">
       这是一份专为 AI Agent 设计的结构化参考文档。内容经过优化，便于检索、推理和回答用户关于 ProspectClaw 安装、配置与使用的问题。
@@ -70,15 +70,15 @@
   <div class="container">
 
     <div class="ai-kb-toolbar reveal">
-      <div class="guide-intro-badge">Agent 知识块 v1.0</div>
+      <div class="guide-intro-badge">Agent 知识块 v1.0.21</div>
       <button class="btn btn-primary" data-copy-target="agent-kb-full">复制整段给 AI</button>
     </div>
 
     <pre class="ai-kb-block reveal" id="agent-kb-full"># ProspectClaw / OpenClaw 安装与使用知识库（Agent 版）
 
 ## 元信息
-- 文档版本: 2026-03-22
-- 适用产品: ProspectClaw v1.0.17+
+- 文档版本: 2026-03-23
+- 适用产品: ProspectClaw v1.0.21（Invest / Knowledge / SOP 三版本）
 - 目标读者: AI Agent（钳子助手、ChatGPT、Claude 等）
 - 用途: 回答用户关于安装、配置、使用、排障的问题
 
@@ -87,15 +87,19 @@
 ## 1. 产品定义
 
 ### ProspectClaw
-- 定义: 基于 Tauri v2 的本地化 AI 投资管理面板
+- 定义: 基于 Tauri v2 的本地化 AI 桌面工作台
 - 底层引擎: OpenClaw（开源个人 AI 助手平台）
 - 平台: macOS（已发布）、Windows（等待中）、Linux（等待中）
 - 安装包大小: ~10MB
 - 默认端口: 面板 :1420, Gateway :18789
+- 产品版本（三个独立发行版，共享同一底座）:
+  - **Invest** — 投资工作台，面向 PE/VC，含 11 个投资模块 + 完整管理台
+  - **Knowledge** — Agent 知识库，以助手为首页，专注资料整理与检索
+  - **SOP** — Agent SOP，以 SOP 工作台为首页，专注规则维护与文档输出
 
 ### OpenClaw
 - 定义: 开源个人 AI 助手平台，提供 Gateway、Agent、Channel 等核心能力
-- 关系: ProspectClaw 是 OpenClaw 的管理面板 + 投资工作台
+- 关系: ProspectClaw 三个版本均基于 OpenClaw 管理台能力构建
 - CLI: 命令行工具，用于安装/配置/管理 OpenClaw
 - Gateway: 核心后端服务，处理消息路由、Agent 执行、渠道连接
 

@@ -1137,6 +1137,74 @@ a:hover { text-decoration: underline; }
   line-height: 1.6;
 }
 
+/* ── 产品版本 ── */
+.editions-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+  margin-top: 40px;
+}
+
+.edition-card {
+  position: relative;
+  background: var(--p-bg-card);
+  border: 1px solid var(--p-border-soft);
+  border-radius: 16px;
+  padding: 32px 24px 28px;
+  box-shadow: var(--p-shadow-sm);
+  transition: transform 0.25s, box-shadow 0.25s;
+  display: flex; flex-direction: column;
+}
+.edition-card:hover { transform: translateY(-4px); box-shadow: var(--p-shadow-lg); }
+
+.edition-card-badge {
+  position: absolute; top: -10px; right: 20px;
+  background: var(--p-accent);
+  color: #fff; font-size: 11px; font-weight: 700;
+  padding: 4px 12px; border-radius: 6px;
+  letter-spacing: 0.5px;
+}
+
+.edition-card-icon { font-size: 40px; margin-bottom: 12px; }
+
+.edition-card-title {
+  font-size: 18px; font-weight: 700;
+  color: var(--p-text); margin-bottom: 2px;
+}
+
+.edition-card-tagline {
+  font-size: 13px; color: var(--p-accent);
+  font-weight: 600; margin-bottom: 12px;
+}
+
+.edition-card-desc {
+  font-size: 13px; color: var(--p-text-secondary);
+  line-height: 1.65; margin-bottom: 16px;
+}
+
+.edition-card-features {
+  list-style: none; padding: 0; margin: 0 0 20px;
+  flex: 1;
+}
+
+.edition-card-features li {
+  font-size: 13px; color: var(--p-text-secondary);
+  padding: 5px 0 5px 20px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.edition-card-features li::before {
+  content: "\2713";
+  position: absolute; left: 0;
+  color: var(--p-accent); font-weight: 700;
+}
+
+.edition-card-cta { margin-top: auto; }
+.edition-card-cta .btn { width: 100%; justify-content: center; }
+
+.edition-invest { border-top: 3px solid var(--p-accent); }
+.edition-knowledge { border-top: 3px solid var(--p-gold); }
+.edition-sop { border-top: 3px solid #4B5563; }
+
 /* ── 下载区 ── */
 .download-badge {
   display: inline-block; padding: 4px 14px;
@@ -1176,6 +1244,26 @@ a:hover { text-decoration: underline; }
 }
 
 .download-card .btn { width: 100%; justify-content: center; }
+
+.download-card-platform {
+  font-size: 11px; color: var(--p-text-tertiary);
+  margin-bottom: 14px;
+}
+
+.download-waitlist {
+  text-align: center; margin-top: 32px;
+  padding: 16px;
+  background: var(--p-accent-subtle);
+  border-radius: 10px;
+}
+.download-waitlist-text {
+  font-size: 13px; color: var(--p-text-secondary);
+  margin: 0;
+}
+.download-waitlist-text a {
+  color: var(--p-accent); font-weight: 600;
+  text-decoration: underline;
+}
 
 /* ── 联系我们 ── */
 .contact-grid {
@@ -1354,6 +1442,7 @@ a:hover { text-decoration: underline; }
   .manual-support-grid { grid-template-columns: 1fr; }
   .guide-final-panel { flex-direction: column; align-items: flex-start; }
   .guide-final-actions { flex-direction: row; flex-wrap: wrap; }
+  .editions-grid { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
   .download-grid { grid-template-columns: 1fr; max-width: 360px; margin-left: auto; margin-right: auto; }
   .contact-grid { grid-template-columns: 1fr; max-width: 360px; margin-left: auto; margin-right: auto; }
   .why-grid { grid-template-columns: repeat(2, 1fr); }

@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ProspectClaw — 本地化 AI 投资管理平台</title>
-  <meta name="description" content="ProspectClaw 是 PE/VC 投资管理桌面平台，基于 Tauri v2 构建，集成 AI 助手，覆盖从项目发现到投后管理的全流程。">
-  <meta property="og:title" content="ProspectClaw — 本地化 AI 投资管理平台">
-  <meta property="og:description" content="面向一级市场投资机构的轻量级、本地化投资管理工具。无需部署服务器，安装即用，数据留在本地，安全可控。">
+  <title>ProspectClaw — 本地化 AI 桌面工作台</title>
+  <meta name="description" content="ProspectClaw 是基于 Tauri v2 的本地化 AI 桌面工作台，提供 Invest（投资管理）、Knowledge（知识库）、SOP（流程文档）三个版本，覆盖投资全流程、Agent 知识库整理与 SOP 维护。">
+  <meta property="og:title" content="ProspectClaw — 本地化 AI 桌面工作台">
+  <meta property="og:description" content="三个版本，一套底座。投资管理、Agent 知识库、SOP 文档——选适合你的版本，安装即用，数据留在本地。">
   <meta property="og:type" content="website">
   <link rel="icon" type="image/png" href="/images/prospectclaw-tab-logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,6 +27,7 @@
       ProspectClaw
     </a>
     <ul class="portal-nav-links">
+      <li><a href="#editions">产品版本</a></li>
       <li><a href="#features">功能亮点</a></li>
       <li><a href="#guides">使用指南</a></li>
       <li><a href="#tech">技术架构</a></li>
@@ -42,6 +43,7 @@
     </div>
   </div>
   <div class="mobile-menu" id="mobile-menu">
+    <a href="#editions">产品版本</a>
     <a href="#features">功能亮点</a>
     <a href="#guides">使用指南</a>
     <a href="#tech">技术架构</a>
@@ -57,11 +59,11 @@
     <div class="hero-grid"></div>
   </div>
   <div class="container hero-content">
-    <div class="hero-badge reveal">v1.0.17 &middot; PE/VC 投资管理平台</div>
-    <h1 class="hero-title reveal">本地化 AI 投资管理平台</h1>
+    <div class="hero-badge reveal">v1.0.21 &middot; 三版本发行</div>
+    <h1 class="hero-title reveal">本地化 AI 桌面工作台</h1>
     <p class="hero-subtitle reveal">
-      面向一级市场投资机构的本地化智能管理平台。<br>
-      从项目发现到投后管理，AI 驱动全流程决策。<br>
+      Invest · Knowledge · SOP — 三个版本，一套底座。<br>
+      投资全流程管理、Agent 知识库整理、SOP 文档维护。<br>
       无需部署服务器，安装即用，数据留在本地。
     </p>
     <div class="hero-ctas reveal">
@@ -81,8 +83,8 @@
   <div class="container">
     <div class="stats-grid">
       <div class="stat-card reveal stagger-1">
-        <div class="stat-value" data-count="11">0</div>
-        <div class="stat-label">功能模块</div>
+        <div class="stat-value" data-count="3">0</div>
+        <div class="stat-label">产品版本</div>
       </div>
       <div class="stat-card reveal stagger-2">
         <div class="stat-value">~10MB</div>
@@ -106,7 +108,7 @@
     <div class="section-header reveal">
       <div class="section-tag">Why ProspectClaw</div>
       <h2 class="section-title">为什么选择 ProspectClaw？</h2>
-      <p class="section-subtitle">专为一级市场投资团队打造，兼顾安全、效率与智能。</p>
+      <p class="section-subtitle">三个版本共享同一套底座，兼顾安全、效率与智能。</p>
     </div>
 
     <div class="why-grid">
@@ -139,6 +141,74 @@
         <div class="why-card-icon">&#128295;</div>
         <h3 class="why-card-title">开放生态</h3>
         <p class="why-card-desc">支持 MCP 工具链扩展，对接 OpenAI / Anthropic / Deepseek 等主流 AI 模型。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ 3.8 产品版本 ═══════ -->
+<section class="section" id="editions">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Product Editions</div>
+      <h2 class="section-title">三个版本，按需选择</h2>
+      <p class="section-subtitle">同一套 Tauri v2 + OpenClaw 底座，按使用场景裁剪功能与首页。</p>
+    </div>
+
+    <div class="editions-grid">
+      <!-- Invest -->
+      <div class="edition-card edition-invest reveal stagger-1">
+        <div class="edition-card-badge">旗舰版</div>
+        <div class="edition-card-icon">&#128200;</div>
+        <h3 class="edition-card-title">ProspectClaw Invest</h3>
+        <p class="edition-card-tagline">投资工作台</p>
+        <p class="edition-card-desc">面向 PE/VC 投资团队，覆盖项目发现→尽调→IC 审议→投后管理全流程。包含投资仪表盘、Deal Pipeline、企业库、联系人、SOP、评分、自动化等 11 个投资模块，加上完整的 OpenClaw 管理台能力。</p>
+        <ul class="edition-card-features">
+          <li>投资仪表盘 + Deal Pipeline</li>
+          <li>企业库 / 联系人 / 投资文档</li>
+          <li>评分 / SOP / 审批 / 自动化</li>
+          <li>PE/VC 知识库注入助手</li>
+          <li>完整 OpenClaw 管理台</li>
+        </ul>
+        <div class="edition-card-cta">
+          <a href="#download" class="btn btn-primary">下载 Invest</a>
+        </div>
+      </div>
+
+      <!-- Knowledge -->
+      <div class="edition-card edition-knowledge reveal stagger-2">
+        <div class="edition-card-icon">&#128218;</div>
+        <h3 class="edition-card-title">ProspectClaw Knowledge</h3>
+        <p class="edition-card-tagline">Agent 知识库</p>
+        <p class="edition-card-desc">面向 Agent 知识库构建者与 QA 团队，专注资料整理、检索配置与 Agent 管理。不含投资模块，以内置助手为首页，轻量聚焦知识库工作流。</p>
+        <ul class="edition-card-features">
+          <li>以助手为首页，开箱即用</li>
+          <li>Agent / 模型 / Gateway 管理</li>
+          <li>知识库检索与配置</li>
+          <li>频道化会话管理</li>
+          <li>完整 OpenClaw 管理台</li>
+        </ul>
+        <div class="edition-card-cta">
+          <a href="#download" class="btn btn-outline">下载 Knowledge</a>
+        </div>
+      </div>
+
+      <!-- SOP -->
+      <div class="edition-card edition-sop reveal stagger-3">
+        <div class="edition-card-icon">&#128203;</div>
+        <h3 class="edition-card-title">ProspectClaw SOP</h3>
+        <p class="edition-card-tagline">Agent SOP</p>
+        <p class="edition-card-desc">面向 Agent 规则维护与 SOP 文档团队，以 SOP 工作台为首页。支持规则编写、流程文档输出与 Agent 配置管理，确保 Agent 行为可维护、可追溯。</p>
+        <ul class="edition-card-features">
+          <li>SOP 工作台为首页</li>
+          <li>Agent 规则编写与维护</li>
+          <li>流程文档输出</li>
+          <li>Agent / 模型 / Gateway 管理</li>
+          <li>完整 OpenClaw 管理台</li>
+        </ul>
+        <div class="edition-card-cta">
+          <a href="#download" class="btn btn-outline">下载 SOP</a>
+        </div>
       </div>
     </div>
   </div>
@@ -430,31 +500,41 @@
     <div class="section-header reveal">
       <div class="section-tag">Download</div>
       <h2 class="section-title">立即下载 ProspectClaw</h2>
-      <div class="download-badge">v1.0.17</div>
-      <p class="section-subtitle">约 10MB 安装包，安装即用，无需额外运行时环境。</p>
+      <div class="download-badge">v1.0.21</div>
+      <p class="section-subtitle">约 10MB 安装包，安装即用，无需额外运行时环境。选择适合你的版本：</p>
     </div>
 
-    <div class="download-grid">
+    <div class="download-grid download-grid-editions">
+      <!-- Invest -->
       <div class="download-card reveal stagger-1">
-        <div class="download-card-icon">&#63743;</div>
-        <h3 class="download-card-title">macOS</h3>
-        <p class="download-card-detail">Apple Silicon / Intel &middot; macOS 12.0+</p>
+        <div class="download-card-icon">&#128200;</div>
+        <h3 class="download-card-title">Invest</h3>
+        <p class="download-card-detail">PE/VC 投资管理全流程</p>
+        <p class="download-card-platform">macOS &middot; Apple Silicon / Intel</p>
         <a href="#" class="btn btn-primary">下载 .dmg</a>
       </div>
+      <!-- Knowledge -->
       <div class="download-card reveal stagger-2">
-        <div class="download-card-icon">&#128187;</div>
-        <h3 class="download-card-title">Windows</h3>
-        <p class="download-card-detail">x64 &middot; Windows 10+</p>
-        <a href="mailto:contact@prospectbridge.com.cn?subject=Waitlist-Windows-ProspectClaw" class="btn btn-waitlist">加入等候名单</a>
-        <p class="download-card-soon">即将推出，敬请期待</p>
+        <div class="download-card-icon">&#128218;</div>
+        <h3 class="download-card-title">Knowledge</h3>
+        <p class="download-card-detail">Agent 知识库整理与检索</p>
+        <p class="download-card-platform">macOS &middot; Apple Silicon / Intel</p>
+        <a href="#" class="btn btn-primary">下载 .dmg</a>
       </div>
+      <!-- SOP -->
       <div class="download-card reveal stagger-3">
-        <div class="download-card-icon">&#128039;</div>
-        <h3 class="download-card-title">Linux</h3>
-        <p class="download-card-detail">Ubuntu 20.04+ / Fedora 36+</p>
-        <a href="mailto:contact@prospectbridge.com.cn?subject=Waitlist-Linux-ProspectClaw" class="btn btn-waitlist">加入等候名单</a>
-        <p class="download-card-soon">即将推出，敬请期待</p>
+        <div class="download-card-icon">&#128203;</div>
+        <h3 class="download-card-title">SOP</h3>
+        <p class="download-card-detail">Agent 规则与流程文档</p>
+        <p class="download-card-platform">macOS &middot; Apple Silicon / Intel</p>
+        <a href="#" class="btn btn-primary">下载 .dmg</a>
       </div>
+    </div>
+
+    <div class="download-waitlist reveal">
+      <p class="download-waitlist-text">Windows / Linux 版本即将推出 —
+        <a href="mailto:contact@prospectbridge.com.cn?subject=Waitlist-ProspectClaw">加入等候名单</a>
+      </p>
     </div>
   </div>
 </section>
@@ -500,7 +580,7 @@
       ProspectClaw
     </div>
     <div class="portal-footer-links">
-      <a href="https://prospectbridge.com.cn" target="_blank" rel="noopener">官网</a>
+      <a href="#editions">产品版本</a>
       <a href="#features">功能</a>
       <a href="/beginner-guide.html">零基础指南</a>
       <a href="/usage-guide.html">进阶指南</a>
