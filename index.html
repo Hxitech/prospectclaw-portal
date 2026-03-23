@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ProspectClaw — 本地化 AI 桌面工作台</title>
-  <meta name="description" content="ProspectClaw 是基于 Tauri v2 的本地化 AI 桌面工作台，提供 Invest（投资管理）、Knowledge（知识库）、SOP（流程文档）三个版本，覆盖投资全流程、Agent 知识库整理与 SOP 维护。">
+  <meta name="description" content="ProspectClaw 是基于 Tauri v2 + OpenClaw 的本地化 AI 桌面工作台。内置 Agent 引擎、模型池、MCP 工具链，提供 Invest / Knowledge / SOP 三个版本，让你自由定义智能工作流。">
   <meta property="og:title" content="ProspectClaw — 本地化 AI 桌面工作台">
-  <meta property="og:description" content="三个版本，一套底座。投资管理、Agent 知识库、SOP 文档——选适合你的版本，安装即用，数据留在本地。">
+  <meta property="og:description" content="一套 AI 底座，无限工作流可能。Agent 编排、模型聚合、MCP 扩展——选一个版本开始，用 OpenClaw 定义属于你的智能工作台。">
   <meta property="og:type" content="website">
   <link rel="icon" type="image/png" href="/images/prospectclaw-tab-logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,8 +27,8 @@
       ProspectClaw
     </a>
     <ul class="portal-nav-links">
+      <li><a href="#platform">平台能力</a></li>
       <li><a href="#editions">产品版本</a></li>
-      <li><a href="#features">功能亮点</a></li>
       <li><a href="#guides">使用指南</a></li>
       <li><a href="#tech">技术架构</a></li>
       <li><a href="#download">立即下载</a></li>
@@ -43,8 +43,8 @@
     </div>
   </div>
   <div class="mobile-menu" id="mobile-menu">
+    <a href="#platform">平台能力</a>
     <a href="#editions">产品版本</a>
-    <a href="#features">功能亮点</a>
     <a href="#guides">使用指南</a>
     <a href="#tech">技术架构</a>
     <a href="#download">立即下载</a>
@@ -59,20 +59,20 @@
     <div class="hero-grid"></div>
   </div>
   <div class="container hero-content">
-    <div class="hero-badge reveal">v1.0.21 &middot; 三版本发行</div>
-    <h1 class="hero-title reveal">本地化 AI 桌面工作台</h1>
+    <div class="hero-badge reveal">v1.0.21 &middot; OpenClaw AI 底座</div>
+    <h1 class="hero-title reveal">一套 AI 底座<br>无限工作流可能</h1>
     <p class="hero-subtitle reveal">
-      Invest · Knowledge · SOP — 三个版本，一套底座。<br>
-      投资全流程管理、Agent 知识库整理、SOP 文档维护。<br>
-      无需部署服务器，安装即用，数据留在本地。
+      内置 Agent 引擎、多模型聚合、MCP 工具链扩展。<br>
+      三个版本按场景裁剪，你也可以用 OpenClaw 自由定义工作流。<br>
+      安装即用，数据留在本地，10MB 极致轻量。
     </p>
     <div class="hero-ctas reveal">
       <a href="#download" class="btn btn-primary">下载 ProspectClaw</a>
-      <a href="#features" class="btn btn-outline">了解更多</a>
+      <a href="#platform" class="btn btn-outline">探索平台能力</a>
     </div>
     <div class="hero-image reveal">
       <div class="hero-image-frame">
-        <img src="/screenshots/desktop-dashboard.png" alt="ProspectClaw 仪表盘">
+        <img src="/screenshots/desktop-claw-assistant.png" alt="ProspectClaw 钳子助手">
       </div>
     </div>
   </div>
@@ -91,12 +91,12 @@
         <div class="stat-label">安装包体积</div>
       </div>
       <div class="stat-card reveal stagger-3">
-        <div class="stat-value" data-count="3">0</div>
-        <div class="stat-label">平台支持</div>
+        <div class="stat-value">MCP</div>
+        <div class="stat-label">工具链扩展</div>
       </div>
       <div class="stat-card reveal stagger-4">
-        <div class="stat-value">AI</div>
-        <div class="stat-label">驱动引擎</div>
+        <div class="stat-value">&#8734;</div>
+        <div class="stat-label">工作流可能</div>
       </div>
     </div>
   </div>
@@ -108,14 +108,14 @@
     <div class="section-header reveal">
       <div class="section-tag">Why ProspectClaw</div>
       <h2 class="section-title">为什么选择 ProspectClaw？</h2>
-      <p class="section-subtitle">三个版本共享同一套底座，兼顾安全、效率与智能。</p>
+      <p class="section-subtitle">不只是一个工具，而是你可以自由定义的 AI 工作台。</p>
     </div>
 
     <div class="why-grid">
       <div class="why-card reveal stagger-1">
         <div class="why-card-icon">&#128274;</div>
         <h3 class="why-card-title">本地优先，数据主权</h3>
-        <p class="why-card-desc">所有数据存储在本地 SQLite，不经过任何云端，满足金融机构数据合规要求。</p>
+        <p class="why-card-desc">所有数据存储在本地 SQLite，不经过任何云端，满足企业数据合规要求。</p>
       </div>
       <div class="why-card reveal stagger-2">
         <div class="why-card-icon">&#9889;</div>
@@ -124,13 +124,13 @@
       </div>
       <div class="why-card reveal stagger-3">
         <div class="why-card-icon">&#129302;</div>
-        <h3 class="why-card-title">AI 原生集成</h3>
-        <p class="why-card-desc">内置 OpenClaw Agent 引擎，投资分析 + 智能体运维双模式，开箱即用。</p>
+        <h3 class="why-card-title">OpenClaw AI 原生</h3>
+        <p class="why-card-desc">内置 Agent 引擎 + Gateway + 模型池，AI 不是附加功能，而是核心底座。</p>
       </div>
       <div class="why-card reveal stagger-4">
-        <div class="why-card-icon">&#128200;</div>
-        <h3 class="why-card-title">全流程覆盖</h3>
-        <p class="why-card-desc">项目发现 → 尽调 → IC 审议 → 投后，11 个模块一站式管理完整投资链路。</p>
+        <div class="why-card-icon">&#128295;</div>
+        <h3 class="why-card-title">MCP 开放生态</h3>
+        <p class="why-card-desc">支持 MCP 工具链扩展，对接 OpenAI / Anthropic / Deepseek 等主流模型。</p>
       </div>
       <div class="why-card reveal stagger-5">
         <div class="why-card-icon">&#128640;</div>
@@ -138,37 +138,171 @@
         <p class="why-card-desc">无需服务器、无需运维团队，下载安装即可使用，5 分钟完成上手。</p>
       </div>
       <div class="why-card reveal stagger-1">
-        <div class="why-card-icon">&#128295;</div>
-        <h3 class="why-card-title">开放生态</h3>
-        <p class="why-card-desc">支持 MCP 工具链扩展，对接 OpenAI / Anthropic / Deepseek 等主流 AI 模型。</p>
+        <div class="why-card-icon">&#127912;</div>
+        <h3 class="why-card-title">自由定义工作流</h3>
+        <p class="why-card-desc">Agent 自由创建、Skills 自由挂载、SOP 自由编排——你的工作流你做主。</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════ 3.8 产品版本 ═══════ -->
+<!-- ═══════ 4. 平台核心能力 ═══════ -->
+<section class="section" id="platform">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Platform Capabilities</div>
+      <h2 class="section-title">所有版本共享的 AI 底座</h2>
+      <p class="section-subtitle">无论你选哪个版本，以下能力都开箱即用——这是 ProspectClaw 的核心。</p>
+    </div>
+
+    <!-- 钳子助手 -->
+    <div class="showcase-row reveal">
+      <div class="showcase-text">
+        <div class="showcase-label">Built-in AI Assistant</div>
+        <h3 class="showcase-title">钳子助手 — 你的 AI 运维搭档</h3>
+        <p class="showcase-desc">
+          内置独立 AI 助手，开箱即用。环境体检、模型配置、技能挂载、异常自愈——你可以用对话完成系统排障，也可以让它帮你分析数据、起草文档。
+        </p>
+        <div class="showcase-chips">
+          <span class="chip">环境诊断</span>
+          <span class="chip">流式对话</span>
+          <span class="chip">系统排障</span>
+          <span class="chip">异常自愈</span>
+        </div>
+      </div>
+      <div class="showcase-image" data-lightbox>
+        <img src="/screenshots/desktop-claw-assistant.png" alt="钳子助手">
+      </div>
+    </div>
+
+    <!-- Agent 舰队 -->
+    <div class="showcase-row reverse reveal">
+      <div class="showcase-text">
+        <div class="showcase-label">Agent Fleet & Model Pool</div>
+        <h3 class="showcase-title">Agent 舰队 — 多实例自由编排</h3>
+        <p class="showcase-desc">
+          创建任意数量的 Agent 实例，支持 AI 自动创建和智能配置。模型池聚合 OpenAI / Anthropic / Deepseek 等主流 API，每个 Agent 可独立配置模型、Skills 和行为规则。
+        </p>
+        <div class="showcase-chips">
+          <span class="chip">多 Agent 并行</span>
+          <span class="chip">模型池聚合</span>
+          <span class="chip">AI 自动创建</span>
+          <span class="chip">Skills 挂载</span>
+        </div>
+      </div>
+      <div class="showcase-image" data-lightbox>
+        <img src="/screenshots/desktop-agent-management.png" alt="Agent 管理">
+      </div>
+    </div>
+
+    <!-- 实时聊天 & 频道 -->
+    <div class="showcase-row reveal">
+      <div class="showcase-text">
+        <div class="showcase-label">Chat & Channels</div>
+        <h3 class="showcase-title">实时聊天 — 频道化对话管理</h3>
+        <p class="showcase-desc">
+          与 Agent 实时对话验证效果，频道化管理不同主题的上下文。支持飞书、Telegram、Discord 等外部渠道接入，让 Agent 在你常用的平台上直接工作。
+        </p>
+        <div class="showcase-chips">
+          <span class="chip">实时聊天</span>
+          <span class="chip">会话频道</span>
+          <span class="chip">飞书 / Telegram</span>
+          <span class="chip">渠道扩展</span>
+        </div>
+      </div>
+      <div class="showcase-image" data-lightbox>
+        <img src="/screenshots/desktop-thread-model-switch.png" alt="实时聊天">
+      </div>
+    </div>
+
+    <!-- Gateway & MCP -->
+    <div class="showcase-row reverse reveal">
+      <div class="showcase-text">
+        <div class="showcase-label">Gateway & MCP Extensions</div>
+        <h3 class="showcase-title">Gateway — 消息路由与工具链</h3>
+        <p class="showcase-desc">
+          核心后端服务统一管理消息路由、Agent 执行和渠道连接。MCP 工具链让 Agent 获得无限能力扩展——对接数据库、调用 API、操作文件系统，一切皆可编排。
+        </p>
+        <div class="showcase-chips">
+          <span class="chip">消息路由</span>
+          <span class="chip">MCP 工具链</span>
+          <span class="chip">定时任务</span>
+          <span class="chip">记忆文件</span>
+        </div>
+      </div>
+      <div class="showcase-image" data-lightbox>
+        <img src="/screenshots/desktop-system-diagnosis.png" alt="系统仪表盘">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ 5. 无限可能 ═══════ -->
+<section class="section" id="possibilities" style="background: var(--p-bg-alt);">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Infinite Possibilities</div>
+      <h2 class="section-title">你的 Agent，你的规则</h2>
+      <p class="section-subtitle">ProspectClaw 不锁定你的使用方式——用 OpenClaw 底座自由组合，构建属于你的智能工作流。</p>
+    </div>
+
+    <div class="possibilities-grid">
+      <div class="possibility-card reveal stagger-1">
+        <div class="possibility-icon">&#128161;</div>
+        <h3 class="possibility-title">自定义 Agent</h3>
+        <p class="possibility-desc">用自然语言描述角色、职责和边界，AI 帮你起草完整设定。从客服到分析师，从文档助手到代码审查员，Agent 的身份由你定义。</p>
+      </div>
+      <div class="possibility-card reveal stagger-2">
+        <div class="possibility-icon">&#128736;</div>
+        <h3 class="possibility-title">Skills 即能力</h3>
+        <p class="possibility-desc">Skills 是 Agent 的手和脚。挂载文件操作、数据查询、API 调用等技能，让 Agent 不只会聊天，还能真正执行任务。</p>
+      </div>
+      <div class="possibility-card reveal stagger-3">
+        <div class="possibility-icon">&#128203;</div>
+        <h3 class="possibility-title">SOP 即流程</h3>
+        <p class="possibility-desc">把业务流程写成 Agent 能理解的 SOP 文档，Agent 就能按规则执行。规则清晰、流程稳定、行为可追溯。</p>
+      </div>
+      <div class="possibility-card reveal stagger-4">
+        <div class="possibility-icon">&#128256;</div>
+        <h3 class="possibility-title">MCP 即扩展</h3>
+        <p class="possibility-desc">通过 MCP 协议接入任意工具和数据源。不需要写代码，只需要配置——数据库、REST API、文件系统、第三方服务，一切皆可连接。</p>
+      </div>
+      <div class="possibility-card reveal stagger-5">
+        <div class="possibility-icon">&#128231;</div>
+        <h3 class="possibility-title">渠道即入口</h3>
+        <p class="possibility-desc">Agent 不只在面板里工作——接入飞书、Telegram、Discord，让它在你的团队沟通工具中直接响应。</p>
+      </div>
+      <div class="possibility-card reveal stagger-1">
+        <div class="possibility-icon">&#9881;</div>
+        <h3 class="possibility-title">自动化即闭环</h3>
+        <p class="possibility-desc">定时任务 + 心跳监控 + 事件触发，Agent 可以 7×24 自动运行。异常时自愈，需要时通知你，不需要时安静工作。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ 6. 产品版本 ═══════ -->
 <section class="section" id="editions">
   <div class="container">
     <div class="section-header reveal">
       <div class="section-tag">Product Editions</div>
-      <h2 class="section-title">三个版本，按需选择</h2>
-      <p class="section-subtitle">同一套 Tauri v2 + OpenClaw 底座，按使用场景裁剪功能与首页。</p>
+      <h2 class="section-title">三个版本，按场景选择</h2>
+      <p class="section-subtitle">同一套 OpenClaw 底座，按使用场景裁剪首页与专属模块。所有版本共享完整的平台核心能力。</p>
     </div>
 
     <div class="editions-grid">
       <!-- Invest -->
       <div class="edition-card edition-invest reveal stagger-1">
-        <div class="edition-card-badge">旗舰版</div>
         <div class="edition-card-icon">&#128200;</div>
         <h3 class="edition-card-title">ProspectClaw Invest</h3>
         <p class="edition-card-tagline">投资工作台</p>
-        <p class="edition-card-desc">面向 PE/VC 投资团队，覆盖项目发现→尽调→IC 审议→投后管理全流程。包含投资仪表盘、Deal Pipeline、企业库、联系人、SOP、评分、自动化等 11 个投资模块，加上完整的 OpenClaw 管理台能力。</p>
+        <p class="edition-card-desc">在平台核心能力基础上，增加 11 个投资管理模块。面向 PE/VC 团队，覆盖项目发现→尽调→IC 审议→投后管理全链路。</p>
         <ul class="edition-card-features">
           <li>投资仪表盘 + Deal Pipeline</li>
           <li>企业库 / 联系人 / 投资文档</li>
           <li>评分 / SOP / 审批 / 自动化</li>
           <li>PE/VC 知识库注入助手</li>
-          <li>完整 OpenClaw 管理台</li>
+          <li>+ 完整平台核心能力</li>
         </ul>
         <div class="edition-card-cta">
           <a href="#download" class="btn btn-primary">下载 Invest</a>
@@ -180,16 +314,16 @@
         <div class="edition-card-icon">&#128218;</div>
         <h3 class="edition-card-title">ProspectClaw Knowledge</h3>
         <p class="edition-card-tagline">Agent 知识库</p>
-        <p class="edition-card-desc">面向 Agent 知识库构建者与 QA 团队，专注资料整理、检索配置与 Agent 管理。不含投资模块，以内置助手为首页，轻量聚焦知识库工作流。</p>
+        <p class="edition-card-desc">以钳子助手为首页，专注 Agent 知识库构建与检索配置。资料可检索、规则可维护、Agent 可复用。</p>
         <ul class="edition-card-features">
-          <li>以助手为首页，开箱即用</li>
+          <li>助手首页，开箱即用</li>
+          <li>知识库整理与检索配置</li>
           <li>Agent / 模型 / Gateway 管理</li>
-          <li>知识库检索与配置</li>
           <li>频道化会话管理</li>
-          <li>完整 OpenClaw 管理台</li>
+          <li>+ 完整平台核心能力</li>
         </ul>
         <div class="edition-card-cta">
-          <a href="#download" class="btn btn-outline">下载 Knowledge</a>
+          <a href="#download" class="btn btn-primary">下载 Knowledge</a>
         </div>
       </div>
 
@@ -198,148 +332,24 @@
         <div class="edition-card-icon">&#128203;</div>
         <h3 class="edition-card-title">ProspectClaw SOP</h3>
         <p class="edition-card-tagline">Agent SOP</p>
-        <p class="edition-card-desc">面向 Agent 规则维护与 SOP 文档团队，以 SOP 工作台为首页。支持规则编写、流程文档输出与 Agent 配置管理，确保 Agent 行为可维护、可追溯。</p>
+        <p class="edition-card-desc">以 SOP 工作台为首页，专注 Agent 规则维护与流程文档。规则清晰、流程稳定、Agent 行为可追溯。</p>
         <ul class="edition-card-features">
-          <li>SOP 工作台为首页</li>
+          <li>SOP 工作台首页</li>
           <li>Agent 规则编写与维护</li>
           <li>流程文档输出</li>
           <li>Agent / 模型 / Gateway 管理</li>
-          <li>完整 OpenClaw 管理台</li>
+          <li>+ 完整平台核心能力</li>
         </ul>
         <div class="edition-card-cta">
-          <a href="#download" class="btn btn-outline">下载 SOP</a>
+          <a href="#download" class="btn btn-primary">下载 SOP</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════ 4. 功能亮点 — 投资管理 ═══════ -->
-<section class="section" id="features">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-tag">Investment Management</div>
-      <h2 class="section-title">从线索到关闭，全流程覆盖</h2>
-      <p class="section-subtitle">项目池、Deal 管道、企业库、审批流、自动化——每个环节都有专属模块支撑。</p>
-    </div>
-
-    <!-- 行 1 -->
-    <div class="showcase-row reveal">
-      <div class="showcase-text">
-        <div class="showcase-label">Overview & Pipeline</div>
-        <h3 class="showcase-title">投资概览与项目管道</h3>
-        <p class="showcase-desc">
-          实时仪表盘展示项目池漏斗、管道分布和近期动态。Deal Pipeline 看板按寻源→初筛→尽调→IC审议→条款谈判→已关闭六阶段管理，支持拖拽换阶段。
-        </p>
-        <div class="showcase-chips">
-          <span class="chip">投资概览</span>
-          <span class="chip">项目池</span>
-          <span class="chip">项目管道</span>
-          <span class="chip">三种视图</span>
-        </div>
-      </div>
-      <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-investment-dashboard.png" alt="投资概览仪表盘">
-      </div>
-    </div>
-
-    <!-- 行 2 -->
-    <div class="showcase-row reverse reveal">
-      <div class="showcase-text">
-        <div class="showcase-label">Enterprise & Contacts</div>
-        <h3 class="showcase-title">企业库与联系人管理</h3>
-        <p class="showcase-desc">
-          被投及关注企业档案管理，支持行业分类、搜索筛选。投资相关联系人关联企业与角色标签，项目文档统一归档检索。
-        </p>
-        <div class="showcase-chips">
-          <span class="chip">企业库</span>
-          <span class="chip">联系人</span>
-          <span class="chip">投资文档</span>
-        </div>
-      </div>
-      <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-company-database.png" alt="企业库">
-      </div>
-    </div>
-
-    <!-- 行 3 -->
-    <div class="showcase-row reveal">
-      <div class="showcase-text">
-        <div class="showcase-label">Workflow & Automation</div>
-        <h3 class="showcase-title">审批流与自动化</h3>
-        <p class="showcase-desc">
-          多维度交易评分量化投资决策，标准化 SOP 流程模板支持自定义与执行追踪。操作审计合规记录，定时任务与心跳规则自动化投后监控。
-        </p>
-        <div class="showcase-chips">
-          <span class="chip">战略评分</span>
-          <span class="chip">SOP 流程</span>
-          <span class="chip">审批流程</span>
-          <span class="chip">自动化</span>
-          <span class="chip">审计日志</span>
-        </div>
-      </div>
-      <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-automation-center.png" alt="自动化中心">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════ 5. 功能亮点 — AI 能力 ═══════ -->
-<section class="section" id="ai-features" style="background: var(--p-bg-alt);">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-tag">AI Capabilities</div>
-      <h2 class="section-title">智能体运维，AI 驱动投资决策</h2>
-      <p class="section-subtitle">内置 OpenClaw Agent 引擎，一站式管理 AI 智能体全生命周期，投资分析与系统运维双轨并行。</p>
-    </div>
-
-    <!-- AI 助手 -->
-    <div class="showcase-row reveal">
-      <div class="showcase-text">
-        <div class="showcase-label">Intelligent Agent Ops</div>
-        <h3 class="showcase-title">钳子助手 — 智能体运维中心</h3>
-        <p class="showcase-desc">
-          一站式管理 AI Agent 全生命周期：环境体检、模型配置、技能挂载、心跳监控、异常自愈。支持流式对话诊断系统问题，结合投资知识库提供智能分析与项目初评。
-        </p>
-        <div class="showcase-chips">
-          <span class="chip">智能体运维</span>
-          <span class="chip">环境诊断</span>
-          <span class="chip">心跳监控</span>
-          <span class="chip">异常自愈</span>
-          <span class="chip">AI 分析</span>
-        </div>
-      </div>
-      <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-claw-assistant.png" alt="钳子助手">
-      </div>
-    </div>
-
-    <!-- Agent 舰队 -->
-    <div class="showcase-row reverse reveal">
-      <div class="showcase-text">
-        <div class="showcase-label">Agent Fleet</div>
-        <h3 class="showcase-title">Agent 舰队 — 多实例编排</h3>
-        <p class="showcase-desc">
-          多 Agent 实例并行管理，支持 AI 自动创建和智能配置。模型池聚合 OpenAI / Anthropic / Deepseek 等主流 API，MCP 工具链扩展无限可能。实时聊天验证 Agent 状态，频道化管理对话上下文。
-        </p>
-        <div class="showcase-chips">
-          <span class="chip">Agent 舰队</span>
-          <span class="chip">模型池</span>
-          <span class="chip">MCP 工具链</span>
-          <span class="chip">会话频道</span>
-          <span class="chip">AI 编排</span>
-        </div>
-      </div>
-      <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-agent-management.png" alt="Agent 管理">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════ 6. 使用指南入口 ═══════ -->
-<section class="section" id="guides">
+<!-- ═══════ 7. 使用指南入口 ═══════ -->
+<section class="section" id="guides" style="background: var(--p-bg-alt);">
   <div class="container">
     <div class="section-header reveal">
       <div class="section-tag">Getting Started</div>
@@ -353,7 +363,7 @@
       <div class="tutorial-card reveal stagger-1">
         <div class="tutorial-card-icon">&#128118;</div>
         <h3 class="tutorial-card-title">零基础指南</h3>
-        <p class="tutorial-card-desc">完全没有技术背景？不知道什么是"命令行"？没关系，这份指南专门为你准备。每一步都讲得非常详细，照着做就能把 ProspectClaw 用起来。</p>
+        <p class="tutorial-card-desc">完全没有技术背景？没关系，这份指南专门为你准备。每一步都讲得非常详细，照着做就能把 ProspectClaw 用起来。</p>
         <ol class="tutorial-steps">
           <li class="tutorial-step">
             <div class="tutorial-step-num">1</div>
@@ -388,7 +398,7 @@
         <div class="tutorial-card-kicker">推荐</div>
         <div class="tutorial-card-icon">&#128736;</div>
         <h3 class="tutorial-card-title">进阶指南</h3>
-        <p class="tutorial-card-desc">有一定技术基础，知道命令行和 API Key 是什么？这份指南带你走完从安装到 Agent 上线的完整流程，包括 Skills 管理、日常运维和排障清单。</p>
+        <p class="tutorial-card-desc">有一定技术基础？这份指南带你走完从安装到 Agent 上线的完整流程，包括 Skills 管理、日常运维和排障清单。</p>
         <ol class="tutorial-steps">
           <li class="tutorial-step">
             <div class="tutorial-step-num">1</div>
@@ -422,7 +432,7 @@
       <div class="tutorial-card reveal stagger-3">
         <div class="tutorial-card-icon">&#129302;</div>
         <h3 class="tutorial-card-title">AI 知识库</h3>
-        <p class="tutorial-card-desc">给 AI Agent 看的结构化参考文档。一键复制后喂给钳子助手、ChatGPT、Claude 或任何支持知识库的 AI 平台，让它们能精准回答 ProspectClaw 相关问题。</p>
+        <p class="tutorial-card-desc">给 AI Agent 看的结构化参考文档。一键复制后喂给钳子助手、ChatGPT、Claude 或任何 AI 平台。</p>
         <ol class="tutorial-steps">
           <li class="tutorial-step">
             <div class="tutorial-step-num">1</div>
@@ -456,8 +466,8 @@
   </div>
 </section>
 
-<!-- ═══════ 7. 技术架构 ═══════ -->
-<section class="section" id="tech" style="background: var(--p-bg-alt);">
+<!-- ═══════ 8. 技术架构 ═══════ -->
+<section class="section" id="tech">
   <div class="container">
     <div class="section-header reveal">
       <div class="section-tag">Architecture</div>
@@ -482,20 +492,20 @@
         <div class="tech-card-spotlight"></div>
         <div class="tech-card-icon">&#128274;</div>
         <h3 class="tech-card-title">SQLite 本地存储</h3>
-        <p class="tech-card-desc">数据留在本地，安全可控。无需部署服务器，安装即用，满足金融机构数据合规要求。</p>
+        <p class="tech-card-desc">数据留在本地，安全可控。无需部署服务器，安装即用，满足企业数据合规要求。</p>
       </div>
       <div class="tech-card reveal stagger-4">
         <div class="tech-card-spotlight"></div>
         <div class="tech-card-icon">&#129302;</div>
         <h3 class="tech-card-title">OpenClaw AI 引擎</h3>
-        <p class="tech-card-desc">自研 Agent 框架，支持 OpenAI、Anthropic、Deepseek 等多模型。4 种操作模式，8 种内置工具。</p>
+        <p class="tech-card-desc">自研 Agent 框架，支持 OpenAI、Anthropic、Deepseek 等多模型。4 种操作模式，8 种内置工具，MCP 扩展无上限。</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════ 8. 下载区 ═══════ -->
-<section class="section" id="download">
+<!-- ═══════ 9. 下载区 ═══════ -->
+<section class="section" id="download" style="background: var(--p-bg-alt);">
   <div class="container">
     <div class="section-header reveal">
       <div class="section-tag">Download</div>
@@ -509,7 +519,7 @@
       <div class="download-card reveal stagger-1">
         <div class="download-card-icon">&#128200;</div>
         <h3 class="download-card-title">Invest</h3>
-        <p class="download-card-detail">PE/VC 投资管理全流程</p>
+        <p class="download-card-detail">平台核心 + 投资管理模块</p>
         <p class="download-card-platform">macOS &middot; Apple Silicon / Intel</p>
         <a href="#" class="btn btn-primary">下载 .dmg</a>
       </div>
@@ -517,7 +527,7 @@
       <div class="download-card reveal stagger-2">
         <div class="download-card-icon">&#128218;</div>
         <h3 class="download-card-title">Knowledge</h3>
-        <p class="download-card-detail">Agent 知识库整理与检索</p>
+        <p class="download-card-detail">平台核心 + 知识库首页</p>
         <p class="download-card-platform">macOS &middot; Apple Silicon / Intel</p>
         <a href="#" class="btn btn-primary">下载 .dmg</a>
       </div>
@@ -525,7 +535,7 @@
       <div class="download-card reveal stagger-3">
         <div class="download-card-icon">&#128203;</div>
         <h3 class="download-card-title">SOP</h3>
-        <p class="download-card-detail">Agent 规则与流程文档</p>
+        <p class="download-card-detail">平台核心 + SOP 工作台</p>
         <p class="download-card-platform">macOS &middot; Apple Silicon / Intel</p>
         <a href="#" class="btn btn-primary">下载 .dmg</a>
       </div>
@@ -539,8 +549,8 @@
   </div>
 </section>
 
-<!-- ═══════ 9. 联系我们 ═══════ -->
-<section class="section" id="contact" style="background: var(--p-bg-alt);">
+<!-- ═══════ 10. 联系我们 ═══════ -->
+<section class="section" id="contact">
   <div class="container">
     <div class="section-header reveal">
       <div class="section-tag">Contact Us</div>
@@ -572,7 +582,7 @@
   </div>
 </section>
 
-<!-- ═══════ 10. 页脚 ═══════ -->
+<!-- ═══════ 11. 页脚 ═══════ -->
 <footer class="portal-footer">
   <div class="container">
     <div class="portal-footer-brand">
@@ -580,8 +590,8 @@
       ProspectClaw
     </div>
     <div class="portal-footer-links">
+      <a href="#platform">平台能力</a>
       <a href="#editions">产品版本</a>
-      <a href="#features">功能</a>
       <a href="/beginner-guide.html">零基础指南</a>
       <a href="/usage-guide.html">进阶指南</a>
       <a href="/agent-guide.html">AI 知识库</a>

@@ -1205,6 +1205,34 @@ a:hover { text-decoration: underline; }
 .edition-knowledge { border-top: 3px solid var(--p-gold); }
 .edition-sop { border-top: 3px solid #4B5563; }
 
+/* ── 无限可能 ── */
+.possibilities-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+  margin-top: 40px;
+}
+
+.possibility-card {
+  background: var(--p-bg-card);
+  border: 1px solid var(--p-border-soft);
+  border-radius: 14px;
+  padding: 28px 22px;
+  box-shadow: var(--p-shadow-sm);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.possibility-card:hover { transform: translateY(-3px); box-shadow: var(--p-shadow-md); }
+
+.possibility-icon { font-size: 32px; margin-bottom: 10px; }
+
+.possibility-title {
+  font-size: 15px; font-weight: 700;
+  color: var(--p-text); margin-bottom: 8px;
+}
+
+.possibility-desc {
+  font-size: 13px; color: var(--p-text-secondary);
+  line-height: 1.65;
+}
+
 /* ── 下载区 ── */
 .download-badge {
   display: inline-block; padding: 4px 14px;
@@ -1443,6 +1471,7 @@ a:hover { text-decoration: underline; }
   .guide-final-panel { flex-direction: column; align-items: flex-start; }
   .guide-final-actions { flex-direction: row; flex-wrap: wrap; }
   .editions-grid { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
+  .possibilities-grid { grid-template-columns: repeat(2, 1fr); }
   .download-grid { grid-template-columns: 1fr; max-width: 360px; margin-left: auto; margin-right: auto; }
   .contact-grid { grid-template-columns: 1fr; max-width: 360px; margin-left: auto; margin-right: auto; }
   .why-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1460,6 +1489,7 @@ a:hover { text-decoration: underline; }
   .guide-intro-copy h3 { font-size: 1.35rem; }
   .guide-final-copy h2 { font-size: 1.45rem; }
   .tech-grid { grid-template-columns: 1fr; }
+  .possibilities-grid { grid-template-columns: 1fr; }
   .guide-four-grid { grid-template-columns: 1fr; }
   .why-grid { grid-template-columns: 1fr; }
 }
