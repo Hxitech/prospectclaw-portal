@@ -1770,21 +1770,6 @@ a:hover { text-decoration: underline; }
   .section { padding: 60px 0; }
   .section-title { font-size: 1.6rem; }
   .ai-kb-toolbar { align-items: stretch; flex-direction: column; }
-
-  /* 像素 Hero 移动端 */
-  .hero-pixelscape { height: 320px; }
-  .pixel-window { width: 340px; }
-  .pixel-window-body { padding: 10px 8px; gap: 4px; min-height: 180px; }
-  .pixel-features { gap: 6px; }
-  .pixel-feat { gap: 4px; }
-  .pixel-feat-label { display: none; }
-  .pixel-feat-icon { width: 22px; height: 22px; }
-  .pixel-lobster-art { transform: scale(0.75); }
-  .pixel-badge { padding: 6px 10px; }
-  .pixel-badge-name { font-size: 10px; }
-  .pixel-badge-sub { display: none; }
-  .pixel-badge-icon { font-size: 14px; }
-}
   .guide-mode-switch { display: flex; width: 100%; justify-content: center; }
   .guide-step-card { padding: 22px; }
   .guide-intro-copy h3 { font-size: 1.35rem; }
@@ -1798,13 +1783,6 @@ a:hover { text-decoration: underline; }
 @media (max-width: 480px) {
   .container { padding: 0 16px; }
   .hero-title { font-size: 1.8rem; }
-  .hero-pixelscape { height: 260px; }
-  .pixel-window { width: 280px; }
-  .pixel-lobster-art { transform: scale(0.6); }
-  .pixel-badge-invest { top: 8px; left: 8px; }
-  .pixel-badge-knowledge { top: 8px; right: 8px; }
-  .pixel-badge-sop { bottom: 8px; right: 16px; }
-  .pixel-particle { display: none; }
   .hero-ctas { flex-direction: column; }
   .hero-ctas .btn { width: 100%; justify-content: center; }
   .guide-mode-switch { border-radius: 24px; }
@@ -1814,32 +1792,4 @@ a:hover { text-decoration: underline; }
   .ai-kb-toolbar .btn { width: 100%; justify-content: center; }
   .stats-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
   .stat-card { padding: 20px 12px; }
-}
-
-/* ── Invest 功能展示（usage-guide） ── */
-.guide-invest-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  margin-top: 32px;
-}
-.guide-invest-card {
-  display: flex; flex-direction: column;
-  background: var(--p-bg-card);
-  border: 1px solid var(--p-border-soft);
-  border-radius: 12px; overflow: hidden;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-.guide-invest-card:hover { transform: translateY(-2px); box-shadow: var(--p-shadow-md); }
-.guide-invest-screenshot img { width: 100%; display: block; border-radius: 4px; }
-.guide-invest-info { padding: 16px; }
-.guide-invest-info h3 { font-size: 15px; font-weight: 700; margin-bottom: 6px; color: var(--p-text); }
-.guide-invest-info p { font-size: 13px; color: var(--p-text-secondary); line-height: 1.6; margin: 0; }
-
-@media (max-width: 768px) {
-  .guide-invest-grid { grid-template-columns: 1fr; }
-}
-@media (max-width: 480px) {
-  .guide-invest-info h3 { font-size: 14px; }
-  .guide-invest-info p { font-size: 12px; }
 }
