@@ -54,7 +54,7 @@
     <div class="hero-grid"></div>
   </div>
   <div class="container hero-content">
-    <div class="hero-badge reveal">AI Agent Reference · v1.0.21</div>
+    <div class="hero-badge reveal">AI Agent Reference · v1.0.29</div>
     <h1 class="hero-title reveal">ProspectClaw Agent 知识库</h1>
     <p class="hero-subtitle reveal">
       这是一份专为 AI Agent 设计的结构化参考文档。内容经过优化，便于检索、推理和回答用户关于 ProspectClaw 安装、配置与使用的问题。
@@ -70,15 +70,15 @@
   <div class="container">
 
     <div class="ai-kb-toolbar reveal">
-      <div class="guide-intro-badge">Agent 知识块 v1.0.21</div>
+      <div class="guide-intro-badge">Agent 知识块 v1.0.29</div>
       <button class="btn btn-primary" data-copy-target="agent-kb-full">复制整段给 AI</button>
     </div>
 
     <pre class="ai-kb-block reveal" id="agent-kb-full"># ProspectClaw / OpenClaw 安装与使用知识库（Agent 版）
 
 ## 元信息
-- 文档版本: 2026-03-23
-- 适用产品: ProspectClaw v1.0.21（Invest / Knowledge / SOP 三版本）
+- 文档版本: 2026-03-25
+- 适用产品: ProspectClaw v1.0.29（Invest / Knowledge / SOP 三版本）
 - 目标读者: AI Agent（钳子助手、ChatGPT、Claude 等）
 - 用途: 回答用户关于安装、配置、使用、排障的问题
 
@@ -172,6 +172,30 @@
 | 系统诊断 | /chat-debug | 环境体检、WebSocket 测试 |
 | 自动化 | /automation | 定时任务、模板卡片 |
 | 企业库 | /companies | 投资标的企业管理 |
+| SOP 任务规划 | /sop（任务规划 Tab） | AI 目标拆解、步骤执行、执行监督、流程图 |
+| SOP 归纳 | /sop（SOP 归纳 Tab） | 模式提炼、模板合并、一键应用 |
+| 知识库 | /knowledge | 知识库管理、文档提取、同步 Agent（Knowledge 版） |
+
+---
+
+## 4.1 SOP 任务规划系统（v1.0.29 新增）
+
+### 功能概述
+- 任务规划器：描述大目标 → AI 自动拆解为分步任务（DAG 依赖管理）
+- 执行监督：超时告警、质量门槛（评分 &lt; 阈值阻止通过）、步骤回退（级联重置下游）
+- 流程图可视化：自绘 SVG（Kahn 分层算法）、状态着色、导出 SVG/PNG/Mermaid
+- SOP 归纳器：从已完成计划提炼共性步骤模式，合并为标准模板
+
+### 步骤状态流转
+pending → ready → running → waiting_review → completed / failed / skipped
+
+### 常见问题
+- Q: AI 不可用时能否使用任务规划？
+  A: 可以。内置关键词匹配降级方案（尽调/评估/投决场景），无需 AI 也能自动拆解。
+- Q: 如何回退已完成步骤？
+  A: 点击步骤回退按钮，下游依赖步骤会级联重置为 pending 状态。
+- Q: 如何导出流程图？
+  A: 在任务规划详情页点击"流程图"按钮，支持导出 SVG、PNG（2x 分辨率）或复制 Mermaid 语法。
 
 ---
 

@@ -59,7 +59,7 @@
     <div class="hero-grid"></div>
   </div>
   <div class="container hero-content">
-    <div class="hero-badge reveal">v1.0.21 &middot; OpenClaw AI 底座</div>
+    <div class="hero-badge reveal">v1.0.29 &middot; OpenClaw AI 底座</div>
     <h1 class="hero-title reveal">一套 AI 底座<br>无限工作流可能</h1>
     <p class="hero-subtitle reveal">
       内置 Agent 引擎、多模型聚合、MCP 工具链扩展。<br>
@@ -69,6 +69,12 @@
     <div class="hero-ctas reveal">
       <a href="#download" class="btn btn-primary">下载 ProspectClaw</a>
       <a href="#platform" class="btn btn-outline">探索平台能力</a>
+    </div>
+    <div class="hero-whatsnew reveal">
+      <span class="chip">AI 任务规划器</span>
+      <span class="chip">执行监督</span>
+      <span class="chip">流程图可视化</span>
+      <span class="chip">新手引导系统</span>
     </div>
     <div class="hero-image reveal">
       <div class="hero-pixelscape">
@@ -421,22 +427,44 @@
       </div>
     </div>
 
-    <!-- 评分 + SOP -->
+    <!-- 评分 + SOP 任务规划 -->
     <div class="showcase-row reverse reveal">
       <div class="showcase-text">
-        <div class="showcase-label">Scoring & SOP</div>
-        <h3 class="showcase-title">评分体系 + SOP 流程 — 决策标准化</h3>
+        <div class="showcase-label">Scoring & SOP Task Planner</div>
+        <h3 class="showcase-title">评分体系 + SOP 任务规划 — 从评估到执行的闭环</h3>
         <p class="showcase-desc">
-          灵活配置评分模型，系统化评估每个标的。SOP 流程文档把投资逻辑固化下来，让每个项目都按规范走。
+          灵活配置评分模型，系统化评估每个标的。SOP 任务规划器让你描述一个大目标，AI 自动拆解为可执行步骤——DAG 依赖管理、步骤状态追踪，关联 Deal 与项目池。
         </p>
         <div class="showcase-chips">
           <span class="chip">评分模型</span>
-          <span class="chip">SOP 文档</span>
-          <span class="chip">IC 审批</span>
+          <span class="chip">AI 目标拆解</span>
+          <span class="chip">任务规划</span>
+          <span class="chip">依赖管理</span>
         </div>
       </div>
       <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-scoring.png" alt="评分体系">
+        <img src="/screenshots/desktop-sop-task-planner.png" alt="SOP 任务规划">
+      </div>
+    </div>
+
+    <!-- 流程可视化 + 执行监督 -->
+    <div class="showcase-row reveal">
+      <div class="showcase-text">
+        <div class="showcase-label">Flow Visualization & Supervision</div>
+        <h3 class="showcase-title">流程可视化 + 执行监督 — 看得见的任务进度</h3>
+        <p class="showcase-desc">
+          自绘 SVG 流程图展示步骤依赖与执行状态，超时告警实时检测，质量门槛守护交付标准，步骤回退支持级联重置。导出 SVG / PNG / Mermaid，SOP 归纳器从历史执行中提炼标准模板。
+        </p>
+        <div class="showcase-chips">
+          <span class="chip">SVG 流程图</span>
+          <span class="chip">超时告警</span>
+          <span class="chip">质量门槛</span>
+          <span class="chip">Mermaid 导出</span>
+          <span class="chip">SOP 归纳</span>
+        </div>
+      </div>
+      <div class="showcase-image" data-lightbox>
+        <img src="/screenshots/desktop-sop-flow-diagram.png" alt="流程可视化">
       </div>
     </div>
 
@@ -466,7 +494,7 @@
       <div class="possibility-card reveal stagger-3">
         <div class="possibility-icon">&#128203;</div>
         <h3 class="possibility-title">SOP 即流程</h3>
-        <p class="possibility-desc">把业务流程写成 Agent 能理解的 SOP 文档，Agent 就能按规则执行。规则清晰、流程稳定、行为可追溯。</p>
+        <p class="possibility-desc">描述一个目标，AI 自动拆解为可执行步骤。DAG 依赖管理、执行监督、质量门槛、流程图可视化——从规划到完成，全程可追踪。</p>
       </div>
       <div class="possibility-card reveal stagger-4">
         <div class="possibility-icon">&#128256;</div>
@@ -506,7 +534,7 @@
         <ul class="edition-card-features">
           <li>投资仪表盘 + Deal Pipeline</li>
           <li>企业库 / 联系人 / 投资文档</li>
-          <li>评分 / SOP / 审批 / 自动化</li>
+          <li>评分 / SOP 任务规划 / 审批 / 自动化</li>
           <li>PE/VC 知识库注入助手</li>
           <li>+ 完整平台核心能力</li>
         </ul>
@@ -540,10 +568,10 @@
         <p class="edition-card-tagline">Agent SOP</p>
         <p class="edition-card-desc">以 SOP 工作台为首页，专注 Agent 规则维护与流程文档。规则清晰、流程稳定、Agent 行为可追溯。</p>
         <ul class="edition-card-features">
-          <li>SOP 工作台首页</li>
-          <li>Agent 规则编写与维护</li>
-          <li>流程文档输出</li>
-          <li>Agent / 模型 / Gateway 管理</li>
+          <li>SOP 工作台 + AI 任务规划器</li>
+          <li>执行监督 + 质量门槛 + 步骤回退</li>
+          <li>流程图可视化 + Mermaid 导出</li>
+          <li>SOP 归纳器 + 模板库</li>
           <li>+ 完整平台核心能力</li>
         </ul>
         <div class="edition-card-cta">
@@ -716,7 +744,7 @@
     <div class="section-header reveal">
       <div class="section-tag">Download</div>
       <h2 class="section-title">立即下载 ProspectClaw</h2>
-      <div class="download-badge">v1.0.21</div>
+      <div class="download-badge">v1.0.29</div>
       <p class="section-subtitle">约 10MB 安装包，安装即用，无需额外运行时环境。选择适合你的版本：</p>
     </div>
 

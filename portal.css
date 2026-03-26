@@ -253,6 +253,16 @@ a:hover { text-decoration: underline; }
   flex-wrap: wrap;
 }
 
+.hero-whatsnew {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  justify-content: center; margin-top: 16px;
+}
+.hero-whatsnew .chip {
+  background: var(--p-accent-muted);
+  color: var(--p-accent);
+  font-size: 12px;
+}
+
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 11px 24px; border-radius: 10px;
