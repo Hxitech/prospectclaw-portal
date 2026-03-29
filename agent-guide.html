@@ -54,7 +54,7 @@
     <div class="hero-grid"></div>
   </div>
   <div class="container hero-content">
-    <div class="hero-badge reveal">AI Agent Reference · v1.1.3</div>
+    <div class="hero-badge reveal">AI Agent Reference · v1.1.5</div>
     <h1 class="hero-title reveal">ProspectClaw Agent 知识库</h1>
     <p class="hero-subtitle reveal">
       这是一份专为 AI Agent 设计的结构化参考文档。内容经过优化，便于检索、推理和回答用户关于 ProspectClaw 安装、配置与使用的问题。
@@ -70,7 +70,7 @@
   <div class="container">
 
     <div class="ai-kb-toolbar reveal">
-      <div class="guide-intro-badge">Agent 知识块 v1.1.3</div>
+      <div class="guide-intro-badge">Agent 知识块 v1.1.5</div>
       <button class="btn btn-primary" data-copy-target="agent-kb-full">复制整段给 AI</button>
     </div>
 
@@ -78,7 +78,7 @@
 
 ## 元信息
 - 文档版本: 2026-03-29
-- 适用产品: ProspectClaw v1.1.3（Invest / Knowledge / SOP 三版本）
+- 适用产品: ProspectClaw v1.1.5（Invest / Knowledge / SOP 三版本）
 - 目标读者: AI Agent（钳子助手、ChatGPT、Claude 等）
 - 用途: 回答用户关于安装、配置、使用、排障的问题
 
@@ -175,6 +175,7 @@
 | SOP 任务规划 | /sop（任务规划 Tab） | AI 目标拆解、步骤执行、执行监督、流程图 |
 | SOP 归纳 | /sop（SOP 归纳 Tab） | 模式提炼、模板合并、一键应用 |
 | 知识库 | /knowledge | 知识库管理、文档提取、同步 Agent（Knowledge 版） |
+| Star Office | /star-office | 像素风 AI 办公室看板，iframe 嵌入自托管 Star-Office-UI |
 | EvoScientist 工作台 | /evoscientist?tab=workbench | 运行状态、线程、下一步动作、近期协作、最近线程 |
 | EvoScientist 聊天 | /evoscientist?tab=chat | 任务发送、时间线消息流、中断确认、用户提问 |
 | EvoScientist 设置 | /evoscientist?tab=settings | Provider 配置、API Key、人格调控 |
@@ -310,7 +311,36 @@ pending → ready → running → waiting_review → completed / failed / skippe
 
 ---
 
-## 10. EvoScientist 多科学家协作系统（v1.1.3 新增）
+## 10. v1.1.5 新增功能
+
+### Star Office（像素 AI 办公室看板）
+- 路由：`/star-office`，独立导航区，位于 EvoScientist 和系统设置之间
+- 功能：通过 iframe 嵌入自托管 Star-Office-UI，将 Agent 工作状态实时可视化为像素角色动画
+- 配置：在页面填写 Star-Office-UI 部署地址（默认 http://127.0.0.1:19000），点击连接
+- 部署要求：需要独立部署 Star-Office-UI（Python 3.10+）
+
+### 侧边栏全区可折叠
+- 所有导航区（OPS / CLAW概览 / EvoScientist / Star Office / 系统设置）均支持折叠
+- 折叠状态独立持久化到 localStorage，刷新不丢失
+- 各区有色彩标识的折叠按钮
+
+### 投资仪表盘快速入口（Invest 版）
+- 投资仪表盘新增所有主要功能区的快速跳转卡片
+- 无需通过侧边栏导航即可快速进入各模块
+
+### Gateway 一键修复（v1.1.4）
+- Gateway 启动失败时显示「一键修复」按钮
+- 弹窗执行 `openclaw doctor --fix` 并显示实时日志
+
+### 其他改进（v1.1.4）
+- 开机自启：面板设置新增自启动开关（仅 Tauri 桌面版）
+- Ollama 原生 API 类型支持（不再强制追加 /v1）
+- Gemini 3.1 Pro / Flash / Flash Lite 模型预设
+- 推荐 OpenClaw 版本更新至 2026.3.28
+
+---
+
+## 11. EvoScientist 多科学家协作系统（v1.1.3 新增）
 
 ### 功能概述
 EvoScientist 是 ProspectClaw v1.1.3 新增的多 Agent 协调编排模块，以 Coordinator（总控协调者）为核心，调度多个专属科学家并行协作。
