@@ -54,7 +54,7 @@
     <div class="hero-grid"></div>
   </div>
   <div class="container hero-content">
-    <div class="hero-badge reveal">AI Agent Reference · v1.0.29</div>
+    <div class="hero-badge reveal">AI Agent Reference · v1.1.3</div>
     <h1 class="hero-title reveal">ProspectClaw Agent 知识库</h1>
     <p class="hero-subtitle reveal">
       这是一份专为 AI Agent 设计的结构化参考文档。内容经过优化，便于检索、推理和回答用户关于 ProspectClaw 安装、配置与使用的问题。
@@ -70,15 +70,15 @@
   <div class="container">
 
     <div class="ai-kb-toolbar reveal">
-      <div class="guide-intro-badge">Agent 知识块 v1.0.29</div>
+      <div class="guide-intro-badge">Agent 知识块 v1.1.3</div>
       <button class="btn btn-primary" data-copy-target="agent-kb-full">复制整段给 AI</button>
     </div>
 
     <pre class="ai-kb-block reveal" id="agent-kb-full"># ProspectClaw / OpenClaw 安装与使用知识库（Agent 版）
 
 ## 元信息
-- 文档版本: 2026-03-25
-- 适用产品: ProspectClaw v1.0.29（Invest / Knowledge / SOP 三版本）
+- 文档版本: 2026-03-29
+- 适用产品: ProspectClaw v1.1.3（Invest / Knowledge / SOP 三版本）
 - 目标读者: AI Agent（钳子助手、ChatGPT、Claude 等）
 - 用途: 回答用户关于安装、配置、使用、排障的问题
 
@@ -175,6 +175,10 @@
 | SOP 任务规划 | /sop（任务规划 Tab） | AI 目标拆解、步骤执行、执行监督、流程图 |
 | SOP 归纳 | /sop（SOP 归纳 Tab） | 模式提炼、模板合并、一键应用 |
 | 知识库 | /knowledge | 知识库管理、文档提取、同步 Agent（Knowledge 版） |
+| EvoScientist 工作台 | /evoscientist?tab=workbench | 运行状态、线程、下一步动作、近期协作、最近线程 |
+| EvoScientist 聊天 | /evoscientist?tab=chat | 任务发送、时间线消息流、中断确认、用户提问 |
+| EvoScientist 设置 | /evoscientist?tab=settings | Provider 配置、API Key、人格调控 |
+| EvoScientist 协作架构 | /evoscientist?tab=architecture | 科学家可视化、工具调用统计、协作关系图 |
 
 ---
 
@@ -306,7 +310,41 @@ pending → ready → running → waiting_review → completed / failed / skippe
 
 ---
 
-## 10. 回答原则
+## 10. EvoScientist 多科学家协作系统（v1.1.3 新增）
+
+### 功能概述
+EvoScientist 是 ProspectClaw v1.1.3 新增的多 Agent 协调编排模块，以 Coordinator（总控协调者）为核心，调度多个专属科学家并行协作。
+
+- 路由：`/evoscientist`，通过 `?tab=workbench|chat|settings|architecture` 切换
+- 四个 Tab：工作台（状态总览）、聊天（任务执行）、设置（Provider/人格）、协作架构（可视化）
+- 支持 8 大 LLM Provider：Anthropic、OpenAI、Google GenAI、MiniMax、NVIDIA、Custom OpenAI、Custom Anthropic、Ollama
+- 就绪状态：unsupported → not_installed → needs_config → stopped → starting → ready → error
+
+### AI 人格系统
+EvoScientist Coordinator 拥有四维人格调控：
+- 严谨度（1-5）：证据强调程度，5 = 严格验证
+- 主动性（1-5）：自主行动程度，5 = 强主动权
+- 审慎度（1-5）：风险意识，5 = 高度保守
+- 架构思维（1-5）：系统性思考，5 = 全局架构视角
+
+人格来源：手动配置 / 从钳子助手同步 / 从 OpenClaw 继承 / JSON 导入
+
+### 会话线程管理
+- 支持多个可恢复线程，含上下文快照
+- 线程可绑定到具体工作目录
+- 线程锁定机制防止意外切换
+
+### 常见问题
+- Q: EvoScientist 显示"不支持"是什么意思？
+  A: 当前页面仅在 Tauri 桌面端可用，Web 模式下不支持 EvoScientist。
+- Q: 安装 EvoScientist 需要什么前提？
+  A: 需要配置模型 ID 和对应 Provider 的 API Key，然后点击工作台中的"安装 EvoScientist"按钮。
+- Q: 如何配置科学家 Agent？
+  A: 在"设置"Tab 选择 Provider、填写 API Key，在"协作架构"Tab 查看自动检测到的科学家角色。
+
+---
+
+## 11. 回答原则
 
 ### 当用户问"怎么安装"
 - 先确认操作系统

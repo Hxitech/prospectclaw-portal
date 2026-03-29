@@ -611,6 +611,98 @@
   </div>
 </section>
 
+<!-- ═══════ EvoScientist 多科学家协作 ═══════ -->
+<section class="section" id="evoscientist">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">EvoScientist · v1.1.3</div>
+      <h2 class="section-title">EvoScientist — 多科学家协作系统</h2>
+      <p class="section-subtitle">全平台可用的 AI 多 Agent 编排层，Coordinator 统一调度，多科学家并行协作。</p>
+    </div>
+
+    <!-- 工作台 -->
+    <div class="showcase-row reveal">
+      <div class="showcase-text">
+        <div class="showcase-label">Workbench Tab</div>
+        <h3 class="showcase-title">工作台 — 运行状态总览</h3>
+        <p class="showcase-desc">
+          实时查看 EvoScientist 运行状态、当前线程、工作目录。"下一步"卡片根据当前状态给出操作建议，"近期协作"汇总最近任务，"最近线程"支持一键恢复上次对话。
+        </p>
+        <div class="showcase-chips">
+          <span class="chip">就绪状态检测</span>
+          <span class="chip">线程恢复</span>
+          <span class="chip">一键安装</span>
+        </div>
+      </div>
+      <div class="showcase-image" data-lightbox>
+        <img src="/screenshots/desktop-evoscientist-workbench.png" alt="EvoScientist 工作台">
+      </div>
+    </div>
+
+    <!-- 设置 -->
+    <div class="showcase-row reverse reveal">
+      <div class="showcase-text">
+        <div class="showcase-label">Settings Tab</div>
+        <h3 class="showcase-title">设置 — Provider 与人格配置</h3>
+        <p class="showcase-desc">
+          支持 8 大 LLM Provider（Anthropic、OpenAI、Google GenAI、MiniMax、NVIDIA 等）。人格系统四维调控 Coordinator 行为：严谨度、主动性、审慎度、架构思维，从 1 到 5 级自由设定。可从钳子助手同步人格或从文件导入。
+        </p>
+        <div class="showcase-chips">
+          <span class="chip">8 大 Provider</span>
+          <span class="chip">四维人格</span>
+          <span class="chip">人格同步/导入</span>
+        </div>
+      </div>
+      <div class="showcase-image" data-lightbox>
+        <img src="/screenshots/desktop-evoscientist-settings.png" alt="EvoScientist 设置">
+      </div>
+    </div>
+
+    <!-- 聊天 -->
+    <div class="showcase-row reveal">
+      <div class="showcase-text">
+        <div class="showcase-label">Chat Tab</div>
+        <h3 class="showcase-title">聊天 — 任务执行与时间线</h3>
+        <p class="showcase-desc">
+          向 Coordinator 发送任务，实时查看流式响应、思考块、工具调用结果和子 Agent 事件。支持中断确认和用户提问表单，全流程可追踪与干预。
+        </p>
+        <div class="showcase-chips">
+          <span class="chip">流式消息</span>
+          <span class="chip">工具调用追踪</span>
+          <span class="chip">中断确认</span>
+        </div>
+      </div>
+      <div class="showcase-image" data-lightbox>
+        <img src="/screenshots/desktop-evoscientist-chat.png" alt="EvoScientist 聊天">
+      </div>
+    </div>
+
+    <!-- 协作架构 -->
+    <div class="showcase-row reverse reveal">
+      <div class="showcase-text">
+        <div class="showcase-label">Architecture Tab</div>
+        <h3 class="showcase-title">协作架构 — 科学家关系可视化</h3>
+        <p class="showcase-desc">
+          自动识别并分类协作中的科学家角色（Reviewer、Researcher、Executor 等），展示 Coordinator 与各科学家的关系图，统计工具调用、中断次数、子 Agent 事件等协作指标。
+        </p>
+        <div class="showcase-chips">
+          <span class="chip">角色自动分类</span>
+          <span class="chip">协作关系图</span>
+          <span class="chip">协作统计</span>
+        </div>
+      </div>
+      <div class="showcase-image" data-lightbox>
+        <img src="/screenshots/desktop-evoscientist-architecture.png" alt="EvoScientist 协作架构">
+      </div>
+    </div>
+
+    <div class="guide-callout reveal">
+      <div class="guide-callout-title">使用 EvoScientist 的前提</div>
+      <p>需要先完成基础配置（模型 + Gateway），然后在 EvoScientist 设置 Tab 配置 Provider 和 API Key，再点击工作台中的"安装 EvoScientist"按钮完成安装。安装完成后点击"启动 Bridge"即可开始使用。注意：EvoScientist 仅在 Tauri 桌面端可用，Web 模式不支持。</p>
+    </div>
+  </div>
+</section>
+
 <section class="section guide-final">
   <div class="container">
     <div class="guide-final-panel reveal">
