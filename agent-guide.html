@@ -54,7 +54,7 @@
     <div class="hero-grid"></div>
   </div>
   <div class="container hero-content">
-    <div class="hero-badge reveal">AI Agent Reference · v1.1.6</div>
+    <div class="hero-badge reveal">AI Agent Reference · v1.1.7</div>
     <h1 class="hero-title reveal">ProspectClaw Agent 知识库</h1>
     <p class="hero-subtitle reveal">
       这是一份专为 AI Agent 设计的结构化参考文档。内容经过优化，便于检索、推理和回答用户关于 ProspectClaw 安装、配置与使用的问题。
@@ -70,7 +70,7 @@
   <div class="container">
 
     <div class="ai-kb-toolbar reveal">
-      <div class="guide-intro-badge">Agent 知识块 v1.1.6</div>
+      <div class="guide-intro-badge">Agent 知识块 v1.1.7</div>
       <button class="btn btn-primary" data-copy-target="agent-kb-full">复制整段给 AI</button>
     </div>
 
@@ -78,7 +78,7 @@
 
 ## 元信息
 - 文档版本: 2026-03-29
-- 适用产品: ProspectClaw v1.1.6（Invest / Knowledge / SOP 三版本）
+- 适用产品: ProspectClaw v1.1.7（Invest / Knowledge / SOP 三版本）
 - 目标读者: AI Agent（钳子助手、ChatGPT、Claude 等）
 - 用途: 回答用户关于安装、配置、使用、排障的问题
 
@@ -312,7 +312,36 @@ pending → ready → running → waiting_review → completed / failed / skippe
 
 ---
 
-## 10. v1.1.6 新增功能
+## 10. v1.1.7 新增功能
+
+### Agentic Swarm 可视化面板
+- 位于 EvoScientist 协作架构 Tab
+- Coordinator 中心脉冲 + 轨道式科学家节点 + Dash 动画连接线 + 浮动粒子
+- 实时展示多科学家协作拓扑
+
+### Agent 身份系统（5 种原型）
+| 原型代号 | 角色倾向 | 匹配关键词 |
+|----------|----------|------------|
+| 审慎·校验 | 复核 Scientist | review / audit / verify |
+| 探索·检索 | 研究 Scientist | research / search / analysis |
+| 收束·成文 | 汇总 Scientist | summary / report / write |
+| 落地·操作 | 执行 Scientist | code / implement / fix |
+| 焦点·协作 | 专题 Scientist | 默认匹配 |
+
+每种原型配有 8x8 像素风 CSS 头像、专属配色和角色徽章。
+
+### OpenClaw Gateway 导出面板
+- EvoScientist 任务完成后显示导出面板
+- 支持 DOCX / HTML / PPTX 三种格式
+- 通过 WebSocket RPC 发送到 OpenClaw Agent 接力转换
+- 实时检测 Gateway 连接状态
+
+### 修复
+- 中断/提问审批卡死：interrupt 和 ask_user 事件正确重置发送状态
+
+---
+
+## 11. v1.1.6 新增功能
 
 ### 全局概览仪表盘
 - 路由：`/overview`，作为所有版本的默认首页
@@ -336,7 +365,7 @@ pending → ready → running → waiting_review → completed / failed / skippe
 
 ---
 
-## 11. v1.1.5 新增功能
+## 12. v1.1.5 新增功能
 
 ### Star Office（像素 AI 办公室看板）
 - 路由：`/star-office`，独立导航区，位于 EvoScientist 和系统设置之间
@@ -365,7 +394,7 @@ pending → ready → running → waiting_review → completed / failed / skippe
 
 ---
 
-## 12. EvoScientist 多科学家协作系统（v1.1.3 新增）
+## 13. EvoScientist 多科学家协作系统（v1.1.3 新增）
 
 ### 功能概述
 EvoScientist 是 ProspectClaw v1.1.3 新增的多 Agent 协调编排模块，以 Coordinator（总控协调者）为核心，调度多个专属科学家并行协作。
@@ -399,7 +428,7 @@ EvoScientist Coordinator 拥有四维人格调控：
 
 ---
 
-## 13. 回答原则
+## 14. 回答原则
 
 ### 当用户问"怎么安装"
 - 先确认操作系统
