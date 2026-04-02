@@ -611,6 +611,57 @@
   </div>
 </section>
 
+<!-- ═══════ v1.2.0 ClawSwarm ═══════ -->
+<section class="section" id="clawswarm">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">ClawSwarm · v1.2.0</div>
+      <h2 class="section-title">ClawSwarm — 多智能体任务编排</h2>
+      <p class="section-subtitle">描述目标，LLM 自动拆解为 DAG 步骤计划，直连主流 LLM，无需 Gateway。</p>
+    </div>
+
+    <!-- 任务拆解 + DAG -->
+    <div class="showcase-row reveal">
+      <div class="showcase-text">
+        <div class="showcase-label">Task Decomposition & DAG Visualization</div>
+        <h3 class="showcase-title">任务拆解 + DAG 可视化</h3>
+        <p class="showcase-desc">
+          输入任务目标后，LLM 自动拆解为多步骤计划。Kahn 拓扑排序管理步骤依赖，SVG 分层布局可视化面板按执行状态着色（待执行/进行中/已完成/失败），支持交互式选择和详情查看。内置 5 个预设模板（市场调研、竞品分析、技术方案、内容创作、项目启动）。
+        </p>
+        <div class="showcase-chips">
+          <span class="chip">LLM 自动拆解</span>
+          <span class="chip">DAG 依赖管理</span>
+          <span class="chip">SVG 可视化</span>
+          <span class="chip">5 个预设模板</span>
+        </div>
+      </div>
+      <div class="showcase-image" data-lightbox>
+        <img src="/screenshots/desktop-overview.png" alt="ClawSwarm 任务编排">
+      </div>
+    </div>
+
+    <!-- 直连 LLM + 工作区 -->
+    <div class="showcase-row reverse reveal">
+      <div class="showcase-text">
+        <div class="showcase-label">Direct LLM & Workspace</div>
+        <h3 class="showcase-title">直连 LLM + 工作区系统</h3>
+        <p class="showcase-desc">
+          Rust 后端直连 Anthropic / OpenAI / Gemini API，无需经过 OpenClaw Gateway。软沙盒工作区支持文件夹选择和任务目录自动创建，每个任务可绑定独立工作目录。一键 AI 配置向导同步写入 ClawSwarm 作为第 4 个目标系统。
+        </p>
+        <div class="showcase-chips">
+          <span class="chip">直连 3 大 LLM</span>
+          <span class="chip">无需 Gateway</span>
+          <span class="chip">软沙盒工作区</span>
+          <span class="chip">一键配置同步</span>
+        </div>
+      </div>
+      <div class="showcase-image" data-lightbox>
+        <img src="/screenshots/desktop-dashboard.png" alt="直连 LLM 配置">
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ═══════ v1.1.8 新功能 ═══════ -->
 <section class="section" id="v118">
   <div class="container">

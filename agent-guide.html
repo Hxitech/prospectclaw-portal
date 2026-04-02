@@ -54,7 +54,7 @@
     <div class="hero-grid"></div>
   </div>
   <div class="container hero-content">
-    <div class="hero-badge reveal">AI Agent Reference · v1.1.8</div>
+    <div class="hero-badge reveal">AI Agent Reference · v1.2.0</div>
     <h1 class="hero-title reveal">ProspectClaw Agent 知识库</h1>
     <p class="hero-subtitle reveal">
       这是一份专为 AI Agent 设计的结构化参考文档。内容经过优化，便于检索、推理和回答用户关于 ProspectClaw 安装、配置与使用的问题。
@@ -70,7 +70,7 @@
   <div class="container">
 
     <div class="ai-kb-toolbar reveal">
-      <div class="guide-intro-badge">Agent 知识块 v1.1.8</div>
+      <div class="guide-intro-badge">Agent 知识块 v1.2.0</div>
       <button class="btn btn-primary" data-copy-target="agent-kb-full">复制整段给 AI</button>
     </div>
 
@@ -78,7 +78,7 @@
 
 ## 元信息
 - 文档版本: 2026-03-29
-- 适用产品: ProspectClaw v1.1.8（Invest / Knowledge / SOP 三版本）
+- 适用产品: ProspectClaw v1.2.0（Invest / Knowledge / SOP 三版本）
 - 目标读者: AI Agent（钳子助手、ChatGPT、Claude 等）
 - 用途: 回答用户关于安装、配置、使用、排障的问题
 
@@ -176,6 +176,7 @@
 | SOP 归纳 | /sop（SOP 归纳 Tab） | 模式提炼、模板合并、一键应用 |
 | 知识库 | /knowledge | 知识库管理、文档提取、同步 Agent（Knowledge 版） |
 | 全局概览 | /overview | 所有版本的默认首页，展示全部功能板块快速入口卡片 |
+| ClawSwarm | /clawswarm | 多智能体任务编排，LLM 拆解 → DAG 审核 → 可视化 → 执行 |
 | Star Office | /star-office | 像素风 AI 办公室看板，iframe 嵌入自托管 Star-Office-UI |
 | EvoScientist 工作台 | /evoscientist?tab=workbench | 运行状态、线程、下一步动作、近期协作、最近线程 |
 | EvoScientist 聊天 | /evoscientist?tab=chat | 任务发送、时间线消息流、中断确认、用户提问 |
@@ -312,7 +313,56 @@ pending → ready → running → waiting_review → completed / failed / skippe
 
 ---
 
-## 10. v1.1.8 新增功能
+## 10. v1.2.0 ClawSwarm 多智能体任务编排
+
+### 功能概述
+ClawSwarm 是 v1.2.0 新增的多智能体任务编排模块，独立于 EvoScientist。用户输入任务目标后，LLM 自动拆解为多步骤计划，以 DAG（有向无环图）管理步骤依赖关系。
+
+- 路由：`/clawswarm`
+- 核心能力：任务拆解 → DAG 审核 → 可视化 → 执行跟踪
+
+### 任务拆解引擎
+- Kahn 拓扑排序 + DAG 验证
+- 5 个预设任务模板：市场调研、竞品分析、技术方案、内容创作、项目启动
+- 支持自定义步骤编辑和依赖调整
+
+### DAG 可视化
+- SVG 拓扑面板，分层布局算法
+- 步骤状态着色：灰色（待执行）/ 蓝色（进行中）/ 绿色（已完成）/ 红色（失败）
+- 交互式步骤选择和详情查看
+
+### 直连 LLM 对话
+- Rust 后端 `swarm_chat_complete` 命令
+- 支持直连 Anthropic / OpenAI / Gemini API（无需经过 Gateway）
+- 前端双通道策略：直连优先 + Gateway 实验性备选
+
+### 工作区系统
+- 软沙盒工作区，支持文件夹选择
+- 任务目录自动创建，状态持久化到 localStorage
+
+### 常见问题
+- Q: ClawSwarm 和 EvoScientist 有什么区别？
+  A: EvoScientist 是多科学家协作系统（Coordinator 调度 Scientists），适合需要多角色分工的复杂任务。ClawSwarm 是任务拆解编排系统（DAG 步骤管理），适合需要将大目标拆解为可执行步骤的场景。两者互补。
+- Q: ClawSwarm 需要 OpenClaw Gateway 吗？
+  A: 不需要。ClawSwarm 支持直连 LLM API，无需启动 Gateway。但也可以选择通过 Gateway 调用（实验性）。
+- Q: 如何配置 ClawSwarm 的 LLM？
+  A: 通过一键 AI 配置向导（v1.1.9+），ClawSwarm 是第 4 个目标系统，会自动同步配置。
+
+---
+
+## 11. v1.1.9 新增功能
+
+### 一键 AI 配置
+- 投资工作台 4 步向导：选服务商 → 填 API Key → 选模型 → 确认
+- 一键写入钳子助手、OpenClaw、EvoScientist、ClawSwarm 四个系统
+
+### 渠道插件版本检测
+- 飞书/钉钉插件在配置弹窗中自动检测当前版本和 npm 最新版本
+- OpenClaw 版本变更后自动重装渠道插件
+
+---
+
+## 12. v1.1.8 + v1.1.7 新增功能
 
 ### EvoScientist 导出路径选择器
 - 桌面端导出面板新增「选择文件夹」按钮
@@ -336,7 +386,7 @@ pending → ready → running → waiting_review → completed / failed / skippe
 
 ---
 
-## 11. v1.1.7 新增功能
+## 13. v1.1.6 + v1.1.5 新增功能
 
 ### Agentic Swarm 可视化面板
 - 位于 EvoScientist 协作架构 Tab
@@ -365,7 +415,7 @@ pending → ready → running → waiting_review → completed / failed / skippe
 
 ---
 
-## 12. v1.1.6 新增功能
+### v1.1.6 新增功能
 
 ### 全局概览仪表盘
 - 路由：`/overview`，作为所有版本的默认首页
@@ -389,7 +439,7 @@ pending → ready → running → waiting_review → completed / failed / skippe
 
 ---
 
-## 13. v1.1.5 新增功能
+### v1.1.5 新增功能
 
 ### Star Office（像素 AI 办公室看板）
 - 路由：`/star-office`，独立导航区，位于 EvoScientist 和系统设置之间
