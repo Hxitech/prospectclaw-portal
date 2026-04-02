@@ -54,7 +54,7 @@
     <div class="hero-grid"></div>
   </div>
   <div class="container hero-content">
-    <div class="hero-badge reveal">进阶使用指南 · 有一定基础版</div>
+    <div class="hero-badge reveal">进阶使用指南 · v1.2.0</div>
     <h1 class="hero-title reveal">ProspectClaw 进阶使用指南</h1>
     <p class="hero-subtitle reveal">
       这份指南适合有一定技术基础的用户——你知道命令行是什么，用过各种软件，只是没用过 ProspectClaw。<br>
@@ -662,128 +662,27 @@
   </div>
 </section>
 
-<!-- ═══════ v1.1.8 新功能 ═══════ -->
-<section class="section" id="v118">
+<!-- ═══════ 更多功能亮点 ═══════ -->
+<section class="section" id="more-features">
   <div class="container">
     <div class="section-header reveal">
-      <div class="section-tag">v1.1.8 New Features</div>
-      <h2 class="section-title">v1.1.8 新功能</h2>
-      <p class="section-subtitle">导出路径选择、Star Office 健康监控、Dashboard EvoScientist 入口、投资引导。</p>
+      <div class="section-tag">More Highlights</div>
+      <h2 class="section-title">更多功能亮点</h2>
+      <p class="section-subtitle">全局概览、Swarm 可视化、一键 AI 配置、文档导出……持续迭代的能力矩阵。</p>
     </div>
 
-    <!-- 导出路径 + Dashboard 入口 -->
+    <!-- 全局概览 + Flyout 导航 -->
     <div class="showcase-row reveal">
       <div class="showcase-text">
-        <div class="showcase-label">Export Path Picker & Dashboard Entry</div>
-        <h3 class="showcase-title">导出路径选择器 + Dashboard 入口</h3>
+        <div class="showcase-label">Overview & Navigation</div>
+        <h3 class="showcase-title">全局概览 + Flyout 弹出导航</h3>
         <p class="showcase-desc">
-          桌面端导出面板新增「选择文件夹」按钮，DOCX/HTML/PPTX 自动存入指定目录。仪表盘新增 EvoScientist 概览卡片和 OpenClaw vs EvoScientist 双层架构说明面板。
-        </p>
-        <div class="showcase-chips">
-          <span class="chip">导出路径选择</span>
-          <span class="chip">Dashboard 入口卡片</span>
-          <span class="chip">架构说明面板</span>
-        </div>
-      </div>
-      <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-overview.png" alt="Dashboard EvoScientist 入口">
-      </div>
-    </div>
-
-    <!-- Star Office 健康监控 -->
-    <div class="showcase-row reverse reveal">
-      <div class="showcase-text">
-        <div class="showcase-label">Star Office Health Monitoring</div>
-        <h3 class="showcase-title">Star Office 健康监控 + 引导系统</h3>
-        <p class="showcase-desc">
-          Star Office 页面顶栏新增连接状态指示点（绿/黄/红）、错误横幅和重连按钮。健康探测改用 curl 优先 + python3 后备。invest-guide 新增 EvoScientist 引导步骤，帮助 FAB 增加上下文帮助入口。
-        </p>
-        <div class="showcase-chips">
-          <span class="chip">健康状态指示</span>
-          <span class="chip">错误横幅</span>
-          <span class="chip">curl+python 探测</span>
-          <span class="chip">EvoScientist 引导</span>
-        </div>
-      </div>
-      <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-star-office-deploy.png" alt="Star Office 健康监控">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════ v1.1.7 新功能 ═══════ -->
-<section class="section" id="v117">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-tag">v1.1.7 New Features</div>
-      <h2 class="section-title">v1.1.7 新功能</h2>
-      <p class="section-subtitle">Agentic Swarm 可视化、Agent 身份系统、OpenClaw Gateway 文档导出。</p>
-    </div>
-
-    <!-- Swarm 可视化 -->
-    <div class="showcase-row reveal">
-      <div class="showcase-text">
-        <div class="showcase-label">Agentic Swarm Visualization</div>
-        <h3 class="showcase-title">Agentic Swarm — 协作拓扑可视化</h3>
-        <p class="showcase-desc">
-          EvoScientist 协作架构 Tab 新增 Swarm 动画面板。Coordinator 中心脉冲呼吸光效，轨道式排列的科学家节点按角色配色，Dash 动画连接线表示数据流动，浮动粒子增强科技感。实时展示多科学家协作拓扑。
-        </p>
-        <div class="showcase-chips">
-          <span class="chip">Coordinator 脉冲</span>
-          <span class="chip">轨道节点</span>
-          <span class="chip">Dash 连接线</span>
-          <span class="chip">浮动粒子</span>
-        </div>
-      </div>
-      <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-evoscientist-architecture.png" alt="Agentic Swarm 可视化">
-      </div>
-    </div>
-
-    <!-- Agent 身份 + 导出 -->
-    <div class="showcase-row reverse reveal">
-      <div class="showcase-text">
-        <div class="showcase-label">Agent Identity & OpenClaw Export</div>
-        <h3 class="showcase-title">身份系统 + OpenClaw 文档导出</h3>
-        <p class="showcase-desc">
-          5 种科学家原型（审慎·校验 / 探索·检索 / 收束·成文 / 落地·操作 / 焦点·协作），每种配有 8x8 像素风 CSS 头像。任务完成后可将 Markdown 输出一键发送到 OpenClaw Agent，接力生成 DOCX / HTML / PPTX。
-        </p>
-        <div class="showcase-chips">
-          <span class="chip">5 种原型</span>
-          <span class="chip">像素头像</span>
-          <span class="chip">DOCX 导出</span>
-          <span class="chip">PPTX 导出</span>
-        </div>
-      </div>
-      <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-evoscientist-workbench.png" alt="Agent 身份系统">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════ v1.1.6 新功能 ═══════ -->
-<section class="section" id="v116" style="background: var(--p-bg-alt);">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-tag">v1.1.6 New Features</div>
-      <h2 class="section-title">v1.1.6 新功能</h2>
-      <p class="section-subtitle">全局概览仪表盘、Flyout 弹出导航、Star Office 一键部署、投资区可折叠。</p>
-    </div>
-
-    <!-- 全局概览 -->
-    <div class="showcase-row reveal">
-      <div class="showcase-text">
-        <div class="showcase-label">Global Overview Dashboard</div>
-        <h3 class="showcase-title">全局概览 — 所有板块尽在眼前</h3>
-        <p class="showcase-desc">
-          v1.1.6 新增的默认首页，以卡片网格展示当前版本可用的全部功能板块。每张卡片含板块名称、描述和关键统计，点击即跳转。三个产品版本均以全局概览为默认主页。
+          默认首页以卡片网格展示全部功能板块，三版本统一入口。Flyout 模式下侧边栏各区显示为紧凑行，hover 时子菜单从右侧弹出浮层，一键切换导航风格。
         </p>
         <div class="showcase-chips">
           <span class="chip">默认首页</span>
-          <span class="chip">Profile 动态适配</span>
-          <span class="chip">服务/Agent 统计</span>
+          <span class="chip">Profile 适配</span>
+          <span class="chip">Flyout 导航</span>
         </div>
       </div>
       <div class="showcase-image" data-lightbox>
@@ -791,23 +690,42 @@
       </div>
     </div>
 
-    <!-- Flyout 导航 + 一键部署 -->
+    <!-- Swarm 可视化 + Agent 身份 + 文档导出 -->
     <div class="showcase-row reverse reveal">
       <div class="showcase-text">
-        <div class="showcase-label">Flyout Nav & One-Click Deploy</div>
-        <h3 class="showcase-title">Flyout 导航 + Star Office 一键部署</h3>
+        <div class="showcase-label">Swarm & Export</div>
+        <h3 class="showcase-title">Swarm 可视化 + 身份系统 + 文档导出</h3>
         <p class="showcase-desc">
-          Flyout 弹出式导航模式：sidebar 各区显示为紧凑行，hover 时子菜单从右侧弹出浮层，通过侧边栏底部按钮切换。Star Office 一键部署：桌面端自动执行 git clone、pip install、启动服务，带步骤进度 UI。
+          Agentic Swarm 动画面板实时展示多科学家协作拓扑。5 种科学家原型配有像素风 CSS 头像和角色徽章。任务完成后可一键发送到 OpenClaw Agent，接力生成 DOCX / HTML / PPTX。
         </p>
         <div class="showcase-chips">
-          <span class="chip">弹出式导航</span>
-          <span class="chip">一键切换</span>
-          <span class="chip">一键部署</span>
-          <span class="chip">步骤进度 UI</span>
+          <span class="chip">Swarm 拓扑</span>
+          <span class="chip">5 种原型</span>
+          <span class="chip">DOCX/PPTX 导出</span>
         </div>
       </div>
       <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-star-office-deploy.png" alt="Star Office 一键部署">
+        <img src="/screenshots/desktop-evoscientist-architecture.png" alt="Swarm 可视化">
+      </div>
+    </div>
+
+    <!-- 一键 AI 配置 + Star Office -->
+    <div class="showcase-row reveal">
+      <div class="showcase-text">
+        <div class="showcase-label">Quick Config & Star Office</div>
+        <h3 class="showcase-title">一键 AI 配置 + Star Office</h3>
+        <p class="showcase-desc">
+          4 步向导一键配置钳子助手 + OpenClaw + EvoScientist + ClawSwarm 四个系统。Star Office 像素看板将 Agent 工作状态可视化为像素角色动画，支持一键部署和健康监控。
+        </p>
+        <div class="showcase-chips">
+          <span class="chip">4 步向导</span>
+          <span class="chip">四系统同步</span>
+          <span class="chip">像素看板</span>
+          <span class="chip">健康监控</span>
+        </div>
+      </div>
+      <div class="showcase-image" data-lightbox>
+        <img src="/screenshots/desktop-star-office.png" alt="Star Office">
       </div>
     </div>
   </div>
