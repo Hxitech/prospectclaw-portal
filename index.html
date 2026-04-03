@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ProspectClaw — 本地化 AI 桌面工作台</title>
-  <meta name="description" content="ProspectClaw 是基于 Tauri v2 + OpenClaw 的本地化 AI 桌面工作台。内置 Agent 引擎、模型池、MCP 工具链，提供 Invest / Knowledge / SOP 三个版本，让你自由定义智能工作流。">
+  <meta name="description" content="ProspectClaw 是基于 Tauri v2 + OpenClaw 的本地化 AI 桌面工作台。投资管理、知识库、SOP 全功能合一，内置 Agent 引擎、模型池、MCP 工具链，支持应用内热更新。">
   <meta property="og:title" content="ProspectClaw — 本地化 AI 桌面工作台">
-  <meta property="og:description" content="一套 AI 底座，无限工作流可能。Agent 编排、模型聚合、MCP 扩展——选一个版本开始，用 OpenClaw 定义属于你的智能工作台。">
+  <meta property="og:description" content="投资管理 · 知识库 · SOP · AI 助手 · 多智能体编排，全功能合一。支持应用内热更新，无需重装即可升级。">
   <meta property="og:type" content="website">
   <link rel="icon" type="image/png" href="/images/prospectclaw-tab-logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -164,26 +164,26 @@
           </div>
         </div>
 
-        <!-- 三个版本悬浮卡片 -->
+        <!-- 核心能力悬浮卡片 -->
         <div class="pixel-badge pixel-badge-invest">
           <div class="pixel-badge-icon">📊</div>
           <div class="pixel-badge-info">
             <div class="pixel-badge-name">Invest</div>
-            <div class="pixel-badge-sub">投资工作台</div>
+            <div class="pixel-badge-sub">投资管理</div>
           </div>
         </div>
         <div class="pixel-badge pixel-badge-knowledge">
           <div class="pixel-badge-icon">🧠</div>
           <div class="pixel-badge-info">
             <div class="pixel-badge-name">Knowledge</div>
-            <div class="pixel-badge-sub">Agent 知识库</div>
+            <div class="pixel-badge-sub">知识库</div>
           </div>
         </div>
         <div class="pixel-badge pixel-badge-sop">
           <div class="pixel-badge-icon">📋</div>
           <div class="pixel-badge-info">
             <div class="pixel-badge-name">SOP</div>
-            <div class="pixel-badge-sub">Agent SOP</div>
+            <div class="pixel-badge-sub">流程引擎</div>
           </div>
         </div>
 
@@ -630,65 +630,54 @@
 <section class="section" id="editions">
   <div class="container">
     <div class="section-header reveal">
-      <div class="section-tag">Product Editions</div>
-      <h2 class="section-title">三个版本，按场景选择</h2>
-      <p class="section-subtitle">同一套 OpenClaw 底座，按使用场景裁剪首页与专属模块。所有版本共享完整的平台核心能力。</p>
+      <div class="section-tag">All-in-One</div>
+      <h2 class="section-title">一个应用，全部能力</h2>
+      <p class="section-subtitle">投资管理、知识库、SOP 全功能合一。同一套 OpenClaw 底座，无需选择版本，安装即拥有全部能力。</p>
     </div>
 
     <div class="editions-grid">
       <!-- Invest -->
       <div class="edition-card edition-invest reveal stagger-1">
         <div class="edition-card-icon">&#128200;</div>
-        <h3 class="edition-card-title">ProspectClaw Invest</h3>
-        <p class="edition-card-tagline">投资工作台</p>
-        <p class="edition-card-desc">在平台核心能力基础上，增加 11 个投资管理模块。面向 PE/VC 团队，覆盖项目发现→尽调→IC 审议→投后管理全链路。</p>
+        <h3 class="edition-card-title">投资管理</h3>
+        <p class="edition-card-tagline">PE/VC 全链路</p>
+        <p class="edition-card-desc">11 个投资管理模块，覆盖项目发现→尽调→IC 审议→投后管理全链路。PE/VC 知识库注入助手。</p>
         <ul class="edition-card-features">
           <li>投资仪表盘 + Deal Pipeline</li>
           <li>企业库 / 联系人 / 投资文档</li>
-          <li>评分 / SOP 任务规划 / 审批 / 自动化</li>
-          <li>PE/VC 知识库注入助手</li>
-          <li>+ 完整平台核心能力</li>
+          <li>评分 / 审批 / 自动化</li>
         </ul>
-        <div class="edition-card-cta">
-          <a href="#download" class="btn btn-primary">下载 Invest</a>
-        </div>
       </div>
 
       <!-- Knowledge -->
       <div class="edition-card edition-knowledge reveal stagger-2">
         <div class="edition-card-icon">&#128218;</div>
-        <h3 class="edition-card-title">ProspectClaw Knowledge</h3>
-        <p class="edition-card-tagline">Agent 知识库</p>
-        <p class="edition-card-desc">以钳子助手为首页，专注 Agent 知识库构建与检索配置。资料可检索、规则可维护、Agent 可复用。</p>
+        <h3 class="edition-card-title">知识库</h3>
+        <p class="edition-card-tagline">Agent 知识管理</p>
+        <p class="edition-card-desc">钳子助手 + Agent 知识库构建与检索配置。资料可检索、规则可维护、Agent 可复用。</p>
         <ul class="edition-card-features">
-          <li>助手首页，开箱即用</li>
+          <li>AI 助手，开箱即用</li>
           <li>知识库整理与检索配置</li>
-          <li>Agent / 模型 / Gateway 管理</li>
           <li>频道化会话管理</li>
-          <li>+ 完整平台核心能力</li>
         </ul>
-        <div class="edition-card-cta">
-          <a href="#download" class="btn btn-primary">下载 Knowledge</a>
-        </div>
       </div>
 
       <!-- SOP -->
       <div class="edition-card edition-sop reveal stagger-3">
         <div class="edition-card-icon">&#128203;</div>
-        <h3 class="edition-card-title">ProspectClaw SOP</h3>
-        <p class="edition-card-tagline">Agent SOP</p>
-        <p class="edition-card-desc">以 SOP 工作台为首页，专注 Agent 规则维护与流程文档。规则清晰、流程稳定、Agent 行为可追溯。</p>
+        <h3 class="edition-card-title">SOP 引擎</h3>
+        <p class="edition-card-tagline">流程自动化</p>
+        <p class="edition-card-desc">SOP 工作台 + AI 任务规划器。规则清晰、流程稳定、Agent 行为可追溯。</p>
         <ul class="edition-card-features">
-          <li>SOP 工作台 + AI 任务规划器</li>
           <li>执行监督 + 质量门槛 + 步骤回退</li>
           <li>流程图可视化 + Mermaid 导出</li>
           <li>SOP 归纳器 + 模板库</li>
-          <li>+ 完整平台核心能力</li>
         </ul>
-        <div class="edition-card-cta">
-          <a href="#download" class="btn btn-primary">下载 SOP</a>
-        </div>
       </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 32px;" class="reveal">
+      <a href="#download" class="btn btn-primary" style="font-size: 16px; padding: 14px 40px;">下载 ProspectClaw</a>
     </div>
   </div>
 </section>
@@ -893,6 +882,21 @@
     <div class="changelog-timeline">
       <!-- v1.2.0 -->
       <div class="changelog-entry changelog-entry-latest reveal">
+        <div class="changelog-dot"></div>
+        <div class="changelog-version">v1.2.2-fix2<span class="changelog-date">2026-04-03</span></div>
+        <div class="changelog-body">
+          <ul>
+            <li><strong>全功能合一</strong> — 投资管理 + 知识库 + SOP 合并为统一 ProspectClaw，一个安装包包含全部能力</li>
+            <li><strong>应用内热更新</strong> — "关于"页自动检测新版本，一键更新前端，SHA-256 校验，无需重装 DMG</li>
+            <li><strong>macOS Gateway 检测修复</strong> — CLI 直启 Gateway 不再误报"未启动"，TCP 端口兜底检测</li>
+            <li><strong>授权码兼容</strong> — 旧版本授权码无缝迁移，无需重新激活</li>
+            <li><strong>上游同步 v0.11.3</strong> — 版本映射修正、多安装检测去重、Intel Mac 支持、OpenClaw 推荐版本升至 4.2</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- v1.2.0 -->
+      <div class="changelog-entry reveal">
         <div class="changelog-dot"></div>
         <div class="changelog-version">v1.2.0<span class="changelog-date">2026-04-01</span></div>
         <div class="changelog-body">
