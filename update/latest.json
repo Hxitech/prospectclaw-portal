@@ -1,0 +1,9 @@
+{
+  "version": "1.2.2-fix1",
+  "minAppVersion": "1.2.0",
+  "hash": "sha256:755debaf7c1a811ca97cbb1448dc5c032bd72e095d01c23790afa9c2e1aa27b4",
+  "url": "https://prospectclaw.ccipd.net/update/web-1.2.2-fix1.zip",
+  "size": 8983252,
+  "changelog": "修复 macOS Gateway 状态误报、授权码 profile 兼容、上游 v0.11.3 同步、品牌统一为 ProspectClaw",
+  "releasedAt": "2026-04-03T08:36:00Z"
+}
