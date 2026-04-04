@@ -1,9 +1,9 @@
 {
-  "version": "1.2.2-fix2",
+  "version": "1.2.2-fix3",
   "minAppVersion": "1.2.0",
-  "hash": "sha256:9642e02bcd8cbfaf1e85c99b4f9cb24a2e0b09398742a911ab745bbb1a8c532a",
-  "url": "https://prospectclaw.ccipd.net/update/web-1.2.2-fix2.zip",
-  "size": 8983172,
-  "changelog": "全功能合一、应用内热更新、Gateway 检测修复、授权码兼容、上游 v0.11.3 同步",
-  "releasedAt": "2026-04-03T15:51:18Z"
+  "hash": "sha256:ab53b4e68be888a6947406de29369519358301292136614374d78b870782a1f6",
+  "url": "https://prospectclaw.ccipd.net/update/web-1.2.2-fix3.zip",
+  "size": 8983215,
+  "changelog": "修复总览页 getProductProfile 报错、官网美化、联系信息更新",
+  "releasedAt": "2026-04-04T00:29:39Z"
 }
