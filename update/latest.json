@@ -1,9 +1,9 @@
 {
   "version": "1.2.2-fix3",
   "minAppVersion": "1.2.0",
-  "hash": "sha256:ab53b4e68be888a6947406de29369519358301292136614374d78b870782a1f6",
+  "hash": "sha256:461b36702a3e3f87c3be0546b16b68ade199d5b3ae0fb5abd350f6f75e81d07e",
   "url": "https://prospectclaw.ccipd.net/update/web-1.2.2-fix3.zip",
   "size": 8983215,
-  "changelog": "修复总览页 getProductProfile 报错、官网美化、联系信息更新",
-  "releasedAt": "2026-04-04T00:29:39Z"
+  "changelog": "授权系统安全加固 + 总览页修复 + 官网美化",
+  "releasedAt": "2026-04-04T02:16:15Z"
 }
