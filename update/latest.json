@@ -1,9 +1,9 @@
 {
-  "version": "1.2.3",
+  "version": "1.2.3-fix1",
   "minAppVersion": "1.2.0",
-  "hash": "sha256:90c5c7bb47c1c1fa828d1967f95915e0832931334e0185ff930585f8810385d0",
-  "url": "https://prospectclaw.ccipd.net/update/web-1.2.3.zip",
-  "size": 8989084,
-  "changelog": "v1.2.3: EvoScientist 案例画廊 + ClawSwarm 模板画廊 + 授权安全加固",
-  "releasedAt": "2026-04-04T06:04:09Z"
+  "hash": "sha256:4fff62b5229d17836d50c935a883e8c27ab393ac04f12bfd35a59cde30d7ee4c",
+  "url": "https://prospectclaw.ccipd.net/update/web-1.2.3-fix1.zip",
+  "size": 8988830,
+  "changelog": "版本 1.2.3-fix1 更新",
+  "releasedAt": "2026-04-04T08:16:44Z"
 }
