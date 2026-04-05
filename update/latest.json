@@ -1,6 +1,6 @@
 {
-  "version": "1.2.5",
+  "version": "1.2.5-fix1",
   "minAppVersion": "1.2.0",
-  "changelog": "版本 1.2.5 — 全量 i18n 多语言支持",
-  "releasedAt": "2026-04-04T12:00:00Z"
+  "changelog": "版本 1.2.5-fix1 — 修复 i18n 页���文本丢失和聊天加载崩溃",
+  "releasedAt": "2026-04-04T19:03:00Z"
 }
