@@ -147,6 +147,24 @@ a:hover { text-decoration: underline; }
   display: flex; align-items: center; gap: 12px;
 }
 
+/* 语言切换器 */
+.lang-switcher {
+  display: flex; align-items: center; gap: 2px;
+  border: 1px solid var(--p-border); border-radius: 8px;
+  overflow: hidden;
+}
+.lang-switcher button {
+  background: none; border: none; cursor: pointer;
+  padding: 6px 8px; font-size: 12px; font-weight: 600;
+  color: var(--p-text-tertiary);
+  transition: background 0.2s, color 0.2s;
+  line-height: 1;
+}
+.lang-switcher button:hover { color: var(--p-text); background: var(--p-accent-subtle); }
+.lang-switcher button.active {
+  color: var(--p-accent); background: var(--p-accent-muted);
+}
+
 .theme-toggle {
   background: none; border: 1px solid var(--p-border); border-radius: 8px;
   width: 36px; height: 36px; cursor: pointer;
@@ -614,6 +632,7 @@ a:hover { text-decoration: underline; }
 @media (max-width: 1024px) {
   .portal-nav-links { display: none; }
   .hamburger { display: flex; }
+  .lang-switcher { order: -1; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .showcase-row { grid-template-columns: 1fr; gap: 28px; }
   .showcase-row.reverse { direction: ltr; }

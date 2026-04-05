@@ -27,25 +27,30 @@
       ProspectClaw
     </a>
     <ul class="portal-nav-links">
-      <li><a href="#features">功能亮点</a></li>
-      <li><a href="#tutorials">教程引导</a></li>
-      <li><a href="#tech">技术架构</a></li>
-      <li><a href="#download">立即下载</a></li>
+      <li><a href="#features" data-i18n="nav.features">功能亮点</a></li>
+      <li><a href="#tutorials" data-i18n="nav.tutorials">教程引导</a></li>
+      <li><a href="#tech" data-i18n="nav.tech">技术架构</a></li>
+      <li><a href="#download" data-i18n="nav.download">立即下载</a></li>
     </ul>
     <div class="portal-nav-actions">
-      <button class="theme-toggle" id="theme-toggle" title="切换主题">
+      <div class="lang-switcher">
+        <button data-lang="zh-CN" onclick="switchLocale('zh-CN')">中</button>
+        <button data-lang="en" onclick="switchLocale('en')">EN</button>
+        <button data-lang="ja" onclick="switchLocale('ja')">JA</button>
+      </div>
+      <button class="theme-toggle" id="theme-toggle" data-i18n-title="nav.theme_toggle" title="切换主题">
         <span class="theme-icon">&#9790;</span>
       </button>
-      <button class="hamburger" id="hamburger" aria-label="菜单">
+      <button class="hamburger" id="hamburger" data-i18n-aria="nav.menu" aria-label="菜单">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
   <div class="mobile-menu" id="mobile-menu">
-    <a href="#features">功能亮点</a>
-    <a href="#tutorials">教程引导</a>
-    <a href="#tech">技术架构</a>
-    <a href="#download">立即下载</a>
+    <a href="#features" data-i18n="nav.features">功能亮点</a>
+    <a href="#tutorials" data-i18n="nav.tutorials">教程引导</a>
+    <a href="#tech" data-i18n="nav.tech">技术架构</a>
+    <a href="#download" data-i18n="nav.download">立即下载</a>
   </div>
 </nav>
 
@@ -57,15 +62,15 @@
     <div class="hero-grid"></div>
   </div>
   <div class="container hero-content">
-    <div class="hero-badge reveal">v1.2.3-fix1 &middot; AI 全能工作台</div>
-    <h1 class="hero-title reveal">本地化 AI 全能工作台</h1>
-    <p class="hero-subtitle reveal">
+    <div class="hero-badge reveal" data-i18n-html="hero.badge">v1.2.5 &middot; AI 全能工作台</div>
+    <h1 class="hero-title reveal" data-i18n="hero.title">本地化 AI 全能工作台</h1>
+    <p class="hero-subtitle reveal" data-i18n-html="hero.subtitle">
       集成 AI 助手、多智能体协作、投资管理、知识库、SOP 流程引擎。<br>
       无需部署服务器，~10MB 安装即用，数据留在本地，安全可控。
     </p>
     <div class="hero-ctas reveal">
-      <a href="#download" class="btn btn-primary">下载 ProspectClaw</a>
-      <a href="#features" class="btn btn-outline">了解更多</a>
+      <a href="#download" class="btn btn-primary" data-i18n="hero.cta_download">下载 ProspectClaw</a>
+      <a href="#features" class="btn btn-outline" data-i18n="hero.cta_learn">了解更多</a>
     </div>
     <div class="hero-image reveal">
       <div class="hero-image-frame">
@@ -81,19 +86,19 @@
     <div class="stats-grid">
       <div class="stat-card reveal stagger-1">
         <div class="stat-value" data-count="13">0</div>
-        <div class="stat-label">功能模块</div>
+        <div class="stat-label" data-i18n="stats.modules_label">功能模块</div>
       </div>
       <div class="stat-card reveal stagger-2">
         <div class="stat-value">~10MB</div>
-        <div class="stat-label">安装包体积</div>
+        <div class="stat-label" data-i18n="stats.size_label">安装包体积</div>
       </div>
       <div class="stat-card reveal stagger-3">
         <div class="stat-value" data-count="3">0</div>
-        <div class="stat-label">平台支持</div>
+        <div class="stat-label" data-i18n="stats.platforms_label">平台支持</div>
       </div>
       <div class="stat-card reveal stagger-4">
         <div class="stat-value">AI</div>
-        <div class="stat-label">驱动引擎</div>
+        <div class="stat-label" data-i18n="stats.ai_label">驱动引擎</div>
       </div>
     </div>
   </div>
@@ -103,24 +108,24 @@
 <section class="section" id="features">
   <div class="container">
     <div class="section-header reveal">
-      <div class="section-tag">Core Modules</div>
-      <h2 class="section-title">模块化架构，按需组合</h2>
-      <p class="section-subtitle">投资管理、知识库、SOP 流程——三大业务模块可独立使用，也可组合运行。</p>
+      <div class="section-tag" data-i18n="features.tag">Core Modules</div>
+      <h2 class="section-title" data-i18n="features.title">模块化架构，按需组合</h2>
+      <p class="section-subtitle" data-i18n="features.subtitle">投资管理、知识库、SOP 流程——三大业务模块可独立使用，也可组合运行。</p>
     </div>
 
     <!-- 行 1 -->
     <div class="showcase-row reveal">
       <div class="showcase-text">
-        <div class="showcase-label">Overview & Pipeline</div>
-        <h3 class="showcase-title">投资概览与项目管道</h3>
-        <p class="showcase-desc">
+        <div class="showcase-label" data-i18n="features.row1_label">Overview & Pipeline</div>
+        <h3 class="showcase-title" data-i18n="features.row1_title">投资概览与项目管道</h3>
+        <p class="showcase-desc" data-i18n="features.row1_desc">
           实时仪表盘展示项目池漏斗、管道分布和近期动态。Deal Pipeline 看板按寻源→初筛→尽调→IC审议→条款谈判→已关闭六阶段管理，支持拖拽换阶段。
         </p>
         <div class="showcase-chips">
-          <span class="chip">投资概览</span>
-          <span class="chip">项目池</span>
-          <span class="chip">项目管道</span>
-          <span class="chip">三种视图</span>
+          <span class="chip" data-i18n="features.row1_chip1">投资概览</span>
+          <span class="chip" data-i18n="features.row1_chip2">项目池</span>
+          <span class="chip" data-i18n="features.row1_chip3">项目管道</span>
+          <span class="chip" data-i18n="features.row1_chip4">三种视图</span>
         </div>
       </div>
       <div class="showcase-image" data-lightbox>
@@ -131,15 +136,15 @@
     <!-- 行 2 -->
     <div class="showcase-row reverse reveal">
       <div class="showcase-text">
-        <div class="showcase-label">Enterprise & Contacts</div>
-        <h3 class="showcase-title">企业库与联系人管理</h3>
-        <p class="showcase-desc">
+        <div class="showcase-label" data-i18n="features.row2_label">Enterprise & Contacts</div>
+        <h3 class="showcase-title" data-i18n="features.row2_title">企业库与联系人管理</h3>
+        <p class="showcase-desc" data-i18n="features.row2_desc">
           被投及关注企业档案管理，支持行业分类、搜索筛选。投资相关联系人关联企业与角色标签，项目文档统一归档检索。
         </p>
         <div class="showcase-chips">
-          <span class="chip">企业库</span>
-          <span class="chip">联系人</span>
-          <span class="chip">投资文档</span>
+          <span class="chip" data-i18n="features.row2_chip1">企业库</span>
+          <span class="chip" data-i18n="features.row2_chip2">联系人</span>
+          <span class="chip" data-i18n="features.row2_chip3">投资文档</span>
         </div>
       </div>
       <div class="showcase-image" data-lightbox>
@@ -150,17 +155,17 @@
     <!-- 行 3 -->
     <div class="showcase-row reveal">
       <div class="showcase-text">
-        <div class="showcase-label">Workflow & Automation</div>
-        <h3 class="showcase-title">审批流与自动化</h3>
-        <p class="showcase-desc">
+        <div class="showcase-label" data-i18n="features.row3_label">Workflow & Automation</div>
+        <h3 class="showcase-title" data-i18n="features.row3_title">审批流与自动化</h3>
+        <p class="showcase-desc" data-i18n="features.row3_desc">
           多维度交易评分量化投资决策，标准化 SOP 流程模板支持自定义与执行追踪。操作审计合规记录，定时任务与心跳规则自动化投后监控。
         </p>
         <div class="showcase-chips">
-          <span class="chip">战略评分</span>
-          <span class="chip">SOP 流程</span>
-          <span class="chip">审批流程</span>
-          <span class="chip">自动化</span>
-          <span class="chip">审计日志</span>
+          <span class="chip" data-i18n="features.row3_chip1">战略评分</span>
+          <span class="chip" data-i18n="features.row3_chip2">SOP 流程</span>
+          <span class="chip" data-i18n="features.row3_chip3">审批流程</span>
+          <span class="chip" data-i18n="features.row3_chip4">自动化</span>
+          <span class="chip" data-i18n="features.row3_chip5">审计日志</span>
         </div>
       </div>
       <div class="showcase-image" data-lightbox>
@@ -174,24 +179,24 @@
 <section class="section" id="ai-features" style="background: var(--p-bg-alt);">
   <div class="container">
     <div class="section-header reveal">
-      <div class="section-tag">AI Capabilities</div>
-      <h2 class="section-title">AI 助手 + 多智能体协作</h2>
-      <p class="section-subtitle">钳子助手、EvoScientist 科学家集群、ClawSwarm 蜂群协作——三大 AI 引擎覆盖从单次对话到多 Agent 编排。</p>
+      <div class="section-tag" data-i18n="ai.tag">AI Capabilities</div>
+      <h2 class="section-title" data-i18n="ai.title">AI 助手 + 多智能体协作</h2>
+      <p class="section-subtitle" data-i18n="ai.subtitle">钳子助手、Prospect-Research 科学家集群、ClawSwarm 蜂群协作——三大 AI 引擎覆盖从单次对话到多 Agent 编排。</p>
     </div>
 
     <!-- AI 助手 -->
     <div class="showcase-row reveal">
       <div class="showcase-text">
-        <div class="showcase-label">Claw Assistant</div>
-        <h3 class="showcase-title">钳子助手 — 内置 AI 对话引擎</h3>
-        <p class="showcase-desc">
+        <div class="showcase-label" data-i18n="ai.assistant_label">Claw Assistant</div>
+        <h3 class="showcase-title" data-i18n="ai.assistant_title">钳子助手 — 内置 AI 对话引擎</h3>
+        <p class="showcase-desc" data-i18n="ai.assistant_desc">
           流式响应、Markdown 渲染、多会话管理。支持多模型切换，可用于行业分析、知识问答、代码辅助、系统诊断等任意场景。
         </p>
         <div class="showcase-chips">
-          <span class="chip">钳子助手</span>
-          <span class="chip">AI 诊断</span>
-          <span class="chip">智能分析</span>
-          <span class="chip">多会话</span>
+          <span class="chip" data-i18n="ai.assistant_chip1">钳子助手</span>
+          <span class="chip" data-i18n="ai.assistant_chip2">AI 诊断</span>
+          <span class="chip" data-i18n="ai.assistant_chip3">智能分析</span>
+          <span class="chip" data-i18n="ai.assistant_chip4">多会话</span>
         </div>
       </div>
       <div class="showcase-image" data-lightbox>
@@ -202,16 +207,16 @@
     <!-- Agent 舰队 -->
     <div class="showcase-row reverse reveal">
       <div class="showcase-text">
-        <div class="showcase-label">Agent Fleet</div>
-        <h3 class="showcase-title">Agent 舰队与模型池</h3>
-        <p class="showcase-desc">
+        <div class="showcase-label" data-i18n="ai.fleet_label">Agent Fleet</div>
+        <h3 class="showcase-title" data-i18n="ai.fleet_title">Agent 舰队与模型池</h3>
+        <p class="showcase-desc" data-i18n="ai.fleet_desc">
           AI Agent 多实例管理，支持 AI 新建和 AI 配置。多模型池支持 OpenAI、Anthropic、Deepseek 等主流 API，实时聊天验证 Agent 状态。
         </p>
         <div class="showcase-chips">
-          <span class="chip">Agent 舰队</span>
-          <span class="chip">模型池</span>
-          <span class="chip">会话频道</span>
-          <span class="chip">MCP 工具</span>
+          <span class="chip" data-i18n="ai.fleet_chip1">Agent 舰队</span>
+          <span class="chip" data-i18n="ai.fleet_chip2">模型池</span>
+          <span class="chip" data-i18n="ai.fleet_chip3">会话频道</span>
+          <span class="chip" data-i18n="ai.fleet_chip4">MCP 工具</span>
         </div>
       </div>
       <div class="showcase-image" data-lightbox>
@@ -219,39 +224,39 @@
       </div>
     </div>
 
-    <!-- EvoScientist -->
+    <!-- Prospect-Research -->
     <div class="showcase-row reveal">
       <div class="showcase-text">
-        <div class="showcase-label">EvoScientist</div>
-        <h3 class="showcase-title">EvoScientist 科学家集群</h3>
-        <p class="showcase-desc">
+        <div class="showcase-label" data-i18n="ai.evo_label">Prospect-Research</div>
+        <h3 class="showcase-title" data-i18n="ai.evo_title">Prospect-Research 科学家集群</h3>
+        <p class="showcase-desc" data-i18n="ai.evo_desc">
           基于进化式推理的 AI 科学家系统，自动拆解复杂任务并协调多个 Scientist 协作完成。内置 12 个成功案例模板，覆盖竞品分析、代码审查、市场测算、技术选型等场景，一键启动。
         </p>
         <div class="showcase-chips">
-          <span class="chip">案例模板</span>
-          <span class="chip">多 Scientist 协作</span>
-          <span class="chip">人格自定义</span>
-          <span class="chip">实时事件流</span>
+          <span class="chip" data-i18n="ai.evo_chip1">案例模板</span>
+          <span class="chip" data-i18n="ai.evo_chip2">多 Scientist 协作</span>
+          <span class="chip" data-i18n="ai.evo_chip3">人格自定义</span>
+          <span class="chip" data-i18n="ai.evo_chip4">实时事件流</span>
         </div>
       </div>
       <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-evoscientist.png" alt="EvoScientist 案例画廊">
+        <img src="/screenshots/desktop-evoscientist.png" alt="Prospect-Research 案例画廊">
       </div>
     </div>
 
     <!-- ClawSwarm -->
     <div class="showcase-row reverse reveal">
       <div class="showcase-text">
-        <div class="showcase-label">ClawSwarm</div>
-        <h3 class="showcase-title">ClawSwarm 蜂群协作</h3>
-        <p class="showcase-desc">
+        <div class="showcase-label" data-i18n="ai.swarm_label">ClawSwarm</div>
+        <h3 class="showcase-title" data-i18n="ai.swarm_title">ClawSwarm 蜂群协作</h3>
+        <p class="showcase-desc" data-i18n="ai.swarm_desc">
           多智能体并行任务编排系统——输入目标，AI 自动拆解为 DAG 依赖图，多个智能体按波次并行执行。5 大模板（深度研究、尽调报告、头脑风暴、文档审校、竞品监控）开箱即用，支持自定义智能体角色和依赖关系。
         </p>
         <div class="showcase-chips">
-          <span class="chip">DAG 可视化</span>
-          <span class="chip">波次调度</span>
-          <span class="chip">模板画廊</span>
-          <span class="chip">多 Provider</span>
+          <span class="chip" data-i18n="ai.swarm_chip1">DAG 可视化</span>
+          <span class="chip" data-i18n="ai.swarm_chip2">波次调度</span>
+          <span class="chip" data-i18n="ai.swarm_chip3">模板画廊</span>
+          <span class="chip" data-i18n="ai.swarm_chip4">多 Provider</span>
         </div>
       </div>
       <div class="showcase-image" data-lightbox>
@@ -265,51 +270,51 @@
 <section class="section" id="tutorials">
   <div class="container">
     <div class="section-header reveal">
-      <div class="section-tag">Getting Started</div>
-      <h2 class="section-title">两条路径，快速上手</h2>
-      <p class="section-subtitle">每一步都告诉你做什么、在哪做、做完算什么。下载即可开始。</p>
+      <div class="section-tag" data-i18n="tutorials.tag">Getting Started</div>
+      <h2 class="section-title" data-i18n="tutorials.title">两条路径，快速上手</h2>
+      <p class="section-subtitle" data-i18n="tutorials.subtitle">每一步都告诉你做什么、在哪做、做完算什么。下载即可开始。</p>
     </div>
 
     <div class="tutorials-grid">
       <!-- 投资工作台教程 -->
       <div class="tutorial-card reveal stagger-1">
         <div class="tutorial-card-icon">&#128200;</div>
-        <h3 class="tutorial-card-title">10 分钟跑通投资工作台</h3>
-        <p class="tutorial-card-desc">顺着这条链走，最快能把线索到审批的流程跑通。</p>
+        <h3 class="tutorial-card-title" data-i18n="tutorials.invest_title">10 分钟跑通投资工作台</h3>
+        <p class="tutorial-card-desc" data-i18n="tutorials.invest_desc">顺着这条链走，最快能把线索到审批的流程跑通。</p>
         <ol class="tutorial-steps">
           <li class="tutorial-step">
             <div class="tutorial-step-num">1</div>
             <div class="tutorial-step-body">
-              <div class="tutorial-step-title">导入演示数据</div>
-              <div class="tutorial-step-desc">先让首页出现一组可浏览的任务和样例，后面的项目池、Deal 才有完整链路可看。</div>
+              <div class="tutorial-step-title" data-i18n="tutorials.invest_s1_title">导入演示数据</div>
+              <div class="tutorial-step-desc" data-i18n="tutorials.invest_s1_desc">先让首页出现一组可浏览的任务和样例，后面的项目池、Deal 才有完整链路可看。</div>
             </div>
           </li>
           <li class="tutorial-step">
             <div class="tutorial-step-num">2</div>
             <div class="tutorial-step-body">
-              <div class="tutorial-step-title">在项目池录入第一条线索</div>
-              <div class="tutorial-step-desc">把项目名称、行业、负责人先放进项目池，先把线索进入系统。</div>
+              <div class="tutorial-step-title" data-i18n="tutorials.invest_s2_title">在项目池录入第一条线索</div>
+              <div class="tutorial-step-desc" data-i18n="tutorials.invest_s2_desc">把项目名称、行业、负责人先放进项目池，先把线索进入系统。</div>
             </div>
           </li>
           <li class="tutorial-step">
             <div class="tutorial-step-num">3</div>
             <div class="tutorial-step-body">
-              <div class="tutorial-step-title">转成 Deal 并推进阶段</div>
-              <div class="tutorial-step-desc">把值得跟进的项目转成 Deal，体验阶段推进和待办记录。</div>
+              <div class="tutorial-step-title" data-i18n="tutorials.invest_s3_title">转成 Deal 并推进阶段</div>
+              <div class="tutorial-step-desc" data-i18n="tutorials.invest_s3_desc">把值得跟进的项目转成 Deal，体验阶段推进和待办记录。</div>
             </div>
           </li>
           <li class="tutorial-step">
             <div class="tutorial-step-num">4</div>
             <div class="tutorial-step-body">
-              <div class="tutorial-step-title">补齐 BP、初评或尽调材料</div>
-              <div class="tutorial-step-desc">把审批会用到的材料挂到文档库，让 Deal 和 SOP 围绕同一份资料工作。</div>
+              <div class="tutorial-step-title" data-i18n="tutorials.invest_s4_title">补齐 BP、初评或尽调材料</div>
+              <div class="tutorial-step-desc" data-i18n="tutorials.invest_s4_desc">把审批会用到的材料挂到文档库，让 Deal 和 SOP 围绕同一份资料工作。</div>
             </div>
           </li>
           <li class="tutorial-step">
             <div class="tutorial-step-num">5</div>
             <div class="tutorial-step-body">
-              <div class="tutorial-step-title">发起审批或执行 SOP</div>
-              <div class="tutorial-step-desc">材料齐套后推进到审批，让系统承担流程提醒和决策沉淀。</div>
+              <div class="tutorial-step-title" data-i18n="tutorials.invest_s5_title">发起审批或执行 SOP</div>
+              <div class="tutorial-step-desc" data-i18n="tutorials.invest_s5_desc">材料齐套后推进到审批，让系统承担流程提醒和决策沉淀。</div>
             </div>
           </li>
         </ol>
@@ -318,42 +323,42 @@
       <!-- OpenClaw Agent 养成教程 -->
       <div class="tutorial-card reveal stagger-2">
         <div class="tutorial-card-icon">&#129424;</div>
-        <h3 class="tutorial-card-title">OpenClaw Agent 养成教程</h3>
-        <p class="tutorial-card-desc">按这 5 步把 OpenClaw 从"装好了"养到"第一只 Agent 真能用"。</p>
+        <h3 class="tutorial-card-title" data-i18n="tutorials.agent_title">OpenClaw Agent 养成教程</h3>
+        <p class="tutorial-card-desc" data-i18n="tutorials.agent_desc">按这 5 步把 OpenClaw 从「装好了」养到「第一只 Agent 真能用」。</p>
         <ol class="tutorial-steps">
           <li class="tutorial-step">
             <div class="tutorial-step-num">1</div>
             <div class="tutorial-step-body">
-              <div class="tutorial-step-title">环境体检</div>
-              <div class="tutorial-step-desc">确认 Node.js、OpenClaw CLI 和配置文件是否齐全，先把底座检查清楚。</div>
+              <div class="tutorial-step-title" data-i18n="tutorials.agent_s1_title">环境体检</div>
+              <div class="tutorial-step-desc" data-i18n="tutorials.agent_s1_desc">确认 Node.js、OpenClaw CLI 和配置文件是否齐全，先把底座检查清楚。</div>
             </div>
           </li>
           <li class="tutorial-step">
             <div class="tutorial-step-num">2</div>
             <div class="tutorial-step-body">
-              <div class="tutorial-step-title">给虾配脑子</div>
-              <div class="tutorial-step-desc">添加至少一个主模型，确保后面创建 Agent 时有可用的推理能力。</div>
+              <div class="tutorial-step-title" data-i18n="tutorials.agent_s2_title">给虾配脑子</div>
+              <div class="tutorial-step-desc" data-i18n="tutorials.agent_s2_desc">添加至少一个主模型，确保后面创建 Agent 时有可用的推理能力。</div>
             </div>
           </li>
           <li class="tutorial-step">
             <div class="tutorial-step-num">3</div>
             <div class="tutorial-step-body">
-              <div class="tutorial-step-title">开虾缸</div>
-              <div class="tutorial-step-desc">创建第一只 Agent，给它独立身份、模型和工作区。</div>
+              <div class="tutorial-step-title" data-i18n="tutorials.agent_s3_title">开虾缸</div>
+              <div class="tutorial-step-desc" data-i18n="tutorials.agent_s3_desc">创建第一只 Agent，给它独立身份、模型和工作区。</div>
             </div>
           </li>
           <li class="tutorial-step">
             <div class="tutorial-step-num">4</div>
             <div class="tutorial-step-body">
-              <div class="tutorial-step-title">喂技能或装灵魂</div>
-              <div class="tutorial-step-desc">确认可用 Skill，或去 AI 助手页导入灵魂配置让 Agent 更像你的团队。</div>
+              <div class="tutorial-step-title" data-i18n="tutorials.agent_s4_title">喂技能或装灵魂</div>
+              <div class="tutorial-step-desc" data-i18n="tutorials.agent_s4_desc">确认可用 Skill，或去 AI 助手页导入灵魂配置让 Agent 更像你的团队。</div>
             </div>
           </li>
           <li class="tutorial-step">
             <div class="tutorial-step-num">5</div>
             <div class="tutorial-step-body">
-              <div class="tutorial-step-title">让虾开口</div>
-              <div class="tutorial-step-desc">去实时聊天发第一条消息，确认 Agent 真正能对话。</div>
+              <div class="tutorial-step-title" data-i18n="tutorials.agent_s5_title">让虾开口</div>
+              <div class="tutorial-step-desc" data-i18n="tutorials.agent_s5_desc">去实时聊天发第一条消息，确认 Agent 真正能对话。</div>
             </div>
           </li>
         </ol>
@@ -366,35 +371,35 @@
 <section class="section" id="tech" style="background: var(--p-bg-alt);">
   <div class="container">
     <div class="section-header reveal">
-      <div class="section-tag">Architecture</div>
-      <h2 class="section-title">专业级技术底座</h2>
-      <p class="section-subtitle">Rust 后端保安全、Vanilla JS 保轻量、SQLite 保隐私、OpenClaw 保智能。</p>
+      <div class="section-tag" data-i18n="tech.tag">Architecture</div>
+      <h2 class="section-title" data-i18n="tech.title">专业级技术底座</h2>
+      <p class="section-subtitle" data-i18n="tech.subtitle">Rust 后端保安全、Vanilla JS 保轻量、SQLite 保隐私、OpenClaw 保智能。</p>
     </div>
 
     <div class="tech-grid">
       <div class="tech-card reveal stagger-1">
         <div class="tech-card-spotlight"></div>
         <div class="tech-card-icon">&#9881;</div>
-        <h3 class="tech-card-title">Tauri v2</h3>
-        <p class="tech-card-desc">Rust 后端 + 系统 WebView，安装包约 10MB，无需 Electron 臃肿运行时。跨平台支持 macOS、Windows、Linux。</p>
+        <h3 class="tech-card-title" data-i18n="tech.tauri_title">Tauri v2</h3>
+        <p class="tech-card-desc" data-i18n="tech.tauri_desc">Rust 后端 + 系统 WebView，安装包约 10MB，无需 Electron 臃肿运行时。跨平台支持 macOS、Windows、Linux。</p>
       </div>
       <div class="tech-card reveal stagger-2">
         <div class="tech-card-spotlight"></div>
         <div class="tech-card-icon">&#9889;</div>
-        <h3 class="tech-card-title">Vanilla JS + Vite</h3>
-        <p class="tech-card-desc">零框架依赖，极致轻量。Vite 构建毫秒级热更新，原生 CSS 变量驱动主题系统。</p>
+        <h3 class="tech-card-title" data-i18n="tech.vite_title">Vanilla JS + Vite</h3>
+        <p class="tech-card-desc" data-i18n="tech.vite_desc">零框架依赖，极致轻量。Vite 构建毫秒级热更新，原生 CSS 变量驱动主题系统。</p>
       </div>
       <div class="tech-card reveal stagger-3">
         <div class="tech-card-spotlight"></div>
         <div class="tech-card-icon">&#128274;</div>
-        <h3 class="tech-card-title">SQLite 本地存储</h3>
-        <p class="tech-card-desc">数据留在本地，安全可控。无需部署服务器，安装即用，满足金融机构数据合规要求。</p>
+        <h3 class="tech-card-title" data-i18n="tech.sqlite_title">SQLite 本地存储</h3>
+        <p class="tech-card-desc" data-i18n="tech.sqlite_desc">数据留在本地，安全可控。无需部署服务器，安装即用，满足金融机构数据合规要求。</p>
       </div>
       <div class="tech-card reveal stagger-4">
         <div class="tech-card-spotlight"></div>
         <div class="tech-card-icon">&#129302;</div>
-        <h3 class="tech-card-title">OpenClaw AI 引擎</h3>
-        <p class="tech-card-desc">自研 Agent 框架，支持 OpenAI、Anthropic、Deepseek 等多模型。4 种操作模式，8 种内置工具。</p>
+        <h3 class="tech-card-title" data-i18n="tech.openclaw_title">OpenClaw AI 引擎</h3>
+        <p class="tech-card-desc" data-i18n="tech.openclaw_desc">自研 Agent 框架，支持 OpenAI、Anthropic、Deepseek 等多模型。4 种操作模式，8 种内置工具。</p>
       </div>
     </div>
   </div>
@@ -404,31 +409,31 @@
 <section class="section" id="download">
   <div class="container">
     <div class="section-header reveal">
-      <div class="section-tag">Download</div>
-      <h2 class="section-title">立即下载 ProspectClaw</h2>
-      <div class="download-badge">v1.2.3-fix1</div>
-      <p class="section-subtitle">约 10MB 安装包，安装即用，无需额外运行时环境。</p>
+      <div class="section-tag" data-i18n="download.tag">Download</div>
+      <h2 class="section-title" data-i18n="download.title">立即下载 ProspectClaw</h2>
+      <div class="download-badge" data-i18n="download.badge">v1.2.5</div>
+      <p class="section-subtitle" data-i18n="download.subtitle">约 10MB 安装包，安装即用，无需额外运行时环境。</p>
     </div>
 
     <div class="download-grid">
       <div class="download-card reveal stagger-1">
         <div class="download-card-icon">&#63743;</div>
-        <h3 class="download-card-title">macOS</h3>
-        <p class="download-card-detail">Apple Silicon / Intel &middot; macOS 12.0+</p>
-        <a href="/downloads/ProspectClaw_1.2.3-fix1_aarch64.dmg" class="btn btn-primary">下载 .dmg (Apple Silicon)</a>
-        <a href="/downloads/ProspectClaw_1.2.3-fix1_x64.dmg" class="btn btn-outline" style="margin-top:8px">下载 .dmg (Intel)</a>
+        <h3 class="download-card-title" data-i18n="download.mac_title">macOS</h3>
+        <p class="download-card-detail" data-i18n-html="download.mac_detail">Apple Silicon / Intel &middot; macOS 12.0+</p>
+        <a href="/downloads/ProspectClaw_1.2.5_aarch64.dmg" class="btn btn-primary" data-i18n="download.mac_btn_arm">下载 .dmg (Apple Silicon)</a>
+        <a href="/downloads/ProspectClaw_1.2.5_x64.dmg" class="btn btn-outline" style="margin-top:8px" data-i18n="download.mac_btn_intel">下载 .dmg (Intel)</a>
       </div>
       <div class="download-card reveal stagger-2">
         <div class="download-card-icon">&#128187;</div>
-        <h3 class="download-card-title">Windows</h3>
-        <p class="download-card-detail">x64 &middot; Windows 10+</p>
-        <a href="#" class="btn btn-primary btn-disabled">即将上线</a>
+        <h3 class="download-card-title" data-i18n="download.win_title">Windows</h3>
+        <p class="download-card-detail" data-i18n-html="download.win_detail">x64 &middot; Windows 10+</p>
+        <a href="#" class="btn btn-primary btn-disabled" data-i18n="download.win_btn">即将上线</a>
       </div>
       <div class="download-card reveal stagger-3">
         <div class="download-card-icon">&#128039;</div>
-        <h3 class="download-card-title">Linux</h3>
+        <h3 class="download-card-title" data-i18n="download.linux_title">Linux</h3>
         <p class="download-card-detail">Ubuntu 20.04+ / Fedora 36+</p>
-        <a href="#" class="btn btn-primary btn-disabled">即将上线</a>
+        <a href="#" class="btn btn-primary btn-disabled" data-i18n="download.linux_btn">即将上线</a>
       </div>
     </div>
   </div>
@@ -442,12 +447,12 @@
       ProspectClaw
     </div>
     <div class="portal-footer-links">
-      <a href="https://prospectclaw.ccipd.net" target="_blank" rel="noopener">官网</a>
-      <a href="#features">功能</a>
-      <a href="#tutorials">教程</a>
-      <a href="#download">下载</a>
+      <a href="https://prospectclaw.ccipd.net" target="_blank" rel="noopener" data-i18n="footer.site">官网</a>
+      <a href="#features" data-i18n="footer.features">功能</a>
+      <a href="#tutorials" data-i18n="footer.tutorials">教程</a>
+      <a href="#download" data-i18n="footer.download">下载</a>
     </div>
-    <p class="portal-footer-copy">Copyright &copy; 2026 ProspectClaw. All rights reserved.</p>
+    <p class="portal-footer-copy" data-i18n-html="footer.copyright">Copyright &copy; 2026 ProspectClaw. All rights reserved.</p>
   </div>
 </footer>
 
@@ -457,5 +462,6 @@
 </div>
 
 <script type="module" src="./portal.js"></script>
+<script src="./i18n.js"></script>
 </body>
 </html>

@@ -1,9 +1,6 @@
 {
-  "version": "1.2.3-fix1",
+  "version": "1.2.5",
   "minAppVersion": "1.2.0",
-  "hash": "sha256:4fff62b5229d17836d50c935a883e8c27ab393ac04f12bfd35a59cde30d7ee4c",
-  "url": "https://prospectclaw.ccipd.net/update/web-1.2.3-fix1.zip",
-  "size": 8988830,
-  "changelog": "版本 1.2.3-fix1 更新",
-  "releasedAt": "2026-04-04T08:16:44Z"
+  "changelog": "版本 1.2.5 — 全量 i18n 多语言支持",
+  "releasedAt": "2026-04-04T12:00:00Z"
 }
