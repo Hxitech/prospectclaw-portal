@@ -672,6 +672,14 @@ a:hover { text-decoration: underline; }
 
 .download-card .btn { width: 100%; justify-content: center; }
 
+.download-coming-soon {
+  text-align: center;
+  font-size: 14px;
+  color: var(--p-text-tertiary);
+  margin-top: 20px;
+  letter-spacing: -0.224px;
+}
+
 /* ── 页脚 ── */
 .portal-footer {
   border-top: 1px solid var(--p-footer-border);

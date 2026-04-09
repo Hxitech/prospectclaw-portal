@@ -8,6 +8,8 @@
   <meta property="og:title" content="ProspectClaw Agent 知识库 — 给 AI 看的结构化参考">
   <meta property="og:description" content="专为 AI Agent 设计的结构化参考文档，便于检索、推理和回答用户关于 ProspectClaw 的问题。">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://prospectclaw.ccipd.net/screenshots/desktop-overview.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" href="/images/prospectclaw-tab-logo.png">
   <link rel="stylesheet" href="/portal.css">
 </head>
@@ -21,16 +23,13 @@
       ProspectClaw
     </a>
     <ul class="portal-nav-links">
+      <li><a href="/index.html">主站</a></li>
       <li><a href="/beginner-guide.html">零基础指南</a></li>
       <li><a href="/usage-guide.html">进阶指南</a></li>
       <li><a href="/agent-guide.html">Agent 知识库</a></li>
-      <li><a href="/index.html#download">立即下载</a></li>
+      <li><a href="/index.html#download">下载</a></li>
     </ul>
     <div class="portal-nav-actions">
-      <div class="lang-switcher">
-        <button data-lang="zh-CN" class="active" onclick="switchLocale && switchLocale('zh-CN')">中</button>
-        <button data-lang="en" onclick="switchLocale && switchLocale('en')">EN</button>
-      </div>
       <button class="theme-toggle" id="theme-toggle" title="切换主题">
         <span class="theme-icon">&#9790;</span>
       </button>
@@ -464,16 +463,37 @@ pending → ready → running → waiting_review → completed / failed / skippe
 <div class="lightbox" id="lightbox"><img src="" alt="预览"></div>
 <script defer src="/portal.js"></script>
 <script>
-// 复制功能
-document.querySelectorAll('[data-copy-target]').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const target = document.getElementById(btn.dataset.copyTarget);
+// 复制功能（带 fallback）
+document.querySelectorAll('[data-copy-target]').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var target = document.getElementById(btn.dataset.copyTarget);
     if (!target) return;
-    navigator.clipboard.writeText(target.textContent).then(() => {
-      const orig = btn.textContent;
+    var text = target.textContent;
+    var orig = btn.textContent;
+
+    function onSuccess() {
       btn.textContent = '已复制!';
-      setTimeout(() => btn.textContent = orig, 2000);
-    });
+      setTimeout(function() { btn.textContent = orig; }, 2000);
+    }
+    function onFail() {
+      btn.textContent = '复制失败';
+      setTimeout(function() { btn.textContent = orig; }, 2000);
+    }
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(onSuccess, onFail);
+    } else {
+      // fallback for HTTP or older browsers
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.cssText = 'position:fixed;left:-9999px;top:0;opacity:0';
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand('copy') ? onSuccess() : onFail();
+      } catch(e) { onFail(); }
+      document.body.removeChild(ta);
+    }
   });
 });
 </script>

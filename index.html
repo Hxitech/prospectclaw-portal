@@ -8,6 +8,11 @@
   <meta property="og:title" content="ProspectClaw — 本地化 AI 全能工作台">
   <meta property="og:description" content="集成 AI 助手、多智能体编排、投资管理、知识库、SOP 等模块的桌面工作台。无需部署服务器，安装即用。">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://prospectclaw.ccipd.net/screenshots/desktop-overview.png">
+  <meta property="og:image:width" content="2880">
+  <meta property="og:image:height" content="1800">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://prospectclaw.ccipd.net/screenshots/desktop-overview.png">
   <link rel="icon" type="image/png" href="/images/prospectclaw-tab-logo.png">
   <link rel="stylesheet" href="./portal.css">
 </head>
@@ -104,19 +109,18 @@
       <p class="section-subtitle" data-i18n="features.subtitle">投资管理、知识库、SOP 流程——三大业务模块可独立使用，也可组合运行。</p>
     </div>
 
-    <!-- 行 1 -->
+    <!-- 行 1: 投资概览 -->
     <div class="showcase-row reveal">
       <div class="showcase-text">
-        <div class="showcase-label" data-i18n="features.row1_label">Overview & Pipeline</div>
-        <h3 class="showcase-title" data-i18n="features.row1_title">投资概览与项目管道</h3>
+        <div class="showcase-label" data-i18n="features.row1_label">Investment Overview</div>
+        <h3 class="showcase-title" data-i18n="features.row1_title">投资概览仪表盘</h3>
         <p class="showcase-desc" data-i18n="features.row1_desc">
-          实时仪表盘展示项目池漏斗、管道分布和近期动态。Deal Pipeline 看板按寻源→初筛→尽调→IC审议→条款谈判→已关闭六阶段管理，支持拖拽换阶段。
+          实时仪表盘展示项目池漏斗、管道分布和近期动态，快速访问一键 AI 配置、智能运维等核心入口。支持视图设置和助手协同。
         </p>
         <div class="showcase-chips">
           <span class="chip" data-i18n="features.row1_chip1">投资概览</span>
           <span class="chip" data-i18n="features.row1_chip2">项目池</span>
-          <span class="chip" data-i18n="features.row1_chip3">项目管道</span>
-          <span class="chip" data-i18n="features.row1_chip4">三种视图</span>
+          <span class="chip" data-i18n="features.row1_chip3">快速访问</span>
         </div>
       </div>
       <div class="showcase-image" data-lightbox>
@@ -124,18 +128,37 @@
       </div>
     </div>
 
-    <!-- 行 2 -->
+    <!-- 行 2: 项目管道 -->
     <div class="showcase-row reverse reveal">
       <div class="showcase-text">
-        <div class="showcase-label" data-i18n="features.row2_label">Enterprise & Contacts</div>
-        <h3 class="showcase-title" data-i18n="features.row2_title">企业库与联系人管理</h3>
+        <div class="showcase-label" data-i18n="features.row2_label">Deal Pipeline</div>
+        <h3 class="showcase-title" data-i18n="features.row2_title">Deal Pipeline 看板</h3>
         <p class="showcase-desc" data-i18n="features.row2_desc">
+          六阶段看板管理投资流程：寻源→初筛→尽调→IC 审议→条款谈判→已关闭。支持拖拽换阶段、看板/列表/表格三种视图。
+        </p>
+        <div class="showcase-chips">
+          <span class="chip" data-i18n="features.row2_chip1">项目管道</span>
+          <span class="chip" data-i18n="features.row2_chip2">六阶段</span>
+          <span class="chip" data-i18n="features.row2_chip3">三种视图</span>
+        </div>
+      </div>
+      <div class="showcase-image" data-lightbox>
+        <img src="/screenshots/desktop-project-pipelines.png" alt="Deal Pipeline 看板">
+      </div>
+    </div>
+
+    <!-- 行 3: 企业库与联系人 -->
+    <div class="showcase-row reveal">
+      <div class="showcase-text">
+        <div class="showcase-label" data-i18n="features.row3_label">Enterprise & Contacts</div>
+        <h3 class="showcase-title" data-i18n="features.row3_title">企业库与联系人</h3>
+        <p class="showcase-desc" data-i18n="features.row3_desc">
           被投及关注企业档案管理，支持行业分类、搜索筛选。投资相关联系人关联企业与角色标签，项目文档统一归档检索。
         </p>
         <div class="showcase-chips">
-          <span class="chip" data-i18n="features.row2_chip1">企业库</span>
-          <span class="chip" data-i18n="features.row2_chip2">联系人</span>
-          <span class="chip" data-i18n="features.row2_chip3">投资文档</span>
+          <span class="chip" data-i18n="features.row3_chip1">企业库</span>
+          <span class="chip" data-i18n="features.row3_chip2">联系人</span>
+          <span class="chip" data-i18n="features.row3_chip3">投资文档</span>
         </div>
       </div>
       <div class="showcase-image" data-lightbox>
@@ -143,20 +166,19 @@
       </div>
     </div>
 
-    <!-- 行 3 -->
-    <div class="showcase-row reveal">
+    <!-- 行 4: 审批流与自动化 -->
+    <div class="showcase-row reverse reveal">
       <div class="showcase-text">
-        <div class="showcase-label" data-i18n="features.row3_label">Workflow & Automation</div>
-        <h3 class="showcase-title" data-i18n="features.row3_title">审批流与自动化</h3>
-        <p class="showcase-desc" data-i18n="features.row3_desc">
-          多维度交易评分量化投资决策，标准化 SOP 流程模板支持自定义与执行追踪。操作审计合规记录，定时任务与心跳规则自动化投后监控。
+        <div class="showcase-label" data-i18n="features.row4_label">Workflow & Automation</div>
+        <h3 class="showcase-title" data-i18n="features.row4_title">评分、SOP 与自动化</h3>
+        <p class="showcase-desc" data-i18n="features.row4_desc">
+          多维度交易评分量化投资决策，标准化 SOP 流程模板支持自定义与执行追踪。定时任务与心跳规则自动化投后监控，操作审计合规记录。
         </p>
         <div class="showcase-chips">
-          <span class="chip" data-i18n="features.row3_chip1">战略评分</span>
-          <span class="chip" data-i18n="features.row3_chip2">SOP 流程</span>
-          <span class="chip" data-i18n="features.row3_chip3">审批流程</span>
-          <span class="chip" data-i18n="features.row3_chip4">自动化</span>
-          <span class="chip" data-i18n="features.row3_chip5">审计日志</span>
+          <span class="chip" data-i18n="features.row4_chip1">战略评分</span>
+          <span class="chip" data-i18n="features.row4_chip2">SOP 流程</span>
+          <span class="chip" data-i18n="features.row4_chip3">自动化</span>
+          <span class="chip" data-i18n="features.row4_chip4">审计日志</span>
         </div>
       </div>
       <div class="showcase-image" data-lightbox>
@@ -438,7 +460,7 @@
       <p class="section-subtitle" data-i18n="download.subtitle">约 10MB 安装包，安装即用，无需额外运行时环境。</p>
     </div>
 
-    <div class="download-grid">
+    <div class="download-grid" style="grid-template-columns: 1fr; max-width: 480px; margin: 40px auto 0;">
       <div class="download-card reveal stagger-1">
         <div class="download-card-icon">&#63743;</div>
         <h3 class="download-card-title" data-i18n="download.mac_title">macOS</h3>
@@ -446,19 +468,8 @@
         <a href="/downloads/ProspectClaw_1.2.8_aarch64.dmg" class="btn btn-primary" data-i18n="download.mac_btn_arm">下载 .dmg (Apple Silicon)</a>
         <a href="https://github.com/Hxitech/ClawPanelInvest/releases" class="btn btn-outline" style="margin-top:8px" data-i18n="download.mac_btn_intel">GitHub Releases</a>
       </div>
-      <div class="download-card reveal stagger-2">
-        <div class="download-card-icon">&#128187;</div>
-        <h3 class="download-card-title" data-i18n="download.win_title">Windows</h3>
-        <p class="download-card-detail" data-i18n-html="download.win_detail">x64 &middot; Windows 10+</p>
-        <a href="#" class="btn btn-primary btn-disabled" data-i18n="download.win_btn">即将上线</a>
-      </div>
-      <div class="download-card reveal stagger-3">
-        <div class="download-card-icon">&#128039;</div>
-        <h3 class="download-card-title" data-i18n="download.linux_title">Linux</h3>
-        <p class="download-card-detail">Ubuntu 20.04+ / Fedora 36+</p>
-        <a href="#" class="btn btn-primary btn-disabled" data-i18n="download.linux_btn">即将上线</a>
-      </div>
     </div>
+    <p class="download-coming-soon reveal" data-i18n="download.coming_soon">Windows 和 Linux 版本即将上线，敬请期待。</p>
   </div>
 </section>
 
