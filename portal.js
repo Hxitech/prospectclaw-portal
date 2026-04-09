@@ -38,18 +38,6 @@
     }
   })
 
-  /* ── 滚动进度条 ── */
-  const scrollProgress = document.getElementById('scroll-progress')
-
-  function updateScrollProgress() {
-    const scrollTop = window.scrollY
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight
-    const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0
-    if (scrollProgress) scrollProgress.style.width = pct + '%'
-  }
-
-  window.addEventListener('scroll', updateScrollProgress, { passive: true })
-
   /* ── 滚动渐显动画 ── */
   const revealObserver = new IntersectionObserver(
     function (entries) {
@@ -94,15 +82,6 @@
 
   document.querySelectorAll('[data-count]').forEach(function (el) {
     counterObserver.observe(el)
-  })
-
-  /* ── 技术卡片径向高光 ── */
-  document.querySelectorAll('.tech-card').forEach(function (card) {
-    card.addEventListener('mousemove', function (e) {
-      const rect = card.getBoundingClientRect()
-      card.style.setProperty('--mx', (e.clientX - rect.left) + 'px')
-      card.style.setProperty('--my', (e.clientY - rect.top) + 'px')
-    })
   })
 
   /* ── 灯箱 ── */
