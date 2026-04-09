@@ -147,6 +147,18 @@
     "linux_detail": "Ubuntu 20.04+ / Fedora 36+",
     "linux_btn": "即将上线"
   },
+  "docs": {
+    "tag": "Guides",
+    "title": "三本手册，按需取用",
+    "subtitle": "不懂技术看第一本，有基础看第二本，想喂给 AI 看第三本。",
+    "beginner_title": "零基础安装指南",
+    "beginner_desc": "不用懂代码，跟着 8 步走就行。半小时从下载到能聊天，卡住了问内置 AI 助手。",
+    "usage_title": "进阶使用指南",
+    "usage_desc": "6 步跑通完整链路，附排障清单、日常管理要点和 9 个概念速查。适合有一定技术基础的用户。",
+    "agent_title": "Agent 知识库",
+    "agent_desc": "复制全文丢给 AI 就行。产品架构、排障决策树、完整 FAQ，让钳子助手或 ChatGPT 能回答关于 ProspectClaw 的问题。",
+    "read_guide": "阅读指南 →"
+  },
   "footer": {
     "site": "官网",
     "features": "功能",

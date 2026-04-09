@@ -147,6 +147,18 @@
     "linux_detail": "Ubuntu 20.04+ / Fedora 36+",
     "linux_btn": "近日公開"
   },
+  "docs": {
+    "tag": "Guides",
+    "title": "3つのガイド、必要なものを選択",
+    "subtitle": "技術知識なし→1番目。ある程度分かる→2番目。AIに読ませたい→3番目。",
+    "beginner_title": "初心者インストールガイド",
+    "beginner_desc": "コーディング不要。8ステップに従うだけ、30分でダウンロードからチャットまで。困ったら内蔵AIアシスタントが助けてくれます。",
+    "usage_title": "上級使用ガイド",
+    "usage_desc": "6ステップで完全稼働。トラブルシューティングチェックリスト、日常運用のコツ、9つの用語解説付き。技術的な背景がある方向け。",
+    "agent_title": "Agentナレッジベース",
+    "agent_desc": "全文をコピーしてAIに貼り付けるだけ。製品アーキテクチャ、トラブルシューティング決定木、完全FAQで、ClawアシスタントやChatGPTがProspectClawの質問に答えられるように。",
+    "read_guide": "ガイドを読む →"
+  },
   "footer": {
     "site": "公式サイト",
     "features": "機能",

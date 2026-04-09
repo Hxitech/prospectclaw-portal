@@ -147,6 +147,18 @@
     "linux_detail": "Ubuntu 20.04+ / Fedora 36+",
     "linux_btn": "Coming Soon"
   },
+  "docs": {
+    "tag": "Guides",
+    "title": "Three Guides, Pick What You Need",
+    "subtitle": "No tech background? Read the first one. Some experience? The second. Want to feed an AI? The third.",
+    "beginner_title": "Beginner Install Guide",
+    "beginner_desc": "No coding needed. Follow 8 steps, 30 minutes from download to chatting. Built-in AI assistant helps if you get stuck.",
+    "usage_title": "Advanced Usage Guide",
+    "usage_desc": "6 steps to a fully working setup, plus troubleshooting checklist, daily ops tips, and a 9-concept glossary. For users with some tech background.",
+    "agent_title": "Agent Knowledge Base",
+    "agent_desc": "Copy the full text and feed it to any AI. Product architecture, troubleshooting decision trees, and full FAQ — lets Claw Assistant or ChatGPT answer ProspectClaw questions.",
+    "read_guide": "Read Guide →"
+  },
   "footer": {
     "site": "Website",
     "features": "Features",
