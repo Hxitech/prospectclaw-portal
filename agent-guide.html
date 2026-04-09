@@ -23,13 +23,18 @@
       ProspectClaw
     </a>
     <ul class="portal-nav-links">
-      <li><a href="/index.html">主站</a></li>
-      <li><a href="/beginner-guide.html">零基础指南</a></li>
-      <li><a href="/usage-guide.html">进阶指南</a></li>
-      <li><a href="/agent-guide.html">Agent 知识库</a></li>
-      <li><a href="/index.html#download">下载</a></li>
+      <li><a href="/index.html" data-i18n="nav.home">主站</a></li>
+      <li><a href="/beginner-guide.html" data-i18n="nav.beginner">零基础指南</a></li>
+      <li><a href="/usage-guide.html" data-i18n="nav.usage">进阶指南</a></li>
+      <li><a href="/agent-guide.html" data-i18n="nav.agent">Agent 知识库</a></li>
+      <li><a href="/index.html#download" data-i18n="nav.download">下载</a></li>
     </ul>
     <div class="portal-nav-actions">
+      <div class="lang-switcher">
+        <button data-lang="zh-CN" onclick="switchLocale('zh-CN')">中</button>
+        <button data-lang="en" onclick="switchLocale('en')">EN</button>
+        <button data-lang="ja" onclick="switchLocale('ja')">JA</button>
+      </div>
       <button class="theme-toggle" id="theme-toggle" title="切换主题">
         <span class="theme-icon">&#9790;</span>
       </button>
@@ -39,24 +44,25 @@
     </div>
   </div>
   <div class="mobile-menu" id="mobile-menu">
-    <a href="/beginner-guide.html">零基础指南</a>
-    <a href="/usage-guide.html">进阶指南</a>
-    <a href="/agent-guide.html">Agent 知识库</a>
-    <a href="/index.html#download">立即下载</a>
+    <a href="/index.html" data-i18n="nav.home">主站</a>
+    <a href="/beginner-guide.html" data-i18n="nav.beginner">零基础指南</a>
+    <a href="/usage-guide.html" data-i18n="nav.usage">进阶指南</a>
+    <a href="/agent-guide.html" data-i18n="nav.agent">Agent 知识库</a>
+    <a href="/index.html#download" data-i18n="nav.download_now">立即下载</a>
   </div>
 </nav>
 
 <!-- ═══════ Hero ═══════ -->
 <section class="hero hero-guide">
   <div class="container hero-content">
-    <div class="hero-badge reveal">AI Agent Reference · v1.2.8</div>
-    <h1 class="hero-title reveal">ProspectClaw Agent 知识库</h1>
-    <p class="hero-subtitle reveal">
-      专为 AI Agent 设计的结构化参考文档。内容经过优化，便于检索、推理和回答用户关于 ProspectClaw 安装、配置与使用的问题。
+    <div class="hero-badge reveal" data-i18n="agent.badge">AI Agent Reference · v1.2.8</div>
+    <h1 class="hero-title reveal" data-i18n="agent.title">ProspectClaw Agent 知识库</h1>
+    <p class="hero-subtitle reveal" data-i18n="agent.subtitle">
+      这份文档是给 AI 看的。复制下面的全文，丢给钳子助手、ChatGPT、Claude 或者任何支持知识库的 AI 平台，它就能回答关于 ProspectClaw 的问题了。
     </p>
     <div class="hero-ctas reveal">
-      <button class="btn btn-primary" data-copy-target="agent-kb-full">复制全文给 AI</button>
-      <a href="/beginner-guide.html" class="btn btn-outline">查看新手指南</a>
+      <button class="btn btn-primary" data-copy-target="agent-kb-full" data-i18n="agent.cta_copy">复制全文给 AI</button>
+      <a href="/beginner-guide.html" class="btn btn-outline" data-i18n="agent.cta_beginner">看新手指南</a>
     </div>
   </div>
 </section>
@@ -66,8 +72,8 @@
   <div class="container">
 
     <div class="ai-kb-toolbar reveal">
-      <div class="guide-intro-badge">Agent 知识块 v1.2.8</div>
-      <button class="btn btn-primary" data-copy-target="agent-kb-full">复制整段给 AI</button>
+      <div class="guide-intro-badge" data-i18n="agent.kb_badge">Agent 知识块 v1.2.8</div>
+      <button class="btn btn-primary" data-copy-target="agent-kb-full" data-i18n="agent.kb_copy">复制整段给 AI</button>
     </div>
 
     <pre class="ai-kb-block reveal" id="agent-kb-full"># ProspectClaw / OpenClaw 安装与使用知识库（Agent 版）
@@ -420,8 +426,8 @@ pending → ready → running → waiting_review → completed / failed / skippe
 - 可以建议查看日志具体排查</pre>
 
     <div class="guide-callout reveal">
-      <div class="guide-callout-title">如何使用这个知识库</div>
-      <p>将上方全部内容复制后提供给任何 AI Agent。可以用作钳子助手的内置知识、ChatGPT 的自定义指令、Claude 的项目知识，或任何支持知识库的 AI 平台。建议定期更新以保持与产品版本同步。</p>
+      <div class="guide-callout-title" data-i18n="agent.howto_title">怎么用这个知识库</div>
+      <p data-i18n="agent.howto_desc">把上面的全部内容复制，然后粘贴给你在用的 AI。可以是钳子助手的内置知识、ChatGPT 的自定义指令、Claude 的项目知识，或者任何支持知识库导入的平台。建议版本更新后重新复制一次。</p>
     </div>
   </div>
 </section>
@@ -432,13 +438,13 @@ pending → ready → running → waiting_review → completed / failed / skippe
     <div class="guide-final-panel reveal">
       <div class="guide-final-copy">
         <div class="section-tag">Next Step</div>
-        <h2>知识库已就绪，下一步喂给你的 AI</h2>
-        <p>复制上方全文，粘贴到钳子助手、ChatGPT、Claude 或任何支持知识库的 AI 平台。也可以查看新手指南了解完整上手流程。</p>
+        <h2 data-i18n="agent.final_title">复制好了？去喂给你的 AI 吧</h2>
+        <p data-i18n="agent.final_desc">粘贴到钳子助手、ChatGPT、Claude 或者任何 AI 平台里就行。想自己上手操作的话看新手指南或进阶指南。</p>
       </div>
       <div class="guide-final-actions">
-        <a href="/beginner-guide.html" class="btn btn-primary">查看新手指南</a>
-        <a href="/usage-guide.html" class="btn btn-outline">进阶指南</a>
-        <a href="/index.html" class="btn btn-outline">回到主站</a>
+        <a href="/beginner-guide.html" class="btn btn-primary" data-i18n="agent.final_cta1">零基础指南</a>
+        <a href="/usage-guide.html" class="btn btn-outline" data-i18n="agent.final_cta2">进阶指南</a>
+        <a href="/index.html" class="btn btn-outline" data-i18n="agent.final_cta3">回到主站</a>
       </div>
     </div>
   </div>
@@ -451,17 +457,18 @@ pending → ready → running → waiting_review → completed / failed / skippe
       ProspectClaw
     </div>
     <div class="portal-footer-links">
-      <a href="/index.html">主站首页</a>
-      <a href="/beginner-guide.html">零基础指南</a>
-      <a href="/usage-guide.html">进阶指南</a>
-      <a href="/agent-guide.html">Agent 知识库</a>
+      <a href="/index.html" data-i18n="nav.home">主站首页</a>
+      <a href="/beginner-guide.html" data-i18n="nav.beginner">零基础指南</a>
+      <a href="/usage-guide.html" data-i18n="nav.usage">进阶指南</a>
+      <a href="/agent-guide.html" data-i18n="nav.agent">Agent 知识库</a>
     </div>
-    <p class="portal-footer-copy">Copyright &copy; 2026 ProspectClaw. All rights reserved.</p>
+    <p class="portal-footer-copy" data-i18n="footer.copyright">Copyright &copy; 2026 ProspectClaw. All rights reserved.</p>
   </div>
 </footer>
 
 <div class="lightbox" id="lightbox"><img src="" alt="预览"></div>
 <script defer src="/portal.js"></script>
+<script defer src="/i18n.js"></script>
 <script>
 // 复制功能（带 fallback）
 document.querySelectorAll('[data-copy-target]').forEach(function(btn) {
@@ -483,7 +490,6 @@ document.querySelectorAll('[data-copy-target]').forEach(function(btn) {
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(text).then(onSuccess, onFail);
     } else {
-      // fallback for HTTP or older browsers
       var ta = document.createElement('textarea');
       ta.value = text;
       ta.style.cssText = 'position:fixed;left:-9999px;top:0;opacity:0';

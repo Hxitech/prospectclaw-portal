@@ -23,13 +23,18 @@
       ProspectClaw
     </a>
     <ul class="portal-nav-links">
-      <li><a href="/index.html">主站</a></li>
-      <li><a href="/beginner-guide.html">零基础指南</a></li>
-      <li><a href="/usage-guide.html">进阶指南</a></li>
-      <li><a href="/agent-guide.html">Agent 知识库</a></li>
-      <li><a href="/index.html#download">下载</a></li>
+      <li><a href="/index.html" data-i18n="nav.home">主站</a></li>
+      <li><a href="/beginner-guide.html" data-i18n="nav.beginner">零基础指南</a></li>
+      <li><a href="/usage-guide.html" data-i18n="nav.usage">进阶指南</a></li>
+      <li><a href="/agent-guide.html" data-i18n="nav.agent">Agent 知识库</a></li>
+      <li><a href="/index.html#download" data-i18n="nav.download">下载</a></li>
     </ul>
     <div class="portal-nav-actions">
+      <div class="lang-switcher">
+        <button data-lang="zh-CN" onclick="switchLocale('zh-CN')">中</button>
+        <button data-lang="en" onclick="switchLocale('en')">EN</button>
+        <button data-lang="ja" onclick="switchLocale('ja')">JA</button>
+      </div>
       <button class="theme-toggle" id="theme-toggle" title="切换主题">
         <span class="theme-icon">&#9790;</span>
       </button>
@@ -39,38 +44,38 @@
     </div>
   </div>
   <div class="mobile-menu" id="mobile-menu">
-    <a href="/beginner-guide.html">零基础指南</a>
-    <a href="/usage-guide.html">进阶指南</a>
-    <a href="/agent-guide.html">Agent 知识库</a>
-    <a href="/index.html#download">立即下载</a>
+    <a href="/index.html" data-i18n="nav.home">主站</a>
+    <a href="/beginner-guide.html" data-i18n="nav.beginner">零基础指南</a>
+    <a href="/usage-guide.html" data-i18n="nav.usage">进阶指南</a>
+    <a href="/agent-guide.html" data-i18n="nav.agent">Agent 知识库</a>
+    <a href="/index.html#download" data-i18n="nav.download_now">立即下载</a>
   </div>
 </nav>
 
 <!-- ═══════ Hero ═══════ -->
 <section class="hero hero-guide">
   <div class="container hero-content">
-    <div class="hero-badge reveal">零基础安装指南 · v1.2.8</div>
-    <h1 class="hero-title reveal">从零开始，手把手带你用起来</h1>
-    <p class="hero-subtitle reveal">
-      不需要编程基础，不需要懂命令行。照着下面 8 个步骤做，30 分钟就能把 ProspectClaw 跑起来。<br>
-      遇到问题？把这个页面链接发给任何 AI（钳子助手、ChatGPT、Claude），它们能帮你排查。
+    <div class="hero-badge reveal" data-i18n="beginner.badge">零基础安装指南 · v1.2.8</div>
+    <h1 class="hero-title reveal" data-i18n="beginner.title">从零开始，手把手带你用起来</h1>
+    <p class="hero-subtitle reveal" data-i18n-html="beginner.subtitle">
+      不用懂代码，不用会命令行。跟着下面 8 步走，半小时就能把 ProspectClaw 跑起来。
     </p>
     <div class="hero-ctas reveal">
-      <a href="#step-1" class="btn btn-primary">从第一步开始</a>
-      <a href="#faq" class="btn btn-outline">常见问题</a>
+      <a href="#step-1" class="btn btn-primary" data-i18n="beginner.cta_start">从第一步开始</a>
+      <a href="#faq" class="btn btn-outline" data-i18n="beginner.cta_faq">常见问题</a>
     </div>
     <div class="guide-quickbar reveal">
       <div class="guide-quickbar-card">
-        <div class="guide-quickbar-title">需要什么基础</div>
-        <div class="guide-quickbar-text">零基础。会装软件、能上网就够了。</div>
+        <div class="guide-quickbar-title" data-i18n="beginner.qb1_title">要什么基础</div>
+        <div class="guide-quickbar-text" data-i18n="beginner.qb1_text">零基础。会装软件就行。</div>
       </div>
       <div class="guide-quickbar-card">
-        <div class="guide-quickbar-title">大概需要多久</div>
-        <div class="guide-quickbar-text">约 30 分钟，取决于网速。</div>
+        <div class="guide-quickbar-title" data-i18n="beginner.qb2_title">要多长时间</div>
+        <div class="guide-quickbar-text" data-i18n="beginner.qb2_text">大概 30 分钟，看网速。</div>
       </div>
       <div class="guide-quickbar-card">
-        <div class="guide-quickbar-title">遇到问题怎么办</div>
-        <div class="guide-quickbar-text">把这个页面链接发给 AI 助手，告诉它卡在哪一步。</div>
+        <div class="guide-quickbar-title" data-i18n="beginner.qb3_title">卡住了怎么办</div>
+        <div class="guide-quickbar-text" data-i18n="beginner.qb3_text">问软件里自带的 AI 助手，或者把截图发给 ChatGPT。</div>
       </div>
     </div>
   </div>
@@ -81,47 +86,47 @@
   <div class="container">
     <div class="section-header reveal">
       <div class="section-tag">Three Editions</div>
-      <h2 class="section-title">三个版本，选最适合你的</h2>
-      <p class="section-subtitle">同一套底座，按场景裁剪。首次使用选哪个都行，后续可切换。</p>
+      <h2 class="section-title" data-i18n="beginner.editions_title">三个版本，先随便选一个</h2>
+      <p class="section-subtitle" data-i18n="beginner.editions_subtitle">底子是一样的，只是默认首页不同。选错了随时能切，不用重装。</p>
     </div>
 
     <div class="guide-callout reveal" style="margin-bottom: 24px;">
-      <div class="guide-callout-title">v1.2.8 新功能亮点</div>
-      <p><strong>SkillHub 技能商店</strong> — 在线浏览、搜索、一键安装 Agent 技能，替代旧版 CLI 命令。<strong>Chat OpenClaw 4.5+ 兼容</strong> — 支持 Agent 事件流（生命周期/计划/审批/思考），3 分钟超时保护。<strong>Gateway 稳定性增强</strong> — 仪表盘刷新节流、TCP 重试、自动重启优化。</p>
+      <div class="guide-callout-title" data-i18n="beginner.v128_title">v1.2.8 有啥新的</div>
+      <p data-i18n-html="beginner.v128_desc">加了个 <strong>SkillHub 技能商店</strong>，装技能不用敲命令了，在界面里搜一下点安装就行。聊天也更稳了，不会再出现发了消息半天没反应的情况。</p>
     </div>
 
     <div class="editions-grid" style="grid-template-columns: repeat(3, 1fr);">
       <div class="edition-card reveal stagger-1">
         <div class="edition-card-icon">&#128200;</div>
         <h3 class="edition-card-title">ProspectClaw Invest</h3>
-        <p class="edition-card-tagline">投资工作台</p>
+        <p class="edition-card-tagline" data-i18n="beginner.ed_invest_tag">投资工作台</p>
         <ul class="edition-card-features">
-          <li>投资仪表盘 + Deal Pipeline</li>
-          <li>企业库 / 联系人 / 投资文档</li>
-          <li>评分 / SOP / 审批 / 自动化</li>
-          <li>+ 完整平台核心能力</li>
+          <li data-i18n="beginner.ed_invest_f1">投资仪表盘 + Deal Pipeline</li>
+          <li data-i18n="beginner.ed_invest_f2">企业库 / 联系人 / 投资文档</li>
+          <li data-i18n="beginner.ed_invest_f3">评分 / SOP / 审批 / 自动化</li>
+          <li data-i18n="beginner.ed_invest_f4">+ 完整平台核心能力</li>
         </ul>
       </div>
       <div class="edition-card reveal stagger-2">
         <div class="edition-card-icon">&#128218;</div>
         <h3 class="edition-card-title">ProspectClaw Knowledge</h3>
-        <p class="edition-card-tagline">Agent 知识库</p>
+        <p class="edition-card-tagline" data-i18n="beginner.ed_kb_tag">Agent 知识库</p>
         <ul class="edition-card-features">
-          <li>助手首页，开箱即用</li>
-          <li>知识库整理与检索配置</li>
-          <li>Agent / 模型 / Gateway 管理</li>
-          <li>+ 完整平台核心能力</li>
+          <li data-i18n="beginner.ed_kb_f1">助手首页，开箱即用</li>
+          <li data-i18n="beginner.ed_kb_f2">知识库整理与检索配置</li>
+          <li data-i18n="beginner.ed_kb_f3">Agent / 模型 / Gateway 管理</li>
+          <li data-i18n="beginner.ed_kb_f4">+ 完整平台核心能力</li>
         </ul>
       </div>
       <div class="edition-card reveal stagger-3">
         <div class="edition-card-icon">&#128203;</div>
         <h3 class="edition-card-title">ProspectClaw SOP</h3>
-        <p class="edition-card-tagline">Agent SOP</p>
+        <p class="edition-card-tagline" data-i18n="beginner.ed_sop_tag">Agent SOP</p>
         <ul class="edition-card-features">
-          <li>SOP 工作台首页</li>
-          <li>Agent 规则编写与维护</li>
-          <li>流程文档输出</li>
-          <li>+ 完整平台核心能力</li>
+          <li data-i18n="beginner.ed_sop_f1">SOP 工作台首页</li>
+          <li data-i18n="beginner.ed_sop_f2">Agent 规则编写与维护</li>
+          <li data-i18n="beginner.ed_sop_f3">流程文档输出</li>
+          <li data-i18n="beginner.ed_sop_f4">+ 完整平台核心能力</li>
         </ul>
       </div>
     </div>
@@ -133,8 +138,8 @@
   <div class="container">
     <div class="section-header reveal">
       <div class="section-tag">Step by Step</div>
-      <h2 class="section-title">一步一步来，不跳步</h2>
-      <p class="section-subtitle">8 个步骤，按顺序来。每一步做完确认"过关标准"再往下走。</p>
+      <h2 class="section-title" data-i18n="beginner.steps_title">8 步搞定，按顺序来就行</h2>
+      <p class="section-subtitle" data-i18n="beginner.steps_subtitle">每一步做完看看"怎么知道搞定了"，确认没问题再往下。</p>
     </div>
 
     <div class="guide-steps">
@@ -143,19 +148,16 @@
       <article class="guide-step-card reveal" id="step-1">
         <div class="guide-step-topline">
           <div class="guide-step-index">01</div>
-          <div class="guide-step-meta">你需要准备什么</div>
+          <div class="guide-step-meta" data-i18n="beginner.s1_meta">你需要准备什么</div>
         </div>
         <div class="guide-step-content">
           <div class="guide-step-copy">
-            <h3>只需要一台能上网的电脑</h3>
-            <ul class="guide-bullet-list">
-              <li><strong>一台电脑</strong>（Mac 或 Windows），需要能联网。手机平板不行。</li>
-              <li><strong>不需要编程经验</strong>，不需要懂代码，不需要上过计算机课。</li>
-              <li><strong>不需要知道"命令行"是什么</strong>。如果后面用到，我们会明确告诉你输入什么。</li>
-              <li>有技术同事更好，但不是必须——你有 AI 助手可以问。</li>
-            </ul>
+            <h3 data-i18n="beginner.s1_title">就一台电脑就够了</h3>
+            <p data-i18n-html="beginner.s1_p1">Mac 或者 Windows 都行，能上网就行。手机平板不行，必须是电脑。</p>
+            <p data-i18n-html="beginner.s1_p2">不需要你懂编程，也不需要知道"命令行"是什么。后面如果需要用到，我们会一个字一个字告诉你输什么。</p>
+            <p data-i18n-html="beginner.s1_p3">身边有技术同事当然更好，但不是必须的。软件里有个内置 AI 助手能帮你。</p>
             <div class="guide-checkpoint">
-              <strong>过关标准：</strong> 你有一台能上网的 Mac 或 Windows 电脑。这就够了。
+              <strong data-i18n="beginner.checkpoint_label">怎么知道搞定了：</strong> <span data-i18n="beginner.s1_check">你面前有一台能上网的电脑。搞定。</span>
             </div>
           </div>
         </div>
@@ -165,28 +167,21 @@
       <article class="guide-step-card reveal" id="step-2">
         <div class="guide-step-topline">
           <div class="guide-step-index">02</div>
-          <div class="guide-step-meta">下载和安装</div>
+          <div class="guide-step-meta" data-i18n="beginner.s2_meta">下载和安装</div>
         </div>
         <div class="guide-step-content">
           <div class="guide-step-copy">
-            <h3>像装普通软件一样安装</h3>
-            <p>去主站下载安装包：<a href="/index.html#download">点击这里去下载页面</a></p>
+            <h3 data-i18n="beginner.s2_title">跟装普通软件一样</h3>
+            <p data-i18n-html="beginner.s2_p1">先去 <a href="/index.html#download">下载页面</a> 下载安装包。</p>
 
-            <h4>Mac 用户：</h4>
-            <ul class="guide-bullet-list">
-              <li>下载 .dmg 文件，双击打开，把图标拖到"应用程序"文件夹。</li>
-              <li><strong>重要：</strong>Mac 可能提示"无法验证开发者"或"已损坏"。<strong>这不是病毒！</strong>解决方法：
-                <br>点击左上角苹果图标 → 系统设置 → 隐私与安全性 → 找到 ProspectClaw 被阻止的提示 → 仍要打开
-              </li>
-            </ul>
+            <h4 data-i18n="beginner.s2_mac">Mac 用户</h4>
+            <p data-i18n-html="beginner.s2_mac_p1">下载 .dmg 文件，双击，把图标拖到"应用程序"文件夹里，完事。</p>
+            <p data-i18n-html="beginner.s2_mac_p2">第一次打开大概率会弹窗说"无法验证开发者"或者"已损坏"。<strong>这不是病毒，别怕。</strong>解决办法：点左上角苹果图标 → 系统设置 → 隐私与安全性 → 找到 ProspectClaw 被拦的那条提示 → 点"仍要打开"。</p>
 
-            <h4>Windows 用户：</h4>
-            <ul class="guide-bullet-list">
-              <li>下载 .exe 安装包，双击运行，一路"下一步"即可。</li>
-              <li>如果出现安全提示，选择"仍要运行"。</li>
-            </ul>
+            <h4 data-i18n="beginner.s2_win">Windows 用户</h4>
+            <p data-i18n-html="beginner.s2_win_p1">下载 .exe 文件，双击，一路点"下一步"就行。弹安全提示就选"仍要运行"。</p>
             <div class="guide-checkpoint">
-              <strong>过关标准：</strong> ProspectClaw 已安装，你可以双击打开它了。
+              <strong data-i18n="beginner.checkpoint_label">怎么知道搞定了：</strong> <span data-i18n="beginner.s2_check">在桌面或应用列表里能找到 ProspectClaw，双击能打开。</span>
             </div>
           </div>
           <div class="guide-step-visual showcase-image" data-lightbox>
@@ -199,34 +194,25 @@
       <article class="guide-step-card reveal" id="step-3">
         <div class="guide-step-topline">
           <div class="guide-step-index">03</div>
-          <div class="guide-step-meta">第一次打开 — 初始设置</div>
+          <div class="guide-step-meta" data-i18n="beginner.s3_meta">第一次打开</div>
         </div>
         <div class="guide-step-content">
           <div class="guide-step-copy">
-            <h3>让应用帮你检查电脑环境</h3>
-            <p>第一次打开会自动进入"初始设置"页面，帮你检查需要的工具是否齐全。</p>
-            <ul class="guide-bullet-list">
-              <li><strong>绿色勾</strong> = 已通过，不用管。</li>
-              <li><strong>红色叉</strong> = 需要处理，按下面说明来。</li>
-            </ul>
+            <h3 data-i18n="beginner.s3_title">打开之后会自动检查，别慌</h3>
+            <p data-i18n-html="beginner.s3_p1">第一次打开会进"初始设置"页面。它会自动检查你电脑上有没有缺什么东西。</p>
+            <p data-i18n-html="beginner.s3_p2">看到<strong>绿色勾</strong>就是没问题。看到<strong>红色叉</strong>说明缺了点东西，别慌，按下面说的来。</p>
 
-            <h4>如果 Node.js 显示红色：</h4>
-            <ul class="guide-bullet-list">
-              <li>Node.js 是一个运行环境工具（不需要理解它，装上就行）。</li>
-              <li>打开浏览器去 <strong>nodejs.org</strong>，下载安装即可。</li>
-              <li>装完后回到 ProspectClaw 刷新检查。</li>
-            </ul>
+            <h4 data-i18n="beginner.s3_nodejs">Node.js 是红色的？</h4>
+            <p data-i18n-html="beginner.s3_nodejs_p">Node.js 是一个工具，你不用管它是干嘛的，装上就行。打开浏览器搜"nodejs.org"，下载安装，装完回来刷新一下。</p>
 
-            <h4>如果 OpenClaw 显示红色：</h4>
-            <ul class="guide-bullet-list">
-              <li>直接点页面上的"安装"按钮，等它自动完成（几分钟）。</li>
-            </ul>
+            <h4 data-i18n="beginner.s3_openclaw">OpenClaw 是红色的？</h4>
+            <p data-i18n-html="beginner.s3_openclaw_p">直接点页面上的"安装"按钮，等几分钟，它会自己装好。</p>
 
-            <h4>什么是"命令行"？</h4>
-            <p>一个可以输入文字指令的窗口。<strong>Mac：</strong>按 Command+空格，搜 Terminal 回车。<strong>Windows：</strong>按 Win 键，搜 cmd 回车。正常情况下初始设置的按钮就够用了。</p>
+            <h4 data-i18n="beginner.s3_terminal">说的"命令行"是什么东西？</h4>
+            <p data-i18n-html="beginner.s3_terminal_p">就是一个黑底白字的窗口，可以输文字指令。Mac 按 Command+空格搜"Terminal"回车就能打开；Windows 按 Win 键搜"cmd"回车。不过正常来说你不用自己打开它，页面上的按钮就够用了。</p>
 
             <div class="guide-checkpoint">
-              <strong>过关标准：</strong> 初始设置页面上所有检查项都是绿色的。有红色项搞不定？先往下走，配好钳子助手（第 4 步）后让它帮你排查。
+              <strong data-i18n="beginner.checkpoint_label">怎么知道搞定了：</strong> <span data-i18n-html="beginner.s3_check">所有检查项都变绿了。有搞不定的红色项？先别卡在这，往下走到第 4 步配好 AI 助手，让它帮你看。</span>
             </div>
           </div>
         </div>
@@ -236,21 +222,21 @@
       <article class="guide-step-card reveal" id="step-4">
         <div class="guide-step-topline">
           <div class="guide-step-index">04</div>
-          <div class="guide-step-meta">配置钳子助手（AI 私人教练）</div>
+          <div class="guide-step-meta" data-i18n="beginner.s4_meta">配钳子助手（你的 AI 帮手）</div>
         </div>
         <div class="guide-step-content reverse">
           <div class="guide-step-copy">
-            <h3>先叫醒你的"私人教练"</h3>
-            <p>在左侧菜单找到"钳子助手"，点进去。它是内置的 AI 助手，能帮你解答问题、排查故障。</p>
-            <p>但它现在还不能工作——需要给它配一个"AI 大脑"（模型）。</p>
-            <ul class="guide-bullet-list">
-              <li>点右上角<strong>"设置"</strong>按钮。</li>
-              <li>填写 AI 模型信息，需要一个 <strong>API Key</strong>（使用密码）。</li>
-              <li><strong>不知道用什么模型？</strong>试试 MiniMax（有免费额度），或联系技术同事拿一个 API Key。</li>
-              <li>填好后点<strong>"测试连接"</strong>，看到成功提示就配好了。</li>
-            </ul>
+            <h3 data-i18n="beginner.s4_title">先把你的帮手叫醒</h3>
+            <p data-i18n-html="beginner.s4_p1">在左边菜单找到"钳子助手"，点进去。这是软件自带的 AI 助手，后面遇到什么问题都可以问它。</p>
+            <p data-i18n-html="beginner.s4_p2">但它现在还没法工作，需要你给它配一个 AI 模型（相当于给它装个大脑）。</p>
+            <ol>
+              <li data-i18n="beginner.s4_step1">点右上角"设置"按钮</li>
+              <li data-i18n-html="beginner.s4_step2">填 AI 模型信息。需要一个 <strong>API Key</strong>（就是一串密码）</li>
+              <li data-i18n="beginner.s4_step3">不知道填什么？试试 MiniMax，有免费额度。或者问公司技术同事要一个</li>
+              <li data-i18n="beginner.s4_step4">填好后点"测试连接"，显示成功就行了</li>
+            </ol>
             <div class="guide-checkpoint">
-              <strong>过关标准：</strong> 钳子助手能正常对话。试试输入"你好"看它是否回复。从现在开始，遇到问题直接问它！
+              <strong data-i18n="beginner.checkpoint_label">怎么知道搞定了：</strong> <span data-i18n="beginner.s4_check">在钳子助手里输入"你好"，它能回复你。从现在起遇到问题直接问它。</span>
             </div>
           </div>
           <div class="guide-step-visual showcase-image" data-lightbox>
@@ -258,8 +244,8 @@
           </div>
         </div>
         <div class="guide-callout">
-          <div class="guide-callout-title">从这一步开始，你有帮手了</div>
-          <p>后面遇到任何问题，都可以在钳子助手里描述你的问题。你也可以把这个网页链接发给它。再也不用一个人硬扛了。</p>
+          <div class="guide-callout-title" data-i18n="beginner.s4_callout_title">从这步开始你就有帮手了</div>
+          <p data-i18n="beginner.s4_callout_desc">后面不管卡在哪，都可以直接在钳子助手里说你的问题。它就是你的技术客服，而且还不用排队。</p>
         </div>
       </article>
 
@@ -267,21 +253,21 @@
       <article class="guide-step-card reveal" id="step-5">
         <div class="guide-step-topline">
           <div class="guide-step-index">05</div>
-          <div class="guide-step-meta">配置主引擎（模型和 Gateway）</div>
+          <div class="guide-step-meta" data-i18n="beginner.s5_meta">配模型和启动 Gateway</div>
         </div>
         <div class="guide-step-content">
           <div class="guide-step-copy">
-            <h3>给系统装上"发动机"</h3>
-            <p>第 4 步配的是钳子助手自己的模型。现在给系统主引擎也配上。</p>
-            <ul class="guide-bullet-list">
-              <li>左侧菜单找到<strong>"模型配置"</strong>，添加至少一个 AI 模型（可以和钳子助手用同一个）。</li>
-              <li>点<strong>"测试"</strong>确认模型能用。</li>
-              <li>然后去<strong>"仪表盘"</strong>或<strong>"服务管理"</strong>页面。</li>
-              <li>找到 <strong>Gateway</strong>（系统总开关），点<strong>"启动"</strong>。</li>
-              <li>等它变绿色<strong>"运行中"</strong>，主引擎就启动成功了。</li>
-            </ul>
+            <h3 data-i18n="beginner.s5_title">把系统的"主引擎"也开起来</h3>
+            <p data-i18n-html="beginner.s5_p1">刚才配的是钳子助手自己用的模型。现在要给系统主引擎也配上，这样实时聊天、Agent 这些功能才能用。</p>
+            <ol>
+              <li data-i18n="beginner.s5_step1">左边菜单找到"模型配置"，加一个 AI 模型（可以和钳子助手用同一个）</li>
+              <li data-i18n="beginner.s5_step2">点"测试"确认能用</li>
+              <li data-i18n="beginner.s5_step3">然后去"仪表盘"或"服务管理"页面</li>
+              <li data-i18n-html="beginner.s5_step4">找到 <strong>Gateway</strong>（就是系统的总开关），点"启动"</li>
+              <li data-i18n="beginner.s5_step5">等它变成绿色的"运行中"就好了</li>
+            </ol>
             <div class="guide-checkpoint">
-              <strong>过关标准：</strong> 模型测试通过，Gateway 显示"运行中"（绿色）。Gateway 启动不了？问钳子助手。
+              <strong data-i18n="beginner.checkpoint_label">怎么知道搞定了：</strong> <span data-i18n="beginner.s5_check">模型测试通过了，Gateway 显示绿色"运行中"。启动不了？去问钳子助手。</span>
             </div>
           </div>
           <div class="guide-step-visual guide-dual-shots">
@@ -299,19 +285,16 @@
       <article class="guide-step-card reveal" id="step-6">
         <div class="guide-step-topline">
           <div class="guide-step-index">06</div>
-          <div class="guide-step-meta">第一次对话 — 验证系统</div>
+          <div class="guide-step-meta" data-i18n="beginner.s6_meta">发第一条消息</div>
         </div>
         <div class="guide-step-content reverse">
           <div class="guide-step-copy">
-            <h3>发一条消息，验证系统跑通了</h3>
-            <ul class="guide-bullet-list">
-              <li>左侧菜单找到<strong>"实时聊天"</strong>，点进去。</li>
-              <li>输入：<strong>"你好，介绍一下你自己"</strong>，按回车。</li>
-              <li>收到回复 = <strong>系统已完全跑通！</strong></li>
-              <li>没收到回复？检查 Gateway 是否还在"运行中"，或问钳子助手："实时聊天发消息没回复，怎么办？"</li>
-            </ul>
+            <h3 data-i18n="beginner.s6_title">试一下能不能聊天</h3>
+            <p data-i18n="beginner.s6_p1">左边菜单找到"实时聊天"，点进去，随便打句话，比如"你好，介绍一下你自己"。</p>
+            <p data-i18n-html="beginner.s6_p2">收到回复了？<strong>恭喜，系统跑通了！</strong></p>
+            <p data-i18n="beginner.s6_p3">没收到？先看看 Gateway 是不是还在"运行中"。如果是绿色的但就是不回，去钳子助手说一句"实时聊天发消息没回复"，它会帮你查。</p>
             <div class="guide-checkpoint">
-              <strong>过关标准：</strong> 实时聊天里发消息能收到回复。核心功能已跑通。
+              <strong data-i18n="beginner.checkpoint_label">怎么知道搞定了：</strong> <span data-i18n="beginner.s6_check">发消息能收到回复。核心功能跑通了。</span>
             </div>
           </div>
           <div class="guide-step-visual showcase-image" data-lightbox>
@@ -324,34 +307,32 @@
       <article class="guide-step-card reveal" id="step-7">
         <div class="guide-step-topline">
           <div class="guide-step-index">07</div>
-          <div class="guide-step-meta">探索更多功能（可选）</div>
+          <div class="guide-step-meta" data-i18n="beginner.s7_meta">随便逛逛（可选）</div>
         </div>
         <div class="guide-step-content">
           <div class="guide-step-copy">
-            <h3>系统跑通后，这些功能值得试试</h3>
-            <p>基础链路已通，可以按兴趣探索这些模块：</p>
+            <h3 data-i18n="beginner.s7_title">系统能用了，看看还有什么好玩的</h3>
+            <p data-i18n="beginner.s7_p1">基本功能已经跑通了，下面这些按兴趣看就行，不用全试：</p>
 
-            <h4>AI 能力：</h4>
+            <h4 data-i18n="beginner.s7_ai">AI 相关</h4>
             <ul class="guide-bullet-list">
-              <li><strong>SkillHub 技能商店</strong>（v1.2.8 新增）— 在线浏览、搜索、一键安装 Agent 技能。去"Skills"页面的"商店"标签页体验。</li>
-              <li><strong>Prospect-Research 科学家集群</strong> — 多 AI 协作完成复杂任务，自带 12 个案例模板。</li>
-              <li><strong>ClawSwarm 蜂群协作</strong> — 输入目标，AI 自动拆解为任务 DAG，多智能体并行执行。</li>
+              <li data-i18n="beginner.s7_ai1">SkillHub 技能商店 — 给 Agent 装新技能的地方，去 Skills 页面就能看到</li>
+              <li data-i18n="beginner.s7_ai2">Prospect-Research 科学家集群 — 多个 AI 协作完成复杂任务，有 12 个现成模板可以直接跑</li>
+              <li data-i18n="beginner.s7_ai3">ClawSwarm 蜂群协作 — 你说个目标，AI 自动拆成小任务分头干活</li>
             </ul>
 
-            <h4>投资管理（Invest 版本）：</h4>
+            <h4 data-i18n="beginner.s7_invest">投资管理（Invest 版才有）</h4>
             <ul class="guide-bullet-list">
-              <li><strong>投资概览</strong> — 项目池漏斗、管道分布和近期动态仪表盘。</li>
-              <li><strong>Deal Pipeline</strong> — 六阶段看板管理（寻源→初筛→尽调→IC→条款→关闭）。</li>
-              <li><strong>企业库 + 联系人</strong> — 被投企业档案和联系人管理。</li>
+              <li data-i18n="beginner.s7_invest1">投资概览 — 看项目池全貌的仪表盘</li>
+              <li data-i18n="beginner.s7_invest2">Deal Pipeline — 看板式管理，从寻源一直到关闭</li>
+              <li data-i18n="beginner.s7_invest3">企业库 + 联系人 — 管公司和人的地方</li>
             </ul>
 
-            <h4>消息渠道（可选）：</h4>
-            <ul class="guide-bullet-list">
-              <li><strong>飞书 / Lark</strong> — 需要在飞书开放平台创建应用，拿到 App ID 和 App Secret。操作较复杂，建议让钳子助手或技术同事协助。</li>
-              <li><strong>Telegram</strong> — 通过 @BotFather 创建 Bot 拿到 Token 即可，最简单。</li>
-            </ul>
+            <h4 data-i18n="beginner.s7_channel">消息渠道（可选）</h4>
+            <p data-i18n-html="beginner.s7_channel_p"><strong>飞书</strong>：配置比较复杂，建议让技术同事帮忙。<strong>Telegram</strong>：最简单，几分钟就能接上。</p>
+
             <div class="guide-checkpoint">
-              <strong>过关标准：</strong> 你已经知道系统里有哪些功能，并按兴趣试了几个。
+              <strong data-i18n="beginner.checkpoint_label">怎么知道搞定了：</strong> <span data-i18n="beginner.s7_check">你大概知道系统里有啥了，感兴趣的试了几个。</span>
             </div>
           </div>
         </div>
@@ -361,19 +342,19 @@
       <article class="guide-step-card reveal" id="step-8">
         <div class="guide-step-topline">
           <div class="guide-step-index">08</div>
-          <div class="guide-step-meta">遇到问题怎么办</div>
+          <div class="guide-step-meta" data-i18n="beginner.s8_meta">遇到问题找谁</div>
         </div>
         <div class="guide-step-content">
           <div class="guide-step-copy">
-            <h3>三个求助方法，优先级排序</h3>
-            <ul class="guide-bullet-list">
-              <li><strong>第一选择：问钳子助手！</strong>描述问题，比如"Gateway 还是红色的"，它会帮你排查。</li>
-              <li><strong>第二选择：发给外部 AI。</strong>把这个页面链接发给 ChatGPT / Claude，告诉它你的问题。</li>
-              <li><strong>第三选择：查看进阶指南。</strong><a href="/usage-guide.html">进阶指南</a>有更详细的操作手册和排障清单。</li>
-            </ul>
-            <p><strong>最重要：不要一出问题就重装！</strong>大多数问题有简单解决方法，重装反而可能丢配置。先问 AI。</p>
+            <h3 data-i18n="beginner.s8_title">记住这三个方法就够了</h3>
+            <ol>
+              <li data-i18n-html="beginner.s8_m1"><strong>先问钳子助手。</strong>直接说你的问题，比如"Gateway 还是红色的怎么办"，它通常能给你答案。</li>
+              <li data-i18n-html="beginner.s8_m2"><strong>发给外部 AI。</strong>把截图或这个网页链接发给 ChatGPT / Claude，说"我在用 ProspectClaw，遇到了这个问题"。</li>
+              <li data-i18n-html="beginner.s8_m3"><strong>看进阶指南。</strong><a href="/usage-guide.html">进阶指南</a>有更详细的操作手册和排障清单。</li>
+            </ol>
+            <p data-i18n-html="beginner.s8_tip">还有一件事：<strong>别一出问题就重装。</strong>大多数问题有简单的解决办法，重装反而可能丢掉你的配置。先问 AI。</p>
             <div class="guide-checkpoint">
-              <strong>过关标准：</strong> 你知道遇到问题该找谁——先找钳子助手，或把这个页面发给 AI。
+              <strong data-i18n="beginner.checkpoint_label">怎么知道搞定了：</strong> <span data-i18n="beginner.s8_check">你知道遇到问题该找谁了。</span>
             </div>
           </div>
         </div>
@@ -384,42 +365,37 @@
     <!-- FAQ -->
     <div class="guide-cards-panel reveal" id="faq">
       <div class="section-tag">Quick FAQ</div>
-      <h3 class="guide-cards-title">最常见的 4 个问题</h3>
+      <h3 class="guide-cards-title" data-i18n="beginner.faq_title">最常碰到的 4 个问题</h3>
       <div class="guide-card-grid">
         <article class="guide-tool-card">
           <div class="guide-tool-head">
             <div class="guide-tool-icon">&#127822;</div>
-            <h4>Mac 提示"无法打开"或"已损坏"</h4>
+            <h4 data-i18n="beginner.faq1_title">双击打不开，说什么"已损坏"</h4>
           </div>
-          <p>不是病毒，是苹果安全机制。系统设置 → 隐私与安全性 → 找到 ProspectClaw → 仍要打开。详见第 2 步。</p>
+          <p data-i18n="beginner.faq1_desc">这是 Mac 的安全机制，不是真的坏了。去系统设置 → 隐私与安全性 → 找到 ProspectClaw → 点"仍要打开"。详见第 2 步。</p>
         </article>
         <article class="guide-tool-card">
           <div class="guide-tool-head">
             <div class="guide-tool-icon">&#128308;</div>
-            <h4>初始设置里有红色项</h4>
+            <h4 data-i18n="beginner.faq2_title">打开就看到一堆红色</h4>
           </div>
-          <p>红色项表示需要安装某工具。按页面提示操作。搞不定就问钳子助手："初始设置里 XX 是红色的，怎么办？"</p>
+          <p data-i18n="beginner.faq2_desc">红色就是缺了点东西，按页面提示装就行。搞不定就去钳子助手说"初始设置里 XX 是红色的"，它会告诉你怎么弄。</p>
         </article>
         <article class="guide-tool-card">
           <div class="guide-tool-head">
             <div class="guide-tool-icon">&#128679;</div>
-            <h4>Gateway 启动不了</h4>
+            <h4 data-i18n="beginner.faq3_title">点了启动但 Gateway 还是红的</h4>
           </div>
-          <p>最常见原因是模型没配好或端口被占用。直接在钳子助手里说"Gateway 启动失败"，让它帮你诊断。</p>
+          <p data-i18n="beginner.faq3_desc">多半是模型没配好，或者端口被别的程序占了。直接在钳子助手里说"Gateway 启动失败"，让它帮你看看。</p>
         </article>
         <article class="guide-tool-card">
           <div class="guide-tool-head">
             <div class="guide-tool-icon">&#128172;</div>
-            <h4>实时聊天没收到回复</h4>
+            <h4 data-i18n="beginner.faq4_title">发了消息但没人理我</h4>
           </div>
-          <p>先检查服务管理页面 Gateway 是否绿色"运行中"。不是就先启动它。是绿色还没回复，问钳子助手帮你查。</p>
+          <p data-i18n="beginner.faq4_desc">去仪表盘看看 Gateway 是不是绿色"运行中"。不是绿色就先启动它。是绿色的还不回，问钳子助手帮你查原因。</p>
         </article>
       </div>
-    </div>
-
-    <div class="guide-callout reveal">
-      <div class="guide-callout-title">万能求助法</div>
-      <p>任何时候遇到问题，把这个页面链接（或截图）发给 AI 助手。无论是钳子助手、ChatGPT 还是 Claude，它们都能根据这里的信息帮你解决。</p>
     </div>
 
   </div>
@@ -431,13 +407,13 @@
     <div class="guide-final-panel reveal">
       <div class="guide-final-copy">
         <div class="section-tag">Next Step</div>
-        <h2>搞定了？接下来看看进阶指南</h2>
-        <p>零基础指南帮你从零跑起来了。想更深入了解每个功能、学习高级用法，查看进阶指南。</p>
+        <h2 data-i18n="beginner.final_title">搞定了？接下来看看进阶指南</h2>
+        <p data-i18n="beginner.final_desc">零基础指南帮你把东西跑起来了。想了解每个功能怎么用、怎么调，看进阶指南。</p>
       </div>
       <div class="guide-final-actions">
-        <a href="/usage-guide.html" class="btn btn-primary">查看进阶指南</a>
-        <a href="/agent-guide.html" class="btn btn-outline">Agent 知识库</a>
-        <a href="/index.html" class="btn btn-outline">回到主站</a>
+        <a href="/usage-guide.html" class="btn btn-primary" data-i18n="beginner.final_cta1">查看进阶指南</a>
+        <a href="/agent-guide.html" class="btn btn-outline" data-i18n="beginner.final_cta2">Agent 知识库</a>
+        <a href="/index.html" class="btn btn-outline" data-i18n="beginner.final_cta3">回到主站</a>
       </div>
     </div>
   </div>
@@ -450,16 +426,17 @@
       ProspectClaw
     </div>
     <div class="portal-footer-links">
-      <a href="/index.html">主站首页</a>
-      <a href="/beginner-guide.html">零基础指南</a>
-      <a href="/usage-guide.html">进阶指南</a>
-      <a href="/agent-guide.html">Agent 知识库</a>
+      <a href="/index.html" data-i18n="nav.home">主站首页</a>
+      <a href="/beginner-guide.html" data-i18n="nav.beginner">零基础指南</a>
+      <a href="/usage-guide.html" data-i18n="nav.usage">进阶指南</a>
+      <a href="/agent-guide.html" data-i18n="nav.agent">Agent 知识库</a>
     </div>
-    <p class="portal-footer-copy">Copyright &copy; 2026 ProspectClaw. All rights reserved.</p>
+    <p class="portal-footer-copy" data-i18n="footer.copyright">Copyright &copy; 2026 ProspectClaw. All rights reserved.</p>
   </div>
 </footer>
 
 <div class="lightbox" id="lightbox"><img src="" alt="预览"></div>
 <script defer src="/portal.js"></script>
+<script defer src="/i18n.js"></script>
 </body>
 </html>
