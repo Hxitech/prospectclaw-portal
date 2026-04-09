@@ -502,6 +502,66 @@ a:hover { text-decoration: underline; }
   line-height: 1.33; letter-spacing: -0.12px;
 }
 
+/* ── 手册文档 ── */
+.docs-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+}
+
+.doc-card {
+  display: block;
+  background: #272729;
+  border: none;
+  border-radius: 8px;
+  padding: 32px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.doc-card:hover { background: #333336; text-decoration: none; }
+
+.section-light .doc-card {
+  background: #ffffff;
+}
+.section-light .doc-card:hover { background: #fafafa; }
+
+[data-theme="dark"] .section-light .doc-card {
+  background: #272729;
+}
+[data-theme="dark"] .section-light .doc-card:hover { background: #333336; }
+
+.doc-card-icon {
+  font-size: 32px; margin-bottom: 16px;
+}
+
+.doc-card-title {
+  font-size: 21px; font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 1.19; letter-spacing: 0.231px;
+}
+
+.section-dark .doc-card-title { color: #ffffff; }
+.section-light .doc-card-title { color: #1d1d1f; }
+
+.doc-card-desc {
+  font-size: 14px;
+  line-height: 1.43; letter-spacing: -0.224px;
+  margin-bottom: 16px;
+}
+
+.section-dark .doc-card-desc { color: rgba(255,255,255,0.56); }
+.section-light .doc-card-desc { color: rgba(0,0,0,0.56); }
+
+.doc-card-link {
+  font-size: 14px; font-weight: 600;
+  color: #2997ff;
+  letter-spacing: -0.224px;
+}
+
+.section-light .doc-card-link { color: #0066cc; }
+
+@media (max-width: 1024px) {
+  .docs-grid { grid-template-columns: 1fr; max-width: 480px; margin-left: auto; margin-right: auto; }
+}
+
 /* ── 技术架构 ── */
 .tech-grid {
   display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;
