@@ -8,7 +8,7 @@
     "menu": "菜单"
   },
   "hero": {
-    "badge": "v1.2.5 \u00b7 AI 全能工作台",
+    "badge": "v1.2.8 \u00b7 AI 全能工作台",
     "title": "本地化 AI 全能工作台",
     "subtitle": "集成 AI 助手、多智能体协作、投资管理、知识库、SOP 流程引擎。<br>无需部署服务器，~10MB 安装即用，数据留在本地，安全可控。",
     "cta_download": "下载 ProspectClaw",
@@ -128,7 +128,7 @@
   "download": {
     "tag": "Download",
     "title": "立即下载 ProspectClaw",
-    "badge": "v1.2.5",
+    "badge": "v1.2.8",
     "subtitle": "约 10MB 安装包，安装即用，无需额外运行时环境。",
     "mac_title": "macOS",
     "mac_detail": "Apple Silicon / Intel \u00b7 macOS 12.0+",

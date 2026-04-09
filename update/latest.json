@@ -1,6 +1,8 @@
 {
-  "version": "1.2.5-fix2",
+  "version": "1.2.8",
   "minAppVersion": "1.2.0",
-  "changelog": "版本 1.2.5-fix2 — 增量 DOM 更新消除对话闪烁跳动",
-  "releasedAt": "2026-04-04T20:30:00Z"
+  "changelog": "版本 1.2.8 — SkillHub SDK 迁移 + Chat OpenClaw 4.5+ 兼容 + Gateway 稳定性增强",
+  "releasedAt": "2026-04-08T12:00:00Z",
+  "downloadUrl": "https://github.com/Hxitech/ClawPanelInvest/releases/tag/v1.2.8",
+  "recommendedOpenClaw": "2026.4.8"
 }
