@@ -1,8 +1,8 @@
 {
-  "version": "1.2.8-fix2",
+  "version": "1.2.8-fix3",
   "minAppVersion": "1.2.0",
-  "changelog": "版本 1.2.8-fix2 — UI 美化：Prospect-Research / ClawSwarm / 钳子助手 三模块界面升级",
-  "releasedAt": "2026-04-09T12:00:00Z",
-  "downloadUrl": "https://prospectclaw.ccipd.net/downloads/ProspectClaw_1.2.8-fix2_aarch64.dmg",
+  "changelog": "版本 1.2.8-fix3 — 移除 QTCOOL 赞助集成 + i18n 补全 + ESLint 静态分析",
+  "releasedAt": "2026-04-09T14:00:00Z",
+  "downloadUrl": "https://prospectclaw.ccipd.net/downloads/ProspectClaw_1.2.8-fix3_aarch64.dmg",
   "recommendedOpenClaw": "2026.4.8"
 }
