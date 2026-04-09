@@ -14,7 +14,7 @@
     "menu": "メニュー"
   },
   "hero": {
-    "badge": "v1.2.8 · AI ワークベンチ",
+    "badge": "v1.2.8-fix2 · AI ワークベンチ",
     "title": "ローカル AI オールインワン ワークベンチ",
     "subtitle": "AIアシスタント、マルチエージェント連携、投資管理、ナレッジベース、SOPエンジンを統合。<br>サーバー不要、約10MBでインストール、データはローカルに安全に保管。",
     "cta_download": "ProspectClaw をダウンロード",
@@ -134,7 +134,7 @@
   "download": {
     "tag": "Download",
     "title": "ProspectClaw をダウンロード",
-    "badge": "v1.2.8",
+    "badge": "v1.2.8-fix2",
     "subtitle": "約10MBのインストーラー、追加ランタイム不要。インストールしてすぐ使えます。",
     "mac_title": "macOS",
     "mac_detail": "Apple Silicon / Intel · macOS 12.0+",
