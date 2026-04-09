@@ -722,6 +722,607 @@ a:hover { text-decoration: underline; }
   border-radius: 8px;
 }
 
+/* ── 指南页面通用 ── */
+.hero-guide {
+  padding: 140px 0 60px;
+}
+.hero-guide .hero-subtitle {
+  font-size: 17px;
+  max-width: 680px;
+}
+
+/* 快速信息栏 */
+.guide-quickbar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 40px;
+  text-align: left;
+}
+.guide-quickbar-card {
+  background: rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 20px;
+}
+.guide-quickbar-title {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: -0.12px;
+  color: rgba(255,255,255,0.56);
+  margin-bottom: 6px;
+}
+.guide-quickbar-text {
+  font-size: 14px;
+  line-height: 1.43;
+  color: rgba(255,255,255,0.8);
+}
+
+/* 步骤卡片 */
+.guide-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.guide-step-card {
+  background: var(--p-bg-card-dark);
+  border-radius: 16px;
+  padding: 40px;
+  overflow: hidden;
+}
+.section-light .guide-step-card {
+  background: #ffffff;
+}
+[data-theme="dark"] .section-light .guide-step-card {
+  background: #272729;
+}
+
+.guide-step-topline {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.guide-step-index {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--p-accent);
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+  border-radius: 14px;
+  flex-shrink: 0;
+}
+.guide-step-meta {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--p-text-secondary);
+  letter-spacing: -0.224px;
+}
+.guide-step-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+.guide-step-content.reverse {
+  direction: rtl;
+}
+.guide-step-content.reverse > * {
+  direction: ltr;
+}
+.guide-step-copy h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.009px;
+  color: var(--p-text);
+}
+.guide-step-copy h4 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 20px 0 8px;
+  color: var(--p-text);
+}
+.guide-step-copy p {
+  font-size: 15px;
+  line-height: 1.53;
+  color: var(--p-text-secondary);
+  margin-bottom: 12px;
+}
+
+/* 列表 */
+.guide-bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0;
+}
+.guide-bullet-list li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 15px;
+  line-height: 1.53;
+  color: var(--p-text-secondary);
+  margin-bottom: 8px;
+}
+.guide-bullet-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--p-accent);
+}
+
+/* 过关标准 */
+.guide-checkpoint {
+  margin-top: 20px;
+  padding: 16px 20px;
+  background: rgba(0,113,227,0.06);
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--p-text-secondary);
+}
+[data-theme="dark"] .guide-checkpoint {
+  background: rgba(41,151,255,0.1);
+}
+
+/* 提示框 */
+.guide-callout {
+  margin: 24px 0;
+  padding: 20px 24px;
+  background: rgba(0,113,227,0.06);
+  border-left: 3px solid var(--p-accent);
+  border-radius: 0 10px 10px 0;
+  font-size: 15px;
+  line-height: 1.53;
+  color: var(--p-text-secondary);
+}
+[data-theme="dark"] .guide-callout {
+  background: rgba(41,151,255,0.08);
+}
+.guide-callout-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--p-text);
+  margin-bottom: 6px;
+}
+
+/* 版本卡片网格 */
+.editions-grid {
+  display: grid;
+  gap: 20px;
+}
+.edition-card {
+  background: var(--p-bg-card-dark);
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+}
+.section-light .edition-card { background: #ffffff; }
+[data-theme="dark"] .section-light .edition-card { background: #272729; }
+
+.edition-card-icon { font-size: 36px; margin-bottom: 12px; }
+.edition-card-title {
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: var(--p-text);
+}
+.edition-card-tagline {
+  font-size: 14px;
+  color: var(--p-text-tertiary);
+  margin-bottom: 16px;
+}
+.edition-card-features {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+.edition-card-features li {
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--p-text-secondary);
+  padding: 6px 0;
+  border-bottom: 1px solid var(--p-step-line);
+}
+.edition-card-features li:last-child { border-bottom: none; }
+
+/* 工具卡片网格 */
+.guide-cards-panel {
+  margin-top: 48px;
+  padding: 40px;
+  background: var(--p-bg-card-dark);
+  border-radius: 16px;
+}
+.section-light .guide-cards-panel { background: #ffffff; }
+[data-theme="dark"] .section-light .guide-cards-panel { background: #272729; }
+
+.guide-cards-title {
+  font-size: 21px;
+  font-weight: 600;
+  margin: 8px 0 6px;
+  color: var(--p-text);
+}
+.guide-cards-desc {
+  font-size: 14px;
+  color: var(--p-text-tertiary);
+  margin-bottom: 24px;
+  max-width: 640px;
+}
+.guide-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.guide-tool-card {
+  background: rgba(0,0,0,0.04);
+  border-radius: 12px;
+  padding: 20px;
+}
+[data-theme="dark"] .guide-tool-card {
+  background: rgba(255,255,255,0.04);
+}
+.guide-tool-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.guide-tool-icon { font-size: 20px; }
+.guide-tool-head h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--p-text);
+}
+.guide-tool-card p {
+  font-size: 13px;
+  line-height: 1.46;
+  color: var(--p-text-secondary);
+  margin-bottom: 8px;
+}
+.guide-tool-tip {
+  font-size: 12px;
+  color: var(--p-text-tertiary);
+  font-style: italic;
+}
+
+/* 介绍面板 */
+.guide-intro-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 32px;
+  background: var(--p-bg-card-dark);
+  border-radius: 16px;
+}
+.section-light .guide-intro-panel { background: #ffffff; }
+[data-theme="dark"] .section-light .guide-intro-panel { background: #272729; }
+
+.guide-intro-badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--p-link);
+  margin-bottom: 12px;
+}
+.guide-intro-copy h3 {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.41;
+  color: var(--p-text);
+  margin-bottom: 10px;
+}
+.guide-intro-copy p {
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--p-text-secondary);
+}
+
+/* 小卡片堆叠 */
+.guide-mini-stack,
+.guide-skill-note,
+.guide-channel-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.guide-mini-card {
+  background: rgba(0,0,0,0.04);
+  border-radius: 12px;
+  padding: 20px;
+}
+[data-theme="dark"] .guide-mini-card {
+  background: rgba(255,255,255,0.04);
+}
+.guide-mini-card h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--p-text);
+  margin-bottom: 6px;
+}
+.guide-mini-card p {
+  font-size: 13px;
+  line-height: 1.46;
+  color: var(--p-text-secondary);
+}
+
+/* 双截图 */
+.guide-dual-shots {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* 排障清单 */
+.guide-fix-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.guide-fix-card {
+  background: var(--p-bg-card-dark);
+  border-radius: 16px;
+  padding: 28px;
+}
+.section-light .guide-fix-card { background: #ffffff; }
+[data-theme="dark"] .section-light .guide-fix-card { background: #272729; }
+
+.guide-fix-card h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--p-text);
+  margin-bottom: 12px;
+}
+
+/* 概念速查 */
+.guide-glossary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.guide-glossary-card {
+  background: var(--p-bg-card-dark);
+  border-radius: 12px;
+  padding: 24px;
+}
+.section-light .guide-glossary-card { background: #ffffff; }
+[data-theme="dark"] .section-light .guide-glossary-card { background: #272729; }
+
+.guide-glossary-card h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--p-text);
+  margin-bottom: 8px;
+}
+.guide-glossary-card p {
+  font-size: 13px;
+  line-height: 1.46;
+  color: var(--p-text-secondary);
+}
+
+/* 日常管理 4 格 */
+.guide-four-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.guide-focus-card {
+  background: var(--p-bg-card-dark);
+  border-radius: 16px;
+  padding: 28px;
+}
+.section-light .guide-focus-card { background: #ffffff; }
+[data-theme="dark"] .section-light .guide-focus-card { background: #272729; }
+
+.guide-focus-index {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--p-accent);
+  margin-bottom: 12px;
+}
+.guide-focus-card h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--p-text);
+  margin-bottom: 8px;
+}
+.guide-focus-card p {
+  font-size: 13px;
+  line-height: 1.46;
+  color: var(--p-text-secondary);
+}
+
+/* 测试消息框 */
+.guide-test-box {
+  margin: 16px 0;
+  padding: 16px 20px;
+  background: rgba(0,0,0,0.04);
+  border-radius: 10px;
+}
+[data-theme="dark"] .guide-test-box {
+  background: rgba(255,255,255,0.04);
+}
+.guide-test-title {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--p-text-tertiary);
+  margin-bottom: 8px;
+}
+.guide-test-message {
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--p-accent);
+  font-style: italic;
+}
+
+/* 提示条 */
+.guide-assistant-strip {
+  margin-top: 32px;
+  padding: 20px 24px;
+  background: rgba(0,113,227,0.06);
+  border-radius: 12px;
+  text-align: center;
+}
+[data-theme="dark"] .guide-assistant-strip {
+  background: rgba(41,151,255,0.08);
+}
+.guide-assistant-strip-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--p-text);
+  margin-bottom: 4px;
+}
+.guide-assistant-strip p {
+  font-size: 13px;
+  color: var(--p-text-secondary);
+}
+
+/* 救援面板 */
+.guide-rescue-panel {
+  margin-top: 24px;
+  padding: 24px;
+  background: var(--p-bg-card-dark);
+  border-radius: 12px;
+  text-align: center;
+}
+.section-light .guide-rescue-panel { background: #ffffff; }
+[data-theme="dark"] .section-light .guide-rescue-panel { background: #272729; }
+
+.guide-rescue-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--p-text);
+  margin-bottom: 12px;
+}
+
+/* 概要网格 */
+.manual-outline {
+  margin-bottom: 40px;
+  padding: 28px;
+  background: var(--p-bg-card-dark);
+  border-radius: 16px;
+}
+.section-light .manual-outline { background: #ffffff; }
+[data-theme="dark"] .section-light .manual-outline { background: #272729; }
+
+.manual-outline-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--p-text);
+  margin-bottom: 16px;
+}
+.manual-outline-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.manual-outline-item {
+  font-size: 13px;
+  line-height: 1.38;
+  color: var(--p-text-secondary);
+  padding: 10px 14px;
+  background: rgba(0,0,0,0.04);
+  border-radius: 8px;
+}
+[data-theme="dark"] .manual-outline-item {
+  background: rgba(255,255,255,0.04);
+}
+
+/* 结尾面板 */
+.guide-final {
+  padding: 60px 0;
+}
+.guide-final-panel {
+  text-align: center;
+  padding: 48px;
+  background: var(--p-bg-card-dark);
+  border-radius: 20px;
+}
+.section-light .guide-final-panel { background: #ffffff; }
+[data-theme="dark"] .section-light .guide-final-panel { background: #272729; }
+
+.guide-final-copy h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--p-text);
+  margin-bottom: 12px;
+}
+.guide-final-copy p {
+  font-size: 15px;
+  color: var(--p-text-secondary);
+  max-width: 540px;
+  margin: 0 auto 24px;
+}
+.guide-final-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Agent 知识库 */
+.ai-kb-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding: 16px 20px;
+  background: var(--p-bg-card-dark);
+  border-radius: 12px;
+}
+.section-light .ai-kb-toolbar { background: #ffffff; }
+[data-theme="dark"] .section-light .ai-kb-toolbar { background: #272729; }
+
+.ai-kb-block {
+  font-family: "SF Mono", "Fira Code", "Menlo", monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  padding: 32px;
+  background: var(--p-bg-card-dark);
+  border-radius: 16px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: var(--p-text-secondary);
+}
+.section-light .ai-kb-block { background: #ffffff; }
+[data-theme="dark"] .section-light .ai-kb-block { background: #272729; }
+
+/* ── 指南页面响应式 ── */
+@media (max-width: 1024px) {
+  .guide-quickbar { grid-template-columns: 1fr; }
+  .guide-step-content { grid-template-columns: 1fr; }
+  .guide-step-content.reverse { direction: ltr; }
+  .guide-intro-panel { grid-template-columns: 1fr; }
+  .guide-card-grid { grid-template-columns: 1fr; }
+  .guide-fix-grid { grid-template-columns: 1fr; }
+  .guide-glossary-grid { grid-template-columns: repeat(2, 1fr); }
+  .guide-four-grid { grid-template-columns: repeat(2, 1fr); }
+  .manual-outline-grid { grid-template-columns: repeat(2, 1fr); }
+  .editions-grid { grid-template-columns: 1fr !important; max-width: 400px; margin: 0 auto; }
+}
+
+@media (max-width: 768px) {
+  .hero-guide { padding: 100px 0 40px; }
+  .guide-step-card { padding: 24px; }
+  .guide-glossary-grid { grid-template-columns: 1fr; }
+  .guide-four-grid { grid-template-columns: 1fr; }
+  .manual-outline-grid { grid-template-columns: 1fr; }
+}
+
 /* ── 滚动动画 ── */
 .reveal {
   opacity: 0; transform: translateY(20px);

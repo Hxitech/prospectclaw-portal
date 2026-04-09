@@ -4,33 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ProspectClaw 进阶使用指南</title>
-  <meta name="description" content="ProspectClaw 进阶使用指南，适合有一定技术基础的用户。覆盖安装、钳子助手、模型、Gateway、Agent、Skills、消息渠道、排障和基本概念速查。">
+  <meta name="description" content="ProspectClaw 进阶使用指南。适合有一定技术基础的用户，从安装到 Agent 上线的完整流程，附排障清单和概念速查。">
   <meta property="og:title" content="ProspectClaw 进阶使用指南">
-  <meta property="og:description" content="适合有一定技术基础的用户，从安装到 Agent 上线的完整流程指南。">
+  <meta property="og:description" content="从安装到 Agent 上线，6 步完成完整配置。附日常管理、排障清单和概念速查。">
   <meta property="og:type" content="website">
   <link rel="icon" type="image/png" href="/images/prospectclaw-tab-logo.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/portal.css">
 </head>
 <body>
 
-<div id="scroll-progress"></div>
-
+<!-- ═══════ 导航 ═══════ -->
 <nav class="portal-nav">
   <div class="portal-nav-inner">
     <a href="/index.html" class="portal-nav-brand">
-      <img src="/images/logo-prospectclaw.png" alt="ProspectClaw">
+      <img src="/images/logo-brand.png" alt="ProspectClaw">
       ProspectClaw
     </a>
     <ul class="portal-nav-links">
       <li><a href="/beginner-guide.html">零基础指南</a></li>
       <li><a href="/usage-guide.html">进阶指南</a></li>
-      <li><a href="/agent-guide.html">AI 知识库</a></li>
+      <li><a href="/agent-guide.html">Agent 知识库</a></li>
       <li><a href="/index.html#download">立即下载</a></li>
     </ul>
     <div class="portal-nav-actions">
+      <div class="lang-switcher">
+        <button data-lang="zh-CN" class="active" onclick="switchLocale && switchLocale('zh-CN')">中</button>
+        <button data-lang="en" onclick="switchLocale && switchLocale('en')">EN</button>
+      </div>
       <button class="theme-toggle" id="theme-toggle" title="切换主题">
         <span class="theme-icon">&#9790;</span>
       </button>
@@ -42,24 +42,20 @@
   <div class="mobile-menu" id="mobile-menu">
     <a href="/beginner-guide.html">零基础指南</a>
     <a href="/usage-guide.html">进阶指南</a>
-    <a href="/agent-guide.html">AI 知识库</a>
+    <a href="/agent-guide.html">Agent 知识库</a>
     <a href="/index.html#download">立即下载</a>
   </div>
 </nav>
 
-<section class="hero hero-guide usage-hero">
-  <div class="hero-bg">
-    <div class="hero-orb hero-orb-1"></div>
-    <div class="hero-orb hero-orb-2"></div>
-    <div class="hero-grid"></div>
-  </div>
+<!-- ═══════ Hero ═══════ -->
+<section class="hero hero-guide">
   <div class="container hero-content">
-    <div class="hero-badge reveal">进阶使用指南 · v1.2.0</div>
+    <div class="hero-badge reveal">进阶使用指南 · v1.2.8</div>
     <h1 class="hero-title reveal">ProspectClaw 进阶使用指南</h1>
     <p class="hero-subtitle reveal">
-      这份指南适合有一定技术基础的用户——你知道命令行是什么，用过各种软件，只是没用过 ProspectClaw。<br>
-      从安装到 Agent 上线，6 步完成完整配置，附带日常管理、排障清单和概念速查。<br>
-      零基础用户请移步 <a href="/beginner-guide.html">零基础指南</a>；需要喂给 AI 的结构化知识请看 <a href="/agent-guide.html">AI 知识库</a>。
+      适合有一定技术基础的用户——你知道命令行是什么，用过各种软件，只是没用过 ProspectClaw。<br>
+      从安装到 Agent 上线，6 步完成。附日常管理、排障清单和概念速查。<br>
+      零基础请移步<a href="/beginner-guide.html" style="color:#2997ff">零基础指南</a>，需要喂给 AI 的结构化知识看<a href="/agent-guide.html" style="color:#2997ff">Agent 知识库</a>。
     </p>
     <div class="hero-ctas reveal">
       <a href="#guide-steps" class="btn btn-primary">从第一步开始</a>
@@ -82,30 +78,31 @@
   </div>
 </section>
 
-<section class="section" id="guide-steps">
+<!-- ═══════ 6 步配置流程 ═══════ -->
+<section class="section section-light" id="guide-steps">
   <div class="container">
     <div class="section-header reveal">
       <div class="section-tag">Step by Step</div>
-      <h2 class="section-title">6 步把 ProspectClaw 从装好带到真能用</h2>
-      <p class="section-subtitle">按真实使用顺序排列，每一步都回答：先做什么、为什么、做到什么算过关。</p>
+      <h2 class="section-title">6 步从装好带到真能用</h2>
+      <p class="section-subtitle">按真实使用顺序排列。每一步回答：先做什么、为什么、做到什么算过关。</p>
     </div>
 
     <div class="guide-intro-panel reveal">
       <div class="guide-intro-copy">
         <div class="guide-intro-badge">推荐顺序</div>
         <h3>安装 → 钳子助手 → 模型与 Gateway → Agent + Skills → 实时聊天验证 → 接渠道</h3>
-        <p>先把钳子助手配好，是因为它是最稳定的"第二双眼睛"。后面模型不通、Gateway 崩了、Agent 不回话、飞书不响应，你都可以先让钳子助手帮你判断从哪一层开始查。</p>
+        <p>先把钳子助手配好，因为它是最稳定的"第二双眼睛"。后面模型不通、Gateway 崩了、Agent 不回话，都可以先让钳子助手帮你判断从哪一层开始查。</p>
       </div>
       <div class="guide-intro-image showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-claw-assistant.png" alt="ProspectClaw 钳子助手">
+        <img src="/screenshots/desktop-claw-assistant.png" alt="钳子助手">
       </div>
     </div>
 
     <div class="manual-outline reveal">
-      <div class="manual-outline-title">这部分会带你完成这些事</div>
+      <div class="manual-outline-title">这部分会带你完成</div>
       <div class="manual-outline-grid">
         <div class="manual-outline-item">安装并首次启动 ProspectClaw</div>
-        <div class="manual-outline-item">配置钳子助手，保证你有排障助手</div>
+        <div class="manual-outline-item">配置钳子助手作为排障助手</div>
         <div class="manual-outline-item">配置模型、启动 Gateway</div>
         <div class="manual-outline-item">创建 Agent 并挂上 Skills</div>
         <div class="manual-outline-item">实时聊天验证整条链路</div>
@@ -114,7 +111,9 @@
     </div>
 
     <div class="guide-steps">
-      <article class="guide-step-card reveal stagger-1">
+
+      <!-- Step 01 -->
+      <article class="guide-step-card reveal">
         <div class="guide-step-topline">
           <div class="guide-step-index">01</div>
           <div class="guide-step-meta">安装与第一次启动</div>
@@ -122,30 +121,31 @@
         <div class="guide-step-content">
           <div class="guide-step-copy">
             <h3>先把应用装好，再跑一遍初始设置</h3>
-            <p>ProspectClaw 的桌面包安装完成后，第一次启动会进入 `初始设置`。这里不是装饰页，而是整个系统真正的起跑线。</p>
+            <p>桌面包安装完成后，第一次启动会进入"初始设置"。这不是装饰页，是整个系统的起跑线。</p>
             <ul class="guide-bullet-list">
-              <li>macOS 版首次打开如果被拦截，先把应用拖进 `应用程序`，必要时去系统设置里点"仍要打开"。</li>
-              <li>Windows 遇到安装 OpenClaw 报错，优先检查管理员权限、npm 缓存和 Git HTTPS 配置。</li>
-              <li>Linux 如果没有桌面环境，建议直接走 Web 版部署路径，通过浏览器管理。</li>
+              <li>macOS 首次打开被拦截：拖进"应用程序"，系统设置 → 隐私与安全性 → 仍要打开。</li>
+              <li>Windows 遇到 OpenClaw 安装报错：优先检查管理员权限、npm 缓存和 Git HTTPS 配置。</li>
+              <li>Linux 无桌面环境：建议走 Web 版部署，面板通过 :1420 访问，Gateway 通过 :18789 管理。</li>
             </ul>
             <div class="guide-checkpoint">
-              <strong>过关标准：</strong> `初始设置` 里的 Node.js、Git、OpenClaw、配置文件都已经通过，知道自己下一步该去哪里。
+              <strong>过关标准：</strong> 初始设置里 Node.js、Git、OpenClaw、配置文件都已通过。
             </div>
           </div>
           <div class="guide-step-visual guide-mini-stack">
             <div class="guide-mini-card">
               <h4>桌面端</h4>
-              <p>适合 Mac / Windows 用户，下载后直接安装，首次启动自动进入初始设置。</p>
+              <p>Mac / Windows 用户，下载后直接安装，首次启动自动进入初始设置。</p>
             </div>
             <div class="guide-mini-card">
               <h4>Web 版</h4>
-              <p>适合 Linux / 服务器场景。默认通过 `:1420` 提供面板，通过 `:18789` 管理 Gateway。</p>
+              <p>Linux / 服务器场景。默认 :1420 面板，:18789 Gateway。</p>
             </div>
           </div>
         </div>
       </article>
 
-      <article class="guide-step-card reveal stagger-2">
+      <!-- Step 02 -->
+      <article class="guide-step-card reveal">
         <div class="guide-step-topline">
           <div class="guide-step-index">02</div>
           <div class="guide-step-meta">先把钳子助手配好</div>
@@ -153,125 +153,82 @@
         <div class="guide-step-content reverse">
           <div class="guide-step-copy">
             <h3>先配置钳子助手，不要等出事了才想起它</h3>
-            <p>钳子助手和你的 OpenClaw Agent 不是一回事。它是 ProspectClaw 内置的独立 AI 助手，适合做安装说明、配置建议、日志分析和排障。换句话说，它更像你的"随身教练"和"急诊科医生"。</p>
+            <p>钳子助手和你的 OpenClaw Agent 不是一回事。它是内置的独立 AI 助手，适合排障、问答、日志分析。</p>
             <ul class="guide-bullet-list">
-              <li>先去 `钳子助手` 页面，把它自己的模型配置好。</li>
-              <li>这样就算你的 OpenClaw Agent 还没养活，你也已经有一个能问问题、能看报错、能给修复建议的帮手。</li>
-              <li>后面如果模型配崩了、Gateway 抽风了、Skill 缺依赖了，都可以先把报错甩给钳子助手分析。</li>
+              <li>去"钳子助手"页面，把它自己的模型配好。</li>
+              <li>就算你的 Agent 还没养活，你也已经有一个能看报错、给修复建议的帮手。</li>
+              <li>后面模型配崩了、Gateway 抽风了、Skill 缺依赖了，都可以先甩给钳子助手分析。</li>
             </ul>
             <div class="guide-checkpoint">
-              <strong>过关标准：</strong> 钳子助手自己已经能正常对话。到这一步，你的"修理工"已经上岗了。
+              <strong>过关标准：</strong> 钳子助手能正常对话。你的"修理工"已经上岗。
             </div>
           </div>
           <div class="guide-step-visual showcase-image" data-lightbox>
-            <img src="/screenshots/desktop-claw-assistant.png" alt="钳子助手欢迎页">
+            <img src="/screenshots/desktop-claw-assistant.png" alt="钳子助手">
           </div>
         </div>
       </article>
 
+      <!-- 钳子助手卡片 -->
       <div class="guide-cards-panel reveal">
-        <div class="section-tag">Assistant Cards</div>
-        <h3 class="guide-cards-title">钳子助手欢迎页自带一组内置卡片</h3>
-        <p class="guide-cards-desc">这也是它和普通聊天框最不一样的地方。很多常见操作你不用从零描述，直接点卡片，钳子助手就会按预设流程开始检查、分析或排障。对新手来说，这比"我该怎么提问才对"省脑子得多。</p>
+        <div class="section-tag">Assistant Tools</div>
+        <h3 class="guide-cards-title">钳子助手内置工具卡片</h3>
+        <p class="guide-cards-desc">很多常见操作不用从零描述，点卡片就能触发预设检查流程。不确定点哪张？从"检查系统环境"、"检查 OpenClaw 配置"、"诊断 Gateway"、"一键排障"这四张开始。</p>
 
         <div class="guide-card-grid">
           <article class="guide-tool-card">
             <div class="guide-tool-head">
-              <div class="guide-tool-icon">🔧</div>
+              <div class="guide-tool-icon">&#128295;</div>
               <h4>检查 OpenClaw 配置</h4>
             </div>
-            <p>读取并分析 `openclaw.json`，帮你看服务商、Gateway 和常见配置错误。</p>
+            <p>读取并分析 openclaw.json，帮你看服务商、Gateway 和常见配置错误。</p>
             <div class="guide-tool-tip">适合：刚装完、刚改完配置、怀疑写错字段时</div>
           </article>
-
           <article class="guide-tool-card">
             <div class="guide-tool-head">
-              <div class="guide-tool-icon">🏥</div>
+              <div class="guide-tool-icon">&#127973;</div>
               <h4>诊断 Gateway</h4>
             </div>
-            <p>检查进程、端口和日志，判断 Gateway 是没启动、没监听，还是启动了但状态不对。</p>
+            <p>检查进程、端口和日志，判断 Gateway 是没启动、没监听，还是状态异常。</p>
             <div class="guide-tool-tip">适合：实时聊天连不上、端口异常、网关抽风时</div>
           </article>
-
           <article class="guide-tool-card">
             <div class="guide-tool-head">
-              <div class="guide-tool-icon">📂</div>
-              <h4>浏览配置目录</h4>
-            </div>
-            <p>把 `.openclaw` 目录结构摊开给你看，告诉你配置、日志、Agent、备份分别在哪里。</p>
-            <div class="guide-tool-tip">适合：刚上手时认路，或想知道文件该去哪找时</div>
-          </article>
-
-          <article class="guide-tool-card">
-            <div class="guide-tool-head">
-              <div class="guide-tool-icon">💻</div>
+              <div class="guide-tool-icon">&#128187;</div>
               <h4>检查系统环境</h4>
             </div>
-            <p>检查 Node.js、npm、OpenClaw CLI 和端口状态，帮你确认底层环境够不够跑。</p>
+            <p>检查 Node.js、npm、OpenClaw CLI 和端口状态，确认底层环境是否完整。</p>
             <div class="guide-tool-tip">适合：安装卡住、升级后异常、怀疑环境不完整时</div>
           </article>
-
           <article class="guide-tool-card">
             <div class="guide-tool-head">
-              <div class="guide-tool-icon">📋</div>
-              <h4>分析错误日志</h4>
-            </div>
-            <p>从日志里抓 `ERROR`、`WARN`、`fail` 这些关键词，帮你缩小问题范围。</p>
-            <div class="guide-tool-tip">适合：看得见报错，但一时看不懂时</div>
-          </article>
-
-          <article class="guide-tool-card">
-            <div class="guide-tool-head">
-              <div class="guide-tool-icon">🔨</div>
+              <div class="guide-tool-icon">&#128296;</div>
               <h4>一键排障</h4>
             </div>
-            <p>把配置、模型同步、Gateway、WebSocket、Node.js 这些常见环节串起来做一轮体检。</p>
-            <div class="guide-tool-tip">适合：虾突然蔫了、不知道先查哪一层时</div>
+            <p>配置、模型同步、Gateway、WebSocket、Node.js 串起来做一轮体检。</p>
+            <div class="guide-tool-tip">适合：突然不工作了、不知道先查哪一层时</div>
           </article>
-
           <article class="guide-tool-card">
             <div class="guide-tool-head">
-              <div class="guide-tool-icon">🧰</div>
+              <div class="guide-tool-icon">&#128203;</div>
+              <h4>分析错误日志</h4>
+            </div>
+            <p>从日志里抓 ERROR、WARN、fail 关键词，帮你缩小问题范围。</p>
+            <div class="guide-tool-tip">适合：看得见报错，但一时看不懂时</div>
+          </article>
+          <article class="guide-tool-card">
+            <div class="guide-tool-head">
+              <div class="guide-tool-icon">&#128230;</div>
               <h4>Skills 管理</h4>
             </div>
-            <p>查看哪些 Skills 可用、哪些缺依赖，还能引导你安装缺失依赖。</p>
+            <p>查看哪些 Skills 可用、哪些缺依赖，引导安装缺失依赖。</p>
             <div class="guide-tool-tip">适合：Agent 会聊天但不会干活时</div>
           </article>
-
-          <article class="guide-tool-card">
-            <div class="guide-tool-head">
-              <div class="guide-tool-icon">🐛</div>
-              <h4>提交 Bug 报告</h4>
-            </div>
-            <p>帮你整理环境信息、复现步骤和日志，生成能直接拿去提 Issue 的内容。</p>
-            <div class="guide-tool-tip">适合：已经确认是产品问题，准备反馈时</div>
-          </article>
-
-          <article class="guide-tool-card">
-            <div class="guide-tool-head">
-              <div class="guide-tool-icon">🔀</div>
-              <h4>PR 助手</h4>
-            </div>
-            <p>定位问题、整理修复思路，并帮你生成更像样的 PR 描述和提交流程。</p>
-            <div class="guide-tool-tip">适合：你准备自己修，或者想让它先帮你理清方案时</div>
-          </article>
-
-          <article class="guide-tool-card">
-            <div class="guide-tool-head">
-              <div class="guide-tool-icon">🕵️</div>
-              <h4>调试现有 Agent</h4>
-            </div>
-            <p>围绕某只现有 Agent 的文件、规则和运行状态做分析型调试。</p>
-            <div class="guide-tool-tip">适合：明明只有某一只虾不对劲时</div>
-          </article>
-        </div>
-
-        <div class="guide-checkpoint">
-          <strong>用法建议：</strong> 不确定该点哪张卡时，优先从 `检查系统环境`、`检查 OpenClaw 配置`、`诊断 Gateway`、`一键排障` 这四张开始，基本覆盖了大部分"刚装好"和"突然坏了"的情况。
         </div>
       </div>
 
-      <article class="guide-step-card reveal stagger-3">
+      <!-- Step 03 -->
+      <article class="guide-step-card reveal">
         <div class="guide-step-topline">
           <div class="guide-step-index">03</div>
           <div class="guide-step-meta">配置模型与启动 Gateway</div>
@@ -279,14 +236,18 @@
         <div class="guide-step-content">
           <div class="guide-step-copy">
             <h3>配置模型，然后启动 Gateway</h3>
-            <p>`模型配置` 页面决定 OpenClaw 用什么模型工作，`服务管理` 页面决定 Gateway 是否正常跑起来。这两个步骤加起来，才算把 OpenClaw 主体点亮。</p>
+            <p>"模型配置"决定 OpenClaw 用什么模型，"服务管理"决定 Gateway 是否正常跑。两个加起来才算把主体点亮。</p>
             <ul class="guide-bullet-list">
-              <li>至少添加 1 个主模型，建议再准备 1 到 2 个备选模型。</li>
+              <li>至少 1 个主模型，建议 1-2 个备选。</li>
               <li>模型测试通过后保存，必要时重启 Gateway 让配置生效。</li>
-              <li>`服务管理` 里看 Gateway 是否绿色运行，出问题优先看这里和 `日志查看`。</li>
+              <li>"服务管理"看 Gateway 是否绿色运行，出问题优先看日志。</li>
             </ul>
+            <div class="guide-callout">
+              <div class="guide-callout-title">v1.2.8 Gateway 稳定性增强</div>
+              <p>仪表盘刷新节流（5 秒）、TCP 连接重试、停止检测阈值 2→3 次、自动重启前增加 3 秒延迟。如果之前遇到 Gateway 频繁闪断，升级到 v1.2.8 会显著改善。</p>
+            </div>
             <div class="guide-checkpoint">
-              <strong>过关标准：</strong> 主模型可用，Gateway 能正常启动，服务状态不是红的。
+              <strong>过关标准：</strong> 主模型可用，Gateway 绿色运行中。
             </div>
           </div>
           <div class="guide-step-visual guide-dual-shots">
@@ -294,13 +255,14 @@
               <img src="/screenshots/desktop-model-configuration.png" alt="模型配置">
             </div>
             <div class="showcase-image" data-lightbox>
-              <img src="/screenshots/desktop-dashboard.png" alt="仪表盘和 Gateway 状态">
+              <img src="/screenshots/desktop-gateway.png" alt="Gateway 状态">
             </div>
           </div>
         </div>
       </article>
 
-      <article class="guide-step-card reveal stagger-4">
+      <!-- Step 04 -->
+      <article class="guide-step-card reveal">
         <div class="guide-step-topline">
           <div class="guide-step-index">04</div>
           <div class="guide-step-meta">创建 Agent 并挂上 Skills</div>
@@ -308,35 +270,35 @@
         <div class="guide-step-content reverse">
           <div class="guide-step-copy">
             <h3>先创建 Agent，再给它挂上能干活的 Skills</h3>
-            <p>打开 `Agent 管理`，先做出一只职责单一、名字清楚、模型明确的 Agent。然后打开 `Skills` 页面，确认当前最需要的那几个能力能不能真的调用。</p>
+            <p>打开"Agent 管理"，先做出一只职责单一、名字清楚、模型明确的 Agent。然后打开"Skills"页面确认关键能力可用。</p>
             <ul class="guide-bullet-list">
-              <li>第一次上手建议先做单一职责 Agent，不要一开始就堆太多设定。</li>
-              <li>`Agent ID` 建议全小写、简单好记；`名称` 给人看，可以自然一点。</li>
-              <li>Skill 不只是开关，很多还依赖命令行工具、环境变量或额外配置。</li>
-              <li>模型决定它聪不聪明，Skills 决定它会不会干活，身份文件决定它像不像你要的那个角色。</li>
+              <li>第一次建议单一职责 Agent，不要一开始就堆太多设定。</li>
+              <li>Agent ID 建议全小写、简单好记；名称可以自然一点。</li>
+              <li>模型决定它聪不聪明，Skills 决定它会不会干活，身份文件决定它像不像你要的角色。</li>
             </ul>
+            <div class="guide-callout">
+              <div class="guide-callout-title">v1.2.8 SkillHub 技能商店</div>
+              <p>Skills 页面新增"商店"标签页，可在线浏览、搜索、一键安装 Agent 技能。替代旧版 CLI 命令，无需手动操作命令行。支持按 Agent 分配不同 Skills 目录。</p>
+            </div>
             <div class="guide-checkpoint">
-              <strong>过关标准：</strong> Agent 列表里有一只你叫得出名字的 Agent，至少一个关键 Skill 可用。
+              <strong>过关标准：</strong> Agent 列表有一只叫得出名字的 Agent，至少一个关键 Skill 可用。
             </div>
           </div>
-          <div class="guide-step-visual guide-skill-note">
+          <div class="guide-step-visual guide-mini-stack">
             <div class="guide-mini-card">
-              <h4>最常见的误区</h4>
-              <p>"页面里能看到 Skill，所以应该已经能用。"</p>
-            </div>
-            <div class="guide-mini-card">
-              <h4>更靠谱的判断方式</h4>
-              <p>看它是不是可用状态，而不是只看它有没有出现在列表里。</p>
+              <h4>常见误区</h4>
+              <p>"页面里能看到 Skill，所以应该已经能用。" —— 不一定，要看它是否显示为可用状态。</p>
             </div>
             <div class="guide-mini-card">
               <h4>建议</h4>
-              <p>先保证 1 到 2 个关键能力真的能跑，再扩张技能树。</p>
+              <p>先保证 1-2 个关键能力真的能跑，再扩张技能树。</p>
             </div>
           </div>
         </div>
       </article>
 
-      <article class="guide-step-card reveal stagger-5">
+      <!-- Step 05 -->
+      <article class="guide-step-card reveal">
         <div class="guide-step-topline">
           <div class="guide-step-index">05</div>
           <div class="guide-step-meta">实时聊天验证</div>
@@ -344,49 +306,55 @@
         <div class="guide-step-content">
           <div class="guide-step-copy">
             <h3>去实时聊天，让它开口</h3>
-            <p>最后打开 `实时聊天`，发第一条消息。这一步最重要，因为很多配置在页面上都"像是好了"，但只有这里回得出来，才说明整条链路真的通了。</p>
+            <p>打开"实时聊天"发第一条消息。很多配置在页面上"像是好了"，但只有这里回得出来，才说明整条链路真的通了。</p>
+            <p>回得出来意味着：</p>
             <ul class="guide-bullet-list">
               <li>Gateway 在工作。</li>
               <li>模型能正常调用。</li>
-              <li>Agent 已经被正确加载。</li>
-              <li>权限没有把它卡住。</li>
+              <li>Agent 已被正确加载。</li>
+              <li>权限没有拦截。</li>
             </ul>
+            <div class="guide-callout">
+              <div class="guide-callout-title">v1.2.8 Chat OpenClaw 4.5+ 兼容</div>
+              <p>支持 Agent 事件流——生命周期、计划、审批、思考、命令输出事件。打字指示器显示实时计时，3 分钟超时保护避免静默无回复。</p>
+            </div>
             <div class="guide-test-box">
               <div class="guide-test-title">第一次测试可以这样问</div>
               <div class="guide-test-message">你好，请用三句话介绍你是谁、你能做什么、你现在用的是哪个模型。</div>
             </div>
             <div class="guide-checkpoint">
-              <strong>过关标准：</strong> 你已经收到第一条稳定回复。到这里，才算从"安装成功"升级到"可以开工"。
+              <strong>过关标准：</strong> 收到第一条稳定回复。从"安装成功"升级到"可以开工"。
             </div>
           </div>
           <div class="guide-step-visual showcase-image" data-lightbox>
-            <img src="/screenshots/desktop-chat-full.png" alt="实时聊天验证">
+            <img src="/screenshots/desktop-sessions-multi-agent.png" alt="实时聊天">
           </div>
         </div>
       </article>
 
-      <article class="guide-step-card reveal stagger-6">
+      <!-- Step 06 -->
+      <article class="guide-step-card reveal">
         <div class="guide-step-topline">
           <div class="guide-step-index">06</div>
-          <div class="guide-step-meta">接消息渠道</div>
+          <div class="guide-step-meta">接消息渠道（可选）</div>
         </div>
         <div class="guide-step-content reverse">
           <div class="guide-step-copy">
             <h3>先明白规律，再接飞书和 Telegram</h3>
-            <p>`消息渠道` 页面统一管理外部接入。无论接什么平台，有两个前提都一样：Gateway 要先运行，保存配置后通常都需要做平台侧的发布或配对审批。</p>
+            <p>"消息渠道"页面统一管理外部接入。无论接什么平台，两个前提一样：Gateway 先运行，保存后做平台侧发布或配对审批。</p>
             <ul class="guide-bullet-list">
-              <li>飞书 / Lark：创建企业自建应用，开启机器人能力，拿到 App ID / App Secret，事件订阅建议用长连接（WebSocket），保存后做配对审批。</li>
-              <li>Telegram：通过 `@BotFather` 创建 Bot，拿到 Bot Token，再准备允许的用户 ID，填到渠道配置里保存即可。</li>
-              <li>保存后不生效，优先检查 Gateway 是否在运行、平台侧应用是否已发布、机器人是否已被添加到群或工作台中。</li>
+              <li><strong>飞书 / Lark：</strong>创建企业自建应用，开启机器人能力，拿到 App ID / App Secret，事件订阅建议用 WebSocket 长连接，保存后做配对审批。</li>
+              <li><strong>Telegram：</strong>通过 @BotFather 创建 Bot，拿到 Token，再准备允许的用户 ID，填到渠道配置保存即可。</li>
+              <li>保存后不生效？优先检查 Gateway 是否在运行、平台侧应用是否已发布、机器人是否已添加到群中。</li>
             </ul>
             <div class="guide-checkpoint">
-              <strong>过关标准：</strong> 机器人已经能在对应平台收到并回复消息，或者你至少已经完成凭证校验和配对。
+              <strong>过关标准：</strong> 机器人能在对应平台收到并回复消息，或已完成凭证校验和配对。
             </div>
           </div>
-          <div class="guide-step-visual guide-channel-grid">
+          <div class="guide-step-visual guide-mini-stack">
             <div class="guide-mini-card">
               <h4>飞书 / Lark</h4>
-              <p>需要 App ID、App Secret，支持内置插件和官方插件两种模式。发布应用版本后，机器人对其他人才可见。</p>
+              <p>需要 App ID、App Secret，支持内置/官方插件两种模式。发布应用版本后机器人对他人可见。</p>
             </div>
             <div class="guide-mini-card">
               <h4>Telegram</h4>
@@ -399,441 +367,170 @@
 
     <div class="guide-assistant-strip reveal">
       <div class="guide-assistant-strip-title">一个很好用的习惯</div>
-      <p>每完成一步，如果你不确定自己现在算不算"过关"，都可以直接去问钳子助手："我刚完成了模型配置，现在下一步应该做什么？" 比自己在页面里来回猜，通常快很多。</p>
+      <p>每完成一步，不确定算不算"过关"，直接问钳子助手："我刚完成了模型配置，下一步应该做什么？" 比在页面里来回猜快很多。</p>
     </div>
   </div>
 </section>
 
-<section class="section" id="guide-daily" style="background: var(--p-bg-alt);">
+<!-- ═══════ 日常管理 ═══════ -->
+<section class="section section-dark" id="guide-daily">
   <div class="container">
     <div class="section-header reveal">
       <div class="section-tag">Daily Ops</div>
       <h2 class="section-title">日常管理，先记住这 4 件事</h2>
-      <p class="section-subtitle">ProspectClaw 用顺以后，真正省时间的不是"会配"，而是"知道平时该盯哪里"。</p>
+      <p class="section-subtitle">用顺以后，真正省时间的不是"会配"，而是"知道该盯哪里"。</p>
     </div>
 
     <div class="guide-four-grid">
       <article class="guide-focus-card reveal stagger-1">
         <div class="guide-focus-index">01</div>
         <h3>模型要稳</h3>
-        <p>Agent 突然变木，大多数时候不是角色坏了，是模型掉线了。先看 API Key、Base URL、主模型连通性，再看备选模型能不能顶上。</p>
+        <p>Agent 突然变木，大多数时候是模型掉线。先看 API Key、Base URL、主模型连通性，再看备选模型能不能顶上。</p>
       </article>
       <article class="guide-focus-card reveal stagger-2">
         <div class="guide-focus-index">02</div>
         <h3>Gateway 要关好门</h3>
-        <p>只自己用时选"仅本机使用"最省心。要共享就配好 Token 或密码。把门打开很容易，把门关好更重要。</p>
+        <p>只自己用时选"仅本机使用"。要共享就配好 Token 或密码。把门关好比把门打开重要。</p>
       </article>
       <article class="guide-focus-card reveal stagger-3">
         <div class="guide-focus-index">03</div>
         <h3>Agent 要定期整理</h3>
-        <p>名字和职责写清楚，大改前先备份，一个 Agent 尽量只承担一类核心任务。这样出问题时，你知道该修谁。</p>
+        <p>名字和职责写清楚，大改前先备份，一个 Agent 只承担一类核心任务。出问题时你知道该修谁。</p>
       </article>
       <article class="guide-focus-card reveal stagger-4">
         <div class="guide-focus-index">04</div>
-        <h3>先看日志，再找助手</h3>
-        <p>排障顺序建议固定成：实时聊天表现 → 日志查看 → 系统诊断 → 钳子助手。别一出错就先重装，很多时候只是某个环节没接上。</p>
+        <h3>先看日志再找助手</h3>
+        <p>排障顺序：实时聊天表现 → 日志查看 → 系统诊断 → 钳子助手。别一出错就重装。</p>
       </article>
     </div>
 
     <div class="guide-callout reveal">
-      <div class="guide-callout-title">日常高频用到的页面</div>
-      <p>`钳子助手`：问路、排障、卡片触发。`服务管理`：启动 / 停止 / 重启 Gateway，做配置备份。`日志查看`：看 Gateway 日志、错误日志、守护进程日志。`记忆文件`：按 Agent 查看工作记忆、归档和核心文件。`关于`：看推荐稳定版，做版本切换或回退。</p>
+      <div class="guide-callout-title">日常高频页面</div>
+      <p><strong>钳子助手</strong>：问路、排障、卡片触发。<strong>服务管理</strong>：启停 Gateway，配置备份。<strong>日志查看</strong>：Gateway、错误、守护进程日志。<strong>记忆文件</strong>：按 Agent 查看工作记忆。<strong>关于</strong>：看推荐稳定版，版本切换。</p>
     </div>
   </div>
 </section>
 
-<section class="section" id="guide-fix">
+<!-- ═══════ 排障清单 ═══════ -->
+<section class="section section-light" id="guide-fix">
   <div class="container">
     <div class="section-header reveal">
       <div class="section-tag">Troubleshooting</div>
-      <h2 class="section-title">一份够用的排障清单</h2>
-      <p class="section-subtitle">不求覆盖所有奇怪情况，先把最常见的坑变成固定检查动作。</p>
+      <h2 class="section-title">排障清单</h2>
+      <p class="section-subtitle">最常见的坑变成固定检查动作。</p>
     </div>
 
     <div class="guide-fix-grid">
       <article class="guide-fix-card reveal stagger-1">
         <h3>Agent 不回话</h3>
         <ul class="guide-bullet-list">
-          <li>先看 `实时聊天` 是否连上 Gateway。</li>
-          <li>确认 `模型配置` 里的主模型测试通过。</li>
-          <li>确认目标 Agent 真的绑定了模型。</li>
-          <li>确认 Gateway 认证没有把请求拦住。</li>
-          <li>把报错现象直接发给 `钳子助手`，让它帮你判断是模型问题、Gateway 问题还是 Agent 本身问题。</li>
+          <li>实时聊天是否连上 Gateway？</li>
+          <li>模型配置里主模型测试通过？</li>
+          <li>目标 Agent 绑定了模型？</li>
+          <li>Gateway 认证没有拦截请求？</li>
+          <li>把报错发给钳子助手判断层级。</li>
         </ul>
       </article>
       <article class="guide-fix-card reveal stagger-2">
-        <h3>能聊天，但不会用技能</h3>
+        <h3>能聊天但不会用技能</h3>
         <ul class="guide-bullet-list">
-          <li>看 `Skills` 页面里对应 Skill 是否真的是可用状态。</li>
-          <li>检查是否缺命令行依赖、环境变量或配置。</li>
-          <li>检查 Gateway 工具权限是不是设得太严。</li>
-          <li>检查 Agent 规则里有没有把能力边界卡死。</li>
-          <li>把 Skills 页里的状态和缺失项贴给 `钳子助手`，通常它能直接告诉你先补哪一个依赖最省事。</li>
+          <li>Skills 页面对应 Skill 是否可用状态？</li>
+          <li>是否缺命令行依赖或环境变量？</li>
+          <li>Gateway 工具权限是否设得太严？</li>
+          <li>Agent 规则有没有卡死能力边界？</li>
+          <li>把状态贴给钳子助手，通常它能直接告诉你先补哪个依赖。</li>
         </ul>
       </article>
       <article class="guide-fix-card reveal stagger-3">
         <h3>突然一堆报错</h3>
         <ul class="guide-bullet-list">
-          <li>回想最近有没有切 OpenClaw 版本。</li>
-          <li>看看 `关于` 页当前版本是不是高于推荐稳定版。</li>
-          <li>检查最近有没有改服务商、Token 或 Gateway 安全设置。</li>
-          <li>别急着全推倒，先确认是哪个环节先变了。</li>
-          <li>最省时间的做法通常是：截图或粘日志给 `钳子助手`，先让它帮你缩小排查范围。</li>
+          <li>最近是否切了 OpenClaw 版本？</li>
+          <li>当前版本是否高于推荐稳定版？</li>
+          <li>最近有没有改服务商、Token 或安全设置？</li>
+          <li>先确认哪个环节先变了，再修。</li>
+          <li>截图或粘日志给钳子助手缩小排查范围。</li>
         </ul>
       </article>
       <article class="guide-fix-card reveal stagger-4">
-        <h3>虾养死了，怎么抢救</h3>
+        <h3>Agent 养死了怎么抢救</h3>
         <ul class="guide-bullet-list">
-          <li>先别慌着删 Agent、重装或全量重配。</li>
-          <li>把"它之前能做什么、现在哪里不对、最近改过什么"整理成三句话。</li>
-          <li>把对应报错、截图或日志丢给 `钳子助手`，直接问它："这只虾是缺氧、断粮还是网关翻车了？"</li>
-          <li>然后按它给的顺序查：环境 → 模型 → Gateway → Skills → Agent 本身。</li>
+          <li>先别删 Agent、重装或全量重配。</li>
+          <li>整理三句话：之前能做什么、现在哪里不对、最近改过什么。</li>
+          <li>丢给钳子助手：是缺氧、断粮还是网关翻车了？</li>
+          <li>按顺序查：环境 → 模型 → Gateway → Skills → Agent 本身。</li>
         </ul>
       </article>
     </div>
 
     <div class="guide-rescue-panel reveal">
       <div class="guide-rescue-title">可以直接复制给钳子助手的话</div>
-      <div class="guide-test-message">我在 ProspectClaw 里养的 OpenClaw Agent 之前能正常回复，现在不行了。请你按环境、模型、Gateway、Skills、Agent 配置这几个层级，帮我判断最可能的原因，并告诉我先去哪个页面检查。</div>
+      <div class="guide-test-message">我在 ProspectClaw 里的 OpenClaw Agent 之前能正常回复，现在不行了。请按环境、模型、Gateway、Skills、Agent 配置几个层级，帮我判断最可能的原因并告诉我先去哪个页面检查。</div>
     </div>
   </div>
 </section>
 
-<section class="section" id="guide-glossary" style="background: var(--p-bg-alt);">
+<!-- ═══════ 概念速查 ═══════ -->
+<section class="section section-dark" id="guide-glossary">
   <div class="container">
     <div class="section-header reveal">
       <div class="section-tag">Glossary</div>
-      <h2 class="section-title">装好以后，最好知道的 9 个基本概念</h2>
-      <p class="section-subtitle">尽量说人话，不把你丢进术语海里游泳。</p>
+      <h2 class="section-title">9 个基本概念速查</h2>
+      <p class="section-subtitle">说人话版本。</p>
     </div>
 
     <div class="guide-glossary-grid">
       <article class="guide-glossary-card reveal stagger-1">
         <h3>ProspectClaw ≠ OpenClaw</h3>
-        <p>ProspectClaw 是管理面板，OpenClaw 是真正跑 Agent 的底层引擎。一个像驾驶舱，一个像发动机。</p>
+        <p>ProspectClaw 是管理面板（驾驶舱），OpenClaw 是底层引擎（发动机）。</p>
       </article>
       <article class="guide-glossary-card reveal stagger-2">
-        <h3>CLI 不是另一个产品</h3>
-        <p>它是 OpenClaw 的命令行入口。你不一定天天手敲，但它能用，说明面板真的能接上底层。</p>
+        <h3>Gateway 是总入口</h3>
+        <p>聊天、模型调用、Agent 行为都经过它。"AI 不聪明"很多时候是入口没通。</p>
       </article>
       <article class="guide-glossary-card reveal stagger-3">
-        <h3>Gateway 是总入口</h3>
-        <p>聊天、模型调用、很多 Agent 行为都要经过它。很多"AI 不聪明"的问题，最后发现是入口没通。</p>
+        <h3>Agent 是角色不是窗口</h3>
+        <p>有名字、模型、工作区、规则、记忆和技能边界。新建 Agent = 造一个新角色。</p>
       </article>
       <article class="guide-glossary-card reveal stagger-4">
-        <h3>Agent 是角色，不是聊天窗口</h3>
-        <p>它有自己的名字、模型、工作区、规则、记忆和技能边界。新建 Agent，本质上是在造一个新角色。</p>
+        <h3>Skill 是能力插件</h3>
+        <p>决定 Agent 除了聊天还能干什么。有些 Skill 还依赖命令行工具或环境变量。</p>
       </article>
       <article class="guide-glossary-card reveal stagger-1">
-        <h3>工作区就是它的生活区</h3>
-        <p>身份定义、行为规则、记忆文件、任务资料通常都在这附近。把 Agent 比成员工，工作区就是它的工位和文件夹。</p>
+        <h3>SkillHub 是技能商店</h3>
+        <p>v1.2.8 新增，在线浏览、搜索、一键安装 Skills。替代旧版 CLI 命令。</p>
       </article>
       <article class="guide-glossary-card reveal stagger-2">
-        <h3>Skill 是能力插件</h3>
-        <p>它决定 Agent 除了聊天，还能不能调工具、连外部服务、做特定任务。有些 Skill 不是点亮就完事，还要依赖环境。</p>
+        <h3>钳子助手 ≠ 你的 Agent</h3>
+        <p>钳子助手是内置教练兼修理工，Agent 才是你真正要养活的那只虾。</p>
       </article>
       <article class="guide-glossary-card reveal stagger-3">
-        <h3>主模型和备选模型都重要</h3>
-        <p>主模型是默认主力，备选模型是替补。只配一个模型当然也能跑，但一抽风就会带着 Agent 一起抽风。</p>
+        <h3>主模型和备选都重要</h3>
+        <p>只配一个也能跑，但一抽风就会带着 Agent 一起抽风。建议至少配一个备选。</p>
       </article>
       <article class="guide-glossary-card reveal stagger-4">
-        <h3>钳子助手不等于你的 Agent</h3>
-        <p>钳子助手更偏配置说明、排障和规则起草；实时聊天里的 Agent，才是在验证你自己养出来的那只是不是能独立工作。前者像教练兼修理工，后者才是你真正要养活的那只虾。</p>
+        <h3>工作区是 Agent 的生活区</h3>
+        <p>身份定义、行为规则、记忆文件、任务资料都在这。类比员工的工位和文件夹。</p>
       </article>
       <article class="guide-glossary-card reveal stagger-1">
         <h3>版本不是越新越香</h3>
-        <p>推荐稳定版通常更适合长期使用。升得太快，可能先收获新特性，也可能先收获兼容性惊喜。</p>
+        <p>推荐稳定版适合长期使用。升得太快可能先收获兼容性惊喜。</p>
       </article>
     </div>
   </div>
 </section>
 
-<!-- ═══════ Invest 版本专属功能 ═══════ -->
-<section class="section" id="invest-features" style="background: var(--p-bg-alt);">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-tag">Invest Edition</div>
-      <h2 class="section-title">投资管理模块（Invest 版本专属）</h2>
-      <p class="section-subtitle">如果你用的是 ProspectClaw Invest 版本，以下是几个最常用的专属功能模块。</p>
-    </div>
-
-    <div class="guide-invest-grid">
-      <div class="guide-invest-card reveal stagger-1">
-        <div class="guide-invest-screenshot">
-          <img src="/screenshots/invest-pipeline.png" alt="项目管线" style="width:100%; border-radius:8px;">
-        </div>
-        <div class="guide-invest-info">
-          <h3>项目管线（Pipeline）</h3>
-          <p>把每个项目放进对应阶段，从筛选到投后全程追踪。拖拽调整状态，历史记录完整保留。</p>
-        </div>
-      </div>
-
-      <div class="guide-invest-card reveal stagger-2">
-        <div class="guide-invest-screenshot">
-          <img src="/screenshots/invest-scoring.png" alt="战略评分" style="width:100%; border-radius:8px;">
-        </div>
-        <div class="guide-invest-info">
-          <h3>战略评分（Scoring）</h3>
-          <p>多维度评估项目战略契合度。灵活配置评分模型，系统化评估每个标的。</p>
-        </div>
-      </div>
-
-      <div class="guide-invest-card reveal stagger-3">
-        <div class="guide-invest-screenshot">
-          <img src="/screenshots/invest-companies.png" alt="企业库" style="width:100%; border-radius:8px;">
-        </div>
-        <div class="guide-invest-info">
-          <h3>企业库（Companies）</h3>
-          <p>集中管理潜在标的与已投企业信息，支持批量导入、自定义字段与多维度筛选。</p>
-        </div>
-      </div>
-
-      <div class="guide-invest-card reveal stagger-4">
-        <div class="guide-invest-screenshot">
-          <img src="/screenshots/invest-automation.png" alt="自动化" style="width:100%; border-radius:8px;">
-        </div>
-        <div class="guide-invest-info">
-          <h3>自动化（Automation）</h3>
-          <p>定时任务 + 心跳监控 + 事件触发，Agent 可以 7×24 自动运行，异常时自愈。</p>
-        </div>
-      </div>
-
-      <div class="guide-invest-card reveal stagger-5">
-        <div class="guide-invest-screenshot">
-          <img src="/screenshots/desktop-sop-task-planner.png" alt="SOP 任务规划" style="width:100%; border-radius:8px;">
-        </div>
-        <div class="guide-invest-info">
-          <h3>SOP 任务规划（Task Planner）</h3>
-          <p>描述一个大目标，AI 自动拆解为可执行步骤。DAG 依赖管理、执行监督、质量门槛、流程图可视化，从规划到完成全程可追踪。</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════ v1.2.0 ClawSwarm ═══════ -->
-<section class="section" id="clawswarm">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-tag">ClawSwarm · v1.2.0</div>
-      <h2 class="section-title">ClawSwarm — 多智能体任务编排</h2>
-      <p class="section-subtitle">描述目标，LLM 自动拆解为 DAG 步骤计划，直连主流 LLM，无需 Gateway。</p>
-    </div>
-
-    <!-- 任务拆解 + DAG -->
-    <div class="showcase-row reveal">
-      <div class="showcase-text">
-        <div class="showcase-label">Task Decomposition & DAG Visualization</div>
-        <h3 class="showcase-title">任务拆解 + DAG 可视化</h3>
-        <p class="showcase-desc">
-          输入任务目标后，LLM 自动拆解为多步骤计划。Kahn 拓扑排序管理步骤依赖，SVG 分层布局可视化面板按执行状态着色（待执行/进行中/已完成/失败），支持交互式选择和详情查看。内置 5 个预设模板（市场调研、竞品分析、技术方案、内容创作、项目启动）。
-        </p>
-        <div class="showcase-chips">
-          <span class="chip">LLM 自动拆解</span>
-          <span class="chip">DAG 依赖管理</span>
-          <span class="chip">SVG 可视化</span>
-          <span class="chip">5 个预设模板</span>
-        </div>
-      </div>
-      <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-overview.png" alt="ClawSwarm 任务编排">
-      </div>
-    </div>
-
-    <!-- 直连 LLM + 工作区 -->
-    <div class="showcase-row reverse reveal">
-      <div class="showcase-text">
-        <div class="showcase-label">Direct LLM & Workspace</div>
-        <h3 class="showcase-title">直连 LLM + 工作区系统</h3>
-        <p class="showcase-desc">
-          Rust 后端直连 Anthropic / OpenAI / Gemini API，无需经过 OpenClaw Gateway。软沙盒工作区支持文件夹选择和任务目录自动创建，每个任务可绑定独立工作目录。一键 AI 配置向导同步写入 ClawSwarm 作为第 4 个目标系统。
-        </p>
-        <div class="showcase-chips">
-          <span class="chip">直连 3 大 LLM</span>
-          <span class="chip">无需 Gateway</span>
-          <span class="chip">软沙盒工作区</span>
-          <span class="chip">一键配置同步</span>
-        </div>
-      </div>
-      <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-dashboard.png" alt="直连 LLM 配置">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════ 更多功能亮点 ═══════ -->
-<section class="section" id="more-features">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-tag">More Highlights</div>
-      <h2 class="section-title">更多功能亮点</h2>
-      <p class="section-subtitle">全局概览、Swarm 可视化、一键 AI 配置、文档导出……持续迭代的能力矩阵。</p>
-    </div>
-
-    <!-- 全局概览 + Flyout 导航 -->
-    <div class="showcase-row reveal">
-      <div class="showcase-text">
-        <div class="showcase-label">Overview & Navigation</div>
-        <h3 class="showcase-title">全局概览 + Flyout 弹出导航</h3>
-        <p class="showcase-desc">
-          默认首页以卡片网格展示全部功能板块，三版本统一入口。Flyout 模式下侧边栏各区显示为紧凑行，hover 时子菜单从右侧弹出浮层，一键切换导航风格。
-        </p>
-        <div class="showcase-chips">
-          <span class="chip">默认首页</span>
-          <span class="chip">Profile 适配</span>
-          <span class="chip">Flyout 导航</span>
-        </div>
-      </div>
-      <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-overview.png" alt="全局概览仪表盘">
-      </div>
-    </div>
-
-    <!-- Swarm 可视化 + Agent 身份 + 文档导出 -->
-    <div class="showcase-row reverse reveal">
-      <div class="showcase-text">
-        <div class="showcase-label">Swarm & Export</div>
-        <h3 class="showcase-title">Swarm 可视化 + 身份系统 + 文档导出</h3>
-        <p class="showcase-desc">
-          Agentic Swarm 动画面板实时展示多科学家协作拓扑。5 种科学家原型配有像素风 CSS 头像和角色徽章。任务完成后可一键发送到 OpenClaw Agent，接力生成 DOCX / HTML / PPTX。
-        </p>
-        <div class="showcase-chips">
-          <span class="chip">Swarm 拓扑</span>
-          <span class="chip">5 种原型</span>
-          <span class="chip">DOCX/PPTX 导出</span>
-        </div>
-      </div>
-      <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-evoscientist-architecture.png" alt="Swarm 可视化">
-      </div>
-    </div>
-
-    <!-- 一键 AI 配置 + Star Office -->
-    <div class="showcase-row reveal">
-      <div class="showcase-text">
-        <div class="showcase-label">Quick Config & Star Office</div>
-        <h3 class="showcase-title">一键 AI 配置 + Star Office</h3>
-        <p class="showcase-desc">
-          4 步向导一键配置钳子助手 + OpenClaw + EvoScientist + ClawSwarm 四个系统。Star Office 像素看板将 Agent 工作状态可视化为像素角色动画，支持一键部署和健康监控。
-        </p>
-        <div class="showcase-chips">
-          <span class="chip">4 步向导</span>
-          <span class="chip">四系统同步</span>
-          <span class="chip">像素看板</span>
-          <span class="chip">健康监控</span>
-        </div>
-      </div>
-      <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-star-office.png" alt="Star Office">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════ EvoScientist 多科学家协作 ═══════ -->
-<section class="section" id="evoscientist">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-tag">EvoScientist · v1.1.3+</div>
-      <h2 class="section-title">EvoScientist — 多科学家协作系统</h2>
-      <p class="section-subtitle">全平台可用的 AI 多 Agent 编排层，Coordinator 统一调度，多科学家并行协作。</p>
-    </div>
-
-    <!-- 工作台 -->
-    <div class="showcase-row reveal">
-      <div class="showcase-text">
-        <div class="showcase-label">Workbench Tab</div>
-        <h3 class="showcase-title">工作台 — 运行状态总览</h3>
-        <p class="showcase-desc">
-          实时查看 EvoScientist 运行状态、当前线程、工作目录。"下一步"卡片根据当前状态给出操作建议，"近期协作"汇总最近任务，"最近线程"支持一键恢复上次对话。
-        </p>
-        <div class="showcase-chips">
-          <span class="chip">就绪状态检测</span>
-          <span class="chip">线程恢复</span>
-          <span class="chip">一键安装</span>
-        </div>
-      </div>
-      <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-evoscientist-workbench.png" alt="EvoScientist 工作台">
-      </div>
-    </div>
-
-    <!-- 设置 -->
-    <div class="showcase-row reverse reveal">
-      <div class="showcase-text">
-        <div class="showcase-label">Settings Tab</div>
-        <h3 class="showcase-title">设置 — Provider 与人格配置</h3>
-        <p class="showcase-desc">
-          支持 8 大 LLM Provider（Anthropic、OpenAI、Google GenAI、MiniMax、NVIDIA 等）。人格系统四维调控 Coordinator 行为：严谨度、主动性、审慎度、架构思维，从 1 到 5 级自由设定。可从钳子助手同步人格或从文件导入。
-        </p>
-        <div class="showcase-chips">
-          <span class="chip">8 大 Provider</span>
-          <span class="chip">四维人格</span>
-          <span class="chip">人格同步/导入</span>
-        </div>
-      </div>
-      <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-evoscientist-settings.png" alt="EvoScientist 设置">
-      </div>
-    </div>
-
-    <!-- 聊天 -->
-    <div class="showcase-row reveal">
-      <div class="showcase-text">
-        <div class="showcase-label">Chat Tab</div>
-        <h3 class="showcase-title">聊天 — 任务执行与时间线</h3>
-        <p class="showcase-desc">
-          向 Coordinator 发送任务，实时查看流式响应、思考块、工具调用结果和子 Agent 事件。支持中断确认和用户提问表单，全流程可追踪与干预。
-        </p>
-        <div class="showcase-chips">
-          <span class="chip">流式消息</span>
-          <span class="chip">工具调用追踪</span>
-          <span class="chip">中断确认</span>
-        </div>
-      </div>
-      <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-evoscientist-chat.png" alt="EvoScientist 聊天">
-      </div>
-    </div>
-
-    <!-- 协作架构 -->
-    <div class="showcase-row reverse reveal">
-      <div class="showcase-text">
-        <div class="showcase-label">Architecture Tab</div>
-        <h3 class="showcase-title">协作架构 — 科学家关系可视化</h3>
-        <p class="showcase-desc">
-          自动识别并分类协作中的科学家角色（Reviewer、Researcher、Executor 等），展示 Coordinator 与各科学家的关系图，统计工具调用、中断次数、子 Agent 事件等协作指标。
-        </p>
-        <div class="showcase-chips">
-          <span class="chip">角色自动分类</span>
-          <span class="chip">协作关系图</span>
-          <span class="chip">协作统计</span>
-        </div>
-      </div>
-      <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-evoscientist-architecture.png" alt="EvoScientist 协作架构">
-      </div>
-    </div>
-
-    <div class="guide-callout reveal">
-      <div class="guide-callout-title">使用 EvoScientist 的前提</div>
-      <p>需要先完成基础配置（模型 + Gateway），然后在 EvoScientist 设置 Tab 配置 Provider 和 API Key，再点击工作台中的"安装 EvoScientist"按钮完成安装。安装完成后点击"启动 Bridge"即可开始使用。注意：EvoScientist 仅在 Tauri 桌面端可用，Web 模式不支持。</p>
-    </div>
-  </div>
-</section>
-
-<section class="section guide-final">
+<!-- ═══════ 结尾 ═══════ -->
+<section class="section section-light guide-final">
   <div class="container">
     <div class="guide-final-panel reveal">
       <div class="guide-final-copy">
-        <div class="section-tag">All Done</div>
-        <h2>从安装到 Agent 上线，完整流程已经走完。</h2>
-        <p>你已经覆盖了安装、钳子助手、模型、Gateway、Agent、Skills、实时聊天和消息渠道的完整链路。接下来可以看零基础指南帮助更多同事上手，或者查看 AI 知识库把结构化内容喂给钳子助手。</p>
+        <div class="section-tag">Next Step</div>
+        <h2>配置完成，开始干活</h2>
+        <p>进阶指南帮你把整条链路跑通了。如果需要给 AI 喂结构化知识，查看 Agent 知识库。如果想了解更多功能特性，回到主站。</p>
       </div>
       <div class="guide-final-actions">
-        <a href="/beginner-guide.html" class="btn btn-primary">查看零基础指南</a>
-        <a href="/agent-guide.html" class="btn btn-outline">查看 AI 知识库</a>
+        <a href="/agent-guide.html" class="btn btn-primary">Agent 知识库</a>
+        <a href="/beginner-guide.html" class="btn btn-outline">零基础指南</a>
         <a href="/index.html" class="btn btn-outline">回到主站</a>
       </div>
     </div>
@@ -843,23 +540,20 @@
 <footer class="portal-footer">
   <div class="container">
     <div class="portal-footer-brand">
-      <img src="/images/logo-prospectclaw.png" alt="ProspectClaw">
+      <img src="/images/logo-brand.png" alt="ProspectClaw">
       ProspectClaw
     </div>
     <div class="portal-footer-links">
       <a href="/index.html">主站首页</a>
       <a href="/beginner-guide.html">零基础指南</a>
       <a href="/usage-guide.html">进阶指南</a>
-      <a href="/agent-guide.html">AI 知识库</a>
+      <a href="/agent-guide.html">Agent 知识库</a>
     </div>
-    <p class="portal-footer-copy">Copyright &copy; 2026 YnY. All rights reserved.</p>
+    <p class="portal-footer-copy">Copyright &copy; 2026 ProspectClaw. All rights reserved.</p>
   </div>
 </footer>
 
-<div class="lightbox" id="lightbox">
-  <img src="" alt="预览">
-</div>
-
+<div class="lightbox" id="lightbox"><img src="" alt="预览"></div>
 <script defer src="/portal.js"></script>
 </body>
 </html>

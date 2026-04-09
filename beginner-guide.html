@@ -3,34 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ProspectClaw 新手安装指南 — 零基础也能搞定</title>
-  <meta name="description" content="ProspectClaw 零基础新手指南。专为完全没有技术背景的用户准备，不用懂编程，不用懂命令行，照着做就能把 ProspectClaw 用起来。">
-  <meta property="og:title" content="ProspectClaw 新手安装指南 — 零基础也能搞定">
-  <meta property="og:description" content="从零开始，手把手带你用起来。不需要任何技术背景，30 分钟搞定。">
+  <title>ProspectClaw 零基础安装指南 — 30 分钟上手</title>
+  <meta name="description" content="ProspectClaw 零基础安装指南。不需要任何技术背景，30 分钟手把手带你从下载到用起来。">
+  <meta property="og:title" content="ProspectClaw 零基础安装指南 — 30 分钟上手">
+  <meta property="og:description" content="从零开始，手把手带你用起来。不需要任何技术背景。">
   <meta property="og:type" content="website">
   <link rel="icon" type="image/png" href="/images/prospectclaw-tab-logo.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/portal.css">
 </head>
 <body>
 
-<div id="scroll-progress"></div>
-
+<!-- ═══════ 导航 ═══════ -->
 <nav class="portal-nav">
   <div class="portal-nav-inner">
     <a href="/index.html" class="portal-nav-brand">
-      <img src="/images/logo-prospectclaw.png" alt="ProspectClaw">
+      <img src="/images/logo-brand.png" alt="ProspectClaw">
       ProspectClaw
     </a>
     <ul class="portal-nav-links">
       <li><a href="/beginner-guide.html">零基础指南</a></li>
       <li><a href="/usage-guide.html">进阶指南</a></li>
-      <li><a href="/agent-guide.html">AI 知识库</a></li>
+      <li><a href="/agent-guide.html">Agent 知识库</a></li>
       <li><a href="/index.html#download">立即下载</a></li>
     </ul>
     <div class="portal-nav-actions">
+      <div class="lang-switcher">
+        <button data-lang="zh-CN" class="active" onclick="switchLocale && switchLocale('zh-CN')">中</button>
+        <button data-lang="en" onclick="switchLocale && switchLocale('en')">EN</button>
+      </div>
       <button class="theme-toggle" id="theme-toggle" title="切换主题">
         <span class="theme-icon">&#9790;</span>
       </button>
@@ -42,69 +42,60 @@
   <div class="mobile-menu" id="mobile-menu">
     <a href="/beginner-guide.html">零基础指南</a>
     <a href="/usage-guide.html">进阶指南</a>
-    <a href="/agent-guide.html">AI 知识库</a>
+    <a href="/agent-guide.html">Agent 知识库</a>
     <a href="/index.html#download">立即下载</a>
   </div>
 </nav>
 
+<!-- ═══════ Hero ═══════ -->
 <section class="hero hero-guide">
-  <div class="hero-bg">
-    <div class="hero-orb hero-orb-1"></div>
-    <div class="hero-orb hero-orb-2"></div>
-    <div class="hero-grid"></div>
-  </div>
   <div class="container hero-content">
-    <div class="hero-badge reveal">零基础新手指南 · v1.2.0</div>
+    <div class="hero-badge reveal">零基础安装指南 · v1.2.8</div>
     <h1 class="hero-title reveal">从零开始，手把手带你用起来</h1>
     <p class="hero-subtitle reveal">
-      这份指南专门为完全没有技术背景的用户准备。你不需要懂编程，不需要懂命令行，甚至不需要知道什么是"终端"。<br>
-      只要照着下面的步骤一步一步做，就能把 ProspectClaw 用起来。<br>
-      遇到任何问题，随时可以把这个页面的链接发给 AI 助手（钳子助手、ChatGPT、Claude 等），它们能根据这里的内容帮你排查。
+      不需要编程基础，不需要懂命令行。照着下面 8 个步骤做，30 分钟就能把 ProspectClaw 跑起来。<br>
+      遇到问题？把这个页面链接发给任何 AI（钳子助手、ChatGPT、Claude），它们能帮你排查。
     </p>
     <div class="hero-ctas reveal">
       <a href="#step-1" class="btn btn-primary">从第一步开始</a>
-      <a href="#faq" class="btn btn-outline">我遇到问题了</a>
+      <a href="#faq" class="btn btn-outline">常见问题</a>
     </div>
     <div class="guide-quickbar reveal">
       <div class="guide-quickbar-card">
         <div class="guide-quickbar-title">需要什么基础</div>
-        <div class="guide-quickbar-text">不需要任何技术基础。会用电脑上网、会安装普通软件就够了。完全零基础也没关系，我们每一步都会详细说明。</div>
+        <div class="guide-quickbar-text">零基础。会装软件、能上网就够了。</div>
       </div>
       <div class="guide-quickbar-card">
         <div class="guide-quickbar-title">大概需要多久</div>
-        <div class="guide-quickbar-text">整个过程大约 30 分钟。如果中间需要下载安装一些工具，可能会久一点，取决于网速。不着急，慢慢来。</div>
+        <div class="guide-quickbar-text">约 30 分钟，取决于网速。</div>
       </div>
       <div class="guide-quickbar-card">
         <div class="guide-quickbar-title">遇到问题怎么办</div>
-        <div class="guide-quickbar-text">把这个页面的链接发给任何 AI 助手，告诉它你卡在哪一步、看到了什么提示，它就能帮你解决。你不需要自己懂技术。</div>
+        <div class="guide-quickbar-text">把这个页面链接发给 AI 助手，告诉它卡在哪一步。</div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ═══════ 三个版本概览 ═══════ -->
-<section class="section" id="editions-overview" style="background: var(--p-bg-alt);">
+<section class="section section-dark" id="editions-overview">
   <div class="container">
     <div class="section-header reveal">
       <div class="section-tag">Three Editions</div>
       <h2 class="section-title">三个版本，选最适合你的</h2>
-      <p class="section-subtitle">同一套底座，按使用场景裁剪。三个版本共享核心能力，首页和专属模块各有不同。</p>
+      <p class="section-subtitle">同一套底座，按场景裁剪。首次使用选哪个都行，后续可切换。</p>
     </div>
 
     <div class="guide-callout reveal" style="margin-bottom: 24px;">
-      <div class="guide-callout-title">✨ v1.2.0 重磅新功能：ClawSwarm 多智能体任务编排</div>
-      <p><strong>ClawSwarm</strong>——全新 AI 任务编排系统，描述一个目标，LLM 自动拆解为多步骤计划，DAG 可视化管理依赖关系，直连 Anthropic/OpenAI/Gemini 无需 Gateway。另有<strong>一键 AI 配置</strong>4 步向导、<strong>EvoScientist 多科学家协作</strong>、<strong>SOP 任务规划</strong>等完整 AI 工作台能力。</p>
+      <div class="guide-callout-title">v1.2.8 新功能亮点</div>
+      <p><strong>SkillHub 技能商店</strong> — 在线浏览、搜索、一键安装 Agent 技能，替代旧版 CLI 命令。<strong>Chat OpenClaw 4.5+ 兼容</strong> — 支持 Agent 事件流（生命周期/计划/审批/思考），3 分钟超时保护。<strong>Gateway 稳定性增强</strong> — 仪表盘刷新节流、TCP 重试、自动重启优化。</p>
     </div>
 
     <div class="editions-grid" style="grid-template-columns: repeat(3, 1fr);">
-      <!-- Invest -->
-      <div class="edition-card edition-invest reveal stagger-1">
+      <div class="edition-card reveal stagger-1">
         <div class="edition-card-icon">&#128200;</div>
         <h3 class="edition-card-title">ProspectClaw Invest</h3>
         <p class="edition-card-tagline">投资工作台</p>
-        <div class="showcase-image" data-lightbox style="margin: 12px 0;">
-          <img src="/screenshots/invest-dashboard.png" alt="ProspectClaw Invest 首页" style="border-radius: 8px; width: 100%;">
-        </div>
         <ul class="edition-card-features">
           <li>投资仪表盘 + Deal Pipeline</li>
           <li>企业库 / 联系人 / 投资文档</li>
@@ -112,15 +103,10 @@
           <li>+ 完整平台核心能力</li>
         </ul>
       </div>
-
-      <!-- Knowledge -->
-      <div class="edition-card edition-knowledge reveal stagger-2">
+      <div class="edition-card reveal stagger-2">
         <div class="edition-card-icon">&#128218;</div>
         <h3 class="edition-card-title">ProspectClaw Knowledge</h3>
         <p class="edition-card-tagline">Agent 知识库</p>
-        <div class="showcase-image" data-lightbox style="margin: 12px 0;">
-          <img src="/screenshots/knowledge-assistant.png" alt="ProspectClaw Knowledge 首页" style="border-radius: 8px; width: 100%;">
-        </div>
         <ul class="edition-card-features">
           <li>助手首页，开箱即用</li>
           <li>知识库整理与检索配置</li>
@@ -128,15 +114,10 @@
           <li>+ 完整平台核心能力</li>
         </ul>
       </div>
-
-      <!-- SOP -->
-      <div class="edition-card edition-sop reveal stagger-3">
+      <div class="edition-card reveal stagger-3">
         <div class="edition-card-icon">&#128203;</div>
         <h3 class="edition-card-title">ProspectClaw SOP</h3>
         <p class="edition-card-tagline">Agent SOP</p>
-        <div class="showcase-image" data-lightbox style="margin: 12px 0;">
-          <img src="/screenshots/sop-main.png" alt="ProspectClaw SOP 首页" style="border-radius: 8px; width: 100%;">
-        </div>
         <ul class="edition-card-features">
           <li>SOP 工作台首页</li>
           <li>Agent 规则编写与维护</li>
@@ -148,18 +129,19 @@
   </div>
 </section>
 
-<section class="section" id="beginner-steps">
+<!-- ═══════ 8 步指南 ═══════ -->
+<section class="section section-light" id="beginner-steps">
   <div class="container">
     <div class="section-header reveal">
       <div class="section-tag">Step by Step</div>
       <h2 class="section-title">一步一步来，不跳步</h2>
-      <p class="section-subtitle">下面一共 8 个步骤。请按顺序来，每一步做完确认"过关标准"再往下走。</p>
+      <p class="section-subtitle">8 个步骤，按顺序来。每一步做完确认"过关标准"再往下走。</p>
     </div>
 
     <div class="guide-steps">
 
       <!-- Step 01 -->
-      <article class="guide-step-card reveal stagger-1" id="step-1">
+      <article class="guide-step-card reveal" id="step-1">
         <div class="guide-step-topline">
           <div class="guide-step-index">01</div>
           <div class="guide-step-meta">你需要准备什么</div>
@@ -167,62 +149,55 @@
         <div class="guide-step-content">
           <div class="guide-step-copy">
             <h3>只需要一台能上网的电脑</h3>
-            <p>在开始之前，先确认你手边有这些东西。放心，要求非常简单：</p>
             <ul class="guide-bullet-list">
-              <li><strong>一台电脑</strong>（Mac 或 Windows 都可以），需要能连上网。手机和平板不行，必须是电脑。</li>
+              <li><strong>一台电脑</strong>（Mac 或 Windows），需要能联网。手机平板不行。</li>
               <li><strong>不需要编程经验</strong>，不需要懂代码，不需要上过计算机课。</li>
-              <li><strong>不需要知道"命令行"是什么</strong>。如果后面某一步需要用到它，我们会在那个时候告诉你怎么打开、输入什么、怎么关闭。现在完全不用管它。</li>
-              <li>如果你有一个懂技术的同事或朋友，遇到困难时可以找他们帮忙，但这不是必须的 —— 因为你还有 AI 助手可以问。</li>
+              <li><strong>不需要知道"命令行"是什么</strong>。如果后面用到，我们会明确告诉你输入什么。</li>
+              <li>有技术同事更好，但不是必须——你有 AI 助手可以问。</li>
             </ul>
             <div class="guide-checkpoint">
-              <strong>过关标准：</strong> 你有一台能上网的电脑（Mac 或 Windows）。这就够了，可以往下走了。
+              <strong>过关标准：</strong> 你有一台能上网的 Mac 或 Windows 电脑。这就够了。
             </div>
           </div>
         </div>
       </article>
 
       <!-- Step 02 -->
-      <article class="guide-step-card reveal stagger-2" id="step-2">
+      <article class="guide-step-card reveal" id="step-2">
         <div class="guide-step-topline">
           <div class="guide-step-index">02</div>
           <div class="guide-step-meta">下载和安装</div>
         </div>
         <div class="guide-step-content">
           <div class="guide-step-copy">
-            <h3>像装普通软件一样，把 ProspectClaw 装到电脑上</h3>
-            <p>首先，去主站下载 ProspectClaw 安装包：<a href="/index.html#download">点击这里去下载页面</a></p>
+            <h3>像装普通软件一样安装</h3>
+            <p>去主站下载安装包：<a href="/index.html#download">点击这里去下载页面</a></p>
 
-            <h4>如果你用的是 Mac（苹果电脑）：</h4>
+            <h4>Mac 用户：</h4>
             <ul class="guide-bullet-list">
-              <li>下载后你会得到一个 .dmg 文件，双击打开它。</li>
-              <li>你会看到一个窗口，里面有 ProspectClaw 的图标和一个"应用程序"文件夹。把图标拖到文件夹上就行了。这跟你装其他 Mac 软件是一模一样的。</li>
-              <li><strong>重要提醒：</strong>Mac 很可能会弹出一个提示说"无法验证开发者"或者"已损坏，无法打开"。<strong>这不是病毒！</strong>这只是因为苹果没有认证这个软件。解决方法很简单：
-                <br>1. 点击屏幕左上角的苹果图标 → 选择"系统设置"
-                <br>2. 在左侧找到"隐私与安全性"，点进去
-                <br>3. 往下滚动，你会看到关于 ProspectClaw 被阻止的提示
-                <br>4. 点击"仍要打开"按钮
-                <br>5. 再次打开 ProspectClaw，这次就能正常启动了
+              <li>下载 .dmg 文件，双击打开，把图标拖到"应用程序"文件夹。</li>
+              <li><strong>重要：</strong>Mac 可能提示"无法验证开发者"或"已损坏"。<strong>这不是病毒！</strong>解决方法：
+                <br>点击左上角苹果图标 → 系统设置 → 隐私与安全性 → 找到 ProspectClaw 被阻止的提示 → 仍要打开
               </li>
             </ul>
 
-            <h4>如果你用的是 Windows：</h4>
+            <h4>Windows 用户：</h4>
             <ul class="guide-bullet-list">
-              <li>下载后你会得到一个安装包（.exe 文件），双击运行它。</li>
-              <li>按照安装向导的提示，一路点"下一步"就行了。</li>
-              <li>如果 Windows 弹出安全提示，选择"仍要运行"即可。</li>
+              <li>下载 .exe 安装包，双击运行，一路"下一步"即可。</li>
+              <li>如果出现安全提示，选择"仍要运行"。</li>
             </ul>
+            <div class="guide-checkpoint">
+              <strong>过关标准：</strong> ProspectClaw 已安装，你可以双击打开它了。
+            </div>
           </div>
           <div class="guide-step-visual showcase-image" data-lightbox>
-            <img src="/screenshots/desktop-claw-assistant.png" alt="ProspectClaw 界面预览">
+            <img src="/screenshots/desktop-overview.png" alt="ProspectClaw 界面预览">
           </div>
-        </div>
-        <div class="guide-checkpoint">
-          <strong>过关标准：</strong> ProspectClaw 已经安装到电脑上，你可以双击打开它了。
         </div>
       </article>
 
       <!-- Step 03 -->
-      <article class="guide-step-card reveal stagger-3" id="step-3">
+      <article class="guide-step-card reveal" id="step-3">
         <div class="guide-step-topline">
           <div class="guide-step-index">03</div>
           <div class="guide-step-meta">第一次打开 — 初始设置</div>
@@ -230,60 +205,53 @@
         <div class="guide-step-content">
           <div class="guide-step-copy">
             <h3>让应用帮你检查电脑环境</h3>
-            <p>第一次打开 ProspectClaw 后，它会自动进入一个叫"初始设置"的页面。这个页面会帮你检查电脑上是否已经准备好了需要的工具。</p>
-            <p>你会看到几个检查项，每个旁边会显示一个状态：</p>
+            <p>第一次打开会自动进入"初始设置"页面，帮你检查需要的工具是否齐全。</p>
             <ul class="guide-bullet-list">
-              <li><strong>绿色勾</strong> = 这项已经通过，不用管。</li>
-              <li><strong>红色叉</strong> = 这项需要处理。别紧张，按下面的说明来就行。</li>
+              <li><strong>绿色勾</strong> = 已通过，不用管。</li>
+              <li><strong>红色叉</strong> = 需要处理，按下面说明来。</li>
             </ul>
 
             <h4>如果 Node.js 显示红色：</h4>
             <ul class="guide-bullet-list">
-              <li>Node.js 是一个运行环境工具（你不需要理解它是什么，只需要装上它）。</li>
-              <li>打开浏览器，去 <strong>nodejs.org</strong> 这个网站。</li>
-              <li>你会看到一个绿色的下载按钮，点击下载，然后像装普通软件一样安装。</li>
-              <li>安装完成后，回到 ProspectClaw，刷新检查，它应该就变绿色了。</li>
+              <li>Node.js 是一个运行环境工具（不需要理解它，装上就行）。</li>
+              <li>打开浏览器去 <strong>nodejs.org</strong>，下载安装即可。</li>
+              <li>装完后回到 ProspectClaw 刷新检查。</li>
             </ul>
 
             <h4>如果 OpenClaw 显示红色：</h4>
             <ul class="guide-bullet-list">
-              <li>直接点击页面上的"安装"按钮，等它自动完成就好了。这个过程可能需要几分钟，耐心等待。</li>
+              <li>直接点页面上的"安装"按钮，等它自动完成（几分钟）。</li>
             </ul>
 
             <h4>什么是"命令行"？</h4>
-            <p>你可能会在一些提示里看到"命令行"这个词。命令行就是电脑上一个可以输入文字指令的窗口，长得像一个黑色（或白色）的文字框。在这个指南里，如果需要用到命令行，我们会明确告诉你要输入什么。</p>
-            <ul class="guide-bullet-list">
-              <li><strong>Mac 上怎么打开命令行：</strong>同时按下 Command 键和空格键，会弹出一个搜索框，在里面输入 Terminal（终端），然后按回车键。</li>
-              <li><strong>Windows 上怎么打开命令行：</strong>按键盘上的 Win 键（左下角有 Windows 标志的那个键），在弹出的搜索框里输入 cmd，然后按回车键。</li>
-              <li>不过正常情况下，初始设置页面上的按钮就够用了，你可能根本不需要自己打开命令行。</li>
-            </ul>
+            <p>一个可以输入文字指令的窗口。<strong>Mac：</strong>按 Command+空格，搜 Terminal 回车。<strong>Windows：</strong>按 Win 键，搜 cmd 回车。正常情况下初始设置的按钮就够用了。</p>
+
             <div class="guide-checkpoint">
-              <strong>过关标准：</strong> 初始设置页面上所有检查项都是绿色的。如果有红色项怎么也搞不定，先别着急，等配好钳子助手（第 4 步）之后可以让它帮你排查。
+              <strong>过关标准：</strong> 初始设置页面上所有检查项都是绿色的。有红色项搞不定？先往下走，配好钳子助手（第 4 步）后让它帮你排查。
             </div>
           </div>
         </div>
       </article>
 
       <!-- Step 04 -->
-      <article class="guide-step-card reveal stagger-4" id="step-4">
+      <article class="guide-step-card reveal" id="step-4">
         <div class="guide-step-topline">
           <div class="guide-step-index">04</div>
-          <div class="guide-step-meta">配置你的 AI 助手（钳子助手）</div>
+          <div class="guide-step-meta">配置钳子助手（AI 私人教练）</div>
         </div>
         <div class="guide-step-content reverse">
           <div class="guide-step-copy">
             <h3>先叫醒你的"私人教练"</h3>
-            <p>在软件左侧的菜单栏里，找到"钳子助手"，点进去。</p>
-            <p>钳子助手是这个软件里内置的 AI 助手，你可以把它理解成你的"私人教练"。它能帮你解答问题、排查故障、告诉你下一步该做什么。</p>
-            <p>但是，它现在还不能工作，因为还没有给它配一个"AI 大脑"（也就是 AI 模型）。就好比你买了一台电视，但还没接上信号源，所以还看不了节目。</p>
+            <p>在左侧菜单找到"钳子助手"，点进去。它是内置的 AI 助手，能帮你解答问题、排查故障。</p>
+            <p>但它现在还不能工作——需要给它配一个"AI 大脑"（模型）。</p>
             <ul class="guide-bullet-list">
-              <li>点击右上角的<strong>"设置"</strong>按钮。</li>
-              <li>你需要填写一个 AI 模型的信息。这里需要一个叫 <strong>API Key</strong> 的东西（可以理解为"使用密码"）。</li>
-              <li><strong>如果你不知道用什么模型：</strong>可以先试试 MiniMax（国产模型，有免费额度），或者联系你的技术同事帮你拿一个 API Key。</li>
-              <li>填好后点<strong>"测试连接"</strong>，如果看到成功的提示，就说明配好了。</li>
+              <li>点右上角<strong>"设置"</strong>按钮。</li>
+              <li>填写 AI 模型信息，需要一个 <strong>API Key</strong>（使用密码）。</li>
+              <li><strong>不知道用什么模型？</strong>试试 MiniMax（有免费额度），或联系技术同事拿一个 API Key。</li>
+              <li>填好后点<strong>"测试连接"</strong>，看到成功提示就配好了。</li>
             </ul>
             <div class="guide-checkpoint">
-              <strong>过关标准：</strong> 钳子助手能正常对话了。你可以试着输入"你好"看看它是否回复。从现在开始，遇到任何问题你都可以直接问它！
+              <strong>过关标准：</strong> 钳子助手能正常对话。试试输入"你好"看它是否回复。从现在开始，遇到问题直接问它！
             </div>
           </div>
           <div class="guide-step-visual showcase-image" data-lightbox>
@@ -292,12 +260,12 @@
         </div>
         <div class="guide-callout">
           <div class="guide-callout-title">从这一步开始，你有帮手了</div>
-          <p>从这一步开始，如果后面遇到任何问题，你都可以直接在钳子助手里描述你的问题，它会帮你分析和解决。你也可以把这个网页的链接发给它，让它读取里面的信息来帮你。再也不用一个人硬扛了。</p>
+          <p>后面遇到任何问题，都可以在钳子助手里描述你的问题。你也可以把这个网页链接发给它。再也不用一个人硬扛了。</p>
         </div>
       </article>
 
       <!-- Step 05 -->
-      <article class="guide-step-card reveal stagger-5" id="step-5">
+      <article class="guide-step-card reveal" id="step-5">
         <div class="guide-step-topline">
           <div class="guide-step-index">05</div>
           <div class="guide-step-meta">配置主引擎（模型和 Gateway）</div>
@@ -305,121 +273,108 @@
         <div class="guide-step-content">
           <div class="guide-step-copy">
             <h3>给系统装上"发动机"</h3>
-            <p>刚才第 4 步配的是钳子助手自己的模型。现在要给系统的主引擎也配上模型，这样整个系统才能正常工作。</p>
+            <p>第 4 步配的是钳子助手自己的模型。现在给系统主引擎也配上。</p>
             <ul class="guide-bullet-list">
-              <li>在左侧菜单找到<strong>"模型配置"</strong>，点进去。</li>
-              <li>这里要添加至少一个 AI 模型。可以和刚才钳子助手配的用同一个，也可以用不同的。</li>
-              <li>添加完模型后，点<strong>"测试"</strong>按钮，确认模型能正常使用。</li>
-              <li>然后去左侧菜单的<strong>"仪表盘"</strong>或<strong>"服务管理"</strong>页面。</li>
-              <li>找到 <strong>Gateway</strong>（可以理解为系统的"总开关"），点击<strong>"启动"</strong>按钮。</li>
-              <li>等它变成绿色的<strong>"运行中"</strong>，就说明主引擎已经启动成功了。</li>
+              <li>左侧菜单找到<strong>"模型配置"</strong>，添加至少一个 AI 模型（可以和钳子助手用同一个）。</li>
+              <li>点<strong>"测试"</strong>确认模型能用。</li>
+              <li>然后去<strong>"仪表盘"</strong>或<strong>"服务管理"</strong>页面。</li>
+              <li>找到 <strong>Gateway</strong>（系统总开关），点<strong>"启动"</strong>。</li>
+              <li>等它变绿色<strong>"运行中"</strong>，主引擎就启动成功了。</li>
             </ul>
             <div class="guide-checkpoint">
-              <strong>过关标准：</strong> 模型测试通过，Gateway 显示"运行中"（绿色状态）。如果 Gateway 启动不了，直接去问钳子助手。
+              <strong>过关标准：</strong> 模型测试通过，Gateway 显示"运行中"（绿色）。Gateway 启动不了？问钳子助手。
             </div>
           </div>
           <div class="guide-step-visual guide-dual-shots">
             <div class="showcase-image" data-lightbox>
-              <img src="/screenshots/desktop-model-configuration.png" alt="模型配置页面">
+              <img src="/screenshots/desktop-model-configuration.png" alt="模型配置">
             </div>
             <div class="showcase-image" data-lightbox>
-              <img src="/screenshots/desktop-dashboard.png" alt="仪表盘 Gateway 状态">
+              <img src="/screenshots/desktop-dashboard.png" alt="仪表盘">
             </div>
           </div>
         </div>
       </article>
 
       <!-- Step 06 -->
-      <article class="guide-step-card reveal stagger-6" id="step-6">
+      <article class="guide-step-card reveal" id="step-6">
         <div class="guide-step-topline">
           <div class="guide-step-index">06</div>
-          <div class="guide-step-meta">第一次对话 — 验证一切正常</div>
+          <div class="guide-step-meta">第一次对话 — 验证系统</div>
         </div>
         <div class="guide-step-content reverse">
           <div class="guide-step-copy">
-            <h3>发一条消息试试，看看系统是不是真的跑通了</h3>
-            <p>到了激动人心的时刻！我们来验证一下前面所有的努力是否成功。</p>
+            <h3>发一条消息，验证系统跑通了</h3>
             <ul class="guide-bullet-list">
-              <li>在左侧菜单找到<strong>"实时聊天"</strong>，点进去。</li>
-              <li>在输入框里输入一句话，比如：<strong>"你好，介绍一下你自己"</strong></li>
-              <li>按回车发送。</li>
-              <li>如果收到了回复 —— <strong>恭喜你！整个系统已经跑通了！</strong></li>
-              <li>如果没有收到回复，不要慌：
-                <br>1. 回去检查 Gateway 是否还在"运行中"状态
-                <br>2. 或者直接问钳子助手：<strong>"我在实时聊天里发消息没有回复，怎么办？"</strong>
-              </li>
+              <li>左侧菜单找到<strong>"实时聊天"</strong>，点进去。</li>
+              <li>输入：<strong>"你好，介绍一下你自己"</strong>，按回车。</li>
+              <li>收到回复 = <strong>系统已完全跑通！</strong></li>
+              <li>没收到回复？检查 Gateway 是否还在"运行中"，或问钳子助手："实时聊天发消息没回复，怎么办？"</li>
             </ul>
             <div class="guide-checkpoint">
-              <strong>过关标准：</strong> 在实时聊天里发消息，能收到 AI 的回复。到这一步，系统的核心功能已经完全跑通了。
+              <strong>过关标准：</strong> 实时聊天里发消息能收到回复。核心功能已跑通。
             </div>
           </div>
           <div class="guide-step-visual showcase-image" data-lightbox>
-            <img src="/screenshots/desktop-chat-full.png" alt="实时聊天界面">
+            <img src="/screenshots/desktop-sessions-multi-agent.png" alt="实时聊天">
           </div>
         </div>
       </article>
 
       <!-- Step 07 -->
-      <article class="guide-step-card reveal stagger-7" id="step-7">
+      <article class="guide-step-card reveal" id="step-7">
         <div class="guide-step-topline">
           <div class="guide-step-index">07</div>
-          <div class="guide-step-meta">连接聊天工具（可选）</div>
+          <div class="guide-step-meta">探索更多功能（可选）</div>
         </div>
         <div class="guide-step-content">
           <div class="guide-step-copy">
-            <h3>让 AI 在飞书、Telegram 里也能回复你</h3>
-            <p>如果你想让 AI 不只在 ProspectClaw 里能用，还能在飞书、Telegram 等聊天工具里也能回复，可以继续这一步。<strong>如果暂时不需要，可以直接跳过。</strong></p>
+            <h3>系统跑通后，这些功能值得试试</h3>
+            <p>基础链路已通，可以按兴趣探索这些模块：</p>
 
-            <h4>飞书 / Lark：</h4>
+            <h4>AI 能力：</h4>
             <ul class="guide-bullet-list">
-              <li>需要在飞书开放平台创建一个"企业自建应用"，并开启机器人功能。</li>
-              <li>拿到 App ID 和 App Secret（这两个是飞书给你的凭证），填到 ProspectClaw 的"消息渠道"页面。</li>
-              <li>这一步操作比较复杂，如果你不知道怎么弄，可以让钳子助手一步步教你，或者让你的技术同事帮忙。</li>
+              <li><strong>SkillHub 技能商店</strong>（v1.2.8 新增）— 在线浏览、搜索、一键安装 Agent 技能。去"Skills"页面的"商店"标签页体验。</li>
+              <li><strong>Prospect-Research 科学家集群</strong> — 多 AI 协作完成复杂任务，自带 12 个案例模板。</li>
+              <li><strong>ClawSwarm 蜂群协作</strong> — 输入目标，AI 自动拆解为任务 DAG，多智能体并行执行。</li>
             </ul>
 
-            <h4>Telegram：</h4>
+            <h4>投资管理（Invest 版本）：</h4>
             <ul class="guide-bullet-list">
-              <li>在 Telegram 里搜索 <strong>@BotFather</strong>，发送 /newbot 来创建一个机器人。</li>
-              <li>按提示给机器人起名字后，你会拿到一个 <strong>Token</strong>（一串字符），把它填到 ProspectClaw 的"消息渠道"页面。</li>
-              <li>Telegram 的接入相对简单，适合先试试看。</li>
+              <li><strong>投资概览</strong> — 项目池漏斗、管道分布和近期动态仪表盘。</li>
+              <li><strong>Deal Pipeline</strong> — 六阶段看板管理（寻源→初筛→尽调→IC→条款→关闭）。</li>
+              <li><strong>企业库 + 联系人</strong> — 被投企业档案和联系人管理。</li>
             </ul>
 
-            <p>这一步涉及到第三方平台的操作，确实比前面几步更复杂一些。如果暂时用不上，完全可以以后再弄。</p>
+            <h4>消息渠道（可选）：</h4>
+            <ul class="guide-bullet-list">
+              <li><strong>飞书 / Lark</strong> — 需要在飞书开放平台创建应用，拿到 App ID 和 App Secret。操作较复杂，建议让钳子助手或技术同事协助。</li>
+              <li><strong>Telegram</strong> — 通过 @BotFather 创建 Bot 拿到 Token 即可，最简单。</li>
+            </ul>
             <div class="guide-checkpoint">
-              <strong>过关标准：</strong> 聊天工具里能收到机器人的回复。或者你选择了跳过这一步 —— 那也完全没问题。
-            </div>
-          </div>
-          <div class="guide-step-visual guide-mini-stack">
-            <div class="guide-mini-card">
-              <h4>飞书 / Lark</h4>
-              <p>需要 App ID 和 App Secret。操作较复杂，建议让钳子助手或技术同事协助。</p>
-            </div>
-            <div class="guide-mini-card">
-              <h4>Telegram</h4>
-              <p>只需要一个 Bot Token。操作简单，适合快速体验外部聊天渠道。</p>
+              <strong>过关标准：</strong> 你已经知道系统里有哪些功能，并按兴趣试了几个。
             </div>
           </div>
         </div>
       </article>
 
       <!-- Step 08 -->
-      <article class="guide-step-card reveal stagger-8" id="step-8">
+      <article class="guide-step-card reveal" id="step-8">
         <div class="guide-step-topline">
           <div class="guide-step-index">08</div>
           <div class="guide-step-meta">遇到问题怎么办</div>
         </div>
         <div class="guide-step-content">
           <div class="guide-step-copy">
-            <h3>记住这三个求助方法，以后都不用慌</h3>
-            <p>用软件难免会遇到问题，但你不需要自己搞定所有事情。这里是三个解决问题的方法，按优先级排序：</p>
+            <h3>三个求助方法，优先级排序</h3>
             <ul class="guide-bullet-list">
-              <li><strong>第一选择：问钳子助手！</strong>在钳子助手里描述你的问题，比如"我点了启动但是 Gateway 还是红色的"，它会帮你一步步排查。</li>
-              <li><strong>第二选择：把这个网页发给任何 AI 助手。</strong>打开 ChatGPT、Claude 或者其他你在用的 AI，把这个页面的链接发给它，告诉它你的问题。它能根据这个页面的内容帮你分析。</li>
-              <li><strong>第三选择：查看进阶指南。</strong><a href="/usage-guide.html">进阶指南</a>里有更详细的操作手册、排障清单和常见问题解答，适合想更深入了解的用户。</li>
+              <li><strong>第一选择：问钳子助手！</strong>描述问题，比如"Gateway 还是红色的"，它会帮你排查。</li>
+              <li><strong>第二选择：发给外部 AI。</strong>把这个页面链接发给 ChatGPT / Claude，告诉它你的问题。</li>
+              <li><strong>第三选择：查看进阶指南。</strong><a href="/usage-guide.html">进阶指南</a>有更详细的操作手册和排障清单。</li>
             </ul>
-            <p><strong>最重要的一条：不要一出问题就想重装！</strong>大多数问题都有简单的解决方法，重装反而可能丢失你之前的配置。先问 AI，让它帮你判断。</p>
+            <p><strong>最重要：不要一出问题就重装！</strong>大多数问题有简单解决方法，重装反而可能丢配置。先问 AI。</p>
             <div class="guide-checkpoint">
-              <strong>过关标准：</strong> 你知道遇到问题该找谁了 —— 第一时间找钳子助手，或者把这个页面发给 AI。
+              <strong>过关标准：</strong> 你知道遇到问题该找谁——先找钳子助手，或把这个页面发给 AI。
             </div>
           </div>
         </div>
@@ -427,7 +382,7 @@
 
     </div>
 
-    <!-- FAQ Section -->
+    <!-- FAQ -->
     <div class="guide-cards-panel reveal" id="faq">
       <div class="section-tag">Quick FAQ</div>
       <h3 class="guide-cards-title">最常见的 4 个问题</h3>
@@ -437,52 +392,52 @@
             <div class="guide-tool-icon">&#127822;</div>
             <h4>Mac 提示"无法打开"或"已损坏"</h4>
           </div>
-          <p>这不是病毒，只是苹果的安全机制。解决方法：打开"系统设置" → "隐私与安全性" → 找到 ProspectClaw 的提示 → 点击"仍要打开"。详见第 2 步。</p>
+          <p>不是病毒，是苹果安全机制。系统设置 → 隐私与安全性 → 找到 ProspectClaw → 仍要打开。详见第 2 步。</p>
         </article>
         <article class="guide-tool-card">
           <div class="guide-tool-head">
             <div class="guide-tool-icon">&#128308;</div>
             <h4>初始设置里有红色项</h4>
           </div>
-          <p>红色项表示需要安装某个工具。按页面上的提示操作即可。如果搞不定，配好钳子助手后直接问它："初始设置里 XX 是红色的，怎么办？"</p>
+          <p>红色项表示需要安装某工具。按页面提示操作。搞不定就问钳子助手："初始设置里 XX 是红色的，怎么办？"</p>
         </article>
         <article class="guide-tool-card">
           <div class="guide-tool-head">
             <div class="guide-tool-icon">&#128679;</div>
             <h4>Gateway 启动不了</h4>
           </div>
-          <p>最常见的原因是模型没配好或者端口被占用。不用自己排查，直接在钳子助手里说"Gateway 启动失败"，让它帮你诊断。</p>
+          <p>最常见原因是模型没配好或端口被占用。直接在钳子助手里说"Gateway 启动失败"，让它帮你诊断。</p>
         </article>
         <article class="guide-tool-card">
           <div class="guide-tool-head">
             <div class="guide-tool-icon">&#128172;</div>
             <h4>实时聊天没收到回复</h4>
           </div>
-          <p>先检查：左侧菜单里的"服务管理"页面，Gateway 是否显示绿色的"运行中"？如果不是，先启动它。如果是绿色的还没回复，问钳子助手帮你查。</p>
+          <p>先检查服务管理页面 Gateway 是否绿色"运行中"。不是就先启动它。是绿色还没回复，问钳子助手帮你查。</p>
         </article>
       </div>
     </div>
 
-    <!-- Final Callout -->
     <div class="guide-callout reveal">
-      <div class="guide-callout-title">记住这个万能方法</div>
-      <p>任何时候遇到问题，你都可以把这个页面（或者截图）发给 AI 助手。无论是钳子助手、ChatGPT、Claude 还是其他 AI，它们都能根据这里的信息帮你解决问题。你不需要自己懂技术，让 AI 来帮你就好。</p>
+      <div class="guide-callout-title">万能求助法</div>
+      <p>任何时候遇到问题，把这个页面链接（或截图）发给 AI 助手。无论是钳子助手、ChatGPT 还是 Claude，它们都能根据这里的信息帮你解决。</p>
     </div>
 
   </div>
 </section>
 
-<section class="section guide-final">
+<!-- ═══════ 结尾 ═══════ -->
+<section class="section section-dark guide-final">
   <div class="container">
     <div class="guide-final-panel reveal">
       <div class="guide-final-copy">
         <div class="section-tag">Next Step</div>
-        <h2>搞定了？接下来可以看看进阶指南</h2>
-        <p>这份零基础指南帮你把 ProspectClaw 从零跑起来了。如果你想更深入地了解每个功能、学习更高级的用法，可以查看进阶指南。当然，你也随时可以回来翻看这个页面。</p>
+        <h2>搞定了？接下来看看进阶指南</h2>
+        <p>零基础指南帮你从零跑起来了。想更深入了解每个功能、学习高级用法，查看进阶指南。</p>
       </div>
       <div class="guide-final-actions">
         <a href="/usage-guide.html" class="btn btn-primary">查看进阶指南</a>
-        <a href="/agent-guide.html" class="btn btn-outline">AI 知识库</a>
+        <a href="/agent-guide.html" class="btn btn-outline">Agent 知识库</a>
         <a href="/index.html" class="btn btn-outline">回到主站</a>
       </div>
     </div>
@@ -492,16 +447,16 @@
 <footer class="portal-footer">
   <div class="container">
     <div class="portal-footer-brand">
-      <img src="/images/logo-prospectclaw.png" alt="ProspectClaw">
+      <img src="/images/logo-brand.png" alt="ProspectClaw">
       ProspectClaw
     </div>
     <div class="portal-footer-links">
       <a href="/index.html">主站首页</a>
       <a href="/beginner-guide.html">零基础指南</a>
       <a href="/usage-guide.html">进阶指南</a>
-      <a href="/agent-guide.html">AI 知识库</a>
+      <a href="/agent-guide.html">Agent 知识库</a>
     </div>
-    <p class="portal-footer-copy">Copyright &copy; 2026 YnY. All rights reserved.</p>
+    <p class="portal-footer-copy">Copyright &copy; 2026 ProspectClaw. All rights reserved.</p>
   </div>
 </footer>
 
