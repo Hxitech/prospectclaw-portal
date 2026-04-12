@@ -14,7 +14,7 @@
     "menu": "Menu"
   },
   "hero": {
-    "badge": "v1.2.8-fix3 · AI Workbench",
+    "badge": "v1.3.0 · AI Workbench",
     "title": "Local AI All-in-One Workbench",
     "subtitle": "AI Assistant, Multi-Agent orchestration, Investment Management, Knowledge Base, SOP Engine — all in one.<br>No server needed. ~10 MB install. Data stays local and secure.",
     "cta_download": "Download ProspectClaw",
@@ -134,7 +134,7 @@
   "download": {
     "tag": "Download",
     "title": "Download ProspectClaw Now",
-    "badge": "v1.2.8-fix3",
+    "badge": "v1.3.0",
     "subtitle": "~10 MB installer, no extra runtime needed. Install and start working.",
     "mac_title": "macOS",
     "mac_detail": "Apple Silicon / Intel · macOS 12.0+",
