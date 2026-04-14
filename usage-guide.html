@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ProspectClaw 进阶使用指南</title>
-  <meta name="description" content="ProspectClaw 进阶使用指南。适合有一定技术基础的用户，从安装到 Agent 上线的完整流程，附排障清单和概念速查。">
-  <meta property="og:title" content="ProspectClaw 进阶使用指南">
+  <title>Privix 进阶使用指南</title>
+  <meta name="description" content="Privix 进阶使用指南。适合有一定技术基础的用户，从安装到 Agent 上线的完整流程，附排障清单和概念速查。">
+  <meta property="og:title" content="Privix 进阶使用指南">
   <meta property="og:description" content="从安装到 Agent 上线，6 步完成完整配置。附日常管理、排障清单和概念速查。">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://prospectclaw.ccipd.net/screenshots/desktop-overview.png">
+  <meta property="og:image" content="https://www.privix.cn/screenshots/desktop-overview.png">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" type="image/png" href="/images/prospectclaw-tab-logo.png">
+  <link rel="icon" type="image/svg+xml" href="/images/privix-mark.svg">
   <link rel="stylesheet" href="/portal.css">
 </head>
 <body>
@@ -19,8 +19,8 @@
 <nav class="portal-nav">
   <div class="portal-nav-inner">
     <a href="/index.html" class="portal-nav-brand">
-      <img src="/images/logo-brand.png" alt="ProspectClaw">
-      ProspectClaw
+      <img src="/images/privix-mark.svg" alt="Privix">
+      Privix
     </a>
     <ul class="portal-nav-links">
       <li><a href="/index.html" data-i18n="nav.home">主站</a></li>
@@ -55,10 +55,10 @@
 <!-- ═══════ Hero ═══════ -->
 <section class="hero hero-guide">
   <div class="container hero-content">
-    <div class="hero-badge reveal" data-i18n="usage.badge">进阶使用指南 · v1.2.8</div>
-    <h1 class="hero-title reveal" data-i18n="usage.title">ProspectClaw 进阶使用指南</h1>
+    <div class="hero-badge reveal" data-i18n="usage.badge">进阶使用指南 · 适用于 v1.4.3</div>
+    <h1 class="hero-title reveal" data-i18n="usage.title">Privix 进阶使用指南</h1>
     <p class="hero-subtitle reveal" data-i18n-html="usage.subtitle">
-      你大概知道命令行是什么，各种软件也用过不少，只是没用过 ProspectClaw。<br>
+      你大概知道命令行是什么，各种软件也用过不少，只是没用过 Privix。<br>
       6 步把系统跑通，后面附了日常管理要点、排障清单和概念速查。<br>
       完全没基础的话看 <a href="/beginner-guide.html" style="color:#2997ff">零基础指南</a>，需要结构化文档喂 AI 看 <a href="/agent-guide.html" style="color:#2997ff">Agent 知识库</a>。
     </p>
@@ -106,7 +106,7 @@
     <div class="manual-outline reveal">
       <div class="manual-outline-title" data-i18n="usage.outline_title">这 6 步会让你完成</div>
       <div class="manual-outline-grid">
-        <div class="manual-outline-item" data-i18n="usage.outline1">安装并首次启动 ProspectClaw</div>
+        <div class="manual-outline-item" data-i18n="usage.outline1">安装并首次启动 Privix</div>
         <div class="manual-outline-item" data-i18n="usage.outline2">配好钳子助手当排障帮手</div>
         <div class="manual-outline-item" data-i18n="usage.outline3">配模型、把 Gateway 跑起来</div>
         <div class="manual-outline-item" data-i18n="usage.outline4">建一只 Agent 并挂上 Skills</div>
@@ -248,8 +248,8 @@
               <li data-i18n="usage.s3_b3">去"服务管理"确认 Gateway 是绿色运行中，不是的话看看日志说了啥。</li>
             </ul>
             <div class="guide-callout">
-              <div class="guide-callout-title" data-i18n="usage.s3_callout_title">v1.2.8 Gateway 更稳了</div>
-              <p data-i18n="usage.s3_callout_desc">之前有些人碰到 Gateway 频繁闪断，1.2.8 改进了好几个地方：刷新不再那么频繁、连接断了会自动重试、重启前会多等几秒避免打架。升到 1.2.8 这类问题会少很多。</p>
+              <div class="guide-callout-title" data-i18n="usage.s3_callout_title">当前版本的 Gateway 更稳了</div>
+              <p data-i18n="usage.s3_callout_desc">当前版本已经默认纳入更稳的 Gateway 守护策略：刷新节流、连接断线自动重试、重启前缓冲等待，日常使用里更不容易出现频繁闪断。</p>
             </div>
             <div class="guide-checkpoint">
               <strong data-i18n="usage.checkpoint_label">怎么知道搞定了：</strong> <span data-i18n="usage.s3_check">主模型测试通过，Gateway 绿色运行中。</span>
@@ -282,7 +282,7 @@
               <li data-i18n="usage.s4_b3">模型管它聪不聪明，Skills 管它会不会干活，身份文件管它像不像你要的角色。</li>
             </ul>
             <div class="guide-callout">
-              <div class="guide-callout-title" data-i18n="usage.s4_callout_title">v1.2.8 有了 SkillHub 技能商店</div>
+              <div class="guide-callout-title" data-i18n="usage.s4_callout_title">当前版本已内置 SkillHub 技能商店</div>
               <p data-i18n="usage.s4_callout_desc">Skills 页面多了个"商店"标签页，在线搜技能、点一下就装好，不用再敲命令行了。不同 Agent 还能分配不同的 Skills 目录。</p>
             </div>
             <div class="guide-checkpoint">
@@ -314,7 +314,7 @@
             <p data-i18n="usage.s5_p1">去"实时聊天"发一条消息。前面配的那些东西，在各自页面上可能"看着像好了"，但只有这里回得出来，才说明整条链路真的通了。</p>
             <p data-i18n="usage.s5_p2">回得出来意味着：Gateway 在跑、模型能调、Agent 加载成功、权限没拦。</p>
             <div class="guide-callout">
-              <div class="guide-callout-title" data-i18n="usage.s5_callout_title">v1.2.8 聊天兼容 OpenClaw 4.5+</div>
+              <div class="guide-callout-title" data-i18n="usage.s5_callout_title">当前版本聊天链路更完整</div>
               <p data-i18n="usage.s5_callout_desc">现在能看到 Agent 在干嘛了——思考中、在规划、等审批这些状态都会显示出来。发消息后底部会有个计时器，超过 3 分钟没回会自动提醒，不会再出现发了消息石沉大海的情况。</p>
             </div>
             <div class="guide-test-box">
@@ -463,7 +463,7 @@
 
     <div class="guide-rescue-panel reveal">
       <div class="guide-rescue-title" data-i18n="usage.rescue_title">直接复制这段话给钳子助手</div>
-      <div class="guide-test-message" data-i18n="usage.rescue_msg">我在 ProspectClaw 里的 OpenClaw Agent 之前能正常回复，现在不行了。请按环境、模型、Gateway、Skills、Agent 配置几个层级，帮我判断最可能的原因并告诉我先去哪个页面检查。</div>
+      <div class="guide-test-message" data-i18n="usage.rescue_msg">我在 Privix 里的 OpenClaw Agent 之前能正常回复，现在不行了。请按环境、模型、Gateway、Skills、Agent 配置几个层级，帮我判断最可能的原因并告诉我先去哪个页面检查。</div>
     </div>
   </div>
 </section>
@@ -479,8 +479,8 @@
 
     <div class="guide-glossary-grid">
       <article class="guide-glossary-card reveal stagger-1">
-        <h3 data-i18n="usage.g1_title">ProspectClaw 和 OpenClaw 什么关系</h3>
-        <p data-i18n="usage.g1_desc">ProspectClaw 是你看到的这个软件界面（驾驶舱），OpenClaw 是在后台干活的引擎。没有 OpenClaw，ProspectClaw 就是个空壳。</p>
+        <h3 data-i18n="usage.g1_title">Privix 和 OpenClaw 什么关系</h3>
+        <p data-i18n="usage.g1_desc">Privix 是你看到的这个软件界面（驾驶舱），OpenClaw 是在后台干活的引擎。没有 OpenClaw，Privix 就是个空壳。</p>
       </article>
       <article class="guide-glossary-card reveal stagger-2">
         <h3 data-i18n="usage.g2_title">Gateway 是什么</h3>
@@ -496,7 +496,7 @@
       </article>
       <article class="guide-glossary-card reveal stagger-1">
         <h3 data-i18n="usage.g5_title">SkillHub 是什么</h3>
-        <p data-i18n="usage.g5_desc">v1.2.8 新加的技能商店。以前装 Skill 要敲命令，现在在界面里搜一下点安装就行。</p>
+        <p data-i18n="usage.g5_desc">Privix 当前版本内置的技能商店。现在装 Skill 可以直接在界面里搜索和安装，不需要再手敲命令。</p>
       </article>
       <article class="guide-glossary-card reveal stagger-2">
         <h3 data-i18n="usage.g6_title">钳子助手和 Agent 什么区别</h3>
@@ -539,8 +539,8 @@
 <footer class="portal-footer">
   <div class="container">
     <div class="portal-footer-brand">
-      <img src="/images/logo-brand.png" alt="ProspectClaw">
-      ProspectClaw
+      <img src="/images/privix-mark.svg" alt="Privix">
+      Privix
     </div>
     <div class="portal-footer-links">
       <a href="/index.html" data-i18n="nav.home">主站首页</a>
@@ -548,7 +548,7 @@
       <a href="/usage-guide.html" data-i18n="nav.usage">进阶指南</a>
       <a href="/agent-guide.html" data-i18n="nav.agent">Agent 知识库</a>
     </div>
-    <p class="portal-footer-copy" data-i18n="footer.copyright">Copyright &copy; 2026 ProspectClaw. All rights reserved.</p>
+    <p class="portal-footer-copy" data-i18n="footer.copyright">Copyright &copy; 2026 Privix. All rights reserved.</p>
   </div>
 </footer>
 

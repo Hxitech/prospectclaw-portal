@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ProspectClaw Agent 知识库 — 给 AI 看的结构化参考</title>
-  <meta name="description" content="ProspectClaw 结构化知识库，专为 AI Agent 设计。包含产品架构、安装流程、配置参考、排障决策树和完整 FAQ。">
-  <meta property="og:title" content="ProspectClaw Agent 知识库 — 给 AI 看的结构化参考">
-  <meta property="og:description" content="专为 AI Agent 设计的结构化参考文档，便于检索、推理和回答用户关于 ProspectClaw 的问题。">
+  <title>Privix Agent 知识库 — 给 AI 看的结构化参考</title>
+  <meta name="description" content="Privix 结构化知识库，专为 AI Agent 设计。包含产品架构、安装流程、配置参考、排障决策树和完整 FAQ。">
+  <meta property="og:title" content="Privix Agent 知识库 — 给 AI 看的结构化参考">
+  <meta property="og:description" content="专为 AI Agent 设计的结构化参考文档，便于检索、推理和回答用户关于 Privix 的问题。">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://prospectclaw.ccipd.net/screenshots/desktop-overview.png">
+  <meta property="og:image" content="https://www.privix.cn/screenshots/desktop-overview.png">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" type="image/png" href="/images/prospectclaw-tab-logo.png">
+  <link rel="icon" type="image/svg+xml" href="/images/privix-mark.svg">
   <link rel="stylesheet" href="/portal.css">
 </head>
 <body>
@@ -19,8 +19,8 @@
 <nav class="portal-nav">
   <div class="portal-nav-inner">
     <a href="/index.html" class="portal-nav-brand">
-      <img src="/images/logo-brand.png" alt="ProspectClaw">
-      ProspectClaw
+      <img src="/images/privix-mark.svg" alt="Privix">
+      Privix
     </a>
     <ul class="portal-nav-links">
       <li><a href="/index.html" data-i18n="nav.home">主站</a></li>
@@ -55,10 +55,10 @@
 <!-- ═══════ Hero ═══════ -->
 <section class="hero hero-guide">
   <div class="container hero-content">
-    <div class="hero-badge reveal" data-i18n="agent.badge">AI Agent Reference · v1.2.8</div>
-    <h1 class="hero-title reveal" data-i18n="agent.title">ProspectClaw Agent 知识库</h1>
+    <div class="hero-badge reveal" data-i18n="agent.badge">AI Agent Reference · v1.4.3</div>
+    <h1 class="hero-title reveal" data-i18n="agent.title">Privix Agent 知识库</h1>
     <p class="hero-subtitle reveal" data-i18n="agent.subtitle">
-      这份文档是给 AI 看的。复制下面的全文，丢给钳子助手、ChatGPT、Claude 或者任何支持知识库的 AI 平台，它就能回答关于 ProspectClaw 的问题了。
+      这份文档是给 AI 看的。复制下面的全文，丢给钳子助手、ChatGPT、Claude 或者任何支持知识库的 AI 平台，它就能回答关于 Privix 的问题了。
     </p>
     <div class="hero-ctas reveal">
       <button class="btn btn-primary" data-copy-target="agent-kb-full" data-i18n="agent.cta_copy">复制全文给 AI</button>
@@ -72,15 +72,15 @@
   <div class="container">
 
     <div class="ai-kb-toolbar reveal">
-      <div class="guide-intro-badge" data-i18n="agent.kb_badge">Agent 知识块 v1.2.8</div>
+      <div class="guide-intro-badge" data-i18n="agent.kb_badge">Agent 知识块 v1.4.3</div>
       <button class="btn btn-primary" data-copy-target="agent-kb-full" data-i18n="agent.kb_copy">复制整段给 AI</button>
     </div>
 
-    <pre class="ai-kb-block reveal" id="agent-kb-full"># ProspectClaw / OpenClaw 安装与使用知识库（Agent 版）
+    <pre class="ai-kb-block reveal" id="agent-kb-full"># Privix / OpenClaw 安装与使用知识库（Agent 版）
 
 ## 元信息
-- 文档版本: 2026-04-08
-- 适用产品: ProspectClaw v1.2.8（Invest / Knowledge / SOP 三版本）
+- 文档版本: 2026-04-14
+- 适用产品: Privix v1.4.3（单一应用，按 license 启用 Invest / Knowledge / SOP 行业模块）
 - 目标读者: AI Agent（钳子助手、ChatGPT、Claude 等）
 - 用途: 回答用户关于安装、配置、使用、排障的问题
 
@@ -88,26 +88,26 @@
 
 ## 1. 产品定义
 
-### ProspectClaw
+### Privix
 - 定义: 基于 Tauri v2 的本地化 AI 桌面工作台
 - 底层引擎: OpenClaw（开源个人 AI 助手平台）
 - 平台: macOS（已发布）、Windows（待发布）、Linux（待发布）
 - 安装包大小: ~10MB
 - 默认端口: 面板 :1420, Gateway :18789
-- 产品版本（三个独立发行版，共享同一底座）:
-  - **Invest** — 投资工作台，面向 PE/VC，含 11 个投资模块 + 完整管理台
-  - **Knowledge** — Agent 知识库，以助手为首页，专注资料整理与检索
-  - **SOP** — Agent SOP，以 SOP 工作台为首页，专注规则维护与文档输出
+- 产品形态: 单一 Privix 应用，运行时按 license 启用行业模块
+  - **Invest 模块** — 投资工作台，面向 PE/VC，含投资管理模块与完整管理台
+  - **Knowledge 模块** — Agent 知识库，聚焦资料整理、检索与问答
+  - **SOP 模块** — Agent SOP，聚焦规则维护、任务规划与结构化文档输出
 
 ### OpenClaw
 - 定义: 开源个人 AI 助手平台，提供 Gateway、Agent、Channel 等核心能力
-- 关系: ProspectClaw 三个版本均基于 OpenClaw 管理台能力构建
+- 关系: Privix 以单一应用形态运行，Invest / Knowledge / SOP 行业模块均基于 OpenClaw 管理台能力构建
 - CLI: 命令行工具，用于安装/配置/管理 OpenClaw
 - Gateway: 核心后端服务，处理消息路由、Agent 执行、渠道连接
 - 推荐版本: 2026.4.8
 
 ### 钳子助手
-- 定义: ProspectClaw 内置的独立 AI 助手（不是 OpenClaw Agent）
+- 定义: Privix 内置的独立 AI 助手（不是 OpenClaw Agent）
 - 用途: 排障、问答、日志分析、环境检查
 - 独立性: 有自己的模型配置，不依赖 OpenClaw Gateway
 - 优先级: 建议用户最先配置，作为后续排障的"第二双眼睛"
@@ -121,7 +121,7 @@
 2. 双击 .dmg，将应用图标拖入"应用程序"文件夹
 3. 首次打开可能被 Gatekeeper 拦截
    - 错误信息: "无法打开...因为无法验证开发者" 或 "已损坏"
-   - 解决: 系统设置 → 隐私与安全性 → 找到 ProspectClaw → 仍要打开
+   - 解决: 系统设置 → 隐私与安全性 → 找到 Privix → 仍要打开
 4. 首次启动自动进入"初始设置"
 
 ### Windows 安装
@@ -147,7 +147,7 @@
 
 ## 3. 推荐配置顺序
 
-1. 安装 ProspectClaw → 完成初始设置
+1. 安装 Privix → 完成初始设置
 2. 配置钳子助手（优先！给它一个可用模型）
 3. 配置模型（至少 1 个主模型，建议 1-2 个备选）
 4. 启动 Gateway（服务管理/仪表盘页面）
@@ -161,14 +161,14 @@
 
 | 页面 | 路由 | 职责 |
 |------|------|------|
-| 全局概览 | /overview | 所有版本默认首页，功能板块快速入口 |
+| 全局概览 | /overview | 单一应用默认首页，功能板块快速入口 |
 | 初始设置 | /setup | 环境检查、OpenClaw 初始化 |
 | 投资概览 | /invest-dashboard | 投资工作台仪表盘（PE/VC） |
 | 仪表盘 | /dashboard | Gateway 状态、系统概览 |
 | 钳子助手 | /assistant | 内置 AI 问答、排障卡片 |
 | 模型配置 | /models | 服务商/模型管理、主备选设置 |
 | Agent 管理 | /agents | 创建/编辑/备份 Agent |
-| Skills | /skills | 已安装 Skills + SkillHub 商店（v1.2.8） |
+| Skills | /skills | 已安装 Skills + SkillHub 商店 |
 | 实时聊天 | /chat | 验证 Agent 回复、模型切换 |
 | 多Agent会话 | /sessions | 多 Agent 并行会话管理 |
 | 服务管理 | /services | Gateway 启停、版本、备份 |
@@ -213,7 +213,7 @@
 
 ---
 
-## 6. v1.2.8 新功能
+## 6. 当前版本重点
 
 ### SkillHub 技能商店
 - Skills 页面新增"商店"标签页（Installed + Store 双 Tab）
@@ -258,7 +258,7 @@
 3. Agent 是否创建且绑定模型？→ Agent 管理检查
 4. Gateway 认证是否拦截？→ 安全设置检查
 5. 以上都正常 → 查看日志，找具体错误
-6. 如果聊天显示"超时" → v1.2.8 有 3 分钟超时保护，检查模型响应速度
+6. 如果聊天显示"超时" → 当前版本有 3 分钟超时保护，检查模型响应速度
 
 ### 用户说"飞书/Telegram 不回复"
 1. Gateway 是否运行？
@@ -274,7 +274,7 @@
 4. 用日志分析缩小范围，不要直接重装
 
 ### 用户说"Skills 装不了"
-1. 是否使用 v1.2.8+？旧版使用 CLI，新版使用 SkillHub 商店
+1. 当前版本使用 SkillHub 商店；旧版才需要 CLI
 2. 网络是否能访问 SkillHub（检查代理设置）
 3. Agent Skills 目录是否有写权限？
 4. 查看钳子助手"Skills 管理"卡片诊断
@@ -297,7 +297,7 @@
 - 检查 openclaw.json 格式是否正确
 - 检查模型配置是否有效
 - 检查 gateway.auth 认证模式
-- v1.2.8: Gateway 自动重启有 3 秒延迟，等待完成
+- 当前版本: Gateway 自动重启有 3 秒延迟，等待完成
 
 ### ERR: 模型连接超时
 - 检查 API Key 是否正确
@@ -310,11 +310,11 @@
 - 确认 Agent 绑定了可用模型
 - 确认实时聊天选择了正确的 Agent
 - 查看日志中的具体错误信息
-- v1.2.8: 检查是否触发了 3 分钟超时保护
+- 当前版本: 检查是否触发了 3 分钟超时保护
 
 ### ERR: SkillHub 搜索/安装失败
 - 检查网络连接（可能需要代理）
-- 确认 ProspectClaw 版本 >= 1.2.8
+- 确认 Privix 版本为当前发布版或更新
 - 旧版本使用 CLI 命令，不支持 SkillHub SDK
 
 ---
@@ -378,7 +378,7 @@ pending → ready → running → waiting_review → completed / failed / skippe
 
 ---
 
-## 13. 投资模块（Invest 版本专有）
+## 13. 投资模块（启用 Invest 模块时可见）
 
 ### 核心模块
 | 模块 | 路由 | 说明 |
@@ -411,7 +411,7 @@ pending → ready → running → waiting_review → completed / failed / skippe
 - 不要建议重装，先定位具体问题
 
 ### 当用户问"Skills 怎么装"
-- v1.2.8+: 引导去 Skills 页面"商店"标签页搜索安装
+- 当前版本: 引导去 Skills 页面"商店"标签页搜索安装
 - 旧版: 使用 CLI 命令（openclaw skill install）
 - 提醒检查 Agent Skills 目录和网络连接
 
@@ -453,8 +453,8 @@ pending → ready → running → waiting_review → completed / failed / skippe
 <footer class="portal-footer">
   <div class="container">
     <div class="portal-footer-brand">
-      <img src="/images/logo-brand.png" alt="ProspectClaw">
-      ProspectClaw
+      <img src="/images/privix-mark.svg" alt="Privix">
+      Privix
     </div>
     <div class="portal-footer-links">
       <a href="/index.html" data-i18n="nav.home">主站首页</a>
@@ -462,7 +462,7 @@ pending → ready → running → waiting_review → completed / failed / skippe
       <a href="/usage-guide.html" data-i18n="nav.usage">进阶指南</a>
       <a href="/agent-guide.html" data-i18n="nav.agent">Agent 知识库</a>
     </div>
-    <p class="portal-footer-copy" data-i18n="footer.copyright">Copyright &copy; 2026 ProspectClaw. All rights reserved.</p>
+    <p class="portal-footer-copy" data-i18n="footer.copyright">Copyright &copy; 2026 Privix. All rights reserved.</p>
   </div>
 </footer>
 

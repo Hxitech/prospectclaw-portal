@@ -1,8 +1,8 @@
 {
-  "version": "1.4.0",
+  "version": "1.4.3",
   "minAppVersion": "1.2.0",
-  "changelog": "v1.4.0 — 多引擎架构（OpenClaw + Hermes Agent）、OpenClaw 4.11 兼容、品牌重命名",
+  "changelog": "v1.4.3 — Privix 外显品牌统一、官网与桌面图标同步、应用内品牌主标切换为 SVG",
   "releasedAt": "2026-04-13T16:00:00Z",
-  "downloadUrl": "https://prospectclaw.ccipd.net/downloads/ProspectClaw_1.4.0_aarch64.dmg",
+  "downloadUrl": "https://www.privix.cn/downloads/Privix_1.4.3_aarch64.dmg",
   "recommendedOpenClaw": "2026.4.11"
 }
