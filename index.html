@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ProspectClaw — 本地化 AI 全能工作台</title>
-  <meta name="description" content="ProspectClaw 是基于 Tauri v2 的本地化 AI 桌面工作台，集成多智能体协作、投资管理、知识库、SOP 流程引擎等功能模块，数据留在本地，安全可控。">
-  <meta property="og:title" content="ProspectClaw — 本地化 AI 全能工作台">
-  <meta property="og:description" content="集成 AI 助手、多智能体编排、投资管理、知识库、SOP 等模块的桌面工作台。无需部署服务器，安装即用。">
+  <title>ProspectClaw — 本地化 AI Agent 工作台</title>
+  <meta name="description" content="ProspectClaw 是基于 Tauri v2 的本地化 AI Agent 工作台，集成 Claw 助手、ProspectResearch、Agentic Swarm、OpenClaw、Hermes 五大核心能力，双引擎架构，数据留在本地，安全可控。">
+  <meta property="og:title" content="ProspectClaw — 本地化 AI Agent 工作台">
+  <meta property="og:description" content="Claw 助手 + ProspectResearch + Agentic Swarm + OpenClaw + Hermes 五大核心能力 · OpenClaw / Hermes 双引擎架构 · 桌面本地化。">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://prospectclaw.ccipd.net/screenshots/desktop-overview.png">
   <meta property="og:image:width" content="2880">
@@ -58,10 +58,10 @@
 <!-- ═══════ 2. Hero ═══════ -->
 <section class="hero">
   <div class="container hero-content">
-    <div class="hero-badge reveal" data-i18n-html="hero.badge">v1.4.0 &middot; AI 全能工作台</div>
-    <h1 class="hero-title reveal" data-i18n="hero.title">本地化 AI 全能工作台</h1>
+    <div class="hero-badge reveal" data-i18n-html="hero.badge">v1.4.0 &middot; AI Agent 工作台</div>
+    <h1 class="hero-title reveal" data-i18n="hero.title">本地化 AI Agent 工作台</h1>
     <p class="hero-subtitle reveal" data-i18n-html="hero.subtitle">
-      集成 AI 助手、多智能体协作、投资管理、知识库、SOP 流程引擎。<br>
+      Claw 助手 + ProspectResearch + Agentic Swarm + OpenClaw + Hermes 五大核心能力 · OpenClaw / Hermes 双引擎架构。<br>
       无需部署服务器，~10MB 安装即用，数据留在本地，安全可控。
     </p>
     <div class="hero-ctas reveal">
@@ -100,13 +100,13 @@
   </div>
 </section>
 
-<!-- ═══════ 4. 功能亮点 — AI 能力 ═══════ -->
+<!-- ═══════ 4. 功能亮点 — 五大核心能力 ═══════ -->
 <section class="section section-light" id="features">
   <div class="container">
     <div class="section-header reveal">
-      <div class="section-tag" data-i18n="ai.tag">AI Capabilities</div>
-      <h2 class="section-title" data-i18n="ai.title">AI 助手 + 多智能体协作</h2>
-      <p class="section-subtitle" data-i18n="ai.subtitle">钳子助手、Prospect-Research 科学家集群、ClawSwarm 蜂群协作——三大 AI 引擎覆盖从单次对话到多 Agent 编排。</p>
+      <div class="section-tag" data-i18n="ai.tag">Core Capabilities</div>
+      <h2 class="section-title" data-i18n="ai.title">五大核心能力 · 双引擎架构</h2>
+      <p class="section-subtitle" data-i18n="ai.subtitle">Claw 助手 · ProspectResearch · Agentic Swarm · OpenClaw · Hermes —— 从单次对话到多 Agent 编排，从 OpenClaw 到 Hermes 一键切换。</p>
     </div>
 
     <!-- AI 助手 -->
@@ -169,11 +169,11 @@
       </div>
     </div>
 
-    <!-- ClawSwarm -->
+    <!-- Agentic Swarm -->
     <div class="showcase-row reverse reveal">
       <div class="showcase-text">
-        <div class="showcase-label" data-i18n="ai.swarm_label">ClawSwarm</div>
-        <h3 class="showcase-title" data-i18n="ai.swarm_title">ClawSwarm 蜂群协作</h3>
+        <div class="showcase-label" data-i18n="ai.swarm_label">Agentic Swarm</div>
+        <h3 class="showcase-title" data-i18n="ai.swarm_title">Agentic Swarm 蜂群协作</h3>
         <p class="showcase-desc" data-i18n="ai.swarm_desc">
           多智能体并行任务编排系统——输入目标，AI 自动拆解为 DAG 依赖图，多个智能体按波次并行执行。5 大模板（深度研究、尽调报告、头脑风暴、文档审校、竞品监控）开箱即用，支持自定义智能体角色和依赖关系。
         </p>
@@ -185,95 +185,98 @@
         </div>
       </div>
       <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-clawswarm.png" alt="ClawSwarm 蜂群协作">
+        <img src="/screenshots/desktop-clawswarm.png" alt="Agentic Swarm 蜂群协作">
+      </div>
+    </div>
+
+    <!-- Hermes 引擎 -->
+    <div class="showcase-row reveal">
+      <div class="showcase-text">
+        <div class="showcase-label" data-i18n="ai.hermes_label">Hermes</div>
+        <h3 class="showcase-title" data-i18n="ai.hermes_title">Hermes Agent 引擎</h3>
+        <p class="showcase-desc" data-i18n="ai.hermes_desc">
+          v1.4.0 起接入的第二 Agent 引擎（完整移植上游 v0.13.0），提供独立的 setup / dashboard / chat / services / config / channels / cron / skills 全链路。在 Sidebar 顶部一键切换 OpenClaw / Hermes，配置数据各自隔离。
+        </p>
+        <div class="showcase-chips">
+          <span class="chip" data-i18n="ai.hermes_chip1">双引擎架构</span>
+          <span class="chip" data-i18n="ai.hermes_chip2">引擎切换器</span>
+          <span class="chip" data-i18n="ai.hermes_chip3">8 页全链路</span>
+          <span class="chip" data-i18n="ai.hermes_chip4">同步升级</span>
+        </div>
+      </div>
+      <div class="showcase-image" data-lightbox>
+        <img src="/screenshots/desktop-dashboard.png" alt="Hermes Agent 引擎">
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════ 5. 功能亮点 — 投资管理 ═══════ -->
+<!-- ═══════ 5. 功能亮点 — 场景化模块 ═══════ -->
 <section class="section section-dark" id="invest-features">
   <div class="container">
     <div class="section-header reveal">
-      <div class="section-tag" data-i18n="features.tag">Core Modules</div>
-      <h2 class="section-title" data-i18n="features.title">模块化架构，按需组合</h2>
-      <p class="section-subtitle" data-i18n="features.subtitle">投资管理、知识库、SOP 流程——三大业务模块可独立使用，也可组合运行。</p>
+      <div class="section-tag" data-i18n="features.tag">Scenario Profiles</div>
+      <h2 class="section-title" data-i18n="features.title">场景化模块，按行业打包</h2>
+      <p class="section-subtitle" data-i18n="features.subtitle">在 5 大核心能力之上，提供 Invest / Knowledge / SOP 三个场景化模块，可独立使用也可组合运行。</p>
     </div>
 
-    <!-- 行 1: 投资概览 -->
+    <!-- 行 1: Invest Profile -->
     <div class="showcase-row reveal">
       <div class="showcase-text">
-        <div class="showcase-label" data-i18n="features.row1_label">Investment Overview</div>
-        <h3 class="showcase-title" data-i18n="features.row1_title">投资概览仪表盘</h3>
+        <div class="showcase-label" data-i18n="features.row1_label">Invest Profile</div>
+        <h3 class="showcase-title" data-i18n="features.row1_title">投资工作台模块</h3>
         <p class="showcase-desc" data-i18n="features.row1_desc">
-          实时仪表盘展示项目池漏斗、管道分布和近期动态，快速访问一键 AI 配置、智能运维等核心入口。支持视图设置和助手协同。
+          面向 PE/VC 投资项目管理：项目池漏斗、Deal Pipeline 六阶段看板、企业库 / 联系人 / 投资文档归档、战略评分、SOP 流程、审批链、审计日志与投后自动化。
         </p>
         <div class="showcase-chips">
           <span class="chip" data-i18n="features.row1_chip1">投资概览</span>
           <span class="chip" data-i18n="features.row1_chip2">项目池</span>
-          <span class="chip" data-i18n="features.row1_chip3">快速访问</span>
+          <span class="chip" data-i18n="features.row1_chip3">项目管道</span>
+          <span class="chip" data-i18n="features.row1_chip4">审批流</span>
         </div>
       </div>
       <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-investment-dashboard.png" alt="投资概览仪表盘">
+        <img src="/screenshots/desktop-investment-dashboard.png" alt="Invest Profile 投资工作台模块">
       </div>
     </div>
 
-    <!-- 行 2: 项目管道 -->
+    <!-- 行 2: Knowledge Profile -->
     <div class="showcase-row reverse reveal">
       <div class="showcase-text">
-        <div class="showcase-label" data-i18n="features.row2_label">Deal Pipeline</div>
-        <h3 class="showcase-title" data-i18n="features.row2_title">Deal Pipeline 看板</h3>
+        <div class="showcase-label" data-i18n="features.row2_label">Knowledge Profile</div>
+        <h3 class="showcase-title" data-i18n="features.row2_title">Agent 知识库模块</h3>
         <p class="showcase-desc" data-i18n="features.row2_desc">
-          六阶段看板管理投资流程：寻源→初筛→尽调→IC 审议→条款谈判→已关闭。支持拖拽换阶段、看板/列表/表格三种视图。
+          面向 Agent 知识整理与检索配置：知识库问答、文档导入消化、Memory Palace 长期记忆图谱，与通用 OpenClaw 管理链路无缝衔接。
         </p>
         <div class="showcase-chips">
-          <span class="chip" data-i18n="features.row2_chip1">项目管道</span>
-          <span class="chip" data-i18n="features.row2_chip2">六阶段</span>
-          <span class="chip" data-i18n="features.row2_chip3">三种视图</span>
+          <span class="chip" data-i18n="features.row2_chip1">知识库问答</span>
+          <span class="chip" data-i18n="features.row2_chip2">文档消化</span>
+          <span class="chip" data-i18n="features.row2_chip3">Memory Palace</span>
         </div>
       </div>
       <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-project-pipelines.png" alt="Deal Pipeline 看板">
+        <img src="/screenshots/desktop-memory-panel.png" alt="Knowledge Profile Agent 知识库模块">
       </div>
     </div>
 
-    <!-- 行 3: 企业库与联系人 -->
+    <!-- 行 3: SOP Profile -->
     <div class="showcase-row reveal">
       <div class="showcase-text">
-        <div class="showcase-label" data-i18n="features.row3_label">Enterprise & Contacts</div>
-        <h3 class="showcase-title" data-i18n="features.row3_title">企业库与联系人</h3>
+        <div class="showcase-label" data-i18n="features.row3_label">SOP Profile</div>
+        <h3 class="showcase-title" data-i18n="features.row3_title">Agent SOP 模块</h3>
         <p class="showcase-desc" data-i18n="features.row3_desc">
-          被投及关注企业档案管理，支持行业分类、搜索筛选。投资相关联系人关联企业与角色标签，项目文档统一归档检索。
+          面向 Agent 规则维护与结构化文档输出：一键初始化 IDENTITY / SOUL / AGENTS / TOOLS 四份规则文件，DAG 依赖执行监督，模式归纳与模板管理。
         </p>
         <div class="showcase-chips">
-          <span class="chip" data-i18n="features.row3_chip1">企业库</span>
-          <span class="chip" data-i18n="features.row3_chip2">联系人</span>
-          <span class="chip" data-i18n="features.row3_chip3">投资文档</span>
+          <span class="chip" data-i18n="features.row3_chip1">规则初始化</span>
+          <span class="chip" data-i18n="features.row3_chip2">DAG 监督</span>
+          <span class="chip" data-i18n="features.row3_chip3">模板管理</span>
+          <span class="chip" data-i18n="features.row3_chip4">模式归纳</span>
+          <span class="chip" data-i18n="features.row3_chip5">结构化输出</span>
         </div>
       </div>
       <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-company-database.png" alt="企业库">
-      </div>
-    </div>
-
-    <!-- 行 4: 审批流与自动化 -->
-    <div class="showcase-row reverse reveal">
-      <div class="showcase-text">
-        <div class="showcase-label" data-i18n="features.row4_label">Workflow & Automation</div>
-        <h3 class="showcase-title" data-i18n="features.row4_title">评分、SOP 与自动化</h3>
-        <p class="showcase-desc" data-i18n="features.row4_desc">
-          多维度交易评分量化投资决策，标准化 SOP 流程模板支持自定义与执行追踪。定时任务与心跳规则自动化投后监控，操作审计合规记录。
-        </p>
-        <div class="showcase-chips">
-          <span class="chip" data-i18n="features.row4_chip1">战略评分</span>
-          <span class="chip" data-i18n="features.row4_chip2">SOP 流程</span>
-          <span class="chip" data-i18n="features.row4_chip3">自动化</span>
-          <span class="chip" data-i18n="features.row4_chip4">审计日志</span>
-        </div>
-      </div>
-      <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-automation-center.png" alt="自动化中心">
+        <img src="/screenshots/desktop-sop.png" alt="SOP Profile Agent SOP 模块">
       </div>
     </div>
   </div>
