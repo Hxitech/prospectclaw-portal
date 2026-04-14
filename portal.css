@@ -336,6 +336,24 @@ a:hover { text-decoration: underline; }
   color: #ffffff;
 }
 
+/* 深色主题 .section-light 子元素文字修复(v1.4.3)
+ * 原本这些子元素硬编码 color: #1d1d1f,在暗色模式下与深色背景重叠导致不可读 */
+[data-theme="dark"] .section-light .section-title,
+[data-theme="dark"] .section-light .showcase-title,
+[data-theme="dark"] .section-light .tutorial-card-title,
+[data-theme="dark"] .section-light .tutorial-step-title,
+[data-theme="dark"] .section-light .doc-card-title,
+[data-theme="dark"] .section-light .tech-card-title,
+[data-theme="dark"] .section-light .download-card-title {
+  color: #ffffff;
+}
+[data-theme="dark"] .section-light .section-subtitle,
+[data-theme="dark"] .section-light .showcase-desc,
+[data-theme="dark"] .section-light .doc-card-desc,
+[data-theme="dark"] .section-light .tech-card-desc {
+  color: rgba(255, 255, 255, 0.72);
+}
+
 .section-header {
   text-align: center; margin-bottom: 56px;
 }
