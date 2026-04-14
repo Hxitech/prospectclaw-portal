@@ -5,6 +5,7 @@
     "usage": "Advanced Guide",
     "agent": "Agent KB",
     "features": "Features",
+    "privacy": "Privacy First",
     "tutorials": "Tutorials",
     "tech": "Architecture",
     "download": "Download",
@@ -14,9 +15,9 @@
     "menu": "Menu"
   },
   "hero": {
-    "badge": "v1.4.5 · AI Agent Workbench",
-    "title": "Local AI Agent Workbench",
-    "subtitle": "Claw Doctor + ProspectResearch + Agentic Swarm + OpenClaw + Hermes — five core capabilities on a dual-engine (OpenClaw / Hermes) architecture.<br>No server needed. ~10 MB install. Data stays local and secure.",
+    "badge": "v1.4.5 · Privacy-First · Local AI Agent",
+    "title": "The Privacy-First Local AI Agent Workbench",
+    "subtitle": "Your data lives in your own SQLite. Your API keys never leave the machine. Works offline.<br>Claw Doctor · Prospect-Research · Agentic Swarm · OpenClaw · Hermes — five core capabilities on a dual-engine architecture, ~10 MB install.",
     "cta_download": "Download Privix",
     "cta_learn": "Learn More"
   },
@@ -59,7 +60,7 @@
   "ai": {
     "tag": "Core Capabilities",
     "title": "Five Core Capabilities · Dual-Engine Architecture",
-    "subtitle": "Claw Doctor · ProspectResearch · Agentic Swarm · OpenClaw · Hermes — from single chat to multi-agent orchestration, with one-click switching between OpenClaw and Hermes.",
+    "subtitle": "Claw Doctor · Prospect-Research · Agentic Swarm · OpenClaw · Hermes — from single chat to multi-agent orchestration, with one-click switching between OpenClaw and Hermes.",
     "assistant_label": "Claw Doctor",
     "assistant_title": "Claw Doctor — Built-in AI Chat Engine",
     "assistant_desc": "Streaming responses, Markdown rendering, multi-session management. Switch between models for industry analysis, Q&A, code assistance, system diagnostics and more.",
@@ -125,16 +126,29 @@
     "agent_s5_title": "Make It Talk",
     "agent_s5_desc": "Send your first message in live chat and confirm the Agent responds correctly."
   },
+  "privacy": {
+    "tag": "Privacy First",
+    "title": "Privacy First — not a slogan, an architectural choice",
+    "subtitle": "Every design decision in Privix starts from one premise: your data stays in your hands. That's the <em>priv</em> in the product name, and the core of the architecture.",
+    "card1_title": "Data Sovereignty",
+    "card1_desc": "All projects, sessions and Agent configs live in a local SQLite file. No cloud replica, no forced sync. Uninstall wipes everything; delete means really deleted.",
+    "card2_title": "API Keys Stay Local",
+    "card2_desc": "Your model keys are encrypted in the OS keychain. Privix doesn't relay or proxy your traffic — requests go directly to the Provider you configure.",
+    "card3_title": "Works Offline",
+    "card3_desc": "Core features don't depend on the cloud. Browse archives, edit projects, run SOPs and read downloaded knowledge bases even without a network. Only outbound when you invoke a model.",
+    "card4_title": "Auditable",
+    "card4_desc": "Every action writes a local log. Database, config and log paths are fully open. Enterprise compliance, internal audit and lawyers can inspect directly — no black box."
+  },
   "tech": {
     "tag": "Architecture",
     "title": "Professional-Grade Tech Stack",
-    "subtitle": "Rust backend for security, Vanilla JS for speed, SQLite for privacy, OpenClaw for intelligence.",
+    "subtitle": "Rust backend for security, Vanilla JS for speed, SQLite for data sovereignty, OpenClaw for intelligence.",
     "tauri_title": "Tauri v2",
     "tauri_desc": "Rust backend + system WebView. ~10 MB installer, no bloated Electron runtime. Cross-platform: macOS, Windows, Linux.",
     "vite_title": "Vanilla JS + Vite",
     "vite_desc": "Zero framework dependencies, ultra-lightweight. Millisecond HMR with Vite, native CSS variable-driven theming.",
-    "sqlite_title": "SQLite Local Storage",
-    "sqlite_desc": "Data stays on your machine, secure and compliant. No server deployment needed — install and go. Meets financial-grade data compliance.",
+    "sqlite_title": "SQLite · Data Sovereignty",
+    "sqlite_desc": "Projects, sessions and Agent configs all live in a local SQLite file. No cloud replica, no forced sync. Delete means really deleted. Finance, healthcare and consulting can audit in place.",
     "openclaw_title": "OpenClaw AI Engine",
     "openclaw_desc": "In-house Agent framework supporting OpenAI, Anthropic, Deepseek and more. 4 operation modes, 8 built-in tools."
   },
@@ -174,7 +188,7 @@
     "copyright": "Copyright © 2026 Privix. All rights reserved."
   },
   "beginner": {
-    "badge": "Beginner Install Guide · For v1.4.3",
+    "badge": "Beginner Install Guide · For v1.4.5",
     "title": "Start from Zero, We'll Walk You Through",
     "subtitle": "No coding needed. No command line required. Follow these 8 steps and you'll have Privix running in 30 minutes.",
     "cta_start": "Start from Step 1",
@@ -296,7 +310,7 @@
     "final_cta3": "Back to Home"
   },
   "usage": {
-    "badge": "Advanced Usage Guide · For v1.4.3",
+    "badge": "Advanced Usage Guide · For v1.4.5",
     "title": "Privix Advanced Usage Guide",
     "subtitle": "You probably know what a command line is and have used plenty of software — just not Privix yet.<br>6 steps to get the system running, plus daily ops tips, troubleshooting checklist and glossary.<br>Total beginner? See the <a href=\"/beginner-guide.html\" style=\"color:#2997ff\">Beginner Guide</a>. Need structured docs for AI? See <a href=\"/agent-guide.html\" style=\"color:#2997ff\">Agent Knowledge Base</a>.",
     "cta_start": "Start from Step 1",
@@ -468,12 +482,12 @@
     "final_cta3": "Back to Home"
   },
   "agent": {
-    "badge": "AI Agent Reference · v1.4.3",
+    "badge": "AI Agent Reference · v1.4.5",
     "title": "Privix Agent Knowledge Base",
     "subtitle": "This document is for AIs to read. Copy the full text below and feed it to Claw Doctor, ChatGPT, Claude, or any AI platform that supports knowledge bases — it'll then be able to answer questions about Privix.",
     "cta_copy": "Copy Full Text for AI",
     "cta_beginner": "See Beginner Guide",
-    "kb_badge": "Agent Knowledge Block v1.4.3",
+    "kb_badge": "Agent Knowledge Block v1.4.5",
     "kb_copy": "Copy Full Text for AI",
     "howto_title": "How to Use This Knowledge Base",
     "howto_desc": "Copy all the content above and paste it into whatever AI you're using. Could be Claw Doctor's built-in knowledge, ChatGPT's custom instructions, Claude's project knowledge, or any platform that supports knowledge base imports. Recommend re-copying after version updates.",

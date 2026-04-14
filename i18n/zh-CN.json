@@ -5,6 +5,7 @@
     "usage": "进阶指南",
     "agent": "Agent 知识库",
     "features": "功能亮点",
+    "privacy": "隐私优先",
     "tutorials": "教程引导",
     "tech": "技术架构",
     "download": "下载",
@@ -14,9 +15,9 @@
     "menu": "菜单"
   },
   "hero": {
-    "badge": "v1.4.5 · AI Agent 工作台",
-    "title": "本地化 AI Agent 工作台",
-    "subtitle": "Claw 助手 + ProspectResearch + Agentic Swarm + OpenClaw + Hermes 五大核心能力 · OpenClaw / Hermes 双引擎架构。<br>无需部署服务器，~10MB 安装即用，数据留在本地，安全可控。",
+    "badge": "v1.4.5 · 隐私优先 · 本地化 AI Agent",
+    "title": "隐私优先的本地化 AI Agent 工作台",
+    "subtitle": "数据存在你自己的 SQLite，API Key 留在本地，离线可用。<br>Claw 助手 · Prospect-Research · Agentic Swarm · OpenClaw · Hermes 五大核心能力，双引擎架构，约 10MB 安装即用。",
     "cta_download": "下载 Privix",
     "cta_learn": "了解更多"
   },
@@ -59,7 +60,7 @@
   "ai": {
     "tag": "Core Capabilities",
     "title": "五大核心能力 · 双引擎架构",
-    "subtitle": "Claw 助手 · ProspectResearch · Agentic Swarm · OpenClaw · Hermes —— 从单次对话到多 Agent 编排，从 OpenClaw 到 Hermes 一键切换。",
+    "subtitle": "Claw 助手 · Prospect-Research · Agentic Swarm · OpenClaw · Hermes —— 从单次对话到多 Agent 编排，从 OpenClaw 到 Hermes 一键切换。",
     "assistant_label": "Claw Doctor",
     "assistant_title": "钳子医生 — 内置 AI 对话引擎",
     "assistant_desc": "流式响应、Markdown 渲染、多会话管理。支持多模型切换，可用于行业分析、知识问答、代码辅助、系统诊断等任意场景。",
@@ -125,16 +126,29 @@
     "agent_s5_title": "让虾开口",
     "agent_s5_desc": "去实时聊天发第一条消息，确认 Agent 真正能对话。"
   },
+  "privacy": {
+    "tag": "Privacy First",
+    "title": "隐私优先 —— 不是口号，是架构选择",
+    "subtitle": "Privix 的每一个设计决策都以「数据留在你手里」为前提。这是产品名里的 <em>priv</em>，也是整套架构的核心。",
+    "card1_title": "数据主权",
+    "card1_desc": "所有项目、会话、Agent 配置存在本机 SQLite 文件。无云端副本，无强制同步。卸载即清零，删除即真正删除。",
+    "card2_title": "API Key 不离机",
+    "card2_desc": "你的模型密钥加密存在本地 keychain。Privix 不做任何中转、不做「代理调用」，请求直连你配置的 Provider。",
+    "card3_title": "离线可用",
+    "card3_desc": "主要功能不依赖云。断网也能查档、编辑项目、跑 SOP、浏览已下载的知识库。仅在你主动调用模型时出网。",
+    "card4_title": "可审计",
+    "card4_desc": "所有操作产生本地日志。数据库、配置、日志文件路径全部公开。企业合规、内审、律师可直接查，无黑盒。"
+  },
   "tech": {
     "tag": "Architecture",
     "title": "专业级技术底座",
-    "subtitle": "Rust 后端保安全、Vanilla JS 保轻量、SQLite 保隐私、OpenClaw 保智能。",
+    "subtitle": "Rust 后端保安全、Vanilla JS 保轻量、SQLite 保数据主权、OpenClaw 保智能。",
     "tauri_title": "Tauri v2",
     "tauri_desc": "Rust 后端 + 系统 WebView，安装包约 10MB，无需 Electron 臃肿运行时。跨平台支持 macOS、Windows、Linux。",
     "vite_title": "Vanilla JS + Vite",
     "vite_desc": "零框架依赖，极致轻量。Vite 构建毫秒级热更新，原生 CSS 变量驱动主题系统。",
-    "sqlite_title": "SQLite 本地存储",
-    "sqlite_desc": "数据留在本地，安全可控。无需部署服务器，安装即用，满足金融机构数据合规要求。",
+    "sqlite_title": "SQLite · 数据主权",
+    "sqlite_desc": "你的项目、会话、Agent 配置全部存在本机 SQLite 文件。没有云端副本，没有强制同步，删除即真正删除。金融、医疗、咨询行业可本地审计。",
     "openclaw_title": "OpenClaw AI 引擎",
     "openclaw_desc": "自研 Agent 框架，支持 OpenAI、Anthropic、Deepseek 等多模型。4 种操作模式，8 种内置工具。"
   },
@@ -174,7 +188,7 @@
     "copyright": "Copyright © 2026 Privix. All rights reserved."
   },
   "beginner": {
-    "badge": "零基础安装指南 · 适用于 v1.4.3",
+    "badge": "零基础安装指南 · 适用于 v1.4.5",
     "title": "从零开始，手把手带你用起来",
     "subtitle": "不用懂代码，不用会命令行。跟着下面 8 步走，半小时就能把 Privix 跑起来。",
     "cta_start": "从第一步开始",
@@ -296,7 +310,7 @@
     "final_cta3": "回到主站"
   },
   "usage": {
-    "badge": "进阶使用指南 · 适用于 v1.4.3",
+    "badge": "进阶使用指南 · 适用于 v1.4.5",
     "title": "Privix 进阶使用指南",
     "subtitle": "你大概知道命令行是什么，各种软件也用过不少，只是没用过 Privix。<br>6 步把系统跑通，后面附了日常管理要点、排障清单和概念速查。<br>完全没基础的话看 <a href=\"/beginner-guide.html\" style=\"color:#2997ff\">零基础指南</a>，需要结构化文档喂 AI 看 <a href=\"/agent-guide.html\" style=\"color:#2997ff\">Agent 知识库</a>。",
     "cta_start": "从第一步开始",
@@ -468,12 +482,12 @@
     "final_cta3": "回到主站"
   },
   "agent": {
-    "badge": "AI Agent Reference · v1.4.3",
+    "badge": "AI Agent Reference · v1.4.5",
     "title": "Privix Agent 知识库",
     "subtitle": "这份文档是给 AI 看的。复制下面的全文，丢给钳子医生、ChatGPT、Claude 或者任何支持知识库的 AI 平台，它就能回答关于 Privix 的问题了。",
     "cta_copy": "复制全文给 AI",
     "cta_beginner": "看新手指南",
-    "kb_badge": "Agent 知识块 v1.4.3",
+    "kb_badge": "Agent 知识块 v1.4.5",
     "kb_copy": "复制整段给 AI",
     "howto_title": "怎么用这个知识库",
     "howto_desc": "把上面的全部内容复制，然后粘贴给你在用的 AI。可以是钳子医生的内置知识、ChatGPT 的自定义指令、Claude 的项目知识，或者任何支持知识库导入的平台。建议版本更新后重新复制一次。",

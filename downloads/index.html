@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privix 下载归档</title>
+  <meta name="description" content="Privix 当前版本与历史安装包归档页。包含最新 v1.4.5 下载，以及旧版 ProspectClaw 安装包留档。">
+  <meta property="og:title" content="Privix 下载归档">
+  <meta property="og:description" content="查看 Privix 当前版本下载，并访问旧版安装包归档。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.privix.cn/screenshots/desktop-overview.png">
+  <link rel="icon" type="image/svg+xml" href="/images/privix-mark.svg">
+  <link rel="stylesheet" href="/portal.css">
+</head>
+<body>
+
+<nav class="portal-nav">
+  <div class="portal-nav-inner">
+    <a href="/index.html" class="portal-nav-brand">
+      <img src="/images/privix-mark.svg" alt="Privix">
+      Privix
+    </a>
+    <ul class="portal-nav-links">
+      <li><a href="/index.html#features">功能亮点</a></li>
+      <li><a href="/beginner-guide.html">零基础指南</a></li>
+      <li><a href="/usage-guide.html">进阶指南</a></li>
+      <li><a href="/agent-guide.html">Agent 知识库</a></li>
+    </ul>
+    <div class="portal-nav-actions">
+      <button class="theme-toggle" id="theme-toggle" title="切换主题">
+        <span class="theme-icon">&#9790;</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/index.html#features">功能亮点</a>
+    <a href="/beginner-guide.html">零基础指南</a>
+    <a href="/usage-guide.html">进阶指南</a>
+    <a href="/agent-guide.html">Agent 知识库</a>
+  </div>
+</nav>
+
+<section class="hero hero-guide">
+  <div class="container hero-content">
+    <div class="hero-badge reveal">下载归档</div>
+    <h1 class="hero-title reveal">Privix 当前版本与历史安装包</h1>
+    <p class="hero-subtitle reveal">
+      顶部是当前推荐版本 <strong>v1.4.5</strong>，下面保留旧版安装包归档，方便回溯或兼容性排查。<br>
+      历史包文件名保留原样，不对旧版 ProspectClaw 资产做重命名。
+    </p>
+    <div class="hero-ctas reveal">
+      <a href="/downloads/Privix_1.4.5_aarch64.dmg" class="btn btn-primary">下载 Privix v1.4.5</a>
+      <a href="/index.html" class="btn btn-outline">回到主站</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Current Release</div>
+      <h2 class="section-title">当前推荐版本</h2>
+      <p class="section-subtitle">适合绝大多数用户，官网与 OTA 元数据已统一指向这个版本。</p>
+    </div>
+    <div class="download-card reveal" style="max-width:720px;margin:0 auto;">
+      <div class="download-badge">v1.4.5</div>
+      <h3 class="download-card-title">Privix 1.4.5</h3>
+      <p class="showcase-desc" style="margin-bottom:20px;">品牌版冲突修复、官网版本号与下载元数据同步、历史版本归档页补齐。</p>
+      <div class="showcase-chips" style="justify-content:center;margin-bottom:20px;">
+        <span class="chip">Apple Silicon</span>
+        <span class="chip">macOS</span>
+        <span class="chip">当前推荐</span>
+      </div>
+      <a href="/downloads/Privix_1.4.5_aarch64.dmg" class="btn btn-primary">下载 .dmg</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Archive</div>
+      <h2 class="section-title">历史版本归档</h2>
+      <p class="section-subtitle">以下旧包仅作归档留存。若不是为了回滚或对照排查，建议优先使用当前 Privix 版本。</p>
+    </div>
+    <div class="docs-grid">
+      <a class="doc-card reveal" href="/downloads/ProspectClaw_1.4.3_aarch64.dmg">
+        <div class="doc-card-icon">1.4.3</div>
+        <div class="doc-card-title">ProspectClaw 1.4.3</div>
+        <div class="doc-card-desc">品牌切换前的最后一代旧命名安装包，保留原文件名。</div>
+        <div class="doc-card-link">下载旧版 →</div>
+      </a>
+      <a class="doc-card reveal" href="/downloads/ProspectClaw_1.4.2_aarch64.dmg">
+        <div class="doc-card-icon">1.4.2</div>
+        <div class="doc-card-title">ProspectClaw 1.4.2</div>
+        <div class="doc-card-desc">适合与 1.4.x 早期行为做对照时使用。</div>
+        <div class="doc-card-link">下载旧版 →</div>
+      </a>
+      <a class="doc-card reveal" href="/downloads/ProspectClaw_1.3.0_aarch64.dmg">
+        <div class="doc-card-icon">1.3.0</div>
+        <div class="doc-card-title">ProspectClaw 1.3.0</div>
+        <div class="doc-card-desc">1.3 系列归档包，保留原始命名与发布时间线。</div>
+        <div class="doc-card-link">下载旧版 →</div>
+      </a>
+      <a class="doc-card reveal" href="/downloads/ProspectClaw_1.2.8_aarch64.dmg">
+        <div class="doc-card-icon">1.2.8</div>
+        <div class="doc-card-title">ProspectClaw 1.2.8</div>
+        <div class="doc-card-desc">1.2.8 正式版，另有 fix2 与 fix3 补丁包。</div>
+        <div class="doc-card-link">下载旧版 →</div>
+      </a>
+      <a class="doc-card reveal" href="/downloads/ProspectClaw_1.2.8-fix2_aarch64.dmg">
+        <div class="doc-card-icon">1.2.8-fix2</div>
+        <div class="doc-card-title">ProspectClaw 1.2.8 Fix 2</div>
+        <div class="doc-card-desc">修订版归档，文件名保持历史原样。</div>
+        <div class="doc-card-link">下载旧版 →</div>
+      </a>
+      <a class="doc-card reveal" href="/downloads/ProspectClaw_1.2.8-fix3_aarch64.dmg">
+        <div class="doc-card-icon">1.2.8-fix3</div>
+        <div class="doc-card-title">ProspectClaw 1.2.8 Fix 3</div>
+        <div class="doc-card-desc">1.2.8 系列最后一个修订归档包。</div>
+        <div class="doc-card-link">下载旧版 →</div>
+      </a>
+      <a class="doc-card reveal" href="/downloads/ProspectClaw_1.2.5_aarch64.dmg">
+        <div class="doc-card-icon">1.2.5</div>
+        <div class="doc-card-title">ProspectClaw 1.2.5</div>
+        <div class="doc-card-desc">1.2.5 正式版，另保留 fix1 与 fix2 两个修订包。</div>
+        <div class="doc-card-link">下载旧版 →</div>
+      </a>
+      <a class="doc-card reveal" href="/downloads/ProspectClaw_1.2.5-fix1_aarch64.dmg">
+        <div class="doc-card-icon">1.2.5-fix1</div>
+        <div class="doc-card-title">ProspectClaw 1.2.5 Fix 1</div>
+        <div class="doc-card-desc">历史修订安装包，便于复现旧版本环境。</div>
+        <div class="doc-card-link">下载旧版 →</div>
+      </a>
+      <a class="doc-card reveal" href="/downloads/ProspectClaw_1.2.5-fix2_aarch64.dmg">
+        <div class="doc-card-icon">1.2.5-fix2</div>
+        <div class="doc-card-title">ProspectClaw 1.2.5 Fix 2</div>
+        <div class="doc-card-desc">1.2.5 系列第二个修订包。</div>
+        <div class="doc-card-link">下载旧版 →</div>
+      </a>
+      <a class="doc-card reveal" href="/downloads/ProspectClaw_1.2.3-fix1_aarch64.dmg">
+        <div class="doc-card-icon">1.2.3-fix1</div>
+        <div class="doc-card-title">ProspectClaw 1.2.3 Fix 1</div>
+        <div class="doc-card-desc">早期修订包，文件名使用下划线格式。</div>
+        <div class="doc-card-link">下载旧版 →</div>
+      </a>
+      <a class="doc-card reveal" href="/downloads/ProspectClaw-1.2.3-aarch64.dmg">
+        <div class="doc-card-icon">1.2.3</div>
+        <div class="doc-card-title">ProspectClaw 1.2.3</div>
+        <div class="doc-card-desc">早期正式版归档，文件名保留旧横线命名。</div>
+        <div class="doc-card-link">下载旧版 →</div>
+      </a>
+      <a class="doc-card reveal" href="/downloads/ProspectClaw-1.2.2-fix3-aarch64.dmg">
+        <div class="doc-card-icon">1.2.2-fix3</div>
+        <div class="doc-card-title">ProspectClaw 1.2.2 Fix 3</div>
+        <div class="doc-card-desc">最早一批保留在仓库中的历史安装包。</div>
+        <div class="doc-card-link">下载旧版 →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="portal-footer">
+  <div class="container">
+    <div class="portal-footer-brand">
+      <img src="/images/privix-mark.svg" alt="Privix">
+      Privix
+    </div>
+    <div class="portal-footer-links">
+      <a href="/index.html">主站首页</a>
+      <a href="/beginner-guide.html">零基础指南</a>
+      <a href="/usage-guide.html">进阶指南</a>
+      <a href="/agent-guide.html">Agent 知识库</a>
+    </div>
+    <p class="portal-footer-copy">Copyright &copy; 2026 Privix. All rights reserved.</p>
+  </div>
+</footer>
+
+<script defer src="/portal.js"></script>
+</body>
+</html>

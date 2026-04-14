@@ -5,6 +5,7 @@
     "usage": "上級ガイド",
     "agent": "Agent KB",
     "features": "機能",
+    "privacy": "プライバシー優先",
     "tutorials": "チュートリアル",
     "tech": "技術構成",
     "download": "ダウンロード",
@@ -14,9 +15,9 @@
     "menu": "メニュー"
   },
   "hero": {
-    "badge": "v1.4.5 · AI Agent ワークベンチ",
-    "title": "ローカル AI Agent ワークベンチ",
-    "subtitle": "Claw アシスタント + ProspectResearch + Agentic Swarm + OpenClaw + Hermes の 5 大コア能力と OpenClaw / Hermes の二重エンジン構成。<br>サーバー不要、約10MBでインストール、データはローカルに安全に保管。",
+    "badge": "v1.4.5 · プライバシー優先 · ローカル AI Agent",
+    "title": "プライバシー優先のローカル AI Agent ワークベンチ",
+    "subtitle": "データはあなた自身の SQLite に、API キーはローカルに、オフラインでも利用可能。<br>Claw アシスタント · Prospect-Research · Agentic Swarm · OpenClaw · Hermes の 5 大コア能力、二重エンジン構成、約 10MB でインストール。",
     "cta_download": "Privix をダウンロード",
     "cta_learn": "詳しく見る"
   },
@@ -59,7 +60,7 @@
   "ai": {
     "tag": "Core Capabilities",
     "title": "5 大コア能力 · 二重エンジン構成",
-    "subtitle": "Claw アシスタント · ProspectResearch · Agentic Swarm · OpenClaw · Hermes —— 単一チャットからマルチ Agent 編成まで、OpenClaw / Hermes をワンクリックで切り替え可能。",
+    "subtitle": "Claw アシスタント · Prospect-Research · Agentic Swarm · OpenClaw · Hermes —— 単一チャットからマルチ Agent 編成まで、OpenClaw / Hermes をワンクリックで切り替え可能。",
     "assistant_label": "Claw Doctor",
     "assistant_title": "Clawアシスタント — 内蔵AIチャットエンジン",
     "assistant_desc": "ストリーミング応答、Markdownレンダリング、マルチセッション管理。業界分析、Q&A、コード支援、システム診断など幅広く対応。",
@@ -125,16 +126,29 @@
     "agent_s5_title": "Agentと会話",
     "agent_s5_desc": "リアルタイムチャットで最初のメッセージを送り、Agentが正しく応答することを確認。"
   },
+  "privacy": {
+    "tag": "Privacy First",
+    "title": "プライバシー優先 —— スローガンではなく、アーキテクチャの選択",
+    "subtitle": "Privix のすべての設計判断は「データはあなたの手元にある」ことを前提としています。これが製品名の <em>priv</em> であり、アーキテクチャの核心です。",
+    "card1_title": "データ主権",
+    "card1_desc": "すべてのプロジェクト、セッション、Agent 設定はローカルの SQLite ファイルに保存。クラウド複製なし、強制同期なし。アンインストールで全消去、削除は本当の削除。",
+    "card2_title": "API キーは端末外に出ない",
+    "card2_desc": "モデルキーは OS のキーチェーンに暗号化して保存。Privix は中継や「プロキシ呼び出し」を行わず、リクエストは設定した Provider に直接送信されます。",
+    "card3_title": "オフラインでも利用可能",
+    "card3_desc": "主要機能はクラウドに依存しません。ネットワーク切断中もアーカイブ閲覧、プロジェクト編集、SOP 実行、ダウンロード済みナレッジベースの参照が可能。モデル呼び出し時のみ外部通信。",
+    "card4_title": "監査可能",
+    "card4_desc": "すべての操作がローカルログに記録されます。データベース、設定、ログのパスを完全公開。企業コンプライアンス、内部監査、法務が直接検証可能、ブラックボックスなし。"
+  },
   "tech": {
     "tag": "Architecture",
     "title": "プロフェッショナルな技術基盤",
-    "subtitle": "Rustバックエンドで安全性、Vanilla JSで軽量性、SQLiteでプライバシー、OpenClawで知性を確保。",
+    "subtitle": "Rust バックエンドで安全性、Vanilla JS で軽量性、SQLite でデータ主権、OpenClaw で知性を確保。",
     "tauri_title": "Tauri v2",
     "tauri_desc": "Rustバックエンド + システムWebView。約10MBのインストーラー、Electronの肥大化なし。macOS、Windows、Linuxクロスプラットフォーム対応。",
     "vite_title": "Vanilla JS + Vite",
     "vite_desc": "フレームワーク依存ゼロ、超軽量。Viteによるミリ秒HMR、ネイティブCSS変数によるテーマシステム。",
-    "sqlite_title": "SQLiteローカルストレージ",
-    "sqlite_desc": "データはローカルに保管、安全でコンプライアンス対応。サーバー不要、インストールするだけ。金融機関レベルのデータ規制にも対応。",
+    "sqlite_title": "SQLite · データ主権",
+    "sqlite_desc": "プロジェクト、セッション、Agent 設定はすべてローカルの SQLite ファイルに保存。クラウド複製なし、強制同期なし。削除は本当の削除。金融、医療、コンサル業界がそのまま監査可能。",
     "openclaw_title": "OpenClaw AIエンジン",
     "openclaw_desc": "自社開発のAgentフレームワーク。OpenAI、Anthropic、Deepseek等をサポート。4つの動作モード、8つの組み込みツール。"
   },
@@ -174,7 +188,7 @@
     "copyright": "Copyright © 2026 Privix. All rights reserved."
   },
   "beginner": {
-    "badge": "初心者インストールガイド · v1.4.3 対応",
+    "badge": "初心者インストールガイド · v1.4.5 対応",
     "title": "ゼロから始める、手順通りに進めるだけ",
     "subtitle": "プログラミング不要。コマンドラインも不要。8ステップに従えば、30分でPrivixが動きます。",
     "cta_start": "ステップ1から始める",
@@ -296,7 +310,7 @@
     "final_cta3": "ホームに戻る"
   },
   "usage": {
-    "badge": "上級使用ガイド · v1.4.3 対応",
+    "badge": "上級使用ガイド · v1.4.5 対応",
     "title": "Privix 上級使用ガイド",
     "subtitle": "コマンドラインは知っている、いろんなソフトも使ったことがある。ただPrivixは初めて。<br>6ステップでシステムを稼働させます。日常管理のコツ、トラブルシューティングチェックリスト、用語集も付属。<br>完全初心者の方は<a href=\"/beginner-guide.html\" style=\"color:#2997ff\">初心者ガイド</a>、AI向け構造化文書は<a href=\"/agent-guide.html\" style=\"color:#2997ff\">Agentナレッジベース</a>をご覧ください。",
     "cta_start": "ステップ1から始める",
@@ -468,12 +482,12 @@
     "final_cta3": "ホームに戻る"
   },
   "agent": {
-    "badge": "AI Agent Reference · v1.4.3",
+    "badge": "AI Agent Reference · v1.4.5",
     "title": "Privix Agentナレッジベース",
     "subtitle": "この文書はAI向けです。下のテキスト全体をコピーして、Clawアシスタント、ChatGPT、Claude、またはナレッジベースをサポートするAIプラットフォームに貼り付ければ、Privixに関する質問に答えられるようになります。",
     "cta_copy": "全文をAIにコピー",
     "cta_beginner": "初心者ガイドを見る",
-    "kb_badge": "Agentナレッジブロック v1.4.3",
+    "kb_badge": "Agentナレッジブロック v1.4.5",
     "kb_copy": "全文をAIにコピー",
     "howto_title": "このナレッジベースの使い方",
     "howto_desc": "上の内容をすべてコピーして、使用中のAIに貼り付け。Clawアシスタントの内蔵知識、ChatGPTのカスタム指示、Claudeのプロジェクト知識、またはナレッジベースインポートをサポートする任意のプラットフォームに使用可能。バージョン更新後は再コピーを推奨。",

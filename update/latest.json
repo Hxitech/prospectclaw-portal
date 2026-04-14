@@ -1,8 +1,8 @@
 {
-  "version": "1.4.3",
+  "version": "1.4.5",
   "minAppVersion": "1.2.0",
-  "changelog": "v1.4.3 — Privix 外显品牌统一、官网与桌面图标同步、应用内品牌主标切换为 SVG",
-  "releasedAt": "2026-04-13T16:00:00Z",
-  "downloadUrl": "https://www.privix.cn/downloads/Privix_1.4.3_aarch64.dmg",
+  "changelog": "v1.4.5 — Privix 品牌版冲突修复、官网版本号与下载元数据同步、历史版本归档页补齐",
+  "releasedAt": "2026-04-14T00:00:00Z",
+  "downloadUrl": "https://www.privix.cn/downloads/Privix_1.4.5_aarch64.dmg",
   "recommendedOpenClaw": "2026.4.11"
 }
