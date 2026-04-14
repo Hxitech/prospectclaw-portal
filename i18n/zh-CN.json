@@ -14,7 +14,7 @@
     "menu": "菜单"
   },
   "hero": {
-    "badge": "v1.4.2 · AI Agent 工作台",
+    "badge": "v1.4.3 · AI Agent 工作台",
     "title": "本地化 AI Agent 工作台",
     "subtitle": "Claw 助手 + ProspectResearch + Agentic Swarm + OpenClaw + Hermes 五大核心能力 · OpenClaw / Hermes 双引擎架构。<br>无需部署服务器，~10MB 安装即用，数据留在本地，安全可控。",
     "cta_download": "下载 ProspectClaw",
@@ -141,7 +141,7 @@
   "download": {
     "tag": "Download",
     "title": "立即下载 ProspectClaw",
-    "badge": "v1.4.2",
+    "badge": "v1.4.3",
     "subtitle": "约 10MB 安装包，安装即用，无需额外运行时环境。",
     "mac_title": "macOS",
     "mac_detail": "Apple Silicon / Intel · macOS 12.0+",
@@ -173,7 +173,6 @@
     "download": "下载",
     "copyright": "Copyright © 2026 ProspectClaw. All rights reserved."
   },
-
   "beginner": {
     "badge": "零基础安装指南 · v1.2.8",
     "title": "从零开始，手把手带你用起来",
@@ -296,7 +295,6 @@
     "final_cta2": "Agent 知识库",
     "final_cta3": "回到主站"
   },
-
   "usage": {
     "badge": "进阶使用指南 · v1.2.8",
     "title": "ProspectClaw 进阶使用指南",
@@ -469,7 +467,6 @@
     "final_cta2": "零基础指南",
     "final_cta3": "回到主站"
   },
-
   "agent": {
     "badge": "AI Agent Reference · v1.2.8",
     "title": "ProspectClaw Agent 知识库",

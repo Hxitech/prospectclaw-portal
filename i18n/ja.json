@@ -14,7 +14,7 @@
     "menu": "メニュー"
   },
   "hero": {
-    "badge": "v1.4.2 · AI Agent ワークベンチ",
+    "badge": "v1.4.3 · AI Agent ワークベンチ",
     "title": "ローカル AI Agent ワークベンチ",
     "subtitle": "Claw アシスタント + ProspectResearch + Agentic Swarm + OpenClaw + Hermes の 5 大コア能力と OpenClaw / Hermes の二重エンジン構成。<br>サーバー不要、約10MBでインストール、データはローカルに安全に保管。",
     "cta_download": "ProspectClaw をダウンロード",
@@ -141,7 +141,7 @@
   "download": {
     "tag": "Download",
     "title": "ProspectClaw をダウンロード",
-    "badge": "v1.4.2",
+    "badge": "v1.4.3",
     "subtitle": "約10MBのインストーラー、追加ランタイム不要。インストールしてすぐ使えます。",
     "mac_title": "macOS",
     "mac_detail": "Apple Silicon / Intel · macOS 12.0+",
@@ -173,7 +173,6 @@
     "download": "ダウンロード",
     "copyright": "Copyright © 2026 ProspectClaw. All rights reserved."
   },
-
   "beginner": {
     "badge": "初心者インストールガイド · v1.2.8",
     "title": "ゼロから始める、手順通りに進めるだけ",
@@ -296,7 +295,6 @@
     "final_cta2": "Agentナレッジベース",
     "final_cta3": "ホームに戻る"
   },
-
   "usage": {
     "badge": "上級使用ガイド · v1.2.8",
     "title": "ProspectClaw 上級使用ガイド",
@@ -469,7 +467,6 @@
     "final_cta2": "初心者ガイド",
     "final_cta3": "ホームに戻る"
   },
-
   "agent": {
     "badge": "AI Agent Reference · v1.2.8",
     "title": "ProspectClaw Agentナレッジベース",

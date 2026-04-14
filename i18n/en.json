@@ -14,7 +14,7 @@
     "menu": "Menu"
   },
   "hero": {
-    "badge": "v1.4.2 · AI Agent Workbench",
+    "badge": "v1.4.3 · AI Agent Workbench",
     "title": "Local AI Agent Workbench",
     "subtitle": "Claw Assistant + ProspectResearch + Agentic Swarm + OpenClaw + Hermes — five core capabilities on a dual-engine (OpenClaw / Hermes) architecture.<br>No server needed. ~10 MB install. Data stays local and secure.",
     "cta_download": "Download ProspectClaw",
@@ -141,7 +141,7 @@
   "download": {
     "tag": "Download",
     "title": "Download ProspectClaw Now",
-    "badge": "v1.4.2",
+    "badge": "v1.4.3",
     "subtitle": "~10 MB installer, no extra runtime needed. Install and start working.",
     "mac_title": "macOS",
     "mac_detail": "Apple Silicon / Intel · macOS 12.0+",
@@ -173,7 +173,6 @@
     "download": "Download",
     "copyright": "Copyright © 2026 ProspectClaw. All rights reserved."
   },
-
   "beginner": {
     "badge": "Beginner Install Guide · v1.2.8",
     "title": "Start from Zero, We'll Walk You Through",
@@ -296,7 +295,6 @@
     "final_cta2": "Agent Knowledge Base",
     "final_cta3": "Back to Home"
   },
-
   "usage": {
     "badge": "Advanced Usage Guide · v1.2.8",
     "title": "ProspectClaw Advanced Usage Guide",
@@ -469,7 +467,6 @@
     "final_cta2": "Beginner Guide",
     "final_cta3": "Back to Home"
   },
-
   "agent": {
     "badge": "AI Agent Reference · v1.2.8",
     "title": "ProspectClaw Agent Knowledge Base",
