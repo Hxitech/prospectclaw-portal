@@ -60,7 +60,7 @@
     "tag": "Core Capabilities",
     "title": "5 大コア能力 · 二重エンジン構成",
     "subtitle": "Claw アシスタント · ProspectResearch · Agentic Swarm · OpenClaw · Hermes —— 単一チャットからマルチ Agent 編成まで、OpenClaw / Hermes をワンクリックで切り替え可能。",
-    "assistant_label": "Claw Assistant",
+    "assistant_label": "Claw Doctor",
     "assistant_title": "Clawアシスタント — 内蔵AIチャットエンジン",
     "assistant_desc": "ストリーミング応答、Markdownレンダリング、マルチセッション管理。業界分析、Q&A、コード支援、システム診断など幅広く対応。",
     "assistant_chip1": "アシスタント",
