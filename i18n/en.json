@@ -14,7 +14,7 @@
     "menu": "Menu"
   },
   "hero": {
-    "badge": "v1.4.3 · AI Agent Workbench",
+    "badge": "v1.4.5 · AI Agent Workbench",
     "title": "Local AI Agent Workbench",
     "subtitle": "Claw Doctor + ProspectResearch + Agentic Swarm + OpenClaw + Hermes — five core capabilities on a dual-engine (OpenClaw / Hermes) architecture.<br>No server needed. ~10 MB install. Data stays local and secure.",
     "cta_download": "Download Privix",
@@ -141,7 +141,7 @@
   "download": {
     "tag": "Download",
     "title": "Download Privix Now",
-    "badge": "v1.4.3",
+    "badge": "v1.4.5",
     "subtitle": "~10 MB installer, no extra runtime needed. Install and start working.",
     "mac_title": "macOS",
     "mac_detail": "Apple Silicon / Intel · macOS 12.0+",
