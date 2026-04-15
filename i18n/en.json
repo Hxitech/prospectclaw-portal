@@ -15,7 +15,7 @@
     "menu": "Menu"
   },
   "hero": {
-    "badge": "v1.4.5-fix1 · Privacy-First · Local AI Agent",
+    "badge": "v1.4.5-fix2 · Privacy-First · Local AI Agent",
     "title": "The Privacy-First Local AI Agent Workbench",
     "subtitle": "Your data lives in your own SQLite. Your API keys never leave the machine. Works offline.<br>Claw Doctor · Prospect-Research · Agentic Swarm · OpenClaw · Hermes — five core capabilities on a dual-engine architecture, ~10 MB install.",
     "cta_download": "Download Privix",
@@ -155,7 +155,7 @@
   "download": {
     "tag": "Download",
     "title": "Download Privix Now",
-    "badge": "v1.4.5-fix1",
+    "badge": "v1.4.5-fix2",
     "subtitle": "~10 MB installer, no extra runtime needed. Install and start working.",
     "mac_title": "macOS",
     "mac_detail": "Apple Silicon / Intel · macOS 12.0+",

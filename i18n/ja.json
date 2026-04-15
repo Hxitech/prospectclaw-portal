@@ -15,7 +15,7 @@
     "menu": "メニュー"
   },
   "hero": {
-    "badge": "v1.4.5-fix1 · プライバシー優先 · ローカル AI Agent",
+    "badge": "v1.4.5-fix2 · プライバシー優先 · ローカル AI Agent",
     "title": "プライバシー優先のローカル AI Agent ワークベンチ",
     "subtitle": "データはあなた自身の SQLite に、API キーはローカルに、オフラインでも利用可能。<br>Claw アシスタント · Prospect-Research · Agentic Swarm · OpenClaw · Hermes の 5 大コア能力、二重エンジン構成、約 10MB でインストール。",
     "cta_download": "Privix をダウンロード",
@@ -155,7 +155,7 @@
   "download": {
     "tag": "Download",
     "title": "Privix をダウンロード",
-    "badge": "v1.4.5-fix1",
+    "badge": "v1.4.5-fix2",
     "subtitle": "約10MBのインストーラー、追加ランタイム不要。インストールしてすぐ使えます。",
     "mac_title": "macOS",
     "mac_detail": "Apple Silicon / Intel · macOS 12.0+",
