@@ -15,7 +15,7 @@
     "menu": "菜单"
   },
   "hero": {
-    "badge": "v1.4.5 · 隐私优先 · 本地化 AI Agent",
+    "badge": "v1.4.5-fix1 · 隐私优先 · 本地化 AI Agent",
     "title": "隐私优先的本地化 AI Agent 工作台",
     "subtitle": "数据存在你自己的 SQLite，API Key 留在本地，离线可用。<br>Claw 助手 · Prospect-Research · Agentic Swarm · OpenClaw · Hermes 五大核心能力，双引擎架构，约 10MB 安装即用。",
     "cta_download": "下载 Privix",
@@ -155,7 +155,7 @@
   "download": {
     "tag": "Download",
     "title": "立即下载 Privix",
-    "badge": "v1.4.5",
+    "badge": "v1.4.5-fix1",
     "subtitle": "约 10MB 安装包，安装即用，无需额外运行时环境。",
     "mac_title": "macOS",
     "mac_detail": "Apple Silicon / Intel · macOS 12.0+",
