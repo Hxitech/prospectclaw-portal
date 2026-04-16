@@ -155,15 +155,15 @@
   "tech": {
     "tag": "Architecture",
     "title": "专业级技术底座",
-    "subtitle": "Rust 后端保安全、Vanilla JS 保轻量、SQLite 保数据主权、OpenClaw 保智能。",
+    "subtitle": "Rust 后端保安全、Vanilla JS 保轻量、SQLite 保数据主权、OpenClaw + Hermes 双引擎保智能。",
     "tauri_title": "Tauri v2",
     "tauri_desc": "Rust 后端 + 系统 WebView，安装包约 10MB，无需 Electron 臃肿运行时。跨平台支持 macOS、Windows、Linux。",
     "vite_title": "Vanilla JS + Vite",
     "vite_desc": "零框架依赖，极致轻量。Vite 构建毫秒级热更新，原生 CSS 变量驱动主题系统。",
     "sqlite_title": "SQLite · 数据主权",
     "sqlite_desc": "你的项目、会话、Agent 配置全部存在本机 SQLite 文件。没有云端副本，没有强制同步，删除即真正删除。金融、医疗、咨询行业可本地审计。",
-    "openclaw_title": "OpenClaw AI 引擎",
-    "openclaw_desc": "自研 Agent 框架，支持 OpenAI、Anthropic、Deepseek 等多模型。4 种操作模式，8 种内置工具。"
+    "openclaw_title": "双引擎: OpenClaw + Hermes",
+    "openclaw_desc": "OpenClaw 负责多 Agent 编排与 MCP 工具链,Hermes 提供 SSE 流式对话与 Python 生态集成。23 家 LLM Provider 开箱即用,两种引擎按场景自由切换。"
   },
   "download": {
     "tag": "Download",
@@ -471,7 +471,7 @@
     "glossary_title": "9 个概念，用大白话说一遍",
     "glossary_subtitle": "看完这些就不会被术语绕晕了。",
     "g1_title": "Privix 和 OpenClaw 什么关系",
-    "g1_desc": "Privix 是你看到的这个软件界面（驾驶舱），OpenClaw 是在后台干活的引擎。没有 OpenClaw，Privix 就是个空壳。",
+    "g1_desc": "Privix 是你看到的软件界面（驾驶舱），OpenClaw 和 Hermes 是在后台干活的双引擎。OpenClaw 负责多 Agent 编排,Hermes 提供流式对话。可以只装一个,也可以两个同时用。",
     "g2_title": "Gateway 是什么",
     "g2_desc": "你可以理解为系统的总调度。聊天消息、模型调用、Agent 行为全走它。Gateway 不跑，什么都用不了。",
     "g3_title": "Agent 是什么",

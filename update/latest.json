@@ -1,8 +1,8 @@
 {
-  "version": "1.4.5",
+  "version": "1.5.0",
   "minAppVersion": "1.2.0",
-  "changelog": "v1.4.5 — Privix 品牌版冲突修复、官网版本号与下载元数据同步、历史版本归档页补齐",
-  "releasedAt": "2026-04-14T00:00:00Z",
-  "downloadUrl": "https://www.privix.cn/downloads/Privix_1.4.5_aarch64.dmg",
+  "changelog": "v1.5.0 Agent Studio — CLI Agent 自动检测(12款)、LLM Provider 扩充到 23 家、MCP 统一配置 UI、智能预览面板(MD/代码/HTML/图片)、CSS 自定义主题",
+  "releasedAt": "2026-04-15T00:00:00Z",
+  "downloadUrl": "https://www.privix.cn/downloads/Privix_1.5.0_aarch64.dmg",
   "recommendedOpenClaw": "2026.4.11"
 }

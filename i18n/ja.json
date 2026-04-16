@@ -155,15 +155,15 @@
   "tech": {
     "tag": "Architecture",
     "title": "プロフェッショナルな技術基盤",
-    "subtitle": "Rust バックエンドで安全性、Vanilla JS で軽量性、SQLite でデータ主権、OpenClaw で知性を確保。",
+    "subtitle": "Rust バックエンドで安全性、Vanilla JS で軽量性、SQLite でデータ主権、OpenClaw + Hermes デュアルエンジンで知性を確保。",
     "tauri_title": "Tauri v2",
     "tauri_desc": "Rustバックエンド + システムWebView。約10MBのインストーラー、Electronの肥大化なし。macOS、Windows、Linuxクロスプラットフォーム対応。",
     "vite_title": "Vanilla JS + Vite",
     "vite_desc": "フレームワーク依存ゼロ、超軽量。Viteによるミリ秒HMR、ネイティブCSS変数によるテーマシステム。",
     "sqlite_title": "SQLite · データ主権",
     "sqlite_desc": "プロジェクト、セッション、Agent 設定はすべてローカルの SQLite ファイルに保存。クラウド複製なし、強制同期なし。削除は本当の削除。金融、医療、コンサル業界がそのまま監査可能。",
-    "openclaw_title": "OpenClaw AIエンジン",
-    "openclaw_desc": "自社開発のAgentフレームワーク。OpenAI、Anthropic、Deepseek等をサポート。4つの動作モード、8つの組み込みツール。"
+    "openclaw_title": "デュアルエンジン: OpenClaw + Hermes",
+    "openclaw_desc": "OpenClawはマルチAgentオーケストレーションとMCPツールチェーンを担当、HermesはSSEストリーミングチャットとPythonエコシステム統合を提供。23社のLLMプロバイダーがすぐ利用可能、シーン別にエンジンを自由に切替。"
   },
   "download": {
     "tag": "Download",
@@ -471,7 +471,7 @@
     "glossary_title": "9つの概念をわかりやすく解説",
     "glossary_subtitle": "これを読めば専門用語に迷わなくなります。",
     "g1_title": "PrivixとOpenClawの関係",
-    "g1_desc": "Privixはあなたが見ているアプリのインターフェース（コックピット）。OpenClawは裏で動くエンジン。OpenClawなしではPrivixはただの空箱。",
+    "g1_desc": "Privixはアプリのインターフェース（コックピット）。OpenClawとHermesが裏で動くデュアルエンジン。OpenClawはマルチAgentオーケストレーション、Hermesはストリーミングチャットを担当。片方だけでも両方でも使えます。",
     "g2_title": "Gatewayとは",
     "g2_desc": "システムの中央司令官と考えてください。チャットメッセージ、モデル呼び出し、Agentの行動 — すべてGatewayを通ります。Gatewayが動いていなければ何も使えません。",
     "g3_title": "Agentとは",

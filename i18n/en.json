@@ -155,15 +155,15 @@
   "tech": {
     "tag": "Architecture",
     "title": "Professional-Grade Tech Stack",
-    "subtitle": "Rust backend for security, Vanilla JS for speed, SQLite for data sovereignty, OpenClaw for intelligence.",
+    "subtitle": "Rust backend for security, Vanilla JS for speed, SQLite for data sovereignty, OpenClaw + Hermes dual engines for intelligence.",
     "tauri_title": "Tauri v2",
     "tauri_desc": "Rust backend + system WebView. ~10 MB installer, no bloated Electron runtime. Cross-platform: macOS, Windows, Linux.",
     "vite_title": "Vanilla JS + Vite",
     "vite_desc": "Zero framework dependencies, ultra-lightweight. Millisecond HMR with Vite, native CSS variable-driven theming.",
     "sqlite_title": "SQLite · Data Sovereignty",
     "sqlite_desc": "Projects, sessions and Agent configs all live in a local SQLite file. No cloud replica, no forced sync. Delete means really deleted. Finance, healthcare and consulting can audit in place.",
-    "openclaw_title": "OpenClaw AI Engine",
-    "openclaw_desc": "In-house Agent framework supporting OpenAI, Anthropic, Deepseek and more. 4 operation modes, 8 built-in tools."
+    "openclaw_title": "Dual Engine: OpenClaw + Hermes",
+    "openclaw_desc": "OpenClaw handles multi-agent orchestration and MCP tool chains; Hermes provides SSE streaming chat and Python ecosystem integration. 23 LLM providers out of the box, switch engines per scenario."
   },
   "download": {
     "tag": "Download",
@@ -471,7 +471,7 @@
     "glossary_title": "9 Concepts in Plain English",
     "glossary_subtitle": "After reading these, you won't get lost in the jargon.",
     "g1_title": "Privix vs OpenClaw",
-    "g1_desc": "Privix is the app interface you see (the cockpit). OpenClaw is the engine running in the background. Without OpenClaw, Privix is just an empty shell.",
+    "g1_desc": "Privix is the app interface (the cockpit). OpenClaw and Hermes are the dual engines running behind it. OpenClaw handles multi-agent orchestration; Hermes provides streaming chat. You can use one or both.",
     "g2_title": "What's a Gateway",
     "g2_desc": "Think of it as the central dispatcher. Chat messages, model calls, Agent actions — everything goes through it. If Gateway's not running, nothing works.",
     "g3_title": "What's an Agent",
