@@ -16,7 +16,7 @@
     "menu": "メニュー"
   },
   "hero": {
-    "badge": "v1.4.5-fix2 · ローカル実行 · 企業導入対応",
+    "badge": "v1.5.0 · ローカル実行 · 企業導入対応",
     "title": "企業のデータは、企業の手元に — ローカル実行の AI エージェント基盤",
     "subtitle": "クラウドへ送らない、外部に出さない、全操作が監査可能。Privix は AI エージェントをチームのデスクトップで動かし、<br>リサーチ・デューデリ・文書レビュー・業務自動化を、データを一切外に出さずに実行します。",
     "cta_download": "Privix をダウンロード",
@@ -168,7 +168,7 @@
   "download": {
     "tag": "Download",
     "title": "Privix をダウンロード",
-    "badge": "v1.4.5-fix2",
+    "badge": "v1.5.0",
     "subtitle": "約10MBのインストーラー、追加ランタイム不要。インストールしてすぐ使えます。",
     "mac_title": "macOS",
     "mac_detail": "Apple Silicon / Intel · macOS 12.0+",
