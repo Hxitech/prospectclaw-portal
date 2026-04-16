@@ -1,16 +1,17 @@
 <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
+    <!-- Portal UI-harmonized palette: matches the brand gradient #5B68E0 to #8FB3F5 -->
     <linearGradient id="privix-circle" x1="111" y1="74" x2="213" y2="190" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#DCE7FF"/>
+      <stop stop-color="#C7D9FF"/>
       <stop offset="1" stop-color="#8FB3F5"/>
     </linearGradient>
     <linearGradient id="privix-base" x1="136" y1="138" x2="402" y2="432" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#97A1FF"/>
-      <stop offset="1" stop-color="#B8C0FF"/>
+      <stop stop-color="#5B68E0"/>
+      <stop offset="1" stop-color="#7C8CFF"/>
     </linearGradient>
     <linearGradient id="privix-swoosh" x1="92" y1="224" x2="384" y2="388" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#86B4F5"/>
-      <stop offset="1" stop-color="#C7D9FF"/>
+      <stop stop-color="#7380F0"/>
+      <stop offset="1" stop-color="#A3C3FA"/>
     </linearGradient>
   </defs>
   <circle cx="172" cy="160" r="54" fill="url(#privix-circle)"/>

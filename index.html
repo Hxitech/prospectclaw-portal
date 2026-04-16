@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privix — 让企业数据留在自己手里 · 本地 AI Agent 平台</title>
-  <meta name="description" content="Privix 把 AI Agent 装进你团队的电脑 —— 不上云、不出域、全程可审计。研究、尽调、文档审阅、流程自动化，数据从未离开过这台机器。10MB 安装即用，API Key 零托管。">
+  <meta name="description" content="Privix 在团队的本地设备上运行 AI Agent，覆盖研究、尽调、文档审阅与流程自动化。所有数据保存在本地 SQLite，每一次模型调用与 Agent 操作均可审计。10MB 安装即用，API Key 零托管。">
   <meta property="og:title" content="Privix — 让企业数据留在自己手里 · 本地 AI Agent 平台">
-  <meta property="og:description" content="本地运行的企业 AI Agent 平台。不上云、不出域、全程可审计。研究、尽调、文档审阅、流程自动化 —— 数据从未离开过这台机器。">
+  <meta property="og:description" content="本地运行的企业 AI Agent 平台。覆盖研究、尽调、文档审阅与流程自动化，所有数据保存在本地 SQLite，全过程可审计。">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://www.privix.cn/screenshots/desktop-agent-management.png">
+  <meta property="og:image" content="https://www.privix.cn/screenshots/desktop-overview.png">
   <meta property="og:image:width" content="2880">
   <meta property="og:image:height" content="1800">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://www.privix.cn/screenshots/desktop-agent-management.png">
+  <meta name="twitter:image" content="https://www.privix.cn/screenshots/desktop-overview.png">
   <link rel="icon" type="image/svg+xml" href="/images/privix-mark.svg">
   <link rel="stylesheet" href="./portal.css">
 </head>
@@ -63,8 +63,8 @@
     <div class="hero-badge reveal" data-i18n-html="hero.badge">v1.5.0 &middot; 本地运行 &middot; 企业可部署</div>
     <h1 class="hero-title reveal" data-i18n="hero.title">让企业数据留在自己手里 — 本地运行的 AI Agent 平台</h1>
     <p class="hero-subtitle reveal" data-i18n-html="hero.subtitle">
-      不上云、不出域、全程可审计。Privix 把 AI Agent 装进你团队的电脑，<br>
-      研究、尽调、文档审阅、流程自动化 —— 所有数据从未离开过这台机器。
+      Privix 在团队的本地设备上运行 AI Agent，覆盖研究、尽调、文档审阅与流程自动化。<br>
+      所有数据保存在本地 SQLite，每一次模型调用与 Agent 操作均可审计。
     </p>
     <div class="hero-ctas reveal">
       <a href="#download" class="btn btn-primary" data-i18n="hero.cta_download">免费下载 Privix</a>
@@ -72,7 +72,7 @@
     </div>
     <div class="hero-image reveal">
       <div class="hero-image-frame">
-        <img src="/screenshots/desktop-agent-management.png" alt="Privix Agent Studio — 一屏看到本机所有 AI 能力">
+        <img src="/screenshots/desktop-overview.png" alt="Privix 工作台 — 6 个能力模块一屏管理">
       </div>
     </div>
   </div>
@@ -84,7 +84,7 @@
     <div class="stats-grid">
       <div class="stat-card reveal stagger-1">
         <div class="stat-value">0</div>
-        <div class="stat-label" data-i18n="stats.egress_label">出境数据字节</div>
+        <div class="stat-label" data-i18n="stats.egress_label">上传到 Privix 的字节</div>
       </div>
       <div class="stat-card reveal stagger-2">
         <div class="stat-value">100%</div>
@@ -107,17 +107,17 @@
   <div class="container">
     <div class="section-header reveal">
       <div class="section-tag" data-i18n="ai.tag">Core Capabilities</div>
-      <h2 class="section-title" data-i18n="ai.title">五大核心能力 · 全部跑在你自己的机器上</h2>
-      <p class="section-subtitle" data-i18n="ai.subtitle">从单次问答到多 Agent 并行编排 —— Claw 助手、Prospect-Research、Agentic Swarm、OpenClaw、Hermes 覆盖研究、尽调、文档审阅、流程自动化的完整链路。</p>
+      <h2 class="section-title" data-i18n="ai.title">5 个核心能力，全部本地运行</h2>
+      <p class="section-subtitle" data-i18n="ai.subtitle">覆盖运维诊断、Agent 与模型管理、复杂研究、多 Agent 并行编排，以及双引擎切换。</p>
     </div>
 
     <!-- AI 助手 -->
     <div class="showcase-row reveal">
       <div class="showcase-text">
         <div class="showcase-label" data-i18n="ai.assistant_label">Claw Doctor</div>
-        <h3 class="showcase-title" data-i18n="ai.assistant_title">AI 运维医生 —— 诊断、修复、巡检一键搞定</h3>
+        <h3 class="showcase-title" data-i18n="ai.assistant_title">运维诊断与自动修复</h3>
         <p class="showcase-desc" data-i18n="ai.assistant_desc">
-          内置钳子医生能自动诊断 Gateway 故障、修复 Agent 工作区、巡检舰队健康状态。对话式交互，Markdown 渲染命令输出，修复动作透明可审计。模型 Key 你自己管，所有操作留在本机。
+          Claw Doctor 自动诊断 Gateway 故障、修复 Agent 工作区、巡检 Agent 舰队健康状态。对话式交互，Markdown 渲染命令输出，每次修复动作均写入本地审计日志。API Key 由用户管理，操作记录保存在本机。
         </p>
         <div class="showcase-chips">
           <span class="chip" data-i18n="ai.assistant_chip1">故障诊断</span>
@@ -135,9 +135,9 @@
     <div class="showcase-row reverse reveal">
       <div class="showcase-text">
         <div class="showcase-label" data-i18n="ai.fleet_label">Agent Studio</div>
-        <h3 class="showcase-title" data-i18n="ai.fleet_title">一屏看到本机所有 AI 能力</h3>
+        <h3 class="showcase-title" data-i18n="ai.fleet_title">CLI Agent 与模型统一管理</h3>
         <p class="showcase-desc" data-i18n="ai.fleet_desc">
-          自动检测 12 款主流 CLI Agent（Claude Code、Codex、Gemini、Qwen 等），23 家 LLM Provider 开箱即用，MCP 工具一次配置全部 Agent 共享。智能预览面板让 AI 产出实时可见。
+          自动检测 12 款主流 CLI Agent（Claude Code、Codex、Gemini、Qwen 等），内置 23 家 LLM Provider，MCP 工具一次配置即可在所有 Agent 间共享。智能预览面板实时展示 AI 输出。
         </p>
         <div class="showcase-chips">
           <span class="chip" data-i18n="ai.fleet_chip1">CLI 检测</span>
@@ -155,9 +155,9 @@
     <div class="showcase-row reveal">
       <div class="showcase-text">
         <div class="showcase-label" data-i18n="ai.evo_label">Prospect-Research</div>
-        <h3 class="showcase-title" data-i18n="ai.evo_title">把一次竞品分析/市场测算从数人日压到数小时</h3>
+        <h3 class="showcase-title" data-i18n="ai.evo_title">多 Scientist 协作的复杂研究工作流</h3>
         <p class="showcase-desc" data-i18n="ai.evo_desc">
-          Prospect-Research 科学家集群基于进化式推理，自动拆解复杂任务、协调多个 Scientist 并行协作。12 个成功案例模板开箱即用，覆盖竞品分析、代码审查、市场测算、技术选型等场景，一键启动。
+          Prospect-Research 科学家集群基于进化式推理，将复杂任务自动拆解给多个 Scientist 并行处理。12 个案例模板覆盖竞品分析、代码审查、市场测算、技术选型等场景。
         </p>
         <div class="showcase-chips">
           <span class="chip" data-i18n="ai.evo_chip1">案例模板</span>
@@ -175,9 +175,9 @@
     <div class="showcase-row reverse reveal">
       <div class="showcase-text">
         <div class="showcase-label" data-i18n="ai.swarm_label">Agentic Swarm</div>
-        <h3 class="showcase-title" data-i18n="ai.swarm_title">让 10 个 Agent 同时做你的研究</h3>
+        <h3 class="showcase-title" data-i18n="ai.swarm_title">DAG 编排的多 Agent 并行执行</h3>
         <p class="showcase-desc" data-i18n="ai.swarm_desc">
-          输入目标，AI 自动拆解成 DAG 依赖图，多个 Agent 按波次并行执行，结果自动汇总成一份报告。5 大模板（深度研究、尽调报告、头脑风暴、文档审校、竞品监控）开箱即用，支持自定义 Agent 角色和依赖关系。
+          输入目标，系统将其拆解为 DAG 依赖图，多个 Agent 按波次并行执行，结果自动汇总为一份报告。深度研究、尽调报告、头脑风暴、文档审校、竞品监控五个模板可直接使用，Agent 角色与依赖关系均可自定义。
         </p>
         <div class="showcase-chips">
           <span class="chip" data-i18n="ai.swarm_chip1">DAG 可视化</span>
@@ -195,14 +195,14 @@
     <div class="showcase-row reveal">
       <div class="showcase-text">
         <div class="showcase-label" data-i18n="ai.hermes_label">Hermes</div>
-        <h3 class="showcase-title" data-i18n="ai.hermes_title">不锁定在一个 Agent 引擎</h3>
+        <h3 class="showcase-title" data-i18n="ai.hermes_title">OpenClaw 与 Hermes 双引擎</h3>
         <p class="showcase-desc" data-i18n="ai.hermes_desc">
-          OpenClaw 和 Hermes 随时切换 —— 哪个更好用切哪个。Hermes 是 v1.4.0 起接入的第二 Agent 引擎（完整移植上游 v0.13.0），提供独立的 setup / dashboard / chat / services / config / channels / cron / skills 全链路，配置数据各自隔离。
+          OpenClaw 和 Hermes 可在运行时切换。Hermes 是 v1.4.0 引入的第二 Agent 引擎（完整移植上游 v0.13.0），具备独立的 setup / dashboard / chat / services / config / channels / cron / skills 八条页面路径，配置数据互相隔离。
         </p>
         <div class="showcase-chips">
           <span class="chip" data-i18n="ai.hermes_chip1">双引擎架构</span>
           <span class="chip" data-i18n="ai.hermes_chip2">引擎切换器</span>
-          <span class="chip" data-i18n="ai.hermes_chip3">8 页全链路</span>
+          <span class="chip" data-i18n="ai.hermes_chip3">8 条独立路径</span>
           <span class="chip" data-i18n="ai.hermes_chip4">同步升级</span>
         </div>
       </div>
@@ -218,8 +218,8 @@
   <div class="container">
     <div class="section-header reveal">
       <div class="section-tag" data-i18n="privacy.tag">Privacy First</div>
-      <h2 class="section-title" data-i18n="privacy.title">隐私优先 —— 不是口号，是架构选择</h2>
-      <p class="section-subtitle" data-i18n="privacy.subtitle">Privix 的每一个设计决策都以「数据留在你手里」为前提。这是产品名里的 <em>priv</em>，也是整套架构的核心。</p>
+      <h2 class="section-title" data-i18n="privacy.title">隐私优先的架构设计</h2>
+      <p class="section-subtitle" data-i18n="privacy.subtitle">数据存储与密钥管理保留在本地，模型调用从本地直连用户配置的 Provider，不经 Privix 中转。</p>
     </div>
 
     <div class="tech-grid">
@@ -227,25 +227,25 @@
         <div class="tech-card-spotlight"></div>
         <div class="tech-card-icon">&#128274;</div>
         <h3 class="tech-card-title" data-i18n="privacy.card1_title">数据主权</h3>
-        <p class="tech-card-desc" data-i18n="privacy.card1_desc">所有项目、会话、Agent 配置存在本机 SQLite 文件。无云端副本，无强制同步。卸载即清零，删除即真正删除。</p>
+        <p class="tech-card-desc" data-i18n="privacy.card1_desc">项目、会话与 Agent 配置全部存储在本机 SQLite 文件中。无云端副本、无强制同步，卸载即清除全部数据。</p>
       </div>
       <div class="tech-card reveal stagger-2">
         <div class="tech-card-spotlight"></div>
         <div class="tech-card-icon">&#128273;</div>
         <h3 class="tech-card-title" data-i18n="privacy.card2_title">API Key 不离机</h3>
-        <p class="tech-card-desc" data-i18n="privacy.card2_desc">你的模型密钥加密存在本地 keychain。Privix 不做任何中转、不做"代理调用"，请求直连你配置的 Provider。</p>
+        <p class="tech-card-desc" data-i18n="privacy.card2_desc">模型密钥加密存储在本地 keychain。Privix 不进行中转或代理调用，请求直接发送至所配置的 Provider。</p>
       </div>
       <div class="tech-card reveal stagger-3">
         <div class="tech-card-spotlight"></div>
         <div class="tech-card-icon">&#9992;</div>
         <h3 class="tech-card-title" data-i18n="privacy.card3_title">离线可用</h3>
-        <p class="tech-card-desc" data-i18n="privacy.card3_desc">主要功能不依赖云。断网也能查档、编辑项目、跑 SOP、浏览已下载的知识库。仅在你主动调用模型时出网。</p>
+        <p class="tech-card-desc" data-i18n="privacy.card3_desc">主要功能不依赖云端。无网络环境下仍可查阅档案、编辑项目、运行 SOP、浏览本地知识库，仅在调用模型时建立外部连接。</p>
       </div>
       <div class="tech-card reveal stagger-4">
         <div class="tech-card-spotlight"></div>
         <div class="tech-card-icon">&#128196;</div>
         <h3 class="tech-card-title" data-i18n="privacy.card4_title">可审计</h3>
-        <p class="tech-card-desc" data-i18n="privacy.card4_desc">所有操作产生本地日志。数据库、配置、日志文件路径全部公开。企业合规、内审、律师可直接查，无黑盒。</p>
+        <p class="tech-card-desc" data-i18n="privacy.card4_desc">所有操作均写入本地日志，数据库、配置与日志文件路径完全公开。合规、内审与法务团队可直接审查。</p>
       </div>
     </div>
   </div>
@@ -257,7 +257,7 @@
     <div class="section-header reveal">
       <div class="section-tag" data-i18n="features.tag">Scenario Profiles</div>
       <h2 class="section-title" data-i18n="features.title">场景化模块，按行业打包</h2>
-      <p class="section-subtitle" data-i18n="features.subtitle">在 5 大核心能力之上，提供 Invest / Knowledge / SOP 三个场景化模块，可独立使用也可组合运行。</p>
+      <p class="section-subtitle" data-i18n="features.subtitle">在 5 个核心能力之上，提供 Invest / Knowledge / SOP 三个场景化模块，可独立使用也可组合运行。</p>
     </div>
 
     <!-- 行 1: Invest Profile -->
@@ -328,7 +328,7 @@
     <div class="section-header reveal">
       <div class="section-tag" data-i18n="tutorials.tag">Getting Started</div>
       <h2 class="section-title" data-i18n="tutorials.title">两条路径，快速上手</h2>
-      <p class="section-subtitle" data-i18n="tutorials.subtitle">每一步都告诉你做什么、在哪做、做完算什么。下载即可开始。</p>
+      <p class="section-subtitle" data-i18n="tutorials.subtitle">每一步说明操作目标、所在页面与完成标准。</p>
     </div>
 
     <div class="tutorials-grid">
@@ -429,7 +429,7 @@
     <div class="section-header reveal">
       <div class="section-tag" data-i18n="docs.tag">Guides</div>
       <h2 class="section-title" data-i18n="docs.title">三本手册，按需取用</h2>
-      <p class="section-subtitle" data-i18n="docs.subtitle">不懂技术看第一本，有基础看第二本，想喂给 AI 看第三本。</p>
+      <p class="section-subtitle" data-i18n="docs.subtitle">三份手册按读者背景划分：零基础用户、有技术背景的用户，以及希望将 Privix 知识喂给 AI 的用户。</p>
     </div>
 
     <div class="docs-grid">
@@ -460,8 +460,8 @@
   <div class="container">
     <div class="section-header reveal">
       <div class="section-tag" data-i18n="tech.tag">Architecture</div>
-      <h2 class="section-title" data-i18n="tech.title">专业级技术底座</h2>
-      <p class="section-subtitle" data-i18n="tech.subtitle">Rust 后端保安全、Vanilla JS 保轻量、SQLite 保数据主权、OpenClaw + Hermes 双引擎保智能。</p>
+      <h2 class="section-title" data-i18n="tech.title">技术架构</h2>
+      <p class="section-subtitle" data-i18n="tech.subtitle">Rust 后端、Vanilla JS 前端、SQLite 本地存储、OpenClaw 与 Hermes 双 Agent 引擎。</p>
     </div>
 
     <div class="tech-grid">
@@ -469,19 +469,19 @@
         <div class="tech-card-spotlight"></div>
         <div class="tech-card-icon">&#9881;</div>
         <h3 class="tech-card-title" data-i18n="tech.tauri_title">Tauri v2</h3>
-        <p class="tech-card-desc" data-i18n="tech.tauri_desc">Rust 后端 + 系统 WebView，安装包约 10MB，无需 Electron 臃肿运行时。跨平台支持 macOS、Windows、Linux。</p>
+        <p class="tech-card-desc" data-i18n="tech.tauri_desc">Rust 后端 + 系统 WebView，安装包约 10MB，无需 Electron 运行时。跨平台支持 macOS、Windows、Linux。</p>
       </div>
       <div class="tech-card reveal stagger-2">
         <div class="tech-card-spotlight"></div>
         <div class="tech-card-icon">&#9889;</div>
         <h3 class="tech-card-title" data-i18n="tech.vite_title">Vanilla JS + Vite</h3>
-        <p class="tech-card-desc" data-i18n="tech.vite_desc">零框架依赖，极致轻量。Vite 构建毫秒级热更新，原生 CSS 变量驱动主题系统。</p>
+        <p class="tech-card-desc" data-i18n="tech.vite_desc">零框架依赖。Vite 构建毫秒级热更新，原生 CSS 变量驱动主题系统。</p>
       </div>
       <div class="tech-card reveal stagger-3">
         <div class="tech-card-spotlight"></div>
         <div class="tech-card-icon">&#128274;</div>
         <h3 class="tech-card-title" data-i18n="tech.sqlite_title">SQLite · 数据主权</h3>
-        <p class="tech-card-desc" data-i18n="tech.sqlite_desc">你的项目、会话、Agent 配置全部存在本机 SQLite 文件。没有云端副本，没有强制同步，删除即真正删除。金融、医疗、咨询行业可本地审计。</p>
+        <p class="tech-card-desc" data-i18n="tech.sqlite_desc">项目、会话与 Agent 配置全部存储在本机 SQLite 文件。无云端副本、无强制同步，删除后不可恢复。</p>
       </div>
       <div class="tech-card reveal stagger-4">
         <div class="tech-card-spotlight"></div>
@@ -499,29 +499,29 @@
     <div class="section-header reveal">
       <div class="section-tag" data-i18n="enterprise.tag">For Enterprises</div>
       <h2 class="section-title" data-i18n="enterprise.title">为什么企业选择 Privix</h2>
-      <p class="section-subtitle" data-i18n="enterprise.subtitle">不是又一个 SaaS 订阅，而是企业内部的 AI 基础设施 —— 数据留在自己手里，成本掌握在自己手里。</p>
+      <p class="section-subtitle" data-i18n="enterprise.subtitle">面向企业部署的 AI Agent 基础设施。数据、密钥与运行环境由企业自主掌控。</p>
     </div>
 
     <div class="enterprise-grid">
       <div class="enterprise-card reveal stagger-1">
         <span class="enterprise-card-num">01</span>
         <h3 class="enterprise-card-title" data-i18n="enterprise.card1_title">数据零出境</h3>
-        <p class="enterprise-card-desc" data-i18n="enterprise.card1_desc">所有会话、文档、研究都写进你自己的 SQLite。不上传、不同步、不留云端副本。合规、法务、内审可直接查。</p>
+        <p class="enterprise-card-desc" data-i18n="enterprise.card1_desc">会话、文档与研究内容全部存储在本地 SQLite。无云端上传、无强制同步、无云端副本，合规、法务与内审团队可直接审查。</p>
       </div>
       <div class="enterprise-card reveal stagger-2">
         <span class="enterprise-card-num">02</span>
         <h3 class="enterprise-card-title" data-i18n="enterprise.card2_title">API Key 零托管</h3>
-        <p class="enterprise-card-desc" data-i18n="enterprise.card2_desc">模型凭据存在操作系统钥匙串。Privix 不做中转、不做"代理调用"，也不掌握任何密钥。想换 Provider 随时换。</p>
+        <p class="enterprise-card-desc" data-i18n="enterprise.card2_desc">模型凭据存储在操作系统钥匙串中。Privix 不进行中转或代理调用，也不持有任何密钥，可随时切换 Provider。</p>
       </div>
       <div class="enterprise-card reveal stagger-3">
         <span class="enterprise-card-num">03</span>
         <h3 class="enterprise-card-title" data-i18n="enterprise.card3_title">全流程可审计</h3>
-        <p class="enterprise-card-desc" data-i18n="enterprise.card3_desc">每一次 Agent 调用、每一次模型请求，本地都有日志。数据库、配置、日志路径全部公开，黑盒为零。</p>
+        <p class="enterprise-card-desc" data-i18n="enterprise.card3_desc">Agent 调用与模型请求均在本地写入日志，数据库、配置与日志路径完全公开。</p>
       </div>
       <div class="enterprise-card reveal stagger-4">
         <span class="enterprise-card-num">04</span>
         <h3 class="enterprise-card-title" data-i18n="enterprise.card4_title">10 分钟部署</h3>
-        <p class="enterprise-card-desc" data-i18n="enterprise.card4_desc">10MB 安装包，桌面级发放。IT 无需新建服务器、网关或容器集群，每位员工一装即用。</p>
+        <p class="enterprise-card-desc" data-i18n="enterprise.card4_desc">10MB 安装包，桌面级部署。IT 部门无需配置服务器、网关或容器集群，员工本地安装即可使用。</p>
       </div>
     </div>
 
@@ -537,7 +537,7 @@
   <div class="container">
     <div class="section-header reveal">
       <div class="section-tag" data-i18n="download.tag">Download</div>
-      <h2 class="section-title" data-i18n="download.title">立即下载 Privix</h2>
+      <h2 class="section-title" data-i18n="download.title">下载 Privix</h2>
       <div class="download-badge" data-i18n="download.badge">v1.5.0</div>
       <p class="section-subtitle" data-i18n="download.subtitle">约 10MB 安装包，安装即用，无需额外运行时环境。</p>
     </div>
