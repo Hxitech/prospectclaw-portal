@@ -16,7 +16,7 @@
     "menu": "Menu"
   },
   "hero": {
-    "badge": "v1.5.1 · Runs Locally · Enterprise-Ready",
+    "badge": "v1.6.0 · Runs Locally · Enterprise-Ready",
     "title": "Keep your firm's data on your machines — not in a vendor cloud",
     "subtitle": "Privix runs AI Agents on your team's local devices, covering research, due diligence, document review, and workflow automation.<br>All data stays in a local SQLite, and every model call and Agent operation is auditable.",
     "cta_download": "Download Privix",
@@ -168,7 +168,7 @@
   "download": {
     "tag": "Download",
     "title": "Download Privix",
-    "badge": "v1.5.1",
+    "badge": "v1.6.0",
     "subtitle": "~10 MB installer, no extra runtime needed. Install and start working.",
     "mac_title": "macOS",
     "mac_detail": "Apple Silicon / Intel · macOS 12.0+",
