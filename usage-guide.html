@@ -55,7 +55,7 @@
 <!-- ═══════ Hero ═══════ -->
 <section class="hero hero-guide">
   <div class="container hero-content">
-    <div class="hero-badge reveal" data-i18n="usage.badge">进阶使用指南 · 适用于 v1.5.0</div>
+    <div class="hero-badge reveal" data-i18n="usage.badge">进阶使用指南 · 适用于 v1.6.0</div>
     <h1 class="hero-title reveal" data-i18n="usage.title">Privix 进阶使用指南</h1>
     <p class="hero-subtitle reveal" data-i18n-html="usage.subtitle">
       你大概知道命令行是什么，各种软件也用过不少，只是没用过 Privix。<br>
@@ -358,6 +358,51 @@
             <div class="guide-mini-card">
               <h4 data-i18n="usage.s6_tg">Telegram</h4>
               <p data-i18n="usage.s6_tg_p">需要 Bot Token 和用户 ID。最轻量的选择，适合最快跑通第一个外部渠道。</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 07 · v1.6.0 新增 · Knowledge Wiki -->
+      <article class="guide-step-card reveal" id="step-wiki">
+        <div class="guide-step-topline">
+          <div class="guide-step-index">07</div>
+          <div class="guide-step-meta" data-i18n="usage.s7_meta">Knowledge Wiki（v1.6.0 新增 · 可选）</div>
+        </div>
+        <div class="guide-step-content">
+          <div class="guide-step-copy">
+            <h3 data-i18n="usage.s7_title">让知识库自己长出一本「活维基」</h3>
+            <p data-i18n-html="usage.s7_p1">v1.6.0 新增的 Karpathy 式 Wiki 是面向 Agent 的结构化知识层：你把 PDF / Word / Markdown 丢进知识库，AI 会自动拆成三类页面（entity / concept / synthesis）并维护交叉链接、日志与索引。和传统的「切片 + 向量检索」不一样，这里是 LLM 用 <code>[[cross-link]]</code> 手写维护的结构化内容。</p>
+
+            <h4 data-i18n="usage.s7_flow">一次完整流程</h4>
+            <ol>
+              <li data-i18n-html="usage.s7_flow1">进「知识库」页面，选一个 KB → 切到「<strong>Wiki</strong>」Tab → 首次进入会帮你初始化 <code>SCHEMA.md</code> / <code>index.md</code> / <code>log.md</code> / <code>pages/</code> 骨架</li>
+              <li data-i18n-html="usage.s7_flow2"><strong>Ingest</strong>：选一个源文件点「提议导入」，系统会把该文件喂给 Hermes（Hermes 不可用时弹手动粘贴框），返回一组待写入的 .md 页，<strong>带 diff 预览</strong>可勾选应用</li>
+              <li data-i18n-html="usage.s7_flow3"><strong>Query</strong>：在 Wiki Tab 顶部输入问题，LLM 看 index + 选中相关页面，合成一段带引用的答案，并可把答案「采纳为合成页」直接落盘</li>
+              <li data-i18n-html="usage.s7_flow4"><strong>Lint</strong>：跑一遍会标出 broken <code>[[link]]</code>、孤儿页、格式不符合 SCHEMA 的页面，并给出修复建议</li>
+              <li data-i18n-html="usage.s7_flow5"><strong>Obsidian 导出</strong>：Wiki 结构与 Obsidian vault 兼容，可一键导出到本地 vault 文件夹继续维护</li>
+            </ol>
+
+            <div class="guide-callout">
+              <div class="guide-callout-title" data-i18n="usage.s7_callout_title">什么场景值得用 Wiki？</div>
+              <p data-i18n="usage.s7_callout_desc">适合「同一领域持续累积」的知识，比如投研库、法规库、产品知识库。不适合一次性 Q&A，那种直接用聊天就够了。Wiki 的价值在于——你下次提问时，LLM 看到的是它上次写下的结构化概念页，而不是一堆原始片段。</p>
+            </div>
+
+            <div class="guide-checkpoint">
+              <strong data-i18n="usage.checkpoint_label">怎么知道搞定了：</strong> <span data-i18n="usage.s7_check">你能在 Wiki Tab 里看到文件树，至少成功 ingest 过一个源文件并应用了 diff。</span>
+            </div>
+          </div>
+          <div class="guide-step-visual guide-wiki-tree">
+            <div class="guide-wiki-tree-card">
+              <div class="guide-wiki-tree-head" data-i18n="usage.s7_tree_head">wiki/ 目录结构</div>
+<pre class="guide-wiki-tree-body">wiki/
+├── SCHEMA.md         <span class="wt-c">三类页面的约束（LLM 锚点）</span>
+├── index.md          <span class="wt-c">分类目录 + 一行摘要</span>
+├── log.md            <span class="wt-c">ingest / query / lint 事件</span>
+└── pages/
+    ├── entities/     <span class="wt-c">具体对象：人、公司、产品…</span>
+    ├── concepts/     <span class="wt-c">抽象概念、方法、原理</span>
+    └── synthesis/    <span class="wt-c">跨页合成（query 的产出）</span></pre>
             </div>
           </div>
         </div>

@@ -55,7 +55,7 @@
 <!-- ═══════ Hero ═══════ -->
 <section class="hero hero-guide">
   <div class="container hero-content">
-    <div class="hero-badge reveal" data-i18n="agent.badge">AI Agent Reference · v1.5.0</div>
+    <div class="hero-badge reveal" data-i18n="agent.badge">AI Agent Reference · v1.6.0</div>
     <h1 class="hero-title reveal" data-i18n="agent.title">Privix Agent 知识库</h1>
     <p class="hero-subtitle reveal" data-i18n="agent.subtitle">
       这份文档是给 AI 看的。复制下面的全文，丢给钳子助手、ChatGPT、Claude 或者任何支持知识库的 AI 平台，它就能回答关于 Privix 的问题了。
@@ -72,15 +72,15 @@
   <div class="container">
 
     <div class="ai-kb-toolbar reveal">
-      <div class="guide-intro-badge" data-i18n="agent.kb_badge">Agent 知识块 v1.5.0</div>
+      <div class="guide-intro-badge" data-i18n="agent.kb_badge">Agent 知识块 v1.6.0</div>
       <button class="btn btn-primary" data-copy-target="agent-kb-full" data-i18n="agent.kb_copy">复制整段给 AI</button>
     </div>
 
     <pre class="ai-kb-block reveal" id="agent-kb-full"># Privix / OpenClaw 安装与使用知识库（Agent 版）
 
 ## 元信息
-- 文档版本: 2026-04-15
-- 适用产品: Privix v1.5.0（单一应用，按 license 启用 Invest / Knowledge / SOP 行业模块）
+- 文档版本: 2026-04-19
+- 适用产品: Privix v1.6.0（单一应用，按 license 启用 Invest / Knowledge / SOP 行业模块）
 - 目标读者: AI Agent（钳子助手、ChatGPT、Claude 等）
 - 用途: 回答用户关于安装、配置、使用、排障的问题
 
@@ -241,6 +241,21 @@
 ### 助手 SkillHub 工具迁移
 - 钳子助手工具：skills_clawhub_search → skillhub_search, skills_clawhub_install → skillhub_install
 - 新增空流错误检测
+
+### Knowledge Karpathy Wiki (v1.6.0)
+- 每个本地知识库下新增 `wiki/` 目录，由 LLM 维护的结构化知识层
+- 骨架：`SCHEMA.md`（三类页面约束）/ `index.md`（分类目录）/ `log.md`（编年事件）/ `pages/{entities,concepts,synthesis}/`
+- 三类页面：Entity（具体对象）/ Concept（抽象概念）/ Synthesis（跨页合成）
+- 交叉链接用 `[[page-name]]` 语法（无 .md 后缀），raw 源文件用 `[raw/xxx.pdf]`
+- 页面入口：知识库 → 进入某个 KB → 切到「Wiki」Tab
+- 核心流程：
+  - **Ingest**：选源文件 → LLM 自动拆页 → diff 预览可勾选应用（后端命令 `kb_wiki_propose_ingest` / `kb_wiki_write` / `kb_wiki_append_log`）
+  - **Query**：输入问题 → LLM 看 index + 相关页 → 合成带 `[[citation]]` 的答案 → 可「采纳为合成页」落盘
+  - **Lint**：检测 broken link / orphan / SCHEMA 不符，给出修复建议
+  - **Obsidian 导出**：wiki/ 结构与 vault 兼容，一键导出
+- LLM 后端：优先 Hermes Agent（`hermes_agent_run` 命令），不可用时 fallback 到手动粘贴对话框
+- 相关前端库：`src/lib/kb-wiki-prompts.js`（Karpathy 式 prompt 模板 + `runLlmWithFallback`）/ `kb-wiki-ingest.js` / `kb-wiki-query.js`
+- 适用场景：长期积累的领域知识（投研 / 法规 / 产品）。一次性 Q&A 不值得开 Wiki
 
 ---
 
