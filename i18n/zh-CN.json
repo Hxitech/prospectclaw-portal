@@ -16,7 +16,7 @@
     "menu": "菜单"
   },
   "hero": {
-    "badge": "v1.6.0 · 本地运行 · 企业可部署",
+    "badge": "v1.6.0-fix1 · 本地运行 · 企业可部署",
     "title": "让企业数据留在自己手里 — 本地运行的 AI Agent 平台",
     "subtitle": "Privix 在团队的本地设备上运行 AI Agent，覆盖研究、尽调、文档审阅与流程自动化。<br>所有数据保存在本地 SQLite，每一次模型调用与 Agent 操作均可审计。",
     "cta_download": "免费下载 Privix",
@@ -168,7 +168,7 @@
   "download": {
     "tag": "Download",
     "title": "下载 Privix",
-    "badge": "v1.6.0",
+    "badge": "v1.6.0-fix1",
     "subtitle": "约 10MB 安装包，安装即用，无需额外运行时环境。",
     "mac_title": "macOS",
     "mac_detail": "Apple Silicon / Intel · macOS 12.0+",
