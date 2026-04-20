@@ -534,66 +534,48 @@
   </div>
 </section>
 
-<!-- ═══════ 8. 下载区 ═══════ -->
+<!-- ═══════ 8. 下载 — 两个版本并列 ═══════ -->
 <section class="section section-light" id="download">
   <div class="container">
     <div class="section-header reveal">
-      <div class="section-tag" data-i18n="download.tag">Download</div>
-      <h2 class="section-title" data-i18n="download.title">下载 Privix</h2>
-      <div class="download-badge" data-i18n="download.badge">v1.6.0-fix1</div>
-      <p class="section-subtitle" data-i18n="download.subtitle">约 10MB 安装包，安装即用，无需额外运行时环境。</p>
+      <div class="section-tag" data-i18n="download.tag">Editions</div>
+      <h2 class="section-title" data-i18n="download.title">选择适合你的版本</h2>
+      <p class="section-subtitle" data-i18n="download.subtitle">Privix 提供商业版与社区版两条路径。核心面板与 Agent 能力相同，场景模块与企业支持仅在商业版。</p>
     </div>
 
-    <div class="download-grid" style="grid-template-columns: 1fr; max-width: 480px; margin: 40px auto 0;">
-      <div class="download-card reveal stagger-1">
-        <div class="download-card-icon">&#63743;</div>
-        <h3 class="download-card-title" data-i18n="download.mac_title">macOS</h3>
-        <p class="download-card-detail" data-i18n-html="download.mac_detail">Apple Silicon / Intel &middot; macOS 12.0+</p>
-        <a href="/downloads/Privix_1.6.0-fix1_aarch64.dmg" class="btn btn-primary" data-i18n="download.mac_btn_arm">下载 .dmg (Apple Silicon)</a>
-        <a href="/downloads/" class="btn btn-outline" style="margin-top:8px" data-i18n="download.mac_btn_intel">历史版本</a>
+    <div class="download-grid editions-grid">
+      <!-- Professional 商业版 -->
+      <div class="download-card edition-card reveal stagger-1">
+        <div class="edition-badge edition-badge-pro" data-i18n="download.pro_badge">Professional</div>
+        <h3 class="download-card-title" data-i18n="download.pro_title">Privix 专业版</h3>
+        <p class="download-card-detail" data-i18n="download.pro_detail">v1.6.0-fix1 · 企业咨询报价 · 含场景模块</p>
+        <ul class="edition-features">
+          <li data-i18n="download.pro_feat1">OpenClaw + Hermes + Claw Doctor</li>
+          <li data-i18n="download.pro_feat2">Invest / Knowledge / SOP 场景模块</li>
+          <li data-i18n="download.pro_feat3">企业部署与私有化定制</li>
+          <li data-i18n="download.pro_feat4">官方升级通道 + SLA 支持</li>
+        </ul>
+        <a href="/downloads/Privix_1.6.0-fix1_aarch64.dmg" class="btn btn-primary" data-i18n="download.pro_cta">下载 .dmg (Apple Silicon)</a>
+        <a href="mailto:enterprise@privix.cn" class="btn btn-outline" style="margin-top:8px" data-i18n="download.pro_cta_contact">企业咨询</a>
       </div>
-    </div>
-    <p class="download-coming-soon reveal" data-i18n="download.coming_soon">Windows 和 Linux 版本即将上线，敬请期待。</p>
-  </div>
-</section>
 
-<!-- ═══════ 9. 免费社区版 ═══════ -->
-<section class="section section-dark" id="community">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-tag" data-i18n="community.tag">Community Edition</div>
-      <h2 class="section-title" data-i18n="community.title">完全免费的开源社区版</h2>
-      <p class="section-subtitle" data-i18n="community.subtitle">Privix Community 是商业版的开源分支，Apache-2.0 授权。保留 OpenClaw 管理面板、Hermes 引擎、Claw Doctor 助手三大核心能力，个人开发者与小团队可零成本使用、修改与再分发。</p>
-    </div>
-
-    <div class="enterprise-grid">
-      <div class="enterprise-card reveal stagger-1">
-        <span class="enterprise-card-num">01</span>
-        <h3 class="enterprise-card-title" data-i18n="community.card1_title">无激活 · 无授权码</h3>
-        <p class="enterprise-card-desc" data-i18n="community.card1_desc">没有许可证校验、没有试用到期、不需要登录任何账号。下载即用，完全免费。</p>
-      </div>
-      <div class="enterprise-card reveal stagger-2">
-        <span class="enterprise-card-num">02</span>
-        <h3 class="enterprise-card-title" data-i18n="community.card2_title">核心能力完整开源</h3>
-        <p class="enterprise-card-desc" data-i18n="community.card2_desc">OpenClaw 管理面板、Hermes Agent 引擎、Claw Doctor 独立助手全部开源。数据本地存储，从本地直连 Provider。</p>
-      </div>
-      <div class="enterprise-card reveal stagger-3">
-        <span class="enterprise-card-num">03</span>
-        <h3 class="enterprise-card-title" data-i18n="community.card3_title">可自由二次开发</h3>
-        <p class="enterprise-card-desc" data-i18n="community.card3_desc">Apache-2.0 授权允许闭源二次开发。代码、Issue、PR 全部在 GitHub 公开，欢迎贡献。</p>
-      </div>
-      <div class="enterprise-card reveal stagger-4">
-        <span class="enterprise-card-num">04</span>
-        <h3 class="enterprise-card-title" data-i18n="community.card4_title">与商业版的差异</h3>
-        <p class="enterprise-card-desc" data-i18n="community.card4_desc">商业版附带 Invest / Knowledge / SOP 场景模块、企业部署支持与官网分发。社区版专注开源核心，不含这些增值部分。</p>
+      <!-- Community 社区版 -->
+      <div class="download-card edition-card reveal stagger-2" id="community">
+        <div class="edition-badge edition-badge-community" data-i18n="download.community_badge">Community</div>
+        <h3 class="download-card-title" data-i18n="download.community_title">Privix 社区版</h3>
+        <p class="download-card-detail" data-i18n="download.community_detail">v2.0.0-ce.1 · 免费开源 · Apache-2.0</p>
+        <ul class="edition-features">
+          <li data-i18n="download.community_feat1">OpenClaw + Hermes + Claw Doctor（与专业版同源）</li>
+          <li data-i18n="download.community_feat2">无激活码 · 无授权码 · 零订阅</li>
+          <li data-i18n="download.community_feat3">本地存储 · 直连 Provider</li>
+          <li data-i18n="download.community_feat4">可 fork · 可二次开发 · GitHub 公开</li>
+        </ul>
+        <a href="https://github.com/privix-community/privix/releases" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="download.community_cta">GitHub Releases</a>
+        <a href="https://github.com/privix-community/privix/blob/main/docs/USER_GUIDE.md" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top:8px" data-i18n="download.community_cta_docs">用户手册</a>
       </div>
     </div>
 
-    <div class="enterprise-cta reveal">
-      <p data-i18n="community.cta_desc">想查看源码、提 Issue，或自行构建？</p>
-      <a href="https://github.com/privix-community/privix" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="community.cta_github">GitHub 仓库</a>
-      <a href="https://github.com/privix-community/privix/blob/main/docs/USER_GUIDE.md" target="_blank" rel="noopener" class="btn btn-outline" style="margin-left:8px" data-i18n="community.cta_docs">用户手册</a>
-    </div>
+    <p class="download-coming-soon reveal" data-i18n="download.coming_soon">Windows / Linux 商业版即将上线。社区版可跨平台源码构建（见用户手册）。</p>
   </div>
 </section>
 
