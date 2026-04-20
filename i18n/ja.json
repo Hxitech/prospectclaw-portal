@@ -172,7 +172,7 @@
     "subtitle": "Privix は商用版（Professional）とコミュニティ版（Community）の 2 系統を提供します。中核パネルと Agent 機能は共通、シナリオモジュールと企業サポートは商用版のみ。",
     "pro_badge": "Professional",
     "pro_title": "Privix 商用版",
-    "pro_detail": "v1.6.0-fix1 · 企業向け見積 · シナリオモジュール同梱",
+    "pro_detail": "v1.7.0 · 企業向け見積 · シナリオモジュール同梱",
     "pro_feat1": "OpenClaw + Hermes + Claw Doctor",
     "pro_feat2": "Invest / Knowledge / SOP シナリオモジュール",
     "pro_feat3": "エンタープライズ導入・カスタマイズ",
@@ -188,7 +188,8 @@
     "community_feat4": "Fork 可 · 二次開発可 · GitHub で完全公開",
     "community_cta": "GitHub Releases",
     "community_cta_docs": "ユーザーガイド",
-    "coming_soon": "Windows / Linux 商用版は近日公開。コミュニティ版はソースからクロスプラットフォームでビルド可能（ユーザーガイド参照）。"
+    "coming_soon": "Windows / Linux 商用版は近日公開。コミュニティ版はソースからクロスプラットフォームでビルド可能（ユーザーガイド参照）。",
+    "enterprise_soon": "Enterprise エディション（マルチテナント SaaS / SSO / RBAC / 監査）近日公開。"
   },
   "docs": {
     "tag": "Guides",

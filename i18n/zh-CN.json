@@ -172,7 +172,7 @@
     "subtitle": "Privix 提供商业版与社区版两条路径。核心面板与 Agent 能力相同，场景模块与企业支持仅在商业版。",
     "pro_badge": "Professional",
     "pro_title": "Privix 专业版",
-    "pro_detail": "v1.6.0-fix1 · 企业咨询报价 · 含场景模块",
+    "pro_detail": "v1.7.0 · 企业咨询报价 · 含场景模块",
     "pro_feat1": "OpenClaw + Hermes + Claw Doctor",
     "pro_feat2": "Invest / Knowledge / SOP 场景模块",
     "pro_feat3": "企业部署与私有化定制",
@@ -188,7 +188,8 @@
     "community_feat4": "可 fork · 可二次开发 · GitHub 公开",
     "community_cta": "GitHub Releases",
     "community_cta_docs": "用户手册",
-    "coming_soon": "Windows / Linux 商业版即将上线。社区版可跨平台源码构建（见用户手册）。"
+    "coming_soon": "Windows / Linux 商业版即将上线。社区版可跨平台源码构建（见用户手册）。",
+    "enterprise_soon": "Enterprise 企业版（多租户 SaaS / SSO / RBAC / 审计）即将上线。"
   },
   "docs": {
     "tag": "Guides",

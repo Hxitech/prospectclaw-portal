@@ -172,7 +172,7 @@
     "subtitle": "Privix ships as a commercial Professional edition and an open-source Community edition. The core panel and Agent capabilities are identical; scenario modules and enterprise support are Pro-only.",
     "pro_badge": "Professional",
     "pro_title": "Privix Professional",
-    "pro_detail": "v1.6.0-fix1 · Enterprise pricing · Includes scenario modules",
+    "pro_detail": "v1.7.0 · Enterprise pricing · Includes scenario modules",
     "pro_feat1": "OpenClaw + Hermes + Claw Doctor",
     "pro_feat2": "Invest / Knowledge / SOP scenario modules",
     "pro_feat3": "Enterprise deployment & customization",
@@ -188,7 +188,8 @@
     "community_feat4": "Fork-friendly · Fully public on GitHub",
     "community_cta": "GitHub Releases",
     "community_cta_docs": "User guide",
-    "coming_soon": "Windows / Linux Professional builds coming soon. Community builds from source on all platforms (see user guide)."
+    "coming_soon": "Windows / Linux Professional builds coming soon. Community builds from source on all platforms (see user guide).",
+    "enterprise_soon": "Enterprise edition (multi-tenant SaaS / SSO / RBAC / audit) coming soon."
   },
   "docs": {
     "tag": "Guides",
