@@ -12,6 +12,7 @@
     "download": "下载",
     "download_now": "立即下载",
     "docs": "手册",
+    "community": "社区版",
     "theme_toggle": "切换主题",
     "menu": "菜单"
   },
@@ -181,6 +182,22 @@
     "linux_detail": "Ubuntu 20.04+ / Fedora 36+",
     "linux_btn": "即将上线"
   },
+  "community": {
+    "tag": "Community Edition",
+    "title": "完全免费的开源社区版",
+    "subtitle": "Privix Community 是商业版的开源分支，Apache-2.0 授权。保留 OpenClaw 管理面板、Hermes 引擎、Claw Doctor 助手三大核心能力，个人开发者与小团队可零成本使用、修改与再分发。",
+    "card1_title": "无激活 · 无授权码",
+    "card1_desc": "没有许可证校验、没有试用到期、不需要登录任何账号。下载即用，完全免费。",
+    "card2_title": "核心能力完整开源",
+    "card2_desc": "OpenClaw 管理面板、Hermes Agent 引擎、Claw Doctor 独立助手全部开源。数据本地存储，从本地直连 Provider。",
+    "card3_title": "可自由二次开发",
+    "card3_desc": "Apache-2.0 授权允许闭源二次开发。代码、Issue、PR 全部在 GitHub 公开，欢迎贡献。",
+    "card4_title": "与商业版的差异",
+    "card4_desc": "商业版附带 Invest / Knowledge / SOP 场景模块、企业部署支持与官网分发。社区版专注开源核心，不含这些增值部分。",
+    "cta_desc": "想查看源码、提 Issue，或自行构建？",
+    "cta_github": "GitHub 仓库",
+    "cta_docs": "用户手册"
+  },
   "docs": {
     "tag": "Guides",
     "title": "三本手册，按需取用",
@@ -198,6 +215,8 @@
     "features": "功能",
     "tutorials": "教程",
     "download": "下载",
+    "docs": "手册",
+    "community": "社区版",
     "copyright": "Copyright © 2026 Privix. All rights reserved."
   },
   "beginner": {

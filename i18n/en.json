@@ -12,6 +12,7 @@
     "download": "Download",
     "download_now": "Download Now",
     "docs": "Guides",
+    "community": "Community",
     "theme_toggle": "Toggle theme",
     "menu": "Menu"
   },
@@ -181,6 +182,22 @@
     "linux_detail": "Ubuntu 20.04+ / Fedora 36+",
     "linux_btn": "Coming Soon"
   },
+  "community": {
+    "tag": "Community Edition",
+    "title": "Free & Open-Source Community Edition",
+    "subtitle": "Privix Community is the open-source fork of the commercial edition, released under Apache-2.0. The OpenClaw panel, Hermes engine, and Claw Doctor assistant remain fully open. Individuals and small teams can use, modify, and redistribute at zero cost.",
+    "card1_title": "No activation · No license key",
+    "card1_desc": "No license validation, no trial expiry, no account required. Download and run — completely free.",
+    "card2_title": "Core capabilities open",
+    "card2_desc": "OpenClaw panel, Hermes engine, and Claw Doctor assistant all open-source. Data stays local; the app connects directly to your Provider.",
+    "card3_title": "Fork-friendly license",
+    "card3_desc": "Apache-2.0 permits closed-source derivatives. Code, issues, and PRs are all public on GitHub — contributions welcome.",
+    "card4_title": "vs the commercial edition",
+    "card4_desc": "The commercial edition bundles Invest / Knowledge / SOP scenario modules, enterprise deployment support, and the official distribution infrastructure. Community focuses on the open-source core without these add-ons.",
+    "cta_desc": "Want to inspect the source, file an issue, or build from source?",
+    "cta_github": "GitHub repo",
+    "cta_docs": "User guide"
+  },
   "docs": {
     "tag": "Guides",
     "title": "Three Guides, Pick What You Need",
@@ -198,6 +215,8 @@
     "features": "Features",
     "tutorials": "Tutorials",
     "download": "Download",
+    "docs": "Guides",
+    "community": "Community",
     "copyright": "Copyright © 2026 Privix. All rights reserved."
   },
   "beginner": {

@@ -12,6 +12,7 @@
     "download": "ダウンロード",
     "download_now": "今すぐダウンロード",
     "docs": "ガイド",
+    "community": "コミュニティ版",
     "theme_toggle": "テーマ切替",
     "menu": "メニュー"
   },
@@ -181,6 +182,22 @@
     "linux_detail": "Ubuntu 20.04+ / Fedora 36+",
     "linux_btn": "近日公開"
   },
+  "community": {
+    "tag": "Community Edition",
+    "title": "無料・オープンソースのコミュニティ版",
+    "subtitle": "Privix Community は商用版のオープンソースフォーク、Apache-2.0 ライセンスです。OpenClaw パネル、Hermes エンジン、Claw Doctor アシスタントの 3 つの中核機能を完全オープン化。個人開発者と小規模チームは無償で利用・改変・再配布できます。",
+    "card1_title": "アクティベーション不要 · ライセンスキー不要",
+    "card1_desc": "ライセンス検証なし、試用期限なし、アカウント登録不要。ダウンロードしてすぐ使える、完全無料。",
+    "card2_title": "中核機能を完全オープン化",
+    "card2_desc": "OpenClaw パネル、Hermes エンジン、Claw Doctor アシスタントすべてオープンソース。データはローカル保存、Provider へ直接接続。",
+    "card3_title": "自由に二次開発可能",
+    "card3_desc": "Apache-2.0 はクローズドソースの派生物を許可。コード・Issue・PR すべて GitHub で公開、貢献を歓迎します。",
+    "card4_title": "商用版との違い",
+    "card4_desc": "商用版は Invest / Knowledge / SOP シナリオモジュール、エンタープライズ導入サポート、公式配布インフラを含みます。コミュニティ版はオープンソース核心部分に集中し、これらの付加機能は含みません。",
+    "cta_desc": "ソースを見たい、Issue を提出したい、自前でビルドしたいですか？",
+    "cta_github": "GitHub リポジトリ",
+    "cta_docs": "ユーザーガイド"
+  },
   "docs": {
     "tag": "Guides",
     "title": "3つのガイド、必要なものを選択",
@@ -198,6 +215,8 @@
     "features": "機能",
     "tutorials": "チュートリアル",
     "download": "ダウンロード",
+    "docs": "ガイド",
+    "community": "コミュニティ版",
     "copyright": "Copyright © 2026 Privix. All rights reserved."
   },
   "beginner": {
