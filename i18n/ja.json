@@ -45,6 +45,21 @@
     "cta_desc": "導入サポート、プライベート版カスタマイズ、秘密保持契約のご相談はこちら。",
     "cta_btn": "企業担当に連絡"
   },
+  "enterpriseEdition": {
+    "tag": "Enterprise · 近日公開",
+    "title": "Privix Enterprise — 組織向けマルチテナント版",
+    "subtitle": "HR / IT / コンプライアンスが全社員の Agent を統制する段階では、デスクトップ版のローカル優位だけでは足りません。Enterprise 版はテナント管理を重ね、中央集権的な鍵管理・統一監査・コスト枠・SSO を提供します。",
+    "card1_title": "マルチテナント + SSO",
+    "card1_desc": "組織・ユーザ・ロールの 3 階層分離（Postgres RLS）。Keycloak OIDC を統合済み、WeCom / Feishu / Okta などからのログインで自動 JIT プロビジョニング。",
+    "card2_title": "テナント鍵保管庫",
+    "card2_desc": "管理者が OpenAI / Anthropic / Gemini / Azure / DeepSeek / Qwen / Ollama の鍵を一度設定すれば、全テナントメンバーが直接利用可能。AES-256-GCM 暗号化、平文は返却されません。",
+    "card3_title": "LLM ゲートウェイ + クォータ",
+    "card3_desc": "すべての completions はサーバゲートウェイ経由、SSE ストリーミング透過。テナント単位でトークンとコストを記録し、月次 USD / コール数上限を設定可能（超過時は 429）。",
+    "card4_title": "集中監査 + デプロイ",
+    "card4_desc": "ログイン / 鍵ローテーション / Agent 呼び出し / クォータ変更を全て Postgres に監査記録。Helm Chart + Docker Compose でスタック一括起動（Postgres + Redis + Keycloak + サーバ + admin）。",
+    "cta_desc": "パイロット導入にご興味は？デモ / 技術評価 / プライベートデプロイ評価をご予約ください。",
+    "cta_btn": "Enterprise デモを予約"
+  },
   "features": {
     "tag": "Scenario Profiles",
     "title": "業種別シナリオモジュール",
@@ -190,7 +205,15 @@
     "community_cta_github": "GitHub Releases",
     "community_cta_docs": "ユーザーガイド",
     "coming_soon": "Windows / Linux 商用版は近日公開。コミュニティ版はソースからクロスプラットフォームでビルド可能（ユーザーガイド参照）。",
-    "enterprise_soon": "Enterprise エディション（マルチテナント SaaS / SSO / RBAC / 監査）近日公開。"
+    "enterprise_badge": "Enterprise · 近日公開",
+    "enterprise_title": "Privix Enterprise",
+    "enterprise_detail": "v2.x · マルチテナント SaaS / プライベート · 大規模チーム向け",
+    "enterprise_feat1": "マルチテナント組織・ユーザ管理 · Keycloak OIDC / SAML",
+    "enterprise_feat2": "テナント鍵保管庫（AES-256-GCM 暗号化保存）",
+    "enterprise_feat3": "LLM ゲートウェイ · 月次コスト + 呼び出しクォータ（429 強制）",
+    "enterprise_feat4": "集中監査 · Helm Chart + Docker Compose デプロイ",
+    "enterprise_cta": "近日公開",
+    "enterprise_cta_more": "詳細を見る"
   },
   "docs": {
     "tag": "Guides",

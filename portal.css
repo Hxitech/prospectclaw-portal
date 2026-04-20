@@ -715,16 +715,16 @@ a:hover { text-decoration: underline; }
   letter-spacing: -0.224px;
 }
 
-/* ── 版本并列对比（VS Code 风格） ── */
+/* ── 版本并列对比（Community / Professional / Enterprise） ── */
 .editions-grid {
-  grid-template-columns: repeat(2, 1fr);
-  max-width: 880px;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1200px;
   margin: 40px auto 0;
   gap: 24px;
 }
 
-@media (max-width: 640px) {
-  .editions-grid { grid-template-columns: 1fr; }
+@media (max-width: 980px) {
+  .editions-grid { grid-template-columns: 1fr; max-width: 520px; }
 }
 
 .edition-card {
@@ -766,6 +766,37 @@ a:hover { text-decoration: underline; }
   color: #00875a;
 }
 [data-theme="dark"] .edition-badge-community { color: #4ade80; }
+
+.edition-badge-enterprise {
+  background: linear-gradient(135deg, rgba(216,92,34,0.16), rgba(245,143,90,0.16));
+  color: #B35420;
+}
+[data-theme="dark"] .edition-badge-enterprise { color: #FFA574; }
+
+/* 即将上线样式:卡片略降对比度,按钮禁用态 */
+.edition-card-upcoming {
+  position: relative;
+}
+.edition-card-upcoming::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  border: 1px dashed rgba(216,92,34,0.35);
+}
+.edition-card-upcoming .btn-primary[disabled] {
+  opacity: 0.55;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* 新 section 的 Coming Soon tag 配色 */
+.section-tag-upcoming {
+  background: rgba(216,92,34,0.12);
+  color: #B35420;
+}
+[data-theme="dark"] .section-tag-upcoming { color: #FFA574; }
 
 .edition-features {
   list-style: none;

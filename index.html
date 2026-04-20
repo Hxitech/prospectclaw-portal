@@ -534,7 +534,46 @@
   </div>
 </section>
 
-<!-- ═══════ 8. 下载 — 两个版本并列 ═══════ -->
+<!-- ═══════ 7.6 Privix Enterprise — 即将上线 ═══════ -->
+<section class="section" id="enterprise-edition">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag section-tag-upcoming" data-i18n="enterpriseEdition.tag">Enterprise · Coming Soon</div>
+      <h2 class="section-title" data-i18n="enterpriseEdition.title">Privix Enterprise — 面向组织的多租户版</h2>
+      <p class="section-subtitle" data-i18n="enterpriseEdition.subtitle">当 HR / IT / 合规要统管全员 Agent 时,桌面版本地优势不再够用。Enterprise 版在桌面版之上加一层租户管理:中心化密钥、统一审计、成本配额、SSO 登录。</p>
+    </div>
+
+    <div class="enterprise-grid">
+      <div class="enterprise-card reveal stagger-1">
+        <span class="enterprise-card-num">01</span>
+        <h3 class="enterprise-card-title" data-i18n="enterpriseEdition.card1_title">多租户 + SSO</h3>
+        <p class="enterprise-card-desc" data-i18n="enterpriseEdition.card1_desc">组织-用户-角色三级数据隔离(Postgres RLS)。Keycloak OIDC 已集成,用户在企微 / 飞书 / Okta 登录后自动 JIT 建户并按 group 分配租户。</p>
+      </div>
+      <div class="enterprise-card reveal stagger-2">
+        <span class="enterprise-card-num">02</span>
+        <h3 class="enterprise-card-title" data-i18n="enterpriseEdition.card2_title">租户级密钥保险箱</h3>
+        <p class="enterprise-card-desc" data-i18n="enterpriseEdition.card2_desc">管理员一次配置 OpenAI / Anthropic / Gemini / Azure / DeepSeek / Qwen / Ollama 密钥,全租户员工直接用。AES-256-GCM 加密落盘,plaintext 永不回读。</p>
+      </div>
+      <div class="enterprise-card reveal stagger-3">
+        <span class="enterprise-card-num">03</span>
+        <h3 class="enterprise-card-title" data-i18n="enterpriseEdition.card3_title">LLM 网关 + 配额</h3>
+        <p class="enterprise-card-desc" data-i18n="enterpriseEdition.card3_desc">所有 completions 走服务端统一网关,流式 SSE 透传。按租户记录 tokens / 成本,月度 USD / 调用次数上限可设,到顶 429 强制拒绝。</p>
+      </div>
+      <div class="enterprise-card reveal stagger-4">
+        <span class="enterprise-card-num">04</span>
+        <h3 class="enterprise-card-title" data-i18n="enterpriseEdition.card4_title">集中审计 + 部署</h3>
+        <p class="enterprise-card-desc" data-i18n="enterpriseEdition.card4_desc">登录 / 密钥轮换 / Agent 调用 / 配额修改全量审计,Postgres 可直接查询。Helm Chart + Docker Compose 一键起全栈(Postgres + Redis + Keycloak + 服务端 + admin 控制台)。</p>
+      </div>
+    </div>
+
+    <div class="enterprise-cta reveal">
+      <p data-i18n="enterpriseEdition.cta_desc">有意向成为首批试点?预约 Demo / 技术预研 / 私有化部署评估。</p>
+      <a href="mailto:enterprise@privix.cn?subject=Privix%20Enterprise%20Demo" class="btn btn-primary" data-i18n="enterpriseEdition.cta_btn">预约 Enterprise Demo</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ 8. 下载 — 三个版本并列 ═══════ -->
 <section class="section section-light" id="download">
   <div class="container">
     <div class="section-header reveal">
@@ -560,7 +599,7 @@
         <a href="https://github.com/privix-community/privix/blob/main/docs/USER_GUIDE.md" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top:8px" data-i18n="download.community_cta_docs">用户手册</a>
       </div>
 
-      <!-- Professional 专业版（右） -->
+      <!-- Professional 专业版（中） -->
       <div class="download-card edition-card reveal stagger-2">
         <div class="edition-badge edition-badge-pro" data-i18n="download.pro_badge">Professional</div>
         <h3 class="download-card-title" data-i18n="download.pro_title">Privix 专业版</h3>
@@ -574,10 +613,22 @@
         <a href="/downloads/Privix_1.7.0_aarch64.dmg" class="btn btn-primary" data-i18n="download.pro_cta">下载 .dmg (Apple Silicon)</a>
         <a href="mailto:enterprise@privix.cn" class="btn btn-outline" style="margin-top:8px" data-i18n="download.pro_cta_contact">企业咨询</a>
       </div>
-    </div>
 
-    <!-- Enterprise 企业版（即将上线）预留位 -->
-    <p class="download-coming-soon reveal" data-i18n="download.enterprise_soon">Enterprise 企业版（多租户 SaaS / SSO / RBAC / 审计）即将上线。</p>
+      <!-- Enterprise 企业版（右，即将上线） -->
+      <div class="download-card edition-card edition-card-upcoming reveal stagger-3" id="enterprise-edition-card">
+        <div class="edition-badge edition-badge-enterprise" data-i18n="download.enterprise_badge">Enterprise · 即将上线</div>
+        <h3 class="download-card-title" data-i18n="download.enterprise_title">Privix Enterprise</h3>
+        <p class="download-card-detail" data-i18n="download.enterprise_detail">v2.x · 多租户 SaaS / 私有化 · 面向大团队</p>
+        <ul class="edition-features">
+          <li data-i18n="download.enterprise_feat1">多租户组织 / 用户管理 · Keycloak OIDC / SAML</li>
+          <li data-i18n="download.enterprise_feat2">租户级 API Key 保险箱（AES-256-GCM 落盘）</li>
+          <li data-i18n="download.enterprise_feat3">LLM 统一网关 · 月度成本 + 调用配额（429 强制）</li>
+          <li data-i18n="download.enterprise_feat4">集中审计 · Helm Chart + Docker Compose 部署</li>
+        </ul>
+        <button type="button" class="btn btn-primary" disabled data-i18n="download.enterprise_cta">即将上线</button>
+        <a href="#enterprise-edition" class="btn btn-outline" style="margin-top:8px" data-i18n="download.enterprise_cta_more">查看详情</a>
+      </div>
+    </div>
 
     <p class="download-coming-soon reveal" data-i18n="download.coming_soon">Windows / Linux 商业版即将上线。社区版可跨平台源码构建（见用户手册）。</p>
   </div>

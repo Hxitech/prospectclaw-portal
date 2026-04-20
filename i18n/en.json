@@ -45,6 +45,21 @@
     "cta_desc": "Need rollout support, private-deployment customization, or an NDA?",
     "cta_btn": "Contact Enterprise Team"
   },
+  "enterpriseEdition": {
+    "tag": "Enterprise · Coming Soon",
+    "title": "Privix Enterprise — Multi-tenant for Organizations",
+    "subtitle": "When HR / IT / compliance need to govern every employee's Agent, desktop-local isn't enough. Enterprise layers tenant management on top: centralized keys, unified audit, cost quotas, SSO login.",
+    "card1_title": "Multi-tenant + SSO",
+    "card1_desc": "Organization / user / role three-level isolation via Postgres RLS. Keycloak OIDC integrated — users sign in via WeCom / Feishu / Okta and are auto-provisioned by group.",
+    "card2_title": "Tenant Key Vault",
+    "card2_desc": "Admins configure OpenAI / Anthropic / Gemini / Azure / DeepSeek / Qwen / Ollama keys once; all tenant members use them. AES-256-GCM at rest, plaintext never returned.",
+    "card3_title": "LLM Gateway + Quotas",
+    "card3_desc": "All completions route through the server gateway with streaming SSE passthrough. Per-tenant tokens / cost recorded, monthly USD / call caps enforceable (429 on breach).",
+    "card4_title": "Central Audit + Deploy",
+    "card4_desc": "Login / key rotation / Agent calls / quota edits fully audited in Postgres. Helm Chart + Docker Compose bring up the full stack (Postgres + Redis + Keycloak + server + admin).",
+    "cta_desc": "Interested in being an early pilot? Book a demo, tech preview, or private-deployment assessment.",
+    "cta_btn": "Book Enterprise Demo"
+  },
   "features": {
     "tag": "Scenario Profiles",
     "title": "Scenario Profiles, Packaged by Industry",
@@ -190,7 +205,15 @@
     "community_cta_github": "GitHub Releases",
     "community_cta_docs": "User guide",
     "coming_soon": "Windows / Linux Professional builds coming soon. Community builds from source on all platforms (see user guide).",
-    "enterprise_soon": "Enterprise edition (multi-tenant SaaS / SSO / RBAC / audit) coming soon."
+    "enterprise_badge": "Enterprise · Coming Soon",
+    "enterprise_title": "Privix Enterprise",
+    "enterprise_detail": "v2.x · Multi-tenant SaaS / private deployment · For larger teams",
+    "enterprise_feat1": "Multi-tenant orgs / user management · Keycloak OIDC / SAML",
+    "enterprise_feat2": "Tenant API key vault (AES-256-GCM at rest)",
+    "enterprise_feat3": "LLM gateway · Monthly cost + call quotas (429 enforced)",
+    "enterprise_feat4": "Central audit · Helm Chart + Docker Compose deploy",
+    "enterprise_cta": "Coming soon",
+    "enterprise_cta_more": "Learn more"
   },
   "docs": {
     "tag": "Guides",
