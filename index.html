@@ -579,20 +579,20 @@
     <div class="section-header reveal">
       <div class="section-tag" data-i18n="download.tag">Editions</div>
       <h2 class="section-title" data-i18n="download.title">选择适合你的版本</h2>
-      <p class="section-subtitle" data-i18n="download.subtitle">Privix 提供商业版与社区版两条路径。核心面板与 Agent 能力相同，场景模块与企业支持仅在商业版。</p>
+      <p class="section-subtitle" data-i18n="download.subtitle">三个版本由浅入深：社区版开源自由；专业版加全部场景与智能诊断（个人免费）；企业版加多租户 SaaS 与合规（即将上线）。</p>
     </div>
 
     <div class="download-grid editions-grid">
       <!-- Community 社区版（左） -->
       <div class="download-card edition-card reveal stagger-1" id="community">
-        <div class="edition-badge edition-badge-community" data-i18n="download.community_badge">Community</div>
+        <div class="edition-badge edition-badge-community" data-i18n="download.community_badge">Community · 开源</div>
         <h3 class="download-card-title" data-i18n="download.community_title">Privix 社区版</h3>
         <p class="download-card-detail" data-i18n="download.community_detail">v2.1.0-ce.1 · 免费开源 · Apache-2.0</p>
         <ul class="edition-features">
-          <li data-i18n="download.community_feat1">OpenClaw + Hermes + Claw Doctor + ProspectResearch 研究工作台</li>
-          <li data-i18n="download.community_feat2">零遥测 · 敏感信息脱敏 · Workspace 隔离</li>
-          <li data-i18n="download.community_feat3">本地存储 · 直连 Provider · 无订阅无授权</li>
-          <li data-i18n="download.community_feat4">可 fork · 可二次开发 · GitHub 公开</li>
+          <li data-i18n="download.community_feat1">OpenClaw CLI + Hermes Agent + 基础面板集成</li>
+          <li data-i18n="download.community_feat2">流式 AI 对话 · Markdown 渲染 · 中英双语</li>
+          <li data-i18n="download.community_feat3">零遥测 · 本地存储 · 直连 Provider · 无订阅无授权</li>
+          <li data-i18n="download.community_feat4">完整源码公开 · 可 fork / 二次开发 / 自托管</li>
         </ul>
         <a href="downloads/Privix-Community_2.1.0-ce.1_aarch64.dmg" class="btn btn-primary" data-i18n="download.community_cta">下载 macOS (Apple Silicon)</a>
         <a href="https://github.com/privix-community/privix/releases" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top:8px" data-i18n="download.community_cta_github">GitHub Releases</a>
@@ -601,16 +601,17 @@
 
       <!-- Professional 专业版（中） -->
       <div class="download-card edition-card reveal stagger-2">
-        <div class="edition-badge edition-badge-pro" data-i18n="download.pro_badge">Professional</div>
+        <div class="edition-badge edition-badge-pro" data-i18n="download.pro_badge">Professional · 推荐</div>
         <h3 class="download-card-title" data-i18n="download.pro_title">Privix 专业版</h3>
-        <p class="download-card-detail" data-i18n="download.pro_detail">v1.7.1 · 企业咨询报价 · 含场景模块</p>
+        <p class="download-card-detail" data-i18n="download.pro_detail">v1.7.1 · 个人免费下载 · 专业团队支持</p>
         <ul class="edition-features">
-          <li data-i18n="download.pro_feat1">OpenClaw + Hermes + Claw Doctor</li>
-          <li data-i18n="download.pro_feat2">Invest / Knowledge / SOP 场景模块</li>
-          <li data-i18n="download.pro_feat3">企业部署与私有化定制</li>
-          <li data-i18n="download.pro_feat4">官方升级通道 + SLA 支持</li>
+          <li data-i18n="download.pro_feat1">Claw Swarm 多 Agent 协同工作流 · PM / 工程师 / QA 自动接力</li>
+          <li data-i18n="download.pro_feat2">Prospect-Research 深度研究 · 问题拆解 + 并行检索 + 结构化报告导出</li>
+          <li data-i18n="download.pro_feat3">智能错误诊断 · 多模型 failover · 连续错误熔断 · vLLM / Ollama / llama.cpp 常见报错一键说明</li>
+          <li data-i18n="download.pro_feat4">行业模块（投资 / 知识库 / SOP）+ 11 语国际化 + Apple 设计语言 + 聚光灯教程</li>
         </ul>
-        <a href="/downloads/Privix_1.7.1_aarch64.dmg" class="btn btn-primary" data-i18n="download.pro_cta">下载 .dmg (Apple Silicon)</a>
+        <a href="/downloads/Privix_1.7.1_aarch64.dmg" class="btn btn-primary" data-i18n="download.pro_cta">下载 DMG (Apple Silicon)</a>
+        <a href="#features" class="btn btn-outline" style="margin-top:8px" data-i18n="download.pro_cta_docs">查看文档</a>
         <a href="mailto:enterprise@privix.cn" class="btn btn-outline" style="margin-top:8px" data-i18n="download.pro_cta_contact">企业咨询</a>
       </div>
 
@@ -618,12 +619,12 @@
       <div class="download-card edition-card edition-card-upcoming reveal stagger-3" id="enterprise-edition-card">
         <div class="edition-badge edition-badge-enterprise" data-i18n="download.enterprise_badge">Enterprise · 即将上线</div>
         <h3 class="download-card-title" data-i18n="download.enterprise_title">Privix Enterprise</h3>
-        <p class="download-card-detail" data-i18n="download.enterprise_detail">v2.x · 多租户 SaaS / 私有化 · 面向大团队</p>
+        <p class="download-card-detail" data-i18n="download.enterprise_detail">v2.x · 在专业版之上加多租户 SaaS · 面向组织与团队</p>
         <ul class="edition-features">
-          <li data-i18n="download.enterprise_feat1">多租户组织 / 用户管理 · Keycloak OIDC / SAML</li>
-          <li data-i18n="download.enterprise_feat2">租户级 API Key 保险箱（AES-256-GCM 落盘）</li>
-          <li data-i18n="download.enterprise_feat3">LLM 统一网关 · 月度成本 + 调用配额（429 强制）</li>
-          <li data-i18n="download.enterprise_feat4">集中审计 · Helm Chart + Docker Compose 部署</li>
+          <li data-i18n="download.enterprise_feat1">多租户组织 / 用户管理 · Keycloak OIDC / SAML 对接企业目录</li>
+          <li data-i18n="download.enterprise_feat2">租户级 API Key 保险箱 · AES-256-GCM 加密落盘</li>
+          <li data-i18n="download.enterprise_feat3">LLM 统一网关 · 月度成本上限 + 租户调用配额（429 强制）</li>
+          <li data-i18n="download.enterprise_feat4">集中审计日志 · Helm Chart + Docker Compose · 私有化 / 内网部署</li>
         </ul>
         <button type="button" class="btn btn-primary" disabled data-i18n="download.enterprise_cta">即将上线</button>
         <a href="#enterprise-edition" class="btn btn-outline" style="margin-top:8px" data-i18n="download.enterprise_cta_more">查看详情</a>
