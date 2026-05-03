@@ -17,7 +17,7 @@
     "menu": "Menu"
   },
   "hero": {
-    "badge": "v1.10.1 · Runs Locally · Enterprise-Ready",
+    "badge": "v1.10.2 · Runs Locally · Enterprise-Ready",
     "title": "Keep your firm's data on your machines — not in a vendor cloud",
     "subtitle": "Privix runs AI Agents on your team's local devices, covering research, due diligence, document review, and workflow automation.<br>All data stays in a local SQLite, and every model call and Agent operation is auditable.",
     "cta_download": "Download Privix",
