@@ -187,7 +187,7 @@
     "subtitle": "Three tiers, each a superset of the previous: Community is open-source and free; Professional adds every scenario module and smart diagnostics (free for personal use); Enterprise adds multi-tenant SaaS and compliance (coming soon).",
     "pro_badge": "Professional · Recommended",
     "pro_title": "Privix Professional",
-    "pro_detail": "v1.7.1 · Free for personal use · Professional team support",
+    "pro_detail": "v1.10.7 · Free for personal use · Professional team support",
     "pro_feat1": "Claw Swarm multi-agent workflows · automated PM / Engineer / QA handoff",
     "pro_feat2": "Prospect-Research deep research · problem decomposition + parallel retrieval + structured report export",
     "pro_feat3": "Smart error diagnostics · multi-model failover · circuit breaker · one-click explainers for vLLM / Ollama / llama.cpp errors",

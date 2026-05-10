@@ -3,15 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privix 零基础安装指南 — 30 分钟上手</title>
-  <meta name="description" content="Privix 零基础安装指南。不需要任何技术背景，30 分钟手把手带你从下载到用起来。">
-  <meta property="og:title" content="Privix 零基础安装指南 — 30 分钟上手">
-  <meta property="og:description" content="从零开始，手把手带你用起来。不需要任何技术背景。">
+  <title>Privix 零基础安装指南 | 本地 AI Agent 平台 30 分钟上手</title>
+  <meta name="description" content="Privix 零基础安装指南：面向非技术用户，覆盖下载安装到、首次启动、模型配置、Gateway 启动、Agent 测试和常见问题排障。">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://www.privix.cn/beginner-guide.html">
+  <meta property="og:title" content="Privix 零基础安装指南 | 本地 AI Agent 平台 30 分钟上手">
+  <meta property="og:description" content="从下载、安装、模型配置到第一条 Agent 消息，面向非技术用户的 Privix 上手教程。">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.privix.cn/beginner-guide.html">
+  <meta property="og:site_name" content="Privix">
+  <meta property="og:locale" content="zh_CN">
   <meta property="og:image" content="https://www.privix.cn/screenshots/desktop-overview.png">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Privix 零基础安装指南 | 30 分钟上手">
+  <meta name="twitter:description" content="不懂命令行也能跟着完成 Privix 安装、配置、Agent 测试和排障。">
+  <meta name="twitter:image" content="https://www.privix.cn/screenshots/desktop-overview.png">
+  <meta name="theme-color" content="#0f172a">
   <link rel="icon" type="image/svg+xml" href="/images/privix-mark.svg">
   <link rel="stylesheet" href="/portal.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Privix", "item": "https://www.privix.cn/"},
+          {"@type": "ListItem", "position": 2, "name": "零基础安装指南", "item": "https://www.privix.cn/beginner-guide.html"}
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "name": "Privix 零基础安装指南",
+        "description": "从下载 Privix 到完成首次 Agent 对话的 8 步安装与配置流程。",
+        "image": "https://www.privix.cn/screenshots/desktop-overview.png",
+        "totalTime": "PT30M",
+        "step": [
+          {"@type": "HowToStep", "name": "准备电脑", "text": "准备一台 macOS 电脑并确认网络可用。"},
+          {"@type": "HowToStep", "name": "下载并安装 Privix", "text": "从 Privix 官网下载安装包，像普通软件一样完成安装。"},
+          {"@type": "HowToStep", "name": "首次启动", "text": "打开 Privix 并完成系统自动检查。"},
+          {"@type": "HowToStep", "name": "配置钳子助手", "text": "配置内置 AI 助手，作为后续排障帮手。"},
+          {"@type": "HowToStep", "name": "配置模型和 Gateway", "text": "填写模型 Provider 配置并启动 Gateway。"},
+          {"@type": "HowToStep", "name": "发送第一条消息", "text": "用实时聊天验证 Agent 是否能正常回复。"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Privix 双击打不开，说已损坏怎么办？",
+            "acceptedAnswer": {"@type": "Answer", "text": "这是 macOS 安全机制。进入系统设置的隐私与安全性页面，找到 Privix 被拦截的提示并选择仍要打开。"}
+          },
+          {
+            "@type": "Question",
+            "name": "Privix 打开后看到红色状态怎么办？",
+            "acceptedAnswer": {"@type": "Answer", "text": "先查看钳子助手或系统诊断页面，按提示检查模型、Gateway、环境依赖和日志。"}
+          },
+          {
+            "@type": "Question",
+            "name": "Privix Gateway 启动后还是红色怎么办？",
+            "acceptedAnswer": {"@type": "Answer", "text": "检查模型配置、端口占用和网络连接，再用钳子助手读取错误日志。"}
+          },
+          {
+            "@type": "Question",
+            "name": "Privix 发了消息但 Agent 没回复怎么办？",
+            "acceptedAnswer": {"@type": "Answer", "text": "确认模型可用、Gateway 正常、Agent 已启用并挂载必要 Skills。"}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -185,7 +248,7 @@
             </div>
           </div>
           <div class="guide-step-visual showcase-image" data-lightbox>
-            <img src="/screenshots/desktop-overview.png" alt="Privix 界面预览">
+            <img src="/screenshots/desktop-overview.png" width="2880" height="1800" loading="lazy" decoding="async" alt="Privix 本地 AI Agent 工作台界面预览">
           </div>
         </div>
       </article>
@@ -240,7 +303,7 @@
             </div>
           </div>
           <div class="guide-step-visual showcase-image" data-lightbox>
-            <img src="/screenshots/desktop-claw-assistant.png" alt="钳子助手">
+            <img src="/screenshots/desktop-claw-assistant.png" width="2880" height="1800" loading="lazy" decoding="async" alt="Privix 钳子助手配置与排障界面">
           </div>
         </div>
         <div class="guide-callout">
@@ -272,10 +335,10 @@
           </div>
           <div class="guide-step-visual guide-dual-shots">
             <div class="showcase-image" data-lightbox>
-              <img src="/screenshots/desktop-model-configuration.png" alt="模型配置">
+              <img src="/screenshots/desktop-model-configuration.png" width="2880" height="1800" loading="lazy" decoding="async" alt="Privix 模型 Provider 与 API Key 本地配置界面">
             </div>
             <div class="showcase-image" data-lightbox>
-              <img src="/screenshots/desktop-dashboard.png" alt="仪表盘">
+              <img src="/screenshots/desktop-dashboard.png" width="2880" height="1800" loading="lazy" decoding="async" alt="Privix 本地 AI Agent 平台仪表盘">
             </div>
           </div>
         </div>
@@ -298,7 +361,7 @@
             </div>
           </div>
           <div class="guide-step-visual showcase-image" data-lightbox>
-            <img src="/screenshots/desktop-sessions-multi-agent.png" alt="实时聊天">
+            <img src="/screenshots/desktop-sessions-multi-agent.png" width="2880" height="1800" loading="lazy" decoding="async" alt="Privix 多 Agent 实时聊天测试界面">
           </div>
         </div>
       </article>

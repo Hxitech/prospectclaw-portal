@@ -187,7 +187,7 @@
     "subtitle": "三个版本由浅入深：社区版开源自由；专业版加全部场景与智能诊断（个人免费）；企业版加多租户 SaaS 与合规（即将上线）。",
     "pro_badge": "Professional · 推荐",
     "pro_title": "Privix 专业版",
-    "pro_detail": "v1.7.1 · 个人免费下载 · 专业团队支持",
+    "pro_detail": "v1.10.7 · 个人免费下载 · 专业团队支持",
     "pro_feat1": "Claw Swarm 多 Agent 协同工作流 · PM / 工程师 / QA 自动接力",
     "pro_feat2": "Prospect-Research 深度研究 · 问题拆解 + 并行检索 + 结构化报告导出",
     "pro_feat3": "智能错误诊断 · 多模型 failover · 连续错误熔断 · vLLM / Ollama / llama.cpp 常见报错一键说明",

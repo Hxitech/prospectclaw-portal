@@ -3,15 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privix 进阶使用指南</title>
-  <meta name="description" content="Privix 进阶使用指南。适合有一定技术基础的用户，从安装到 Agent 上线的完整流程，附排障清单和概念速查。">
-  <meta property="og:title" content="Privix 进阶使用指南">
-  <meta property="og:description" content="从安装到 Agent 上线，6 步完成完整配置。附日常管理、排障清单和概念速查。">
+  <title>Privix 进阶使用指南 | 本地部署 AI Agent 配置与排障</title>
+  <meta name="description" content="Privix 进阶使用指南：从安装、钳子助手、模型与 Gateway，到 Agent Skills、实时聊天、渠道连接、日常运维和排障清单。">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://www.privix.cn/usage-guide.html">
+  <meta property="og:title" content="Privix 进阶使用指南 | 本地部署 AI Agent 配置与排障">
+  <meta property="og:description" content="面向技术用户的 Privix 配置手册，覆盖模型、Gateway、Agent、Skills、渠道连接和故障排查。">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.privix.cn/usage-guide.html">
+  <meta property="og:site_name" content="Privix">
+  <meta property="og:locale" content="zh_CN">
   <meta property="og:image" content="https://www.privix.cn/screenshots/desktop-overview.png">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Privix 进阶使用指南 | 配置与排障">
+  <meta name="twitter:description" content="6 步把 Privix 从安装完成配置到 Agent 可用，附日常运维和排障清单。">
+  <meta name="twitter:image" content="https://www.privix.cn/screenshots/desktop-overview.png">
+  <meta name="theme-color" content="#0f172a">
   <link rel="icon" type="image/svg+xml" href="/images/privix-mark.svg">
   <link rel="stylesheet" href="/portal.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Privix", "item": "https://www.privix.cn/"},
+          {"@type": "ListItem", "position": 2, "name": "进阶使用指南", "item": "https://www.privix.cn/usage-guide.html"}
+        ]
+      },
+      {
+        "@type": "TechArticle",
+        "headline": "Privix 进阶使用指南",
+        "description": "Privix 本地部署 AI Agent 平台的安装、模型配置、Gateway、Agent、Skills、渠道连接和排障手册。",
+        "image": "https://www.privix.cn/screenshots/desktop-claw-assistant.png",
+        "datePublished": "2026-04-19",
+        "dateModified": "2026-05-10",
+        "inLanguage": "zh-CN",
+        "author": {
+          "@type": "Organization",
+          "name": "Privix"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Privix",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.privix.cn/images/logo-brand.png"
+          }
+        },
+        "mainEntityOfPage": "https://www.privix.cn/usage-guide.html"
+      },
+      {
+        "@type": "HowTo",
+        "name": "Privix 进阶配置流程",
+        "description": "从安装 Privix 到完成 Agent 上线的 6 步配置流程。",
+        "totalTime": "PT30M",
+        "step": [
+          {"@type": "HowToStep", "name": "安装并首次启动 Privix", "text": "完成 Privix 安装并通过首次启动检查。"},
+          {"@type": "HowToStep", "name": "设置钳子助手", "text": "配置可用于后续排障的独立 AI 助手。"},
+          {"@type": "HowToStep", "name": "配置模型并启动 Gateway", "text": "填写模型 Provider 配置并启动本地 Gateway。"},
+          {"@type": "HowToStep", "name": "创建 Agent 并挂载 Skills", "text": "创建 Agent，配置模型、工具和 Skills。"},
+          {"@type": "HowToStep", "name": "实时聊天验证", "text": "发送测试消息验证 Agent 可用性。"},
+          {"@type": "HowToStep", "name": "连接消息渠道", "text": "按需连接飞书、Telegram 等外部渠道。"}
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -99,7 +158,7 @@
         <p data-i18n="usage.order_desc">为什么先配钳子助手？因为后面不管哪个环节出问题，你都可以直接问它。相当于还没上战场就先把军医找好了。</p>
       </div>
       <div class="guide-intro-image showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-claw-assistant.png" alt="钳子助手">
+        <img src="/screenshots/desktop-claw-assistant.png" width="2880" height="1800" loading="lazy" decoding="async" alt="Privix 钳子助手用于本地 AI Agent 排障">
       </div>
     </div>
 
@@ -169,7 +228,7 @@
             </div>
           </div>
           <div class="guide-step-visual showcase-image" data-lightbox>
-            <img src="/screenshots/desktop-claw-assistant.png" alt="钳子助手">
+            <img src="/screenshots/desktop-claw-assistant.png" width="2880" height="1800" loading="lazy" decoding="async" alt="Privix 钳子助手配置步骤">
           </div>
         </div>
       </article>
@@ -257,10 +316,10 @@
           </div>
           <div class="guide-step-visual guide-dual-shots">
             <div class="showcase-image" data-lightbox>
-              <img src="/screenshots/desktop-model-configuration.png" alt="模型配置">
+              <img src="/screenshots/desktop-model-configuration.png" width="2880" height="1800" loading="lazy" decoding="async" alt="Privix 模型 Provider 与 API Key 本地配置界面">
             </div>
             <div class="showcase-image" data-lightbox>
-              <img src="/screenshots/desktop-gateway.png" alt="Gateway 状态">
+              <img src="/screenshots/desktop-gateway.png" width="2880" height="1800" loading="lazy" decoding="async" alt="Privix Gateway 状态与本地服务控制界面">
             </div>
           </div>
         </div>
@@ -326,7 +385,7 @@
             </div>
           </div>
           <div class="guide-step-visual showcase-image" data-lightbox>
-            <img src="/screenshots/desktop-sessions-multi-agent.png" alt="实时聊天">
+            <img src="/screenshots/desktop-sessions-multi-agent.png" width="2880" height="1800" loading="lazy" decoding="async" alt="Privix 多 Agent 实时聊天验证界面">
           </div>
         </div>
       </article>

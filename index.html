@@ -3,18 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privix — 让企业数据留在自己手里 · 本地 AI Agent 平台</title>
-  <meta name="description" content="Privix 在团队的本地设备上运行 AI Agent，覆盖研究、尽调、文档审阅与流程自动化。所有数据保存在本地 SQLite，每一次模型调用与 Agent 操作均可审计。10MB 安装即用，API Key 零托管。">
-  <meta property="og:title" content="Privix — 让企业数据留在自己手里 · 本地 AI Agent 平台">
-  <meta property="og:description" content="本地运行的企业 AI Agent 平台。覆盖研究、尽调、文档审阅与流程自动化，所有数据保存在本地 SQLite，全过程可审计。">
+  <title>本地部署 AI Agent 平台 | Privix 私有化智能体工作台</title>
+  <meta name="description" content="Privix 是面向企业的本地部署 AI Agent 平台，支持研究、尽调、文档审阅、流程自动化和多 Agent 编排。数据与 API Key 留在本地，操作可审计。">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://www.privix.cn/">
+  <meta property="og:title" content="本地部署 AI Agent 平台 | Privix 私有化智能体工作台">
+  <meta property="og:description" content="面向企业的本地部署 AI Agent 平台。覆盖研究、尽调、文档审阅与流程自动化，数据、密钥与运行环境由企业自主掌控。">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.privix.cn/">
+  <meta property="og:site_name" content="Privix">
+  <meta property="og:locale" content="zh_CN">
   <meta property="og:image" content="https://www.privix.cn/screenshots/desktop-overview.png">
   <meta property="og:image:width" content="2880">
   <meta property="og:image:height" content="1800">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="本地部署 AI Agent 平台 | Privix 私有化智能体工作台">
+  <meta name="twitter:description" content="Privix 让企业在本地运行 AI Agent、编排多 Agent 工作流，并保留数据主权与审计能力。">
   <meta name="twitter:image" content="https://www.privix.cn/screenshots/desktop-overview.png">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="preload" as="image" href="/screenshots/desktop-overview.png" imagesrcset="/screenshots/desktop-overview.png" fetchpriority="high">
   <link rel="icon" type="image/svg+xml" href="/images/privix-mark.svg">
   <link rel="stylesheet" href="./portal.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.privix.cn/#organization",
+        "name": "Privix",
+        "url": "https://www.privix.cn/",
+        "logo": "https://www.privix.cn/images/logo-brand.png",
+        "sameAs": [
+          "https://github.com/privix-community/privix"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.privix.cn/#website",
+        "name": "Privix",
+        "url": "https://www.privix.cn/",
+        "publisher": {
+          "@id": "https://www.privix.cn/#organization"
+        },
+        "inLanguage": "zh-CN"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://www.privix.cn/#software",
+        "name": "Privix",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "macOS",
+        "softwareVersion": "1.10.7",
+        "url": "https://www.privix.cn/",
+        "downloadUrl": "https://www.privix.cn/downloads/Privix_1.10.7_aarch64.dmg",
+        "image": "https://www.privix.cn/screenshots/desktop-overview.png",
+        "description": "Privix 是面向企业的本地部署 AI Agent 平台，支持研究、尽调、文档审阅、流程自动化和多 Agent 编排。",
+        "publisher": {
+          "@id": "https://www.privix.cn/#organization"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "CNY",
+          "availability": "https://schema.org/InStock"
+        },
+        "featureList": [
+          "本地 SQLite 数据存储",
+          "API Key 本地托管",
+          "多 Agent 并行编排",
+          "研究与尽调工作流",
+          "企业审计与私有化部署"
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -74,7 +138,7 @@
     </div>
     <div class="hero-image reveal">
       <div class="hero-image-frame">
-        <img src="/screenshots/desktop-overview.png" alt="Privix 工作台 — 6 个能力模块一屏管理">
+        <img src="/screenshots/desktop-overview.png" width="2880" height="1800" alt="Privix 本地部署 AI Agent 工作台，展示研究、Agent 管理和流程自动化模块" fetchpriority="high" decoding="async">
       </div>
     </div>
   </div>
@@ -129,7 +193,7 @@
         </div>
       </div>
       <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-claw-assistant.png" alt="钳子医生">
+        <img src="/screenshots/desktop-claw-assistant.png" width="2880" height="1800" loading="lazy" decoding="async" alt="Privix 钳子医生运维诊断与自动修复界面">
       </div>
     </div>
 
@@ -149,7 +213,7 @@
         </div>
       </div>
       <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-agent-management.png" alt="Agent 管理">
+        <img src="/screenshots/desktop-agent-management.png" width="2880" height="1800" loading="lazy" decoding="async" alt="Privix Agent Studio 统一管理 CLI Agent、模型和 MCP 配置">
       </div>
     </div>
 
@@ -169,7 +233,7 @@
         </div>
       </div>
       <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-evoscientist.png" alt="Prospect-Research 案例画廊">
+        <img src="/screenshots/desktop-evoscientist.png" width="2880" height="1800" loading="lazy" decoding="async" alt="Privix Prospect-Research 多 Scientist 深度研究工作流案例画廊">
       </div>
     </div>
 
@@ -189,7 +253,7 @@
         </div>
       </div>
       <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-clawswarm.png" alt="Agentic Swarm 蜂群协作">
+        <img src="/screenshots/desktop-clawswarm.png" width="2880" height="1800" loading="lazy" decoding="async" alt="Privix Agentic Swarm 基于 DAG 的多 Agent 并行执行界面">
       </div>
     </div>
 
@@ -209,7 +273,7 @@
         </div>
       </div>
       <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-hermes-dashboard.png" alt="Hermes Dashboard · Gateway Running">
+        <img src="/screenshots/desktop-hermes-dashboard.png" width="2880" height="1800" loading="lazy" decoding="async" alt="Privix Hermes Dashboard 显示 Gateway 运行状态与双引擎切换">
       </div>
     </div>
   </div>
@@ -278,7 +342,7 @@
         </div>
       </div>
       <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-investment-dashboard.png" alt="Invest Profile 投资工作台模块">
+        <img src="/screenshots/desktop-investment-dashboard.png" width="2880" height="1800" loading="lazy" decoding="async" alt="Privix Invest Profile 投资工作台模块，包含项目池和 Deal Pipeline">
       </div>
     </div>
 
@@ -297,7 +361,7 @@
         </div>
       </div>
       <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-memory-panel.png" alt="Knowledge Profile Agent 知识库模块">
+        <img src="/screenshots/desktop-memory-panel.png" width="2880" height="1800" loading="lazy" decoding="async" alt="Privix Knowledge Profile Agent 知识库与长期记忆面板">
       </div>
     </div>
 
@@ -318,7 +382,7 @@
         </div>
       </div>
       <div class="showcase-image" data-lightbox>
-        <img src="/screenshots/desktop-sop.png" alt="SOP Profile Agent SOP 模块">
+        <img src="/screenshots/desktop-sop.png" width="2880" height="1800" loading="lazy" decoding="async" alt="Privix SOP Profile 用于 Agent 规则维护、任务规划和结构化输出">
       </div>
     </div>
   </div>
