@@ -191,7 +191,7 @@
     "subtitle": "個人や小規模チームはデスクトップアプリで研究ワークフローを先に試せます。SSO、集中監査、クォータ管理が必要になったら Enterprise を評価してください。",
     "pro_badge": "Professional · 推奨",
     "pro_title": "Privix プロフェッショナル版",
-    "pro_detail": "v1.10.7 · 個人無料ダウンロード · 専門チームサポート",
+    "pro_detail": "v1.10.8 · 個人無料ダウンロード · 専門チームサポート",
     "pro_feat1": "Claw Swarm マルチエージェント協調ワークフロー · PM / エンジニア / QA の自動リレー",
     "pro_feat2": "Prospect-Research ディープリサーチ · 課題分解 + 並列検索 + 構造化レポート出力",
     "pro_feat3": "スマートエラー診断 · マルチモデル failover · 連続エラー遮断 · vLLM / Ollama / llama.cpp の報错をワンクリック解説",
