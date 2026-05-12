@@ -66,7 +66,7 @@
   },
   "features": {
     "tag": "Workflows",
-    "title": "Invest 只是其中一个模块，Privix 主体是 Agent 工作台",
+    "title": "三个行业模块",
     "subtitle": "同一个本地底座，需要哪个模块开哪个。",
     "row1_label": "Invest Teams",
     "row1_title": "投资团队：从线索到审批",
@@ -92,7 +92,7 @@
   },
   "ai": {
     "tag": "What You Can Finish",
-    "title": "不是又一个聊天窗口，而是 Agent 的本地控制台",
+    "title": "Agent 的本地控制台",
     "subtitle": "都在一处。模型、Agent、工具、知识库，不用再开第二个软件。",
     "assistant_label": "Claw Doctor",
     "assistant_title": "排障不靠猜",
@@ -161,7 +161,7 @@
   },
   "privacy": {
     "tag": "Why Local",
-    "title": "敏感研究资料，不该先上传到别人的云",
+    "title": "资料留在你电脑上",
     "subtitle": "Privix 把文档、会话、模型密钥和审计日志都留在本地。只有你主动调用模型时，才从本机直连自己配置的 Provider。",
     "card1_title": "文件和会话留在本机",
     "card1_desc": "研究材料、项目记录、会话和 Agent 配置全部存储在本机 SQLite 文件中，没有强制同步和云端副本。",
