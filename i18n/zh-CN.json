@@ -191,7 +191,7 @@
     "subtitle": "个人和小团队先把桌面版跑起来；要 SSO、集中审计、配额，再上 Enterprise。",
     "pro_badge": "Professional · 推荐",
     "pro_title": "Privix 专业版",
-    "pro_detail": "v1.10.9 · 个人免费下载 · 专业团队支持",
+    "pro_detail": "v1.10.10 · 个人免费下载 · 专业团队支持",
     "pro_feat1": "多 Agent 协同 · PM / 工程师 / QA 自动接力",
     "pro_feat2": "深度研究 · 问题拆解、并行检索、结构化报告",
     "pro_feat3": "报错诊断 · 多模型自动切换 · vLLM / Ollama / llama.cpp 的报错直接告诉你怎么办",

@@ -191,7 +191,7 @@
     "subtitle": "Individuals and small teams can run research workflows in the desktop app; evaluate Enterprise when you need SSO, centralized audit, and quota controls.",
     "pro_badge": "Professional · Recommended",
     "pro_title": "Privix Professional",
-    "pro_detail": "v1.10.9 · Free for personal use · Professional team support",
+    "pro_detail": "v1.10.10 · Free for personal use · Professional team support",
     "pro_feat1": "Claw Swarm multi-agent workflows · automated PM / Engineer / QA handoff",
     "pro_feat2": "Prospect-Research deep research · problem decomposition + parallel retrieval + structured report export",
     "pro_feat3": "Smart error diagnostics · multi-model failover · circuit breaker · one-click explainers for vLLM / Ollama / llama.cpp errors",
