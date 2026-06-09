@@ -1627,3 +1627,33 @@ a:hover { text-decoration: underline; }
   .enterprise-grid { grid-template-columns: 1fr; gap: 14px; }
   .enterprise-card { padding: 22px 20px; }
 }
+
+/* ═══════ 首页翻新 (2026-06): 视觉打磨 + #how 三步带 ═══════ */
+/* hero 品牌径向光晕(hero 恒为黑底,无需主题分支;hero-content z-index:1 在其上) */
+.hero::before {
+  content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background: radial-gradient(ellipse 80% 55% at 50% 0%, rgba(91, 104, 224, 0.20), transparent 62%);
+}
+/* hero 产品图:立体阴影 + 高光描边 */
+.hero-image-frame {
+  box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+/* showcase 截图:hover 上浮(配合灯箱触感;原 :hover opacity 0.9 经 cascade 保留) */
+.showcase-image { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.showcase-image:hover { transform: translateY(-2px); box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.35); }
+/* 统一卡片 hover:tech / doc / download / #how 卡上浮 + 品牌柔影 */
+.tech-card, .doc-card, .download-card { transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease; }
+.tech-card:hover, .doc-card:hover, .download-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(91, 104, 224, 0.12);
+}
+[data-theme="dark"] .tech-card:hover,
+[data-theme="dark"] .doc-card:hover,
+[data-theme="dark"] .download-card:hover {
+  box-shadow: 0 8px 24px rgba(124, 140, 255, 0.18);
+}
+/* #how 三步带:3 列(复用 tech-card 卡壳 + tech-card-title/desc 文本色,主题安全) */
+.how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.how-grid .tech-card { padding: 28px 24px; }
+@media (max-width: 768px) { .how-grid { grid-template-columns: 1fr; } }

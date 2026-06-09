@@ -18,11 +18,11 @@
     "menu": "Menu"
   },
   "hero": {
-    "badge": "Models / Agents / Knowledge Bases / SOP · Runs locally",
-    "title": "A local AI Agent workbench",
-    "subtitle": "Privix brings models, Agents, tools, knowledge bases, and automation workflows into one local workbench.<br>Create Agents, orchestrate multi-Agent workflows, organize team knowledge and SOPs, while data and API keys stay on your machine.",
+    "badge": "Runs locally · As simple as Codex",
+    "title": "Write a task. Plan first, then run.",
+    "subtitle": "Pick a workspace, write your task — Plan mode drafts a plan and waits for your nod before running.<br>Models, data, and keys stay on your machine — a local-first AI Agent workbench.",
     "cta_download": "Download local app",
-    "cta_learn": "See workflows"
+    "cta_learn": "See how it works"
   },
   "stats": {
     "agents_value": "Agents",
@@ -47,7 +47,9 @@
     "card4_title": "Ready in 10 Minutes",
     "card4_desc": "10 MB installer, desktop-grade deployment. IT does not need to provision a server, gateway, or container cluster — employees install and run locally.",
     "cta_desc": "Need rollout support, private-deployment customization, or an NDA?",
-    "cta_btn": "Contact Enterprise Team"
+    "cta_btn": "Contact Enterprise Team",
+    "upcoming_tag": "Enterprise · Coming Soon",
+    "upcoming_desc": "Rolling out company-wide? Multi-tenant Privix Enterprise is coming soon: SSO login, central key vault, budget quotas, centralized audit, and Helm / Docker self-hosting."
   },
   "enterpriseEdition": {
     "tag": "Enterprise · Coming Soon",
@@ -109,9 +111,9 @@
     "fleet_chip3": "MCP tools",
     "fleet_chip4": "Local config",
     "evo_label": "Deep Research",
-    "evo_title": "Break open-ended questions into multi-Agent research tasks",
+    "evo_title": "Write the task — it plans before it researches",
     "evo_desc": "Pick a workspace, write your task, and turn on Plan mode — it drafts a plan and waits for your approval before running, as simple as Codex. Multiple Scientist Agents then research in parallel and return a complete, evidence-backed report instead of a pile of links. Good for competitor analysis, market sizing, technical evaluation, and document review.",
-    "evo_chip1": "Question breakdown",
+    "evo_chip1": "Plan mode",
     "evo_chip2": "Parallel research",
     "evo_chip3": "Evidence synthesis",
     "evo_chip4": "Report export",
@@ -567,5 +569,16 @@
     "final_cta1": "Beginner Guide",
     "final_cta2": "Advanced Guide",
     "final_cta3": "Back to Home"
+  },
+  "how": {
+    "tag": "How It Works",
+    "title": "Up and running in three steps — as simple as Codex",
+    "subtitle": "You stay in control — agents act only after you approve the plan.",
+    "step1_title": "Pick a workspace",
+    "step1_desc": "Point the agent at a local folder — it reads and writes there, and everything stays on your machine.",
+    "step2_title": "Write a task, get a plan",
+    "step2_desc": "Describe what you want. Plan mode drafts a step-by-step plan and stops for your approval — no tools run until you say so.",
+    "step3_title": "Approve, then it runs",
+    "step3_desc": "Once you approve, agents go to work — multiple in parallel for big tasks — with every step traceable and interruptible."
   }
 }

@@ -18,11 +18,11 @@
     "menu": "菜单"
   },
   "hero": {
-    "badge": "模型 / Agent / 知识库 / SOP · 本地运行",
-    "title": "本地运行的 AI Agent 工作台",
-    "subtitle": "把 AI Agent 装进你的电脑。<br>研究、工作流、知识库、SOP——配置和数据都不离开本机。",
+    "badge": "本地运行 · 像 Codex 一样简单",
+    "title": "写下任务，先出计划再执行",
+    "subtitle": "指定工作区、写下任务，Plan 模式先给方案、你点头再跑。<br>模型、数据、密钥都在本机——一个本地运行的 AI Agent 工作台。",
     "cta_download": "下载本地版",
-    "cta_learn": "看典型工作流"
+    "cta_learn": "看怎么用"
   },
   "stats": {
     "agents_value": "Agent",
@@ -47,7 +47,9 @@
     "card4_title": "装上就能用",
     "card4_desc": "10MB 安装包，跟普通软件一样装。IT 不用搭服务器、配网关、搞容器集群，员工自己装就行。",
     "cta_desc": "需要团队部署支持、私有化定制，或签署保密协议？",
-    "cta_btn": "联系企业团队"
+    "cta_btn": "联系企业团队",
+    "upcoming_tag": "Enterprise · 即将上线",
+    "upcoming_desc": "全公司一起用？多租户版 Privix Enterprise 即将上线：SSO 登录、集中密钥保险箱、预算配额、集中审计、Helm / Docker 私有化部署。"
   },
   "enterpriseEdition": {
     "tag": "Enterprise · Coming Soon",
@@ -109,9 +111,9 @@
     "fleet_chip3": "MCP 工具",
     "fleet_chip4": "本地配置",
     "evo_label": "Deep Research",
-    "evo_title": "研究交给 Agent 群",
+    "evo_title": "写下任务，先出计划再研究",
     "evo_desc": "指定工作区、写下任务，开 Plan 模式让它先出计划、你批准后再执行——像 Codex 一样简单。几个 Scientist Agent 并行去查，带证据的完整报告一次给齐，而不是一堆链接。竞品分析、市场测算、技术选型、文档审阅都用得上。",
-    "evo_chip1": "问题拆解",
+    "evo_chip1": "Plan 模式",
     "evo_chip2": "并行研究",
     "evo_chip3": "证据汇总",
     "evo_chip4": "报告导出",
@@ -567,5 +569,16 @@
     "final_cta1": "零基础指南",
     "final_cta2": "进阶指南",
     "final_cta3": "回到主站"
+  },
+  "how": {
+    "tag": "How It Works",
+    "title": "三步上手，像 Codex 一样简单",
+    "subtitle": "主动权一直在你手里：计划你点头，Agent 才动手。",
+    "step1_title": "指定工作区",
+    "step1_desc": "把 Agent 指向一个本地文件夹，它就在那儿读写，产出和数据都留在你机器上。",
+    "step2_title": "写任务，先出计划",
+    "step2_desc": "写下你要做的事，Plan 模式先给一份分步计划，停下来等你确认——批准前不碰任何工具。",
+    "step3_title": "批准后执行",
+    "step3_desc": "你点头，Agent 才开跑；复杂任务多个 Agent 并行，每一步可追溯、随时叫停。"
   }
 }
