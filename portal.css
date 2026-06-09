@@ -337,6 +337,12 @@ a:hover { text-decoration: underline; }
 .section-dark {
   background: #000000;
   color: #ffffff;
+  /* .section-dark 永远是深色底:把文本 token 在该作用域内强制为浅色,
+     修复深色 band 内用 var(--p-text*) 的文字(如 edition-card / guide-callout)
+     在浅色主题下黑底黑字看不清(全站所有深色 band 一并生效) */
+  --p-text: #ffffff;
+  --p-text-secondary: rgba(255, 255, 255, 0.72);
+  --p-text-tertiary: rgba(255, 255, 255, 0.5);
 }
 
 .section-light {
