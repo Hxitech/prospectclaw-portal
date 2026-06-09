@@ -18,9 +18,9 @@
     "menu": "菜单"
   },
   "hero": {
-    "badge": "本地运行 · 像 Codex 一样简单",
-    "title": "写下任务，先出计划再执行",
-    "subtitle": "指定工作区、写下任务，Plan 模式先给方案、你点头再跑。<br>模型、数据、密钥都在本机——一个本地运行的 AI Agent 工作台。",
+    "badge": "模型 · Agent · 知识库 · 本地运行",
+    "title": "本地运行的 AI Agent 工作台",
+    "subtitle": "在自己的电脑上管理模型、Agent、知识库与自动化流程。<br>复杂任务由 AI 先出计划、你确认后再执行，数据和密钥始终不离开本机。",
     "cta_download": "下载本地版",
     "cta_learn": "看怎么用"
   },
@@ -111,7 +111,7 @@
     "fleet_chip3": "MCP 工具",
     "fleet_chip4": "本地配置",
     "evo_label": "Deep Research",
-    "evo_title": "写下任务，先出计划再研究",
+    "evo_title": "把研究交给一群 AI 科学家",
     "evo_desc": "指定工作区、写下任务，开 Plan 模式让它先出计划、你批准后再执行——像 Codex 一样简单。几个 Scientist Agent 并行去查，带证据的完整报告一次给齐，而不是一堆链接。竞品分析、市场测算、技术选型、文档审阅都用得上。",
     "evo_chip1": "Plan 模式",
     "evo_chip2": "并行研究",
@@ -572,7 +572,7 @@
   },
   "how": {
     "tag": "How It Works",
-    "title": "三步上手，像 Codex 一样简单",
+    "title": "用起来，就三步",
     "subtitle": "主动权一直在你手里：计划你点头，Agent 才动手。",
     "step1_title": "指定工作区",
     "step1_desc": "把 Agent 指向一个本地文件夹，它就在那儿读写，产出和数据都留在你机器上。",

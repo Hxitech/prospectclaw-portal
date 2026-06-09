@@ -18,9 +18,9 @@
     "menu": "Menu"
   },
   "hero": {
-    "badge": "Runs locally · As simple as Codex",
-    "title": "Write a task. Plan first, then run.",
-    "subtitle": "Pick a workspace, write your task — Plan mode drafts a plan and waits for your nod before running.<br>Models, data, and keys stay on your machine — a local-first AI Agent workbench.",
+    "badge": "Models · Agents · Knowledge · runs locally",
+    "title": "A local-first AI Agent workbench",
+    "subtitle": "Manage models, agents, knowledge bases, and automations on your own machine.<br>AI drafts a plan and waits for your go-ahead before acting — your data and keys never leave your computer.",
     "cta_download": "Download local app",
     "cta_learn": "See how it works"
   },
@@ -111,7 +111,7 @@
     "fleet_chip3": "MCP tools",
     "fleet_chip4": "Local config",
     "evo_label": "Deep Research",
-    "evo_title": "Write the task — it plans before it researches",
+    "evo_title": "Hand research to a team of AI scientists",
     "evo_desc": "Pick a workspace, write your task, and turn on Plan mode — it drafts a plan and waits for your approval before running, as simple as Codex. Multiple Scientist Agents then research in parallel and return a complete, evidence-backed report instead of a pile of links. Good for competitor analysis, market sizing, technical evaluation, and document review.",
     "evo_chip1": "Plan mode",
     "evo_chip2": "Parallel research",
@@ -572,7 +572,7 @@
   },
   "how": {
     "tag": "How It Works",
-    "title": "Up and running in three steps — as simple as Codex",
+    "title": "Three steps to get going",
     "subtitle": "You stay in control — agents act only after you approve the plan.",
     "step1_title": "Pick a workspace",
     "step1_desc": "Point the agent at a local folder — it reads and writes there, and everything stays on your machine.",
