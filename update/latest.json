@@ -1,8 +1,16 @@
 {
-  "version": "1.5.0",
+  "version": "1.12.0",
   "minAppVersion": "1.2.0",
-  "changelog": "v1.5.0 Agent Studio — CLI Agent 自动检测(12款)、LLM Provider 扩充到 23 家、MCP 统一配置 UI、智能预览面板(MD/代码/HTML/图片)、CSS 自定义主题",
-  "releasedAt": "2026-04-15T00:00:00Z",
-  "downloadUrl": "https://www.privix.cn/downloads/Privix_1.5.0_aarch64.dmg",
-  "recommendedOpenClaw": "2026.4.11"
+  "changelog": "v1.12.0 — 桌面端默认免密码、激活码保持强制；签名自动更新；Kimi K3 双渠道与 Agent 运行时同步",
+  "releasedAt": "2026-08-16T02:39:27Z",
+  "downloadUrl": "https://www.privix.cn/downloads/Privix_1.12.0_aarch64.dmg",
+  "recommendedOpenClaw": "2026.7.1",
+  "notes": "v1.12.0 — 桌面端默认免密码、激活码保持强制；签名自动更新；Kimi K3 双渠道与 Agent 运行时同步",
+  "pub_date": "2026-08-16T02:39:27Z",
+  "platforms": {
+    "darwin-aarch64": {
+      "url": "https://www.privix.cn/downloads/Privix_1.12.0_aarch64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSVXhmNEQvVHdEb215bi9TVkhRSjdPZGFOQno2QnVVVisrKzEyalNMeTBLZ0N4dktmOE1PQU5ZYTYzbXRqUGtCSXRlOGwxaEljWEFXR3AzeVVybG56ZTg3LysrZGRPbWc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg2ODQ0NjA0CWZpbGU6UHJpdml4LmFwcC50YXIuZ3oKeFlDSE5JTnhGaDFPL1NmbjVrZGFNaVdKQUhraS9iZFpZcG91NDdzMXRnVFVmK1A5YVhBU2FTNTdBZ1E4eGxYRDRrQzN0Z2NOTzVCZmRNWUVxYWN3Qmc9PQo="
+    }
+  }
 }
