@@ -126,7 +126,7 @@
     "swarm_chip4": "結果統合",
     "hermes_label": "Local Agent Runtime",
     "hermes_title": "実行エンジンを切り替えても設定は混ざらない",
-    "hermes_desc": "OpenClaw はマルチ Agent 編成とツールチェーンを担当し、Hermes はストリーミングチャットと Python エコシステム統合を担当します。シーン別に切り替えられ、設定、サービス、ログは分離されます。",
+    "hermes_desc": "OpenClaw はマルチ Agent 編成とツールチェーンを担当し、Hermes はストリーミングチャットと Python エコシステム統合を担当します。MiniMax-M3 の中国 Anthropic 互換ルートも直接検証できます。シーン別に切り替えられ、設定、サービス、ログは分離されます。",
     "hermes_chip1": "OpenClaw",
     "hermes_chip2": "Hermes",
     "hermes_chip3": "設定分離",

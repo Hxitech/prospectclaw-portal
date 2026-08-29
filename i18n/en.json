@@ -126,7 +126,7 @@
     "swarm_chip4": "Result synthesis",
     "hermes_label": "Local Agent Runtime",
     "hermes_title": "Switch runtimes without mixing configuration",
-    "hermes_desc": "OpenClaw handles multi-Agent orchestration and tool chains; Hermes handles streaming chat and Python ecosystem integration. Switch by scenario while keeping configuration, services, and logs isolated.",
+    "hermes_desc": "OpenClaw handles multi-Agent orchestration and tool chains; Hermes handles streaming chat and Python ecosystem integration. MiniMax-M3's CN Anthropic-compatible route is verified directly. Switch by scenario while keeping configuration, services, and logs isolated.",
     "hermes_chip1": "OpenClaw",
     "hermes_chip2": "Hermes",
     "hermes_chip3": "Isolated config",

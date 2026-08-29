@@ -126,7 +126,7 @@
     "swarm_chip4": "结果汇总",
     "hermes_label": "Local Agent Runtime",
     "hermes_title": "两套引擎，互不打扰",
-    "hermes_desc": "OpenClaw 跑多 Agent 编排和工具链，Hermes 跑流式对话和 Python 生态。来回切，配置、服务、日志都不会搅在一起。",
+    "hermes_desc": "OpenClaw 跑多 Agent 编排和工具链，Hermes 跑流式对话和 Python 生态；MiniMax-M3 国内 Anthropic 线路可直接验证。来回切，配置、服务、日志都不会搅在一起。",
     "hermes_chip1": "OpenClaw",
     "hermes_chip2": "Hermes",
     "hermes_chip3": "隔离配置",
