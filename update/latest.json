@@ -1,16 +1,16 @@
 {
-  "version": "1.14.1",
+  "version": "1.14.0",
   "minAppVersion": "1.2.0",
-  "changelog": "### 稳定上游补丁同步 - OpenClaw npm 官方/中文目标升级至 2026.9.5 / 2026.9.5-zh.1；保留 protocol 4、Token/Password、配置校验、插件清单、Agent、状态/频道/定时任务与 questions 往返兼容，Node.js 要求不变。 - EvoScientist 升级至 0.3.1 / deepagents 0.7.15，并按官方 `uv.lock` 刷新安装约束；继续使用本地 Gateway backend，现有桥接、HITL、Kimi Code、OpenRouter 与 Provider 工厂合约通过隔离回归。 - ClawPanel 仍为 v0.21.8，Hermes 仍为 0.21.3 / v2026.9.14；两者无新稳定版，本次不复制 AGPL 实现、不切换 Hermes 开发主线。 ### 研究工作台交互修复 - EvoScientist 精简历史栏与工作区，明确区分计划、研究、待确认和结果状态；输入固定在底部，长问题与导出操作可滚动，导出说明与本地生成行为一致。 - 刷新保留输入焦点、选区、草稿、已展开工具及阅读位置；支持“回到最新”，空白会话从顶部展示研究模板，流式输出不会重复追加已折叠记录。 - 中文输入法组合期间延后重绘；Enter 换行、⌘/Ctrl+Enter 发送。运行中及待审批/待回答时阻止重复发送、清空和切换；请求失败恢复草稿和计划审批入口。 - 模板、工具分组和时间线折叠支持键盘，问题字段具有关联标签；同步 11 个 locale，补充隔离浏览器回归和真实 DOCX/PPTX 导出测试。 - 限定更新 `docx → nanoid` 至 5.1.16、`pptxgenjs → image-size` 至 2.0.4，修复生产依赖审计告警。PptxGenJS 4.0.1 的分发代码不调用 image-size，浏览器映射也已禁用该依赖；保持主库版本并验收图片嵌入和 Office 归档。",
-  "releasedAt": "2026-09-20T18:00:42Z",
-  "downloadUrl": "https://www.privix.cn/downloads/Privix_1.14.1_aarch64.dmg",
+  "changelog": "### 全面上游兼容同步 - OpenClaw npm 官方/中文目标升级至 2026.9.4 / 2026.9.4-zh.1；同步 Node 要求、新版 Agent 注册表、显式模型策略、challenge 签名、Password 认证、启动重试和代理 Origin，Doctor 改为 120 秒非交互诊断。 - 聊天支持结构化待答问题：单选、多选、自由回答、取消、过期与重连恢复；请求失败保留草稿，等待回答期间暂停超时处理，密钥问题不进入普通聊天输入。 - EvoScientist 升级至 0.3.0 / deepagents 0.7.13，安装器使用官方锁导出的约束；覆盖 MiniMax 混合 thinking 历史、二轮请求和 HITL 恢复回归。 - Hermes 升级至 0.21.3，固定源码 commit/checksum 与官方依赖覆盖。安装提交前备份配置和 SQLite，在副本上验证迁移与重启，并拒绝使用含 WAL-reset 风险的 SQLite 完成升级。 - Web 模式校验前后端版本契约，避免旧服务配新前端继续执行命令。新增真实 Gateway 与浏览器交互验收脚本；11 个 locale、CI 和 Linux 安装指引同步更新。 - macOS Apple Silicon 官网发行沿用既有 updater 公钥与签名私钥；安装包和自动更新归档通过官网分发。原生 App 使用 ad-hoc 签名，未做 Apple Developer ID 公证；桌面交互及旧版自动升级全流程的验收限制见发布记录。",
+  "releasedAt": "2026-09-19T12:40:31Z",
+  "downloadUrl": "https://www.privix.cn/downloads/Privix_1.14.0_aarch64.dmg",
   "recommendedOpenClaw": "2026.7.1",
-  "notes": "### 稳定上游补丁同步 - OpenClaw npm 官方/中文目标升级至 2026.9.5 / 2026.9.5-zh.1；保留 protocol 4、Token/Password、配置校验、插件清单、Agent、状态/频道/定时任务与 questions 往返兼容，Node.js 要求不变。 - EvoScientist 升级至 0.3.1 / deepagents 0.7.15，并按官方 `uv.lock` 刷新安装约束；继续使用本地 Gateway backend，现有桥接、HITL、Kimi Code、OpenRouter 与 Provider 工厂合约通过隔离回归。 - ClawPanel 仍为 v0.21.8，Hermes 仍为 0.21.3 / v2026.9.14；两者无新稳定版，本次不复制 AGPL 实现、不切换 Hermes 开发主线。 ### 研究工作台交互修复 - EvoScientist 精简历史栏与工作区，明确区分计划、研究、待确认和结果状态；输入固定在底部，长问题与导出操作可滚动，导出说明与本地生成行为一致。 - 刷新保留输入焦点、选区、草稿、已展开工具及阅读位置；支持“回到最新”，空白会话从顶部展示研究模板，流式输出不会重复追加已折叠记录。 - 中文输入法组合期间延后重绘；Enter 换行、⌘/Ctrl+Enter 发送。运行中及待审批/待回答时阻止重复发送、清空和切换；请求失败恢复草稿和计划审批入口。 - 模板、工具分组和时间线折叠支持键盘，问题字段具有关联标签；同步 11 个 locale，补充隔离浏览器回归和真实 DOCX/PPTX 导出测试。 - 限定更新 `docx → nanoid` 至 5.1.16、`pptxgenjs → image-size` 至 2.0.4，修复生产依赖审计告警。PptxGenJS 4.0.1 的分发代码不调用 image-size，浏览器映射也已禁用该依赖；保持主库版本并验收图片嵌入和 Office 归档。",
-  "pub_date": "2026-09-20T18:00:42Z",
+  "notes": "### 全面上游兼容同步 - OpenClaw npm 官方/中文目标升级至 2026.9.4 / 2026.9.4-zh.1；同步 Node 要求、新版 Agent 注册表、显式模型策略、challenge 签名、Password 认证、启动重试和代理 Origin，Doctor 改为 120 秒非交互诊断。 - 聊天支持结构化待答问题：单选、多选、自由回答、取消、过期与重连恢复；请求失败保留草稿，等待回答期间暂停超时处理，密钥问题不进入普通聊天输入。 - EvoScientist 升级至 0.3.0 / deepagents 0.7.13，安装器使用官方锁导出的约束；覆盖 MiniMax 混合 thinking 历史、二轮请求和 HITL 恢复回归。 - Hermes 升级至 0.21.3，固定源码 commit/checksum 与官方依赖覆盖。安装提交前备份配置和 SQLite，在副本上验证迁移与重启，并拒绝使用含 WAL-reset 风险的 SQLite 完成升级。 - Web 模式校验前后端版本契约，避免旧服务配新前端继续执行命令。新增真实 Gateway 与浏览器交互验收脚本；11 个 locale、CI 和 Linux 安装指引同步更新。 - macOS Apple Silicon 官网发行沿用既有 updater 公钥与签名私钥；安装包和自动更新归档通过官网分发。原生 App 使用 ad-hoc 签名，未做 Apple Developer ID 公证；桌面交互及旧版自动升级全流程的验收限制见发布记录。",
+  "pub_date": "2026-09-19T12:40:31Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://www.privix.cn/downloads/Privix_1.14.1_aarch64.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSVXhmNEQvVHdEb3VsNjV0MEhuWnlBZHhTV2U2aGp0Sm5SQ0RacGxKbS9MTXhPVUpYQXkvNXdTZ2txaEczdThNNU1hNXRVaysxSzZROUZ0R3hTYnFGQ0xCdXV0aDRWT1E0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5OTI1ODY2CWZpbGU6UHJpdml4LmFwcC50YXIuZ3oKL3laYTkxem5COHhJLzdWL1lIaEtoZEQxR1hCSkRwV3pGa1FPbmkzeU4zWW84SEowNGdmL2twVG85Nkh1TDJYR3pPN2pOZFFUdCtxZkxtNWIxdm1LQnc9PQo="
+      "url": "https://www.privix.cn/downloads/Privix_1.14.0_aarch64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSVXhmNEQvVHdEb3RaY1RrQ3gySXZ0cXp2RklONVhROHE5bUJ5bGpnVFV0a1kyR2tzYWQ1R01FOG1SNytGM3ZLdUtyWFI5UDV3Q0ZtVkk4UFl6aGZ1b2JlR0hUNnRaRmdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5ODIxMzkxCWZpbGU6UHJpdml4LmFwcC50YXIuZ3oKWGJyZXI5VS82V2c3NnMxRWtnZGt3RUltZlkweWhoVUk4MFN3UVhaNC9PYkh0ZjdYK0oybHhsbWRvMTByOTJ3RndPdVFYdWtSQ2dDMGZLLzBXK1RFQUE9PQo="
     }
   }
 }
