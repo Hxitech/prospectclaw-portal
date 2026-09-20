@@ -1,16 +1,16 @@
 {
-  "version": "1.14.0",
+  "version": "1.14.2",
   "minAppVersion": "1.2.0",
-  "changelog": "### 全面上游兼容同步 - OpenClaw npm 官方/中文目标升级至 2026.9.4 / 2026.9.4-zh.1；同步 Node 要求、新版 Agent 注册表、显式模型策略、challenge 签名、Password 认证、启动重试和代理 Origin，Doctor 改为 120 秒非交互诊断。 - 聊天支持结构化待答问题：单选、多选、自由回答、取消、过期与重连恢复；请求失败保留草稿，等待回答期间暂停超时处理，密钥问题不进入普通聊天输入。 - EvoScientist 升级至 0.3.0 / deepagents 0.7.13，安装器使用官方锁导出的约束；覆盖 MiniMax 混合 thinking 历史、二轮请求和 HITL 恢复回归。 - Hermes 升级至 0.21.3，固定源码 commit/checksum 与官方依赖覆盖。安装提交前备份配置和 SQLite，在副本上验证迁移与重启，并拒绝使用含 WAL-reset 风险的 SQLite 完成升级。 - Web 模式校验前后端版本契约，避免旧服务配新前端继续执行命令。新增真实 Gateway 与浏览器交互验收脚本；11 个 locale、CI 和 Linux 安装指引同步更新。 - macOS Apple Silicon 官网发行沿用既有 updater 公钥与签名私钥；安装包和自动更新归档通过官网分发。原生 App 使用 ad-hoc 签名，未做 Apple Developer ID 公证；桌面交互及旧版自动升级全流程的验收限制见发布记录。",
-  "releasedAt": "2026-09-19T12:40:31Z",
-  "downloadUrl": "https://www.privix.cn/downloads/Privix_1.14.0_aarch64.dmg",
+  "changelog": "本版重新发布 1.14.1 的 OpenClaw 2026.9.5、EvoScientist 0.3.1 与研究工作台交互更新；1.14.1 因云端检查失败已撤回，保留历史标签，不覆盖发布工件。 ### 构建与发布修复 - 清理 Gateway 签名时间戳的冗余类型转换，以及 Linux/Windows 服务模块中已无调用的 UID/restart 辅助函数，修复严格 Clippy 检查，保持现有服务重启路径。 - 收敛 Windows 条件编译范围，修复 Unix 专用变量/测试导入、Homebrew 空分支、尾部返回和 WSL 地址解析的 Clippy 告警，不禁用警告或跳过测试。 - 云端 macOS Release 固定使用 ad-hoc 签名，不再读取 Apple 证书或公证凭据；保留项目自有密钥的 Tauri updater 签名和发布标签来源校验。 - 云端多平台产物先进入 GitHub Release 草稿，全部构建与发布门禁通过后统一公开，避免单个平台提前发布。",
+  "releasedAt": "2026-09-20T19:45:25Z",
+  "downloadUrl": "https://www.privix.cn/downloads/Privix_1.14.2_aarch64.dmg",
   "recommendedOpenClaw": "2026.7.1",
-  "notes": "### 全面上游兼容同步 - OpenClaw npm 官方/中文目标升级至 2026.9.4 / 2026.9.4-zh.1；同步 Node 要求、新版 Agent 注册表、显式模型策略、challenge 签名、Password 认证、启动重试和代理 Origin，Doctor 改为 120 秒非交互诊断。 - 聊天支持结构化待答问题：单选、多选、自由回答、取消、过期与重连恢复；请求失败保留草稿，等待回答期间暂停超时处理，密钥问题不进入普通聊天输入。 - EvoScientist 升级至 0.3.0 / deepagents 0.7.13，安装器使用官方锁导出的约束；覆盖 MiniMax 混合 thinking 历史、二轮请求和 HITL 恢复回归。 - Hermes 升级至 0.21.3，固定源码 commit/checksum 与官方依赖覆盖。安装提交前备份配置和 SQLite，在副本上验证迁移与重启，并拒绝使用含 WAL-reset 风险的 SQLite 完成升级。 - Web 模式校验前后端版本契约，避免旧服务配新前端继续执行命令。新增真实 Gateway 与浏览器交互验收脚本；11 个 locale、CI 和 Linux 安装指引同步更新。 - macOS Apple Silicon 官网发行沿用既有 updater 公钥与签名私钥；安装包和自动更新归档通过官网分发。原生 App 使用 ad-hoc 签名，未做 Apple Developer ID 公证；桌面交互及旧版自动升级全流程的验收限制见发布记录。",
-  "pub_date": "2026-09-19T12:40:31Z",
+  "notes": "本版重新发布 1.14.1 的 OpenClaw 2026.9.5、EvoScientist 0.3.1 与研究工作台交互更新；1.14.1 因云端检查失败已撤回，保留历史标签，不覆盖发布工件。 ### 构建与发布修复 - 清理 Gateway 签名时间戳的冗余类型转换，以及 Linux/Windows 服务模块中已无调用的 UID/restart 辅助函数，修复严格 Clippy 检查，保持现有服务重启路径。 - 收敛 Windows 条件编译范围，修复 Unix 专用变量/测试导入、Homebrew 空分支、尾部返回和 WSL 地址解析的 Clippy 告警，不禁用警告或跳过测试。 - 云端 macOS Release 固定使用 ad-hoc 签名，不再读取 Apple 证书或公证凭据；保留项目自有密钥的 Tauri updater 签名和发布标签来源校验。 - 云端多平台产物先进入 GitHub Release 草稿，全部构建与发布门禁通过后统一公开，避免单个平台提前发布。",
+  "pub_date": "2026-09-20T19:45:25Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://www.privix.cn/downloads/Privix_1.14.0_aarch64.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSVXhmNEQvVHdEb3RaY1RrQ3gySXZ0cXp2RklONVhROHE5bUJ5bGpnVFV0a1kyR2tzYWQ1R01FOG1SNytGM3ZLdUtyWFI5UDV3Q0ZtVkk4UFl6aGZ1b2JlR0hUNnRaRmdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5ODIxMzkxCWZpbGU6UHJpdml4LmFwcC50YXIuZ3oKWGJyZXI5VS82V2c3NnMxRWtnZGt3RUltZlkweWhoVUk4MFN3UVhaNC9PYkh0ZjdYK0oybHhsbWRvMTByOTJ3RndPdVFYdWtSQ2dDMGZLLzBXK1RFQUE9PQo="
+      "url": "https://www.privix.cn/downloads/Privix_1.14.2_aarch64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSVXhmNEQvVHdEb215RzBXNHJjNTJIVHBsZEV2NEhPbCtjVTAzaHRtaU05MzdXWVROQnZLcUZtTmNFUDVVSGpEMTRlSWMzdjJGcEdzcVcvVDhlTlNlcjY5QWdYaHo4V2dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5OTMxOTE3CWZpbGU6UHJpdml4LmFwcC50YXIuZ3oKd0I1eWpIQXBIVHZxa3ppQ2ExRUhXc1FrSzVPaWZJOHZxS0V5Qkd0MEtnVkQrZEFwQm55U1BKYm5qT05FUnIwbnhCQ0IwWXg0eUg5d2VqTXZPNklYQ1E9PQo="
     }
   }
 }
